@@ -1,5 +1,5 @@
 weight: 3
-title: "Design"
+title: "A Design that'll make you say wtf"
 description: >
   <ul class="list-style-none">
     <li>Clean and elegant design</li>
@@ -7,4 +7,4 @@ description: >
     <li>Easily readable Roboto font and awesome icons</li>
     <li>7 preprepared colour variations</li>
   </ul>
-image: "img/carousel/template-easy-customize.png"
+image: "img/screenshots/frame-chrome-mac.png"
