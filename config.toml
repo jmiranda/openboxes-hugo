@@ -1,4 +1,4 @@
-baseURL = "https://new.openboxes.com"
+baseURL = "https://new.openboxes.com/"
 languageCode = "en-us"
 title = "OpenBoxes"
 theme = "hugo-universal-theme"
