@@ -1,0 +1,5 @@
+# Hugo default output directory
+/public
+
+# Visual studio config
+.vscode
