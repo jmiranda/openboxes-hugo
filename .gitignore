@@ -3,3 +3,6 @@
 
 # Visual studio config
 .vscode
+
+# IDEA project files
+.idea 
