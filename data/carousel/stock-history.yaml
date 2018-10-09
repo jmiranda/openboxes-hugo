@@ -1,9 +1,10 @@
+---
 weight: 4
-title: "Not all that Easy to customize"
-description: >
+title: Not all that Easy to customize
+description: |
   <ul class="list-style-none">
-    <li>Wow, how the fuck do i send an email with this thing.</li>
+    <li>Wow, how the f*ck do i send an email with this thing.</li>
     <li>There are no alerts ... What?!?!?</li>
     <li>What do you mena I can't add custom fields?</li>
   </ul>
-image: "img/screenshots/stock-history2.png"
+image: img/screenshots/stock-history2.png

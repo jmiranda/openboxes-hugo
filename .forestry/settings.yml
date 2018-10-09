@@ -9,7 +9,7 @@ sections:
   label: Carousel
   create: documents
   match: "*.yaml"
-  new_doc_ext: ".yaml"
+  new_doc_ext: yaml
 - type: directory
   path: content/blog
   label: Blog
