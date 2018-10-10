@@ -23,7 +23,7 @@ sections:
   match: "*.yaml"
   new_doc_ext: yaml
 - type: directory
-  path: data/features
+  path: data/testimonials
   label: Testimonials
   create: documents
   match: "*.yaml"
