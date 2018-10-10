@@ -11,6 +11,30 @@ sections:
   match: "*.yaml"
   new_doc_ext: yaml
 - type: directory
+  path: data/clients
+  label: Implementations
+  create: documents
+  match: "*.yaml"
+  new_doc_ext: yaml
+- type: directory
+  path: data/features
+  label: Features
+  create: documents
+  match: "*.yaml"
+  new_doc_ext: yaml
+- type: directory
+  path: data/features
+  label: Testimonials
+  create: documents
+  match: "*.yaml"
+  new_doc_ext: yaml
+- type: directory
+  path: data/services
+  label: Services
+  create: documents
+  match: "*.yaml"
+  new_doc_ext: yaml
+- type: directory
   path: content/blog
   label: Blog
   create: all

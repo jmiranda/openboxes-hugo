@@ -1,0 +1,4 @@
+weight: 4
+name: "Master Product Data"
+icon: "fa fa-list"
+description: "Store information about any type of item including cost, suppliers and manufacturers, category, substitutions, temperature requirements, hazardous material class, and import/export requirements."

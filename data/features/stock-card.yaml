@@ -1,0 +1,4 @@
+weight: 4
+name: "Stock Card"
+icon: "fa fa-list"
+description: "Store information about any type of item including cost, vendor and manufacturer information, category, substitutions, temperature requirements, hazardous class, and import/export requirements."

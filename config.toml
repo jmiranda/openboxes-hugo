@@ -1,3 +1,4 @@
+# Hugo configuration
 baseURL = "https://new.openboxes.com/"
 languageCode = "en-us"
 title = "OpenBoxes"
@@ -5,8 +6,10 @@ theme = "hugo-universal-theme"
 
 # Site language. Available translations in the theme's `/i18n` directory.
 defaultContentLanguage = "en"
+
 # Enable comments by entering your Disqus shortname
 disqusShortname = "openboxes"
+
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = ""
 
@@ -19,62 +22,115 @@ paginate = 10
 
 [[menu.main]]
     name = "Home"
+    pre = "<i class='fa fa-home'></i>"
     url  = "/"
     weight = 1
 
 [[menu.main]]
-    name = "Blog"
-    url  = "/blog/"
+    name = "Features"
+    pre = "<i class='fa fa-list'></i>"
+    url  = "/features/"
     weight = 2
 
 [[menu.main]]
-    name = "FAQ"
-    identifier = "faq"
-    url  = "/faq/"
+    name = "Demo"
+    pre = "<i class='fa fa-desktop'></i>"
+    url  = "/demo/"
     weight = 3
 
 [[menu.main]]
-    name = "Contact"
-    url  = "/contact/"
+    name = "Getting Started"
+    pre = "<i class='fa fa-rocket'></i>"
+    url  = "/getting-started/"
     weight = 4
+
+[[menu.main]]
+    name = "Roadmap"
+    pre = "<i class='fa fa-road'></i>"
+    url  = "/roadmap/"
+    weight = 5
+
+[[menu.main]]
+    name = "Services"
+    pre = "<i class='fa fa-wrench'></i>"
+    url  = "/services/"
+    weight = 6
+
+[[menu.main]]
+    name = "Blog"
+    pre = "<i class='fa fa-rss'></i>"
+    url  = "/blog/"
+    weight = 7
+
+[[menu.main]]
+    identifier = "support"
+    pre = "<i class='fa fa-life-ring'></i>"
+    name = "Support"
+    url  = "/contact/"
+    weight = 9
+
+[[menu.main]]
+    name = "FAQ"
+    parent = "support"
+    pre = "<i class='fa fa-question'></i>"
+    identifier = "faq"
+    url  = "/faq/"
+    weight = 10
+
+[[menu.main]]
+    name = "Discuss"
+    parent = "support"
+    pre = "<i class='fa fa-comment'></i>"
+    identifier = "discuss"
+    url  = "/discuss/"
+    weight = 11
+
 
 # Top bar social links menu
 
 [[menu.topbar]]
     weight = 1
     name = "GitHub"
-    url = "https://github.com/devcows/hugo-universal-theme"
+    url = "https://github.com/openboxes/openboxes"
     pre = "<i class='fa fa-2x fa-github'></i>"
-
-[[menu.topbar]]
-    weight = 2
-    name = "Facebook"
-    url = "http://facebook.com"
-    pre = "<i class='fa fa-2x fa-facebook'></i>"
 
 [[menu.topbar]]
     weight = 3
     name = "Twitter"
-    url = "http://twitter.com"
+    url = "https://twitter.com/openboxes_"
     pre = "<i class='fa fa-2x fa-twitter'></i>"
+
+[[menu.topbar]]
+    weight = 2
+    name = "Blogger"
+    url = "https://blog.openboxes.com"
+    pre = "<i class='fa fa-2x fa-rss'></i>"
+
 
 [[menu.topbar]]
     weight = 4
     name = "Email"
-    url = "mailto:your@email.com"
+    url = "mailto:support@openboxes.com"
     pre = "<i class='fa fa-2x fa-envelope'></i>"
+
+[[menu.topbar]]
+    weight = 2
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/company/openboxes"
+    pre = "<i class='fa fa-2x fa-linkedin'></i>"
+
 
 [params]
     viewMorePostLink = "/blog/"
-    author = "DevCows"
-    defaultKeywords = ["devows", "hugo", "go"]
-    defaultDescription = "Site template made by devcows using hugo"
+    author = "OpenBoxes"
+    defaultKeywords = ["openboxes"]
+    defaultDescription = "Open-source supply chain software"
 
     # Google Maps API key (if not set will default to not passing a key.)
     # googleMapsApiKey = "AIzaSyCFhtWLJcE30xOAjcbSFi-0fnoVmQZPb1Y"
 
     # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
-    style = "default"
+    style = "blue"
 
     # Since this template is static, the contact form uses www.formspree.io as a
     # proxy. The form makes a POST request to their servers to send the actual
@@ -91,13 +147,13 @@ paginate = 10
     # Enable the contact form by entering your Formspree.io email
     email = "support@openboxes.com"
 
-    about_us = "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>"
+    about_us = "<p>Open-source supply chain software used to manage supplies and medications for healthcare facilities and disaster response efforts.</p>"
     copyright = "Copyright (c) 2010-2018, OpenBoxes"
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
 
-    logo = "img/openboxes-logo2.png"
+    logo = "img/logo.png"
     logo_small = "img/logo-small.png"
     address = """<p><strong>OpenBoxes</strong>
         <br>Cambridge, MA 02140
@@ -139,6 +195,12 @@ paginate = 10
     # at 'exampleSite/data/features'.
     # For more informtion take a look at the README.
 
+[params.services]
+    enable = true
+    # All features are defined in their own files. You can find example items
+    # at 'exampleSite/data/services'.
+    # For more informtion take a look at the README.
+
 [params.testimonials]
     enable = true
     # All testimonials are defined in their own files. You can find example items
@@ -160,7 +222,7 @@ paginate = 10
     # All clients are defined in their own files. You can find example items
     # at 'exampleSite/data/clients'.
     # For more informtion take a look at the README.
-    title = "Our Clients"
+    title = "Our Users"
     subtitle = ""
 
 [params.recent_posts]

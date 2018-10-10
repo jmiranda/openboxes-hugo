@@ -1,0 +1,4 @@
+weight: 5
+name: "Stock Movements"
+icon: "fa fa-envelope-o"
+description: "Intuitive workflows to manage movement of stock from a supplier, from depot to depot, and from depot to consumption location."

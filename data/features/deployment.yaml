@@ -1,0 +1,4 @@
+weight: 6
+name: "Flexible Deployment"
+icon: "fa fa-server"
+description: "You decide whether to deploy in the cloud or on-premise."

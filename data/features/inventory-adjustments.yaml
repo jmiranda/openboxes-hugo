@@ -1,0 +1,4 @@
+weight: 4
+name: "Inventory Adjustments"
+icon: "fa fa-adjust"
+description: "Adjust inventory quantity and remove quantity due to expiry or damage."

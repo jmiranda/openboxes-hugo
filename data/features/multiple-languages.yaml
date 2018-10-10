@@ -1,0 +1,4 @@
+weight: 3
+name: "Multiple Languages"
+icon: "fa fa-flag"
+description: "Supports English, Spanish, and French out of the box and can easily be translated into any other language."
