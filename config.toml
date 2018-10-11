@@ -50,11 +50,6 @@ paginate = 10
     url  = "/roadmap/"
     weight = 5
 
-[[menu.main]]
-    name = "Services"
-    pre = "<i class='fa fa-wrench'></i>"
-    url  = "/services/"
-    weight = 6
 
 [[menu.main]]
     name = "Blog"
@@ -70,12 +65,19 @@ paginate = 10
     weight = 9
 
 [[menu.main]]
+    name = "Services"
+    parent = "support"
+    pre = "<i class='fa fa-wrench'></i>"
+    url  = "/services/"
+    weight = 9.1
+
+[[menu.main]]
     name = "Support"
     parent = "support"
     pre = "<i class='fa fa-phone'></i>"
     identifier = "contact"
     url  = "/support/"
-    weight = 1
+    weight = 9.2
 
 [[menu.main]]
     name = "Discuss"
@@ -83,7 +85,7 @@ paginate = 10
     pre = "<i class='fa fa-comment'></i>"
     identifier = "discuss"
     url  = "/discuss/"
-    weight = 11
+    weight = 9.3
 
 
 # Top bar social links menu
