@@ -11,7 +11,7 @@ defaultContentLanguage = "en"
 disqusShortname = "openboxes"
 
 # Enable Google Analytics by entering your tracking code
-googleAnalytics = ""
+googleAnalytics = "UA-37396941-2"
 
 # Define the number of posts per page
 paginate = 10
@@ -42,6 +42,12 @@ paginate = 10
     name = "Getting Started"
     pre = "<i class='fa fa-rocket'></i>"
     url  = "/getting-started/"
+    weight = 4
+
+[[menu.main]]
+    name = "Pricing"
+    pre = "<i class='fa fa-money'></i>"
+    url  = "/pricing/"
     weight = 4
 
 [[menu.main]]
