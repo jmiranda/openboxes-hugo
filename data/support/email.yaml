@@ -1,0 +1,6 @@
+weight: 1
+type: "tier3"
+name: "Email"
+icon: "fa fa-email"
+description: "Email our support team and get a response back within a minute. Our pledge to you is that we will always over-promise and under-deliver."
+link: "mailto:support@openboxes.com"
