@@ -100,6 +100,18 @@ function sliders () {
       itemsMobile: [480, 1]
     })
 
+    $('.screenshots').owlCarousel({
+      navigation: true, // Show next and prev buttons
+      navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+      slideSpeed: 100,
+      paginationSpeed: 1000,
+      autoPlay: false,
+      stopOnHover: true,
+      singleItem: true,
+      lazyLoad: false,
+      addClassActive: true,
+    })
+
     $('.testimonials').owlCarousel({
       items: 4,
       itemsDesktopSmall: [990, 3],

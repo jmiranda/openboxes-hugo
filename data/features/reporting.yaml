@@ -1,4 +1,18 @@
-weight: 2
+weight: 11
 name: "Reporting"
 icon: "fa fa-bar-chart"
 description: "Advantage old had otherwise sincerity dependent additions. It in adapted natural hastily is justice. Six draw you him full not mean evil."
+screenshots:
+- image: ../img/screenshots/inventory-snapshot.png
+- image: ../img/screenshots/monthly-consumption-data.png
+- image: ../img/screenshots/monthly-stock-requisitions.png
+- image: ../img/screenshots/stock-analytics.png
+- image: ../img/screenshots/recent-activity.png
+- image: ../img/screenshots/stock-analytics2.png
+- image: ../img/screenshots/browse-inventory-table.png
+- image: ../img/screenshots/canceled-items.png
+- image: ../img/screenshots/dashboard2.png
+- image: ../img/screenshots/dashboard-fast-movers-top10.png
+- image: ../img/screenshots/dashboard-fast-movers-top10.png
+
+

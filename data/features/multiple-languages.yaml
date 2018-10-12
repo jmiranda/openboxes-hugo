@@ -1,4 +1,8 @@
-weight: 3
-name: "Multiple Languages"
+weight: 12
+name: "Multiple Language Support"
 icon: "fa fa-flag"
 description: "Supports English, Spanish, and French out of the box and can easily be translated into any other language."
+items:
+- Ability to store translations in local database.
+screenshots:
+- image: https://placeimg.com/400/300/people

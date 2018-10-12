@@ -1,4 +1,22 @@
-weight: 5
+weight: 3
 name: "Stock Movements"
-icon: "fa fa-envelope-o"
+icon: "fa fa-exchange"
 description: "Intuitive workflows to manage movement of stock from a supplier, from depot to depot, and from depot to consumption location."
+items:
+- Based on the origin and destination entered, OpenBoxes selects the appropriate workflow for moving stock (i.e. incoming from a supplier, depot to depot, depot to consumption location)
+- Ability to base a stock movement on a stock list
+- Ability to edit quantity in stock movement based on availability of stock while capturing original request to inform forecasting
+- Ability to act on suggested substitutions during stock movement workflow
+- Automated suggested pick based on FEFO
+- Ability to export and print pick list
+- Ability to pack items by pallet and box
+- Ability to add stock movement metadata including date, tracking number, comments
+- Ability to export packing lists and other customized customs clearance documentation
+- Ability to upload and store other documentation
+screenshots:
+- image: ../img/screenshots/stock-card.png
+  url: ../img/screenshots/stock-card.png
+- image: ../img/screenshots/overstock.png
+  url: ../img/screenshots/overstock.png
+- image: ../img/screenshots/overstock-alt2.png
+  url: ../img/screenshots/overstock-alt2.png

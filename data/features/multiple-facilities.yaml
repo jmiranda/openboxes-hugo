@@ -1,6 +1,7 @@
-weight: 8
-name: "Bin Locations"
-icon: "fa fa-archive"
+weight: 7
+name: "Multiple Facilities"
+icon: "fa fa-building"
 description: "Am terminated it excellence invitation projection as. She graceful shy believed distance use nay. Lively is people so basket ladies window expect."
 screenshots:
-- image: https://placeimg.com/550/300/any
+- image: ../img/screenshots/choose-location.png
+- image: ../img/screenshots/stock-all-locations.png

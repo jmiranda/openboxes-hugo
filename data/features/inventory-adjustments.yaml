@@ -1,4 +1,11 @@
-weight: 4
-name: "Inventory Adjustments"
-icon: "fa fa-adjust"
-description: "Adjust inventory quantity and remove quantity due to expiry or damage."
+weight: 5
+name: "Inventory Tracking"
+icon: "fa fa-sort"
+description: "Adjust inventory quantity and remove quantity due to expiry and damage."
+items:
+- Track lot/serial number and expiration date through workflows, including automation based on FEFO during picking
+- Easily identify affected inventory in the event of a recall
+- View and export dashboard reports on expiring stock
+- Access information about incoming shipments and pending outgoing shipments for each item by location
+screenshots:
+- image: https://placeimg.com/550/300/any

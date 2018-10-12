@@ -1,4 +1,16 @@
-weight: 4
-name: "Stock Card"
+weight: 2
+name: "Electronic Stock Card"
 icon: "fa fa-list"
-description: "Store information about any type of item including cost, vendor and manufacturer information, category, substitutions, temperature requirements, hazardous class, and import/export requirements."
+description: "Short description."
+items:
+- Store and view metadata about each item, such as cost, vendor and manufacturer information, category, substitutions, temperature requirements, hazardous class, and import/export requirements (e.g. for controlled substances)
+- View quantity on hand within each inventory location by bin location, lot/serial number, and expiration date
+- View stock history including debits, credits, and inventory adjustments
+- OpenBoxes supports any type of item including, but not limited to, medications, medical supplies and devices, office supplies, and building materials. In addition, the software can be used to track the location of fixed assets like automobiles, IT equipment, and hospital furniture.
+screenshots:
+- image: ../img/screenshots/stock-card.png
+  url: ../img/screenshots/stock-card.png
+- image: ../img/screenshots/overstock.png
+  url: ../img/screenshots/overstock.png
+- image: ../img/screenshots/overstock-alt2.png
+  url: ../img/screenshots/overstock-alt2.png

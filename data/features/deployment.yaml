@@ -1,4 +1,11 @@
-weight: 6
-name: "Flexible Deployment"
+weight: 14
+name: "Deployment & Integration"
 icon: "fa fa-server"
 description: "You decide whether to deploy in the cloud or on-premise."
+items:
+- OpenBoxes is a web-based system that can be hosted in the cloud or on-premise. Either option requires a commitment from the implementing group, either to invest in sufficient human resources and hardware to support a locally-hosted system (online/offline capability), or to invest in consistent internet connectivity.
+- Can be accessed from mobile devices
+- Can be integrated with other software systems through REST API
+- There are no limits to the number of users who can use the system at one time
+screenshots:
+- image: ../img/screenshots/stockswap.png
