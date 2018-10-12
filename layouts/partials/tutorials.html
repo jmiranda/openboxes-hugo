@@ -1,0 +1,27 @@
+{{ if isset .Site.Params "tutorials" }}
+{{ if .Site.Params.tutorials.enable }}
+{{ if gt (len .Site.Data.tutorials) 0 }}
+<section class="bar background-white">
+    <div class="container">
+        {{ range $index, $element := sort .Site.Data.tutorials "weight" }}
+		{{ if eq (mod $index 2) 0 }}
+		<div class="col-md-12">
+            <div class="row">
+		{{ end }}
+				<div class="col-md-6">
+                    <h3><i class="{{ .icon }}"></i> {{ $element.name }}</h3>
+                    <p>{{ $element.description | markdownify }}</p>
+
+
+                    <iframe width="560" height="315" src="{{ $element.link }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+		{{ if or (eq (mod $index 2) 2) (eq $index (sub (len $.Site.Data.tutorials) 1 )) }}
+			</div>
+		</div>
+		{{ end }}
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{ end }}

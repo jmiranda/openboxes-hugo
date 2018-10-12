@@ -39,14 +39,52 @@ paginate = 10
     weight = 3
 
 [[menu.main]]
+    identifier = "getting-started"
     name = "Getting Started"
     pre = "<i class='fa fa-rocket'></i>"
     url  = "/getting-started/"
     weight = 4
 
 [[menu.main]]
+    name = "Why?"
+    parent = "getting-started"
+    pre = "<i class='fa fa-question'></i>"
+    url  = "/getting-started/"
+    weight = 4.1
+
+[[menu.main]]
+    name = "Downloads"
+    parent = "getting-started"
+    pre = "<i class='fa fa-download'></i>"
+    url  = "/downloads/"
+    weight = 4.2
+
+[[menu.main]]
+    name = "Installation"
+    parent = "getting-started"
+    pre = "<i class='fa fa-cloud'></i>"
+    url  = "/installation/"
+    weight = 4.3
+
+[[menu.main]]
+    name = "Tutorials"
+    parent = "getting-started"
+    pre = "<i class='fa fa-film'></i>"
+    url  = "/tutorials/"
+    weight = 4.4
+
+[[menu.main]]
+    name = "Contribute"
+    parent = "getting-started"
+    pre = "<i class='fa fa-github'></i>"
+    url  = "/getting-started/"
+    weight = 4.5
+
+
+
+[[menu.main]]
     name = "Pricing"
-    pre = "<i class='fa fa-money'></i>"
+    pre = "<i class='fa fa-coffee'></i>"
     url  = "/pricing/"
     weight = 4
 
@@ -198,6 +236,9 @@ paginate = 10
     enable = true
 
 [params.features]
+    enable = true
+
+[params.tutorials]
     enable = true
 
 [params.services]
