@@ -27,6 +27,12 @@ paginate = 10
     weight = 1
 
 [[menu.main]]
+    name = "About"
+    pre = "<i class='fa fa-info'></i>"
+    url  = "/about"
+    weight = 2
+
+[[menu.main]]
     name = "Features"
     pre = "<i class='fa fa-list'></i>"
     url  = "/features/"
@@ -193,7 +199,7 @@ paginate = 10
     # Enable the contact form by entering your Formspree.io email
     email = "support@openboxes.com"
 
-    about_us = "<p>Open-source supply chain software used to manage supplies and medications for healthcare facilities and disaster response efforts.</p>"
+    about_us = "<p>OpenBoxes is an open-source supply chain management system used to manage supplies and medications for healthcare facilities and disaster relief efforts.</p>"
     copyright = "Copyright (c) 2010-2018, OpenBoxes"
 
     # Format dates with Go's time formatting

@@ -1,4 +1,5 @@
 +++
 title = "Pricing"
+id = "pricing"
 +++
 
