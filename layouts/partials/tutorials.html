@@ -1,27 +1,69 @@
 {{ if isset .Site.Params "tutorials" }}
 {{ if .Site.Params.tutorials.enable }}
 {{ if gt (len .Site.Data.tutorials) 0 }}
+
 <section class="bar background-white">
     <div class="container">
-        {{ range $index, $element := sort .Site.Data.tutorials "weight" }}
-		{{ if eq (mod $index 2) 0 }}
-		<div class="col-md-12">
-            <div class="row">
-		{{ end }}
-				<div class="col-md-6">
-                    <h3><i class="{{ .icon }}"></i> {{ $element.name }}</h3>
-                    <p>{{ $element.description | markdownify }}</p>
+        <div class="row">
+            <div class="col-md-3">
+
+            </div>
+
+            <div class="col-md-8 col-md-offset-2"  id="blog-listing-medium">
+                {{ range $index, $element := sort .Site.Data.tutorials "weight" }}
+                    <section class="post">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a class="btn video-btn" data-toggle="modal" data-src="{{ $element.url }}" data-target="#myModal">
+                                    <img src="{{ $element.thumbnail }}" class="img img-responsive"/>
+                                </a>
+                            </div>
+                            <div class="col-md-8">
+                                <h2><i class="{{ .icon }}"></i> {{ $element.name }}</h2>
+                                <div class="clearfix">
+                                    <p class="author-category">
+                                        By <a href="#">{{ $element.author }}</a>
+                                    </p>
+                                    <p class="date-comments">
+                                        <i class="fa fa-calendar-o"></i> {{ dateFormat "Monday, Jan 2, 2006" $element.published }}
+                                    </p>
+                                </div>
+                                <p class="intro">{{ $element.description | markdownify }}</p>
+                                <p class="text-left">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="{{ $element.url }}" data-target="#myModal">
+                                        Watch Video
+                                    </button>
 
 
-                    <iframe width="560" height="315" src="{{ $element.link }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </div>
-		{{ if or (eq (mod $index 2) 2) (eq $index (sub (len $.Site.Data.tutorials) 1 )) }}
-			</div>
-		</div>
-		{{ end }}
-        {{ end }}
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                {{ end }}
+            </div>
+        </div>
     </div>
 </section>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allowfullscreen="allowfullscreen"
+                            mozallowfullscreen="mozallowfullscreen"
+                            msallowfullscreen="msallowfullscreen"
+                            oallowfullscreen="oallowfullscreen"
+                            webkitallowfullscreen="webkitallowfullscreen"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {{ end }}
 {{ end }}
 {{ end }}
