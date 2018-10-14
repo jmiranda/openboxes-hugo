@@ -1,10 +1,10 @@
+---
 weight: 3
-title: "A Design that'll make you say wtf"
-description: >
+title: Management tool
+description: |
   <ul class="list-style-none">
-    <li>Omg, is this 2011?</li>
-    <li>Won't work on a mobile phone, don't even try it</li>
-    <li>It's like they just randomly chose different fonts and colors for each page</li>
-    <li>These graphs are giving me a seizure</li>
+    <li>Prevent loss to expiry</li>
+    <li>Respond to recalls</li>
+    <li>View requests compared to fulfillment</li>
   </ul>
-image: "img/screenshots/frame-chrome-mac.png"
+image: img/screenshots/frame-chrome-mac.png
