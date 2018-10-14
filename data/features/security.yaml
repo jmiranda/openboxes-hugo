@@ -1,6 +1,10 @@
+---
 weight: 10
-name: "Security"
-icon: "fa fa-id-card"
-description: "Fifth abundantly made Give sixth hath. Cattle creature i be don't them behold green moved fowl Moved life us beast good yielding. Have bring."
+name: Security
+icon: fa fa-id-card
+description: 'Permission levels by role and user; Tracking of all users (unique accounts)
+  and automatic time stamp by user for all major transactions
+
+'
 screenshots:
-- image: ../img/screenshots/login.png
+- image: "../img/screenshots/login.png"
