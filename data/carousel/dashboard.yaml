@@ -1,5 +1,10 @@
 ---
-weight: 1
+weight: 3
 title: Flexibility
-description: "<p>Too. Much. Data. On. One. Page</p>"
+description: |
+  <ul class="list-style-none">
+    <li>No limit to number of users</li>
+    <li>Sign in from any location</li>
+    <li>Can be translated to any language</li>
+  </ul>
 image: img/screenshots/frame-dashboard.png
