@@ -1,10 +1,10 @@
 +++
-title = "Contact"
 id = "contact"
-+++
+title = "Contact"
 
++++
 # We are here to help you
 
-Are you curious about something? Do you have some kind of problem with our products? As am hastily invited settled at limited civilly fortune me. Really spring in extent an by. Judge but built gay party world. Of so am he remember although required. Bachelor unpacked be advanced at. Confined in declared marianne is vicinity.
+Do you have questions about features or what you see in the demo? Do you want to know more about implementation support? Do you want to become a contributor to OpenBoxes or have suggestions for new features?
 
 Please feel free to contact us, our customer service center is working for you 24/7.
