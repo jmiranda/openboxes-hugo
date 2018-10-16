@@ -11,6 +11,12 @@ sections:
   match: "*.yaml"
   new_doc_ext: yaml
 - type: directory
+  path: data/benefits
+  label: Benefits
+  create: documents
+  match: "*.yaml"
+  new_doc_ext: yaml
+- type: directory
   path: data/clients
   label: Implementations
   create: documents
@@ -23,14 +29,38 @@ sections:
   match: "*.yaml"
   new_doc_ext: yaml
 - type: directory
-  path: data/testimonials
-  label: Testimonials
+  path: data/partners
+  label: Partners
   create: documents
   match: "*.yaml"
   new_doc_ext: yaml
 - type: directory
   path: data/services
   label: Services
+  create: documents
+  match: "*.yaml"
+  new_doc_ext: yaml
+- type: directory
+  path: data/support
+  label: Support
+  create: documents
+  match: "*.yaml"
+  new_doc_ext: yaml
+- type: directory
+  path: data/testimonials
+  label: Testimonials
+  create: documents
+  match: "*.yaml"
+  new_doc_ext: yaml
+- type: directory
+  path: data/tutorials
+  label: Tutorials
+  create: documents
+  match: "*.yaml"
+  new_doc_ext: yaml
+- type: directory
+  path: data/users
+  label: Users
   create: documents
   match: "*.yaml"
   new_doc_ext: yaml
