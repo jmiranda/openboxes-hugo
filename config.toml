@@ -73,9 +73,7 @@ paginate = 10
     pre = "<i class='fa fa-desktop'></i>"
     url  = "https://demo.openboxes.com"
     hrefTargetBlank = true
-    weight =
-
-
+    weight = 3
 
 [[menu.main]]
     identifier = "getting-started"
@@ -148,8 +146,6 @@ paginate = 10
     pre = "<i class='fa fa-github'></i>"
     url  = "/contribute/"
     weight = 4
-
-
 
 [[menu.main]]
     name = "News"
