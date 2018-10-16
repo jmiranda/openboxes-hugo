@@ -1,29 +1,123 @@
-{{ if isset .Site.Params "services" }}
-{{ if .Site.Params.services.enable }}
-{{ if gt (len .Site.Data.services) 0 }}
-<section class="bar background-white">
-    <div class="container">
-        {{ range $index, $element := sort .Site.Data.services "weight" }}
-		{{ if eq (mod $index 3) 0 }}
-		<div class="col-md-12">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="heading">
+                <h2>Services</h2>
+            </div>
+
+            <p>OpenBoxes is free to <a href="/getting-started">download and use</a>. The software is
+                therefore an attractive option for organizations with limited financial resources available to purchase licenses for
+                proprietary software. At the same time, depending on existing resources and infrastructure, OpenBoxes may require some
+                financial investment in human and information technology resources for a successful implementation. It is recommended
+                that an organization evaluate the total cost of ownership (TCO) for any software under consideration, including the
+                cost of hardware and personnel required for installation, implementation, maintenance, and custom development of the
+                software.
+            </p>
+
+            <p>Service requirements and pricing can be determined based on the specific needs of the implementing organization. Please
+                contact us at if you'd like to discuss your requirements.</p>
+
+            <p>Should an organization choose to consider OpenBoxes as their supply chain management software, community members can
+                be contracted to design implementation plans and manage the software roll-out. These services include, but are not
+                limited to the following: </p>
+
             <div class="row">
-		{{ end }}
-				<div class="col-md-4">
-                    <div class="box-simple">
-                        <div class="icon">
-                            <i class="{{ .icon }}"></i>
-                        </div>
-                        <h3>{{ $element.name }}</h3>
-                        <p>{{ $element.description | markdownify }}</p>
+
+                <div class="col-md-6">
+
+                    <div class="heading">
+                        <h3>Supply Chain Services</h3>
                     </div>
+
+                    <ul class="list-group">
+                        <li class="list-group-item">Sourcing & Procurement</li>
+                        <li class="list-group-item">Demand Forecasting</li>
+                        <li class="list-group-item">Warehouse Design</li>
+                        <li class="list-group-item">Workflow & Process Mapping</li>
+                        <li class="list-group-item">Standard Operating Procedures (SOPs) </li>
+                        <li class="list-group-item">Business Analysis </li>
+                        <li class="list-group-item">Training (remote or in-person)</li>
+                    </ul>
+
                 </div>
-		{{ if or (eq (mod $index 3) 2) (eq $index (sub (len $.Site.Data.services) 1 )) }}
-			</div>
-		</div>
-		{{ end }}
-        {{ end }}
+
+                <div class="col-md-6">
+
+                    <div class="heading">
+                        <h3>Implementation Services</h3>
+                    </div>
+
+                    <ul class="list-group">
+                        <li class="list-group-item">Requirements Analysis</li>
+                        <li class="list-group-item">Cost Analysis</li>
+                        <li class="list-group-item">Server Hosting</li>
+                        <li class="list-group-item">Implementation Support</li>
+                        <li class="list-group-item">Project Management </li>
+                        <li class="list-group-item">Database Administration</li>
+                        <li class="list-group-item">Technical Support</li>
+                        <li class="list-group-item">Installation & Upgrades</li>
+                        <li class="list-group-item">Performance Tuning </li>
+                        <li class="list-group-item">Data Cleaning</li>
+                        <li class="list-group-item">Data Migration</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="heading">
+                <h3>Service Partners</h3>
+            </div>
+            <div class="lead">If your company is interested in providing any of the aforementioned services,
+            please contact us and we'll add your contact information below.
+            </div>
+
+
+            {{ if isset .Site.Params "services" }}
+            {{ if .Site.Params.services.enable }}
+            {{ if gt (len .Site.Data.services) 0 }}
+            <section class="bar background-white">
+                <div class="container">
+                    {{ range $index, $element := sort .Site.Data.services "weight" }}
+                    {{ if eq (mod $index 3) 0 }}
+                    <div class="col-md-12">
+                        <div class="row">
+                            {{ end }}
+                            <div class="col-md-4">
+                                <div class="box-simple">
+                                    <div class="icon">
+                                        <i class="{{ .icon }}"></i>
+                                    </div>
+                                    <h3>{{ $element.name }}</h3>
+                                    <p>{{ $element.description | markdownify }}</p>
+                                </div>
+                            </div>
+                            {{ if or (eq (mod $index 3) 2) (eq $index (sub (len $.Site.Data.services) 1 )) }}
+                        </div>
+                    </div>
+                    {{ end }}
+                    {{ end }}
+                </div>
+            </section>
+            {{ end }}
+            {{ end }}
+            {{ end }}
+
+
+        </div>
     </div>
+</div>
+<section class="bar background-gray">
+
+    <div class="row">
+
+        <div class="col-md-8 text-center">
+            <h3>Do you need some assistance?</h3>
+        </div>
+        <div class="col-md-4 text-center">
+            <a href="mailto:support@openboxes.com" class="btn btn-template-primary">Email support@openboxes.com</a>
+        </div>
+    </div>
+
+
 </section>
-{{ end }}
-{{ end }}
-{{ end }}
+

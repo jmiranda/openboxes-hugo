@@ -9,7 +9,7 @@
 
             </div>
 
-            <div class="col-md-8 col-md-offset-2"  id="blog-listing-medium">
+            <div class="col-md-10 col-md-offset-1"  id="blog-listing-medium">
                 {{ range $index, $element := sort .Site.Data.tutorials "weight" }}
                     <section class="post">
                         <div class="row">
@@ -19,7 +19,7 @@
                                 </a>
                             </div>
                             <div class="col-md-8">
-                                <h2><i class="{{ .icon }}"></i> {{ $element.name }}</h2>
+                                <h3><i class="{{ .icon }}"></i> {{ $element.name }}</h3>
                                 <div class="clearfix">
                                     <p class="author-category">
                                         By <a href="#">{{ $element.author }}</a>

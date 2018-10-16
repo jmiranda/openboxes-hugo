@@ -21,122 +21,142 @@ paginate = 10
 # Main menu
 
 [[menu.main]]
+    identifier = "home"
     name = "Home"
     pre = "<i class='fa fa-home'></i>"
-    url  = "/"
+    urk = "/"
     weight = 1
 
 [[menu.main]]
+    identifier = "about"
     name = "About"
     pre = "<i class='fa fa-info'></i>"
-    url  = "/about"
     weight = 2
 
 [[menu.main]]
+    name = "About OpenBoxes"
+    parent = "about"
+    pre = "<i class='fa fa-info'></i>"
+    url  = "/about"
+    weight = 1
+
+[[menu.main]]
     name = "Features"
+    parent = "about"
     pre = "<i class='fa fa-list'></i>"
     url  = "/features/"
     weight = 2
 
 [[menu.main]]
-    name = "Demo"
-    pre = "<i class='fa fa-desktop'></i>"
-    url  = "/demo/"
+    name = "Pricing"
+    parent = "about"
+    pre = "<i class='fa fa-coffee'></i>"
+    url  = "/pricing/"
     weight = 3
 
 [[menu.main]]
-    identifier = "getting-started"
-    name = "Getting Started"
-    pre = "<i class='fa fa-rocket'></i>"
-    url  = "/getting-started/"
+    name = "Roadmap"
+    parent = "about"
+    pre = "<i class='fa fa-road'></i>"
+    url  = "/roadmap/"
     weight = 4
 
 [[menu.main]]
-    name = "Why?"
-    parent = "getting-started"
-    pre = "<i class='fa fa-question'></i>"
+    name = "Users"
+    parent = "about"
+    pre = "<i class='fa fa-map'></i>"
+    url  = "/users/"
+    weight = 5
+
+[[menu.main]]
+    name = "Demo"
+    pre = "<i class='fa fa-desktop'></i>"
+    url  = "https://demo.openboxes.com"
+    hrefTargetBlank = true
+    weight =
+
+
+
+[[menu.main]]
+    identifier = "getting-started"
+    name = "Get Started"
+    pre = "<i class='fa fa-rocket'></i>"
     url  = "/getting-started/"
-    weight = 4.1
+    weight = 4
 
 [[menu.main]]
     name = "Downloads"
     parent = "getting-started"
     pre = "<i class='fa fa-download'></i>"
     url  = "/downloads/"
-    weight = 4.2
+    weight = 1
+
+[[menu.main]]
+    name = "Source Code"
+    parent = "getting-started"
+    pre = "<i class='fa fa-code'></i>"
+    url  = "https://github.com/openboxes/openboxes"
+    weight = 2
 
 [[menu.main]]
     name = "Installation"
     parent = "getting-started"
     pre = "<i class='fa fa-cloud'></i>"
     url  = "/installation/"
-    weight = 4.3
+    weight = 3
 
 [[menu.main]]
     name = "Tutorials"
     parent = "getting-started"
     pre = "<i class='fa fa-film'></i>"
     url  = "/tutorials/"
-    weight = 4.4
-
-[[menu.main]]
-    name = "Contribute"
-    parent = "getting-started"
-    pre = "<i class='fa fa-github'></i>"
-    url  = "/getting-started/"
-    weight = 4.5
-
-
-
-[[menu.main]]
-    name = "Pricing"
-    pre = "<i class='fa fa-coffee'></i>"
-    url  = "/pricing/"
     weight = 4
 
 [[menu.main]]
-    name = "Roadmap"
-    pre = "<i class='fa fa-road'></i>"
-    url  = "/roadmap/"
+    identifier = "community"
+    name = "Community"
+    pre = "<i class='fa fa-users'></i>"
+    url  = "/community/"
     weight = 5
 
+[[menu.main]]
+    identifier = "discuss"
+    name = "Discuss"
+    parent = "community"
+    pre = "<i class='fa fa-comment'></i>"
+    url  = "http://discuss.openboxes.com"
+    weight = 1
 
 [[menu.main]]
-    name = "Blog"
-    pre = "<i class='fa fa-rss'></i>"
-    url  = "/blog/"
-    weight = 7
-
-[[menu.main]]
-    identifier = "support"
-    pre = "<i class='fa fa-life-ring'></i>"
     name = "Support"
+    parent = "community"
+    pre = "<i class='fa fa-phone'></i>"
     url  = "/support/"
-    weight = 9
+    weight = 2
 
 [[menu.main]]
     name = "Services"
-    parent = "support"
+    parent = "community"
     pre = "<i class='fa fa-wrench'></i>"
     url  = "/services/"
-    weight = 9.1
+    weight = 3
 
 [[menu.main]]
-    name = "Support"
-    parent = "support"
-    pre = "<i class='fa fa-phone'></i>"
-    identifier = "contact"
-    url  = "/support/"
-    weight = 9.2
+    identifier = "contribute"
+    name = "Contribute"
+    parent = "community"
+    pre = "<i class='fa fa-github'></i>"
+    url  = "/contribute/"
+    weight = 4
+
+
 
 [[menu.main]]
-    name = "Discuss"
-    parent = "support"
-    pre = "<i class='fa fa-comment'></i>"
-    identifier = "discuss"
-    url  = "/discuss/"
-    weight = 9.3
-
+    name = "News"
+    parent = "about"
+    pre = "<i class='fa fa-rss'></i>"
+    url  = "/blog/"
+    weight = 5
 
 # Top bar social links menu
 
