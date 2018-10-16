@@ -1,10 +1,11 @@
-weight: 2
-title: "Loads of features you won't use"
-description: >
+---
+weight: 4
+title: Implementation services
+description: |
   <ul class="list-style-none">
-     <li>Inventory management</li>
-     <li>Order management</li>
-     <li>FEFO Picking</li>
-     <li>Manual Putaway</li>
+     <li>Implementation planning<li>
+     <li>Customization<li>
+     <li>Server hosting<li>
+     <li>Data cleaning and migration</li>
    </ul>
-image: "img/screenshots/overstock-resized.png"
+image: img/screenshots/overstock-resized.png

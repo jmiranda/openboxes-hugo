@@ -1,10 +1,7 @@
 ---
-weight: 4
-title: Not all that Easy to customize
-description: |
-  <ul class="list-style-none">
-    <li>Wow, how the f*ck do i send an email with this thing.</li>
-    <li>There are no alerts ... What?!?!?</li>
-    <li>What do you mena I can't add custom fields?</li>
-  </ul>
+weight: 1
+title: Data visibility
+description: "<ul class=\"list-style-none\">\n  <li>Quantity on hand across your locations
+  <li>\n <li>Stock history <li> \n <li>Incoming and outgoing shipments<li>\n <li>Formularies<li>\n
+  <li>Vendor and manufacturer information<li>\n <li>And more<li>\n</ul>\n"
 image: img/screenshots/stock-history2.png
