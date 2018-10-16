@@ -1,5 +1,5 @@
-weight: 2
-name: "Decrease wastage"
-icon: "fa fa-tree"
-description: "With the ability to track inventory items with expiration date, you Less wastage due to due to expiry and lost items"
+weight: 3
+name: "Reduce stock wastage"
+icon: "fa fa-trash"
+description: "Reduce wastage through use of first-expiry-first-out (FEFO) picking strategy that ensures medicines will be used before their expiry."
 

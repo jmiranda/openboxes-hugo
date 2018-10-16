@@ -278,9 +278,9 @@ paginate = 10
     enable = true
     icon = "fa fa-file-code-o"
     title = "Demo"
-    subtitle = ""
+    subtitle = "The moment we've all been waiting for ..."
     link_url = "https://demo.openboxes.com/openboxes/auth/signup"
-    link_text = "Signup"
+    link_text = "Signup on our demo"
 
 [params.clients]
     enable = true
