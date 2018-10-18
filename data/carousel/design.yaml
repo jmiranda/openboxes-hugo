@@ -1,10 +1,12 @@
 ---
 weight: 2
-title: Management tool
+title: Improve your workflows
 description: |
   <ul class="list-style-none">
-    <li>Prevent loss to expiry</li>
+    <li>Reduce stockouts</li>
+    <li>Prevent loss due to expiry</li>
     <li>Respond to recalls</li>
-    <li>View requests compared to fulfillment</li>
+    <li>Forecast based on demand data</li>
   </ul>
 image: img/screenshots/frame-chrome-mac.png
+link: /features

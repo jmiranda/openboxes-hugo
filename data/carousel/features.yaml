@@ -1,11 +1,14 @@
 ---
 weight: 4
-title: Implementation services
+title: Need Help
 description: |
   <ul class="list-style-none">
-     <li>Implementation planning<li>
-     <li>Customization<li>
+     <li>Planning</li>
+     <li>Implementation<li>
+     <li>Custom Development<li>
      <li>Server hosting<li>
-     <li>Data cleaning and migration</li>
+     <li>Data Migration</li>
+     <li>On-going Support</li>
    </ul>
-image: img/screenshots/overstock-resized.png
+image: img/carousel/colleagues.jpg
+link: /services

@@ -1,7 +1,13 @@
 ---
 weight: 1
-title: Data visibility
-description: "<ul class=\"list-style-none\">\n  <li>Quantity on hand across your locations
-  <li>\n <li>Stock history <li> \n <li>Incoming and outgoing shipments<li>\n <li>Formularies<li>\n
-  <li>Vendor and manufacturer information<li>\n <li>And more<li>\n</ul>\n"
+title: Better Visibility
+description: |
+  <ul class="">
+    <li>Manage stock across all facilities</li>
+    <li>View stock history for any product</li>
+    <li>Inbound and outbound stock movements</li>
+    <li>Organize products into formularies</li>
+    <li>Vendor and manufacturer information</li>
+  </ul>
 image: img/screenshots/stock-history2.png
+link: /features
