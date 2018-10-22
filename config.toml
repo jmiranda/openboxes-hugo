@@ -62,6 +62,14 @@ paginate = 10
     url  = "/users/"
     weight = 5
 
+[[menu.main]]
+    name = "News"
+    parent = "about"
+    pre = "<i class='fa fa-rss'></i>"
+    url  = "/blog/"
+    weight = 6
+
+
 # Demo
 [[menu.main]]
     name = "Demo"
@@ -97,7 +105,7 @@ paginate = 10
     name = "Installation"
     parent = "getting-started"
     pre = "<i class='fa fa-cloud'></i>"
-    url  = "/installation/"
+    url  = "https://openboxes.readthedocs.io/en/develop/installation/"
     weight = 3
 
 [[menu.main]]
@@ -112,30 +120,32 @@ paginate = 10
     identifier = "community"
     name = "Community"
     pre = "<i class='fa fa-users'></i>"
-    url  = "/community/"
+    url  = "https://discuss.openboxes.com"
     weight = 5
 
-[[menu.main]]
-    identifier = "discuss"
-    name = "Discuss"
-    parent = "community"
-    pre = "<i class='fa fa-comment'></i>"
-    url  = "http://discuss.openboxes.com"
-    weight = 1
 
-[[menu.main]]
-    name = "Support"
-    parent = "community"
-    pre = "<i class='fa fa-phone'></i>"
-    url  = "/support/"
-    weight = 2
 
+#[[menu.main]]
+#    identifier = "discuss"
+#    name = "Discuss"
+#    parent = "community"
+#    pre = "<i class='fa fa-comment'></i>"
+#    url  = "http://discuss.openboxes.com"
+#    weight = 1
+
+#[[menu.main]]
+#    name = "Support"
+#    parent = "community"
+#    pre = "<i class='fa fa-phone'></i>"
+#    url  = "/support/"
+#    weight = 2
+
+# Services
 [[menu.main]]
     name = "Services"
-    parent = "community"
     pre = "<i class='fa fa-wrench'></i>"
     url  = "/services/"
-    weight = 3
+    weight = 6
 
 #[[menu.main]]
 #    name = "Pricing"
@@ -145,20 +155,14 @@ paginate = 10
 #    weight = 4
 
 
-[[menu.main]]
-    identifier = "contribute"
-    name = "Contribute"
-    parent = "community"
-    pre = "<i class='fa fa-github'></i>"
-    url  = "/contribute/"
-    weight = 5
+#[[menu.main]]
+#    identifier = "contribute"
+#    name = "Contribute"
+#    parent = "community"
+#    pre = "<i class='fa fa-github'></i>"
+#    url  = "/contribute/"
+#    weight = 5
 
-[[menu.main]]
-    name = "News"
-    parent = "about"
-    pre = "<i class='fa fa-rss'></i>"
-    url  = "/blog/"
-    weight = 5
 
 # Top bar social links menu
 
@@ -273,7 +277,7 @@ paginate = 10
     enable = true
 
 [params.services]
-    enable = true
+    enable = false
 
 [params.support]
     enable = true

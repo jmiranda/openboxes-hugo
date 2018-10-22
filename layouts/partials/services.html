@@ -2,9 +2,6 @@
     <div class="row">
         <div class="col-md-12">
 
-            <div class="heading">
-                <h2>Services</h2>
-            </div>
 
             <p>OpenBoxes is free to <a href="/getting-started">download and use</a>. The software is
                 therefore an attractive option for organizations with limited financial resources available to purchase licenses for
@@ -49,21 +46,22 @@
                     </div>
 
                     <ul class="list-group">
-                        <li class="list-group-item">Requirements Analysis</li>
-                        <li class="list-group-item">Cost Analysis</li>
+                        <li class="list-group-item">Requirements & Cost Analysis</li>
                         <li class="list-group-item">Server Hosting</li>
-                        <li class="list-group-item">Implementation Support</li>
-                        <li class="list-group-item">Project Management </li>
-                        <li class="list-group-item">Database Administration</li>
+                        <li class="list-group-item">Implementation</li>
                         <li class="list-group-item">Technical Support</li>
                         <li class="list-group-item">Installation & Upgrades</li>
                         <li class="list-group-item">Performance Tuning </li>
-                        <li class="list-group-item">Data Cleaning</li>
-                        <li class="list-group-item">Data Migration</li>
+                        <li class="list-group-item">Data Cleaning & Migration</li>
                     </ul>
 
                 </div>
             </div>
+
+
+            {{ if isset .Site.Params "services" }}
+            {{ if .Site.Params.services.enable }}
+
             <div class="heading">
                 <h3>Service Partners</h3>
             </div>
@@ -72,8 +70,6 @@
             </div>
 
 
-            {{ if isset .Site.Params "services" }}
-            {{ if .Site.Params.services.enable }}
             {{ if gt (len .Site.Data.services) 0 }}
             <section class="bar background-white">
                 <div class="container">
@@ -111,9 +107,9 @@
     <div class="row">
 
         <div class="col-md-8 text-center">
-            <h3>Do you need some assistance?</h3>
+            <h3>Do you need some assistance with your supply chain implementation?</h3>
         </div>
-        <div class="col-md-4 text-center">
+        <div class="col-md-4 text-center middle">
             <a href="mailto:support@openboxes.com" class="btn btn-template-primary">Email support@openboxes.com</a>
         </div>
     </div>
