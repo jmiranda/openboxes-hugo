@@ -1,8 +1,13 @@
-weight: 12
-name: "Multiple Language Support"
+weight: 9
+name: "Support for Multiple Languages"
 icon: "fa fa-flag"
 description: "Supports English, Spanish, and French out of the box and can easily be translated into any other language."
 items:
-- Ability to store translations in local database.
+- Easy to translate into other languages
+- Ability to store custom translations in local database.
+- Custom translations for certain metadata fields (i.e. location type)
 screenshots:
-- image: https://placeimg.com/400/300/people
+- image: ../img/screenshots/system/multiple-languages.gif
+- image: ../img/screenshots/product/translation.png
+- image: ../img/screenshots/system/metadata-translations.png
+- image: ../img/screenshots/system/label-translations.png

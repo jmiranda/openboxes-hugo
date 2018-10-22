@@ -1,7 +1,12 @@
-weight: 7
-name: "Multiple Facilities"
+weight: 6
+name: "Flexible Location Hierachy"
 icon: "fa fa-building"
-description: "Am terminated it excellence invitation projection as. She graceful shy believed distance use nay. Lively is people so basket ladies window expect."
+description: "Organize and manage stock within multiple facilities, thousands of bin locations, receiving and staging area, supply closets, etc"
+items:
+- Location Groups (geographic region)
+- Location (facility, storage area, room, closet, locked cabinet, crash cart)
+- Internal locations (bin location, receiving area, staging area, cross-docking, bulk storage)
 screenshots:
-- image: ../img/screenshots/choose-location.png
-- image: ../img/screenshots/stock-all-locations.png
+- image: ../img/screenshots/stock-card/bin-locations.png
+- image: ../img/screenshots/stock-card/multiple-facilities.png
+- image: ../img/screenshots/security/choose-location.png

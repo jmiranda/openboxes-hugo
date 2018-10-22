@@ -1,16 +1,16 @@
 weight: 2
 name: "Electronic Stock Card"
 icon: "fa fa-list"
-description: "Short description."
+description: "- OpenBoxes supports any type of item including, but not limited to, medications, medical supplies and devices, office supplies, and building materials. In addition, the software can be used to track the location of fixed assets like automobiles, IT equipment, and hospital furniture."
 items:
-- Store and view metadata about each item, such as cost, vendor and manufacturer information, category, substitutions, temperature requirements, hazardous class, and import/export requirements (e.g. for controlled substances)
+- Store metadata about each item, including cost, suppliers and manufacturers, category/classification, and substitutions.
+- Create custom attributes for temperature requirements, hazardous material class, and import/export requirements (e.g. for controlled substances).
 - View quantity on hand within each inventory location by bin location, lot/serial number, and expiration date
 - View stock history including debits, credits, and inventory adjustments
-- OpenBoxes supports any type of item including, but not limited to, medications, medical supplies and devices, office supplies, and building materials. In addition, the software can be used to track the location of fixed assets like automobiles, IT equipment, and hospital furniture.
 screenshots:
-- image: ../img/screenshots/stock-card.png
-  url: ../img/screenshots/stock-card.png
-- image: ../img/screenshots/overstock.png
-  url: ../img/screenshots/overstock.png
-- image: ../img/screenshots/overstock-alt2.png
-  url: ../img/screenshots/overstock-alt2.png
+- image: ../img/screenshots/stock-card/current-inventory.png
+- image: ../img/screenshots/stock-card/stock-history.png
+- image: ../img/screenshots/stock-card/consumption.png
+- image: ../img/screenshots/product/edit-master-product.png
+- image: ../img/screenshots/product/substitutions.png
+- image: ../img/screenshots/product/upload-image2.png

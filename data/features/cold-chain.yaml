@@ -1,6 +1,12 @@
 ---
-weight: 13
-name: Materials Handling
-icon: fa fa-snowflake-o
-description: For each item, record temperature requirements, hazardous class, and
-  information about controlled substances
+weight: 11
+name: Custom Attributes
+icon: fa fa-thermometer
+description: Record metadata required for proper handling of particular items.
+items:
+- Controlled-substance classification
+- Temperature requirements (for cold chain)
+- Hazardous materials classification
+- Import/export license requirements
+screenshots:
+- image: ../img/screenshots/product/materials-handling.png

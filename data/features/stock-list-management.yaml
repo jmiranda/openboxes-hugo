@@ -1,9 +1,9 @@
-weight: 9
+weight: 12
 name: "Stock List Management"
 icon: "fa fa-list"
 description: "Organize items by formulary and assign to stock lists."
 items:
-- Ability to organize items by formulary
-- Ability to assign items to a stock list by location to standardize/automate requests
+- Ability to organize items by formulary or catalog
+- Ability to assign items to a stock list by location to standardize and automate stock requests
 screenshots:
 - image: ../img/screenshots/stocklists.png

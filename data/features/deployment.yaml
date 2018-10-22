@@ -1,19 +1,22 @@
 ---
-weight: 14
-name: Connectivity
+weight: 13
+name: Flexible Deployment Options
 icon: fa fa-server
-description: 'A web-based system that can be hosted in the cloud or on a local area
-  network; there is no need for a license, so there is an unlimited number of simultaneous
-  users
-
-'
+description: 'OpenBoxes is a web-based system that can be hosted in the cloud or on-premise; there is no need for a license, so there is an unlimited number of simultaneous
+  users'
 items:
-- OpenBoxes is a web-based system that can be hosted in the cloud or on-premise. Either
-  option requires a commitment from the implementing group, either to invest in sufficient
-  human resources and hardware to support a locally-hosted system (online/offline
-  capability), or to invest in consistent internet connectivity.
-- Can be accessed from mobile devices
-- Can be integrated with other software systems through REST API
+- OpenBoxes is a web-based system that can be hosted in the cloud or on-premise.
+- Requires consistent internet connectivity for cloud-based system
+- Requires human resources and hardware to support on-premise system with offline capability
 - There are no limits to the number of users who can use the system at one time
+- There are no limits to the number stock locations you can manage
+- Can be accessed from mobile devices
+- Can be integrated with third-party software systems through REST API (as of v0.8.0).
+- Can be integrated with barcode scanners and RFID receivers
 screenshots:
-- image: "../img/screenshots/stockswap.png"
+- image: ../img/architecture/deployment-options.png
+- image: ../img/architecture/technologies-inside-grails.png
+- image: ../img/architecture/apache-tomcat.png
+#- image: ../img/screenshots/integration/barcode-scanner-integration-alert.png
+#- image: ../img/screenshots/integration/donate-items.png
+#- image: ../img/screenshots/integration/stockswap.png

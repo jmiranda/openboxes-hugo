@@ -1,18 +1,28 @@
 ---
-weight: 11
+weight: 7
 name: Reporting
 icon: fa fa-bar-chart
 description: "Supports utilization and request (demand) tracking; Includes out-of-the-box
   reporting features for planning and warehouse management; Customized reports and
   integration with other software can be developed \n"
 screenshots:
-- image: "../img/screenshots/inventory-snapshot.png"
-- image: "../img/screenshots/monthly-consumption-data.png"
-- image: "../img/screenshots/monthly-stock-requisitions.png"
-- image: "../img/screenshots/stock-analytics.png"
-- image: "../img/screenshots/recent-activity.png"
-- image: "../img/screenshots/stock-analytics2.png"
-- image: "../img/screenshots/browse-inventory-table.png"
-- image: "../img/screenshots/canceled-items.png"
-- image: "../img/screenshots/dashboard2.png"
-- image: "../img/screenshots/dashboard-fast-movers-top10.png"
+- image: ../img/screenshots/reporting/consumption.png
+- image: ../img/screenshots/reporting/stockout-items.png
+- image: ../img/screenshots/reporting/expired-stock.png
+- image: ../img/screenshots/reporting/expiring-stock.png
+- image: ../img/screenshots/reporting/monthly-consumption-data.png
+- image: ../img/screenshots/reporting/monthly-consumption-data-details.png
+- image: ../img/screenshots/reporting/stock-analytics.png
+- image: ../img/screenshots/reporting/stock-analytics-2.png
+- image: ../img/screenshots/reporting/baseline-qoh-report.png
+- image: ../img/screenshots/dashboard/dashboard.png
+
+
+
+
+
+
+
+
+
+

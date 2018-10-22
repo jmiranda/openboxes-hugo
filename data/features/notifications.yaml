@@ -1,0 +1,11 @@
+---
+weight: 10
+name: Email Notifications
+icon: fa fa-envelope
+description: Configure email notifications for users
+items:
+- Shipment event notifications (shipped, received)
+- New product creation
+- Stock alerts (coming soon)
+screenshots:
+- image: ../img/screenshots/system/shipment-notifications.png

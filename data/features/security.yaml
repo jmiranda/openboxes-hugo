@@ -1,10 +1,17 @@
 ---
-weight: 10
+weight: 8
 name: Security
 icon: fa fa-id-card
-description: 'Permission levels by role and user; Tracking of all users (unique accounts)
-  and automatic time stamp by user for all major transactions
-
-'
+description: 'Assign permission levels by role'
+items:
+- Auditing of user actions, includes automatic created & updated timestamps for all major transactions
+- Multiple roles available (Superuser, Manager, Read-only)
+- User access can be restricted by location
+- Ability to authenticate using directory service (i.e. LDAP)
+- Configuration of user roles and permissions (coming soon)
 screenshots:
-- image: "../img/screenshots/login.png"
+- image: "../img/screenshots/security/auditing.png"
+- image: "../img/screenshots/security/user-roles.png"
+- image: "../img/screenshots/security/signup.png"
+- image: "../img/screenshots/security/login.png"
+- image: "../img/screenshots/security/choose-location.png"

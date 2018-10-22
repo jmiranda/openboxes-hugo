@@ -1,4 +1,4 @@
-weight: 5
+weight: 4
 name: "Inventory Tracking"
 icon: "fa fa-sort"
 description: "Adjust inventory quantity and remove quantity due to expiry and damage."
@@ -8,4 +8,9 @@ items:
 - View and export dashboard reports on expiring stock
 - Access information about incoming shipments and pending outgoing shipments for each item by location
 screenshots:
-- image: https://placeimg.com/550/300/any
+- image: ../img/screenshots/inventory/track-lot-number-exp-date.png
+- image: ../img/screenshots/inventory/report-expired.png
+- image: ../img/screenshots/inventory/mark-expired.png
+- image: ../img/screenshots/inventory/adjust-stock.png
+- image: ../img/screenshots/inventory/pending-outbound.png
+- image: ../img/screenshots/inventory/pending-inbound.png

@@ -24,9 +24,10 @@ paginate = 10
     identifier = "home"
     name = "Home"
     pre = "<i class='fa fa-home'></i>"
-    urk = "/"
+    url = "/"
     weight = 1
 
+# About
 [[menu.main]]
     identifier = "about"
     name = "About"
@@ -48,13 +49,6 @@ paginate = 10
     weight = 2
 
 [[menu.main]]
-    name = "Pricing"
-    parent = "about"
-    pre = "<i class='fa fa-coffee'></i>"
-    url  = "/pricing/"
-    weight = 3
-
-[[menu.main]]
     name = "Roadmap"
     parent = "about"
     pre = "<i class='fa fa-road'></i>"
@@ -68,6 +62,7 @@ paginate = 10
     url  = "/users/"
     weight = 5
 
+# Demo
 [[menu.main]]
     name = "Demo"
     pre = "<i class='fa fa-desktop'></i>"
@@ -75,6 +70,7 @@ paginate = 10
     hrefTargetBlank = true
     weight = 3
 
+# Getting Started
 [[menu.main]]
     identifier = "getting-started"
     name = "Get Started"
@@ -86,7 +82,8 @@ paginate = 10
     name = "Downloads"
     parent = "getting-started"
     pre = "<i class='fa fa-download'></i>"
-    url  = "/downloads/"
+    url  = "https://github.com/openboxes/openboxes/releases"
+    target = "_blank"
     weight = 1
 
 [[menu.main]]
@@ -110,6 +107,7 @@ paginate = 10
     url  = "/tutorials/"
     weight = 4
 
+# Community
 [[menu.main]]
     identifier = "community"
     name = "Community"
@@ -139,13 +137,21 @@ paginate = 10
     url  = "/services/"
     weight = 3
 
+#[[menu.main]]
+#    name = "Pricing"
+#    parent = "support"
+#    pre = "<i class='fa fa-coffee'></i>"
+#    url  = "/pricing/"
+#    weight = 4
+
+
 [[menu.main]]
     identifier = "contribute"
     name = "Contribute"
     parent = "community"
     pre = "<i class='fa fa-github'></i>"
     url  = "/contribute/"
-    weight = 4
+    weight = 5
 
 [[menu.main]]
     name = "News"
@@ -221,16 +227,19 @@ paginate = 10
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
 
-    logo = "img/logo.png"
+    # Logo
+    logo = "img/logo-padding.png"
     logo_small = "img/logo-small.png"
-    address = """<p><strong>OpenBoxes</strong>
-        <br>Cambridge, MA 02140
-        <br>
-        <strong>United States</strong>
-      </p>
-      """
-    latitude = "-12.043333"
-    longitude = "-77.028333"
+
+    # Address
+    #address = """<p><strong>OpenBoxes</strong>
+    #    <br>Cambridge, MA 02140
+    #    <br>
+    #    <strong>United States</strong>
+    #  </p>
+    #  """
+    #latitude = "-12.043333"
+    #longitude = "-77.028333"
 
 [Permalinks]
     blog = "/blog/:year/:month/:day/:filename/"
@@ -295,5 +304,4 @@ paginate = 10
 
 [params.recent_posts]
     enable = true
-    title = "From our blog"
-    subtitle = ""
+    title = "Recent news"

@@ -1,0 +1,14 @@
+---
+weight: 1
+title: Better Visibility
+description: |
+  <ul class="">
+    <li>Manage stock across all facilities</li>
+    <li>View stock history for any product</li>
+    <li>Inbound and outbound stock movements</li>
+    <li>Organize products into formularies</li>
+    <li>Vendor and manufacturer information</li>
+  </ul>
+#image: img/carousel/frame-stock-history.png
+image: img/screenshots/stock-card/stock-history-crop.png
+link: /features

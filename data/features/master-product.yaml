@@ -1,9 +1,0 @@
-weight: 4
-name: "Master Data"
-icon: "fa fa-barcode"
-description: "Store information about any type of item including cost, suppliers and manufacturers, category, substitutions, temperature requirements, hazardous material class, and import/export requirements."
-screenshots:
-- image: ../img/screenshots/master-product-data1.png
-- image: ../img/screenshots/product-master-data.png
-- image: ../screenshots/product-master-upload-documents.png
-- image: ../img/screenshots/product-tags.png

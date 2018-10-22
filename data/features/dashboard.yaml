@@ -1,0 +1,24 @@
+---
+weight: 5
+name: Dashboard
+icon: fa fa-tachometer
+description: Useful indicators to help inform stakeholders on important decisions that need to be made and advise users on what they neeed to work on next.
+items:
+- Stock value
+- Inventory summary
+- Bin location summary
+- Expiring stock summary
+- Fast movers
+- Global search
+- Product tags
+- Recent activities
+screenshots:
+- image: ../img/screenshots/dashboard/stock-value.png
+- image: ../img/screenshots/dashboard/inventory-summary.png
+- image: ../img/screenshots/dashboard/bin-location-summary.png
+- image: ../img/screenshots/dashboard/expiration-summary.png
+- image: ../img/screenshots/dashboard/fast-movers.png
+- image: ../img/screenshots/dashboard/global-search.png
+- image: ../img/screenshots/dashboard/product-tags.png
+- image: ../img/screenshots/dashboard/recent-activity.png
+- image: ../img/screenshots/dashboard/dashboard.png

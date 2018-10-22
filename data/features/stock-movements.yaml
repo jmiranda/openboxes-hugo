@@ -19,9 +19,9 @@ items:
 - Ability to export packing lists and other customized customs clearance documentation
 - Ability to upload and store other documentation
 screenshots:
-- image: "../img/screenshots/stock-card.png"
-  url: "../img/screenshots/stock-card.png"
-- image: "../img/screenshots/overstock.png"
-  url: "../img/screenshots/overstock.png"
-- image: "../img/screenshots/overstock-alt2.png"
-  url: "../img/screenshots/overstock-alt2.png"
+- image: "../img/screenshots/stock-movement/1.png"
+- image: "../img/screenshots/stock-movement/2.png"
+- image: "../img/screenshots/stock-movement/3.png"
+- image: "../img/screenshots/stock-movement/4.png"
+- image: "../img/screenshots/stock-movement/5.png"
+- image: "../img/screenshots/stock-movement/6.png"
