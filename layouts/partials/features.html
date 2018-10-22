@@ -4,10 +4,6 @@
 <section>
     <div class="container">
 
-        <div class="heading">
-            <h3>Features</h3>
-        </div>
-
         {{ range $index, $element := sort .Site.Data.features "weight" }}
 
         <div class="row" style="margin-top: 50px; border: 0px solid lightgrey; ">
