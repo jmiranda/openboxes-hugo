@@ -2,8 +2,7 @@
 weight: 13
 name: Flexible Deployment Options
 icon: fa fa-server
-description: 'OpenBoxes is a web-based system that can be hosted in the cloud or on-premise; there is no need for a license, so there is an unlimited number of simultaneous
-  users'
+description: 'OpenBoxes is a web-based system that can be hosted in the cloud or on-premise; there is no need for a license, so there is no limit to the number of simultaneous users'
 items:
 - OpenBoxes is a web-based system that can be hosted in the cloud or on-premise.
 - Requires consistent internet connectivity for cloud-based system

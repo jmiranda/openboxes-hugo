@@ -31,13 +31,15 @@ paginate = 10
 [[menu.main]]
     identifier = "about"
     name = "About"
-    pre = "<i class='fa fa-info'></i>"
+    pre = "<i class='fa fa-info-alt'></i>"
+    post = ""
     weight = 1
 
 [[menu.main]]
     name = "About Us"
     parent = "about"
     pre = "<i class='fa fa-info'></i>"
+    post = ""
     url  = "/about"
     weight = 1
 
@@ -45,6 +47,7 @@ paginate = 10
     name = "Features"
     parent = "about"
     pre = "<i class='fa fa-list'></i>"
+    post = ""
     url  = "/features/"
     weight = 2
 
@@ -52,6 +55,7 @@ paginate = 10
     name = "Roadmap"
     parent = "about"
     pre = "<i class='fa fa-road'></i>"
+    post = ""
     url  = "/roadmap/"
     weight = 4
 
@@ -59,6 +63,7 @@ paginate = 10
     name = "Users"
     parent = "about"
     pre = "<i class='fa fa-map'></i>"
+    post = ""
     url  = "/users/"
     weight = 5
 
@@ -66,6 +71,7 @@ paginate = 10
     name = "News"
     parent = "about"
     pre = "<i class='fa fa-rss'></i>"
+    post = ""
     url  = "/blog/"
     weight = 6
 
@@ -74,8 +80,8 @@ paginate = 10
 [[menu.main]]
     name = "Demo"
     pre = "<i class='fa fa-desktop'></i>"
+    post = "<i class='fa fa-external-link'></i>"
     url  = "https://demo.openboxes.com"
-    hrefTargetBlank = true
     weight = 2
 
 # Getting Started
@@ -83,6 +89,7 @@ paginate = 10
     identifier = "getting-started"
     name = "Get Started"
     pre = "<i class='fa fa-rocket'></i>"
+    post = ""
     url  = "/getting-started/"
     weight = 3
 
@@ -90,52 +97,56 @@ paginate = 10
     name = "Documentation"
     parent = "getting-started"
     pre = "<i class='fa fa-file'></i>"
+    post = "<i class='fa fa-external-link'></i>"
     url  = "http://docs.openboxes.com/en/develop/"
-    target = "_blank"
-    weight = 0
+    weight = 1
 
 [[menu.main]]
     name = "Downloads"
     parent = "getting-started"
     pre = "<i class='fa fa-download'></i>"
+    post = "<i class='fa fa-external-link'></i>"
     url  = "https://github.com/openboxes/openboxes/releases"
-    target = "_blank"
-    weight = 1
+    weight = 2
 
 [[menu.main]]
     name = "Source Code"
     parent = "getting-started"
     pre = "<i class='fa fa-code'></i>"
+    post = "<i class='fa fa-external-link'></i>"
     url  = "https://github.com/openboxes/openboxes"
-    weight = 2
+    weight = 3
 
 [[menu.main]]
     name = "Installation"
     parent = "getting-started"
     pre = "<i class='fa fa-cloud'></i>"
+    post = "<i class='fa fa-external-link'></i>"
     url  = "https://openboxes.readthedocs.io/en/develop/installation/"
-    weight = 3
+    weight = 4
 
 [[menu.main]]
     name = "Tutorials"
     parent = "getting-started"
     pre = "<i class='fa fa-film'></i>"
+    post = ""
     url  = "/tutorials/"
-    weight = 4
+    weight = 5
 
 # Documentation
-[[menu.main]]
-    name = "Docs"
-    pre = "<i class='fa fa-file'></i>"
-    url  = "http://docs.openboxes.com/en/develop/"
-    target = "_blank"
-    weight = 4
+#[[menu.main]]
+#    name = "Docs"
+#    pre = "<i class='fa fa-file'></i>"
+#    post = "<i class='fa fa-external-link'></i>"
+#    url  = "http://docs.openboxes.com/en/develop/"
+#    weight = 4
 
 # Community
 [[menu.main]]
     identifier = "community"
     name = "Community"
     pre = "<i class='fa fa-users'></i>"
+    post = "<i class='fa fa-external-link'></i>"
     url  = "https://discuss.openboxes.com"
     weight = 5
 
@@ -160,6 +171,7 @@ paginate = 10
 [[menu.main]]
     name = "Services"
     pre = "<i class='fa fa-wrench'></i>"
+    post = ""
     url  = "/services/"
     weight = 6
 
@@ -267,10 +279,10 @@ paginate = 10
 # Enable or disable top bar with social icons
 [params.topbar]
     enable = true
-    text = """<p class="hidden-sm hidden-xs">Contact us at <a href="tel:">+1 (617) 475-0619</a> or 
+    text = """<p class="hidden-sm hidden-xs">Contact us at <a href="tel:+16174750619">+1-617-475-0619</a> or
         <a href="mailto:support@openboxes.com">support@openboxes.com</a>.</p>
-      <p class="hidden-md hidden-lg"><a href="#" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
-      <a href="#" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
+      <p class="hidden-md hidden-lg"><a href="tel:+16174750619" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
+      <a href="mailto:support@openboxes.com" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
       </p>
       """
 
@@ -301,7 +313,7 @@ paginate = 10
 [params.testimonials]
     enable = true
     title = "Testimonials"
-    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Unfortunately, that's harder said than done."
+    subtitle = ""
 
 [params.demo]
     enable = true

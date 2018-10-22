@@ -1,7 +1,7 @@
 ---
 weight: 3
 name: Stock Movements
-icon: fa fa-exchange
+icon: fa fa-random
 description: Intuitive workflows to manage movement of stock from a supplier to depot,
   from depot to depot, and from depot to consumption location.
 items:

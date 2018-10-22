@@ -1,4 +1,4 @@
 weight: 2
-name: "Reduce Stockouts"
+name: "Eliminate Stockouts"
 icon: "fa fa-thumbs-up"
 description: "Reduce the risk of stock outs by informing users when stock levels are at or below reorder and minimum quantity."

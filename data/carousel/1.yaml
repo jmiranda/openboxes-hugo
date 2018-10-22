@@ -2,7 +2,7 @@
 weight: 2
 title: Better Visibility
 description: |
-  <ul class="">
+  <ul class="list-style-none">
     <li>Manage stock across all facilities</li>
     <li>View stock history for any product</li>
     <li>Inbound and outbound stock movements</li>
