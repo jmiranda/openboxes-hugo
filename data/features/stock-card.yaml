@@ -1,7 +1,7 @@
 weight: 2
 name: "Electronic Stock Card"
 icon: "fa fa-list"
-description: "- OpenBoxes supports any type of item including, but not limited to, medications, medical supplies and devices, office supplies, and building materials. In addition, the software can be used to track the location of fixed assets like automobiles, IT equipment, and hospital furniture."
+description: "OpenBoxes supports any type of item including, but not limited to, medications, medical supplies and devices, office supplies, and building materials. In addition, the software can be used to track the location of fixed assets like automobiles, IT equipment, and hospital furniture."
 items:
 - Store metadata about each item, including cost, suppliers and manufacturers, category/classification, and substitutions.
 - Create custom attributes for temperature requirements, hazardous material class, and import/export requirements (e.g. for controlled substances).
