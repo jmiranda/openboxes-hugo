@@ -1,5 +1,5 @@
 # Hugo configuration
-baseURL = "https://new.openboxes.com/"
+baseURL = "http://openboxes.com/"
 languageCode = "en-us"
 title = "OpenBoxes"
 theme = "hugo-universal-theme"
