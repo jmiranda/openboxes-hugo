@@ -35,7 +35,7 @@ paginate = 10
     weight = 2
 
 [[menu.main]]
-    name = "About OpenBoxes"
+    name = "About Us"
     parent = "about"
     pre = "<i class='fa fa-info'></i>"
     url  = "/about"
@@ -85,6 +85,14 @@ paginate = 10
     pre = "<i class='fa fa-rocket'></i>"
     url  = "/getting-started/"
     weight = 4
+
+[[menu.main]]
+    name = "Documentation"
+    parent = "getting-started"
+    pre = "<i class='fa fa-document'></i>"
+    url  = "http://docs.openboxes.com"
+    target = "_blank"
+    weight = 0
 
 [[menu.main]]
     name = "Downloads"
@@ -309,3 +317,4 @@ paginate = 10
 [params.recent_posts]
     enable = true
     title = "Recent news"
+    subtitle = ""
