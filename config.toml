@@ -20,19 +20,19 @@ paginate = 10
 
 # Main menu
 
-[[menu.main]]
-    identifier = "home"
-    name = "Home"
-    pre = "<i class='fa fa-home'></i>"
-    url = "/"
-    weight = 1
+#[[menu.main]]
+#    identifier = "home"
+#    name = "Home"
+#    pre = "<i class='fa fa-home'></i>"
+#    url = "/"
+#    weight = 1
 
 # About
 [[menu.main]]
     identifier = "about"
     name = "About"
     pre = "<i class='fa fa-info'></i>"
-    weight = 2
+    weight = 1
 
 [[menu.main]]
     name = "About Us"
@@ -76,7 +76,7 @@ paginate = 10
     pre = "<i class='fa fa-desktop'></i>"
     url  = "https://demo.openboxes.com"
     hrefTargetBlank = true
-    weight = 3
+    weight = 2
 
 # Getting Started
 [[menu.main]]
@@ -84,13 +84,13 @@ paginate = 10
     name = "Get Started"
     pre = "<i class='fa fa-rocket'></i>"
     url  = "/getting-started/"
-    weight = 4
+    weight = 3
 
 [[menu.main]]
     name = "Documentation"
     parent = "getting-started"
-    pre = "<i class='fa fa-document'></i>"
-    url  = "http://docs.openboxes.com"
+    pre = "<i class='fa fa-file'></i>"
+    url  = "http://docs.openboxes.com/en/develop/"
     target = "_blank"
     weight = 0
 
@@ -121,6 +121,14 @@ paginate = 10
     parent = "getting-started"
     pre = "<i class='fa fa-film'></i>"
     url  = "/tutorials/"
+    weight = 4
+
+# Documentation
+[[menu.main]]
+    name = "Docs"
+    pre = "<i class='fa fa-file'></i>"
+    url  = "http://docs.openboxes.com/en/develop/"
+    target = "_blank"
     weight = 4
 
 # Community
