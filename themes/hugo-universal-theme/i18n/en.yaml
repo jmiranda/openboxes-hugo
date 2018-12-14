@@ -20,13 +20,13 @@
   translation: "Contact form"
 
 - id: contactName
-  translation: "Your Name"
+  translation: "Name"
 
 - id: contactMail
-  translation: "Your Email"
+  translation: "Email"
 
 - id: contactMessage
-  translation: "Your Message"
+  translation: "Message"
 
 - id: contactSend
   translation: "Send Message"
@@ -69,3 +69,50 @@
 
 - id: publishedOn
   translation: "on"
+
+# Signup form
+
+- id: signupForm
+  translation: "Account Registration"
+
+- id: organization
+  translation: "Organization"
+
+- id: url
+  translation: "Desired URL"
+
+- id: urlHelpText
+  translation: "e.g. wms.mycompany.com, openboxes.mycompany.com"
+
+- id: country
+  translation: "Country"
+
+- id: numberSkus
+  translation: "Number of SKUs"
+
+- id: numberUsers
+  translation: "Number of Users"
+
+- id: sizeHelpText
+  translation: "Helps us determines the proper size of instance; does not change the pricing"
+
+- id: additionalServices
+  translation: "Additional Services"
+
+- id: additionalServicesHelpText
+  translation: "Use CTRL to select multiple"
+
+- id: additionalRequirements
+  translation: "Additional Requirements"
+
+- id: package
+  translation: "Desired Package"
+
+- id: signupButton
+  translation: "Submit Request"
+
+- id: name
+  translation: "Full Name"
+
+- id: email
+  translation: "Email"

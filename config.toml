@@ -33,7 +33,14 @@ paginate = 10
     name = "About"
     pre = "<i class='fa fa-info-circle'></i>"
     post = ""
-    weight = 1
+    weight = 10
+
+[[menu.main]]
+    name = "Features"
+    pre = "<i class='fa fa-bell'></i>"
+    post = ""
+    url  = "/features/"
+    weight = 15
 
 [[menu.main]]
     name = "About Us"
@@ -44,14 +51,6 @@ paginate = 10
     weight = 1
 
 [[menu.main]]
-    name = "Features"
-    parent = "about"
-    pre = "<i class='fa fa-list'></i>"
-    post = ""
-    url  = "/features/"
-    weight = 2
-
-[[menu.main]]
     name = "Roadmap"
     parent = "about"
     pre = "<i class='fa fa-road'></i>"
@@ -60,7 +59,7 @@ paginate = 10
     weight = 4
 
 [[menu.main]]
-    name = "Users"
+    name = "Implementations"
     parent = "about"
     pre = "<i class='fa fa-map'></i>"
     post = ""
@@ -75,6 +74,11 @@ paginate = 10
     url  = "/blog/"
     weight = 6
 
+[[menu.main]]
+    name = "Pricing"
+    pre = "<i class='fa fa-coffee'></i>"
+    url  = "/pricing/"
+    weight = 20
 
 # Demo
 [[menu.main]]
@@ -82,7 +86,7 @@ paginate = 10
     pre = "<i class='fa fa-desktop'></i>"
     post = "<i class='fa fa-external-link'></i>"
     url  = "https://demo.openboxes.com"
-    weight = 2
+    weight = 30
 
 # Getting Started
 [[menu.main]]
@@ -91,7 +95,7 @@ paginate = 10
     pre = "<i class='fa fa-rocket'></i>"
     post = ""
     url  = "/getting-started/"
-    weight = 3
+    weight = 40
 
 [[menu.main]]
     name = "Documentation"
@@ -148,7 +152,7 @@ paginate = 10
     pre = "<i class='fa fa-users'></i>"
     post = "<i class='fa fa-external-link'></i>"
     url  = "https://discuss.openboxes.com"
-    weight = 5
+    weight = 50
 
 
 
@@ -168,20 +172,12 @@ paginate = 10
 #    weight = 2
 
 # Services
-[[menu.main]]
-    name = "Services"
-    pre = "<i class='fa fa-wrench'></i>"
-    post = ""
-    url  = "/services/"
-    weight = 6
-
 #[[menu.main]]
-#    name = "Pricing"
-#    parent = "support"
-#    pre = "<i class='fa fa-coffee'></i>"
-#    url  = "/pricing/"
-#    weight = 4
-
+#    name = "Services"
+#    pre = "<i class='fa fa-cog'></i>"
+#    post = ""
+#    url  = "/services/"
+#    weight = 60
 
 #[[menu.main]]
 #    identifier = "contribute"
