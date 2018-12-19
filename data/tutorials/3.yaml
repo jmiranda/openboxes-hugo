@@ -1,9 +1,9 @@
 weight: 2
-name: "Bin Locations Redux"
+name: "Bin Locations"
 icon: "fa fa-archive"
-description: ""
+description: "Quick introduction to the Bin Location feature (somewhat outdated as Bin Location support has been added to almost all inventory pages)"
 url: "https://www.youtube-nocookie.com/embed/koaGx6FhHbs?rel=0"
 thumbnail: "https://i.ytimg.com/vi/koaGx6FhHbs/hqdefault.jpg"
 author: Justin Miranda
-published: 2018-10-08T13:50:46+02:00
-duration: 9m 30s
+published: 2017-04-12T00:00:00-05:00
+duration: 6m 35s

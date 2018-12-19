@@ -2,14 +2,12 @@
 {{ if .Site.Params.tutorials.enable }}
 {{ if gt (len .Site.Data.tutorials) 0 }}
 
-<section class="bar background-white">
+<section>
     <div class="container">
+
+
         <div class="row">
-            <div class="col-md-3">
-
-            </div>
-
-            <div class="col-md-10 col-md-offset-1"  id="blog-listing-medium">
+            <div class="col-md-9"  id="blog-listing-medium">
                 {{ range $index, $element := sort .Site.Data.tutorials "weight" }}
                     <section class="post">
                         <div class="row">
@@ -32,15 +30,43 @@
                                 <p class="text-left">
                                     <!-- Button trigger modal -->
                                     <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="{{ $element.url }}" data-target="#myModal">
-                                        Watch Video
+                                        <i class="fa fa-film"></i> Watch Video
                                     </button>
-
-
                                 </p>
                             </div>
                         </div>
                     </section>
                 {{ end }}
+            </div>
+            <div class="col-md-3">
+
+                <div class="box-simple box-white">
+                    <div class="icon">
+                        <i class="fa fa-lightbulb-o"></i>
+                    </div>
+                    <h4>Ummm, what about ...?</h4>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>Let us know if you'd like to see a tutorial for a specific topic.</p>
+                        </div>
+                    </div>
+                    <form class="tutorials-form" method="post" action="https://formspree.io/support@openboxes.com">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <textarea id="message" class="form-control" name="message" required placeholder="Describe a feature or process that you'd like to see covered."></textarea>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 text-center">
+                                <button type="submit" class="btn btn-template-primary"><i class="fa fa-paper-plane"></i> Submit Topic</button>
+
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
             </div>
         </div>
     </div>
