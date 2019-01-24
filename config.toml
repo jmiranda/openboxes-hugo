@@ -31,109 +31,81 @@ paginate = 10
 [[menu.main]]
     identifier = "about"
     name = "About"
-    pre = "<i class='fa fa-info-circle'></i>"
-    post = ""
     weight = 10
 
 [[menu.main]]
     name = "Features"
-    pre = "<i class='fa fa-bell'></i>"
-    post = ""
     url  = "/features/"
     weight = 15
 
 [[menu.main]]
     name = "About Us"
     parent = "about"
-    pre = "<i class='fa fa-info'></i>"
-    post = ""
     url  = "/about"
     weight = 1
 
 [[menu.main]]
     name = "Roadmap"
     parent = "about"
-    pre = "<i class='fa fa-road'></i>"
-    post = ""
     url  = "/roadmap/"
     weight = 4
 
 [[menu.main]]
     name = "Implementations"
     parent = "about"
-    pre = "<i class='fa fa-map'></i>"
-    post = ""
     url  = "/users/"
     weight = 5
 
 [[menu.main]]
     name = "News"
     parent = "about"
-    pre = "<i class='fa fa-rss'></i>"
-    post = ""
     url  = "/blog/"
     weight = 1
 
 [[menu.main]]
     name = "Pricing"
-    pre = "<i class='fa fa-coffee'></i>"
-    url  = "/pricing/"
     weight = 20
 
 # Demo
 [[menu.main]]
     name = "Demo"
-    pre = "<i class='fa fa-desktop'></i>"
-    post = "<i class='fa fa-external-link'></i>"
-    url  = "https://demo.openboxes.com"
+    url  = "/demo/"
     weight = 30
 
 # Getting Started
 [[menu.main]]
     identifier = "getting-started"
     name = "Get Started"
-    pre = "<i class='fa fa-rocket'></i>"
-    post = ""
     url  = "/getting-started/"
     weight = 40
 
 [[menu.main]]
     name = "Documentation"
     parent = "getting-started"
-    pre = "<i class='fa fa-file'></i>"
-    post = "<i class='fa fa-external-link'></i>"
     url  = "http://docs.openboxes.com/en/develop/"
     weight = 1
 
 [[menu.main]]
     name = "Downloads"
     parent = "getting-started"
-    pre = "<i class='fa fa-download'></i>"
-    post = "<i class='fa fa-external-link'></i>"
     url  = "https://github.com/openboxes/openboxes/releases"
     weight = 2
 
 [[menu.main]]
     name = "Source Code"
     parent = "getting-started"
-    pre = "<i class='fa fa-code'></i>"
-    post = "<i class='fa fa-external-link'></i>"
     url  = "https://github.com/openboxes/openboxes"
     weight = 3
 
 [[menu.main]]
     name = "Installation"
     parent = "getting-started"
-    pre = "<i class='fa fa-cloud'></i>"
-    post = "<i class='fa fa-external-link'></i>"
     url  = "https://openboxes.readthedocs.io/en/develop/installation/"
     weight = 4
 
 [[menu.main]]
     name = "Tutorials"
     parent = "getting-started"
-    pre = "<i class='fa fa-film'></i>"
-    post = ""
     url  = "/tutorials/"
     weight = 5
 
@@ -149,8 +121,6 @@ paginate = 10
 [[menu.main]]
     identifier = "community"
     name = "Community"
-    pre = "<i class='fa fa-users'></i>"
-    post = "<i class='fa fa-external-link'></i>"
     url  = "https://discuss.openboxes.com"
     weight = 50
 
@@ -250,13 +220,13 @@ paginate = 10
     email = "support@openboxes.com"
 
     about_us = "<p>OpenBoxes is an open-source supply chain management system used to manage supplies and medications for healthcare facilities and disaster relief efforts.</p>"
-    copyright = "Copyright (c) 2010-2018, OpenBoxes"
+    copyright = "Copyright (c) 2010-2019, OpenBoxes"
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
 
     # Logo
-    logo = "img/logo-padding.png"
+    logo = "img/logo-eagle.png"
     logo_small = "img/logo-small.png"
 
     # Address
@@ -275,7 +245,7 @@ paginate = 10
 # Enable or disable top bar with social icons
 [params.topbar]
     enable = true
-    text = """<p class="hidden-sm hidden-xs">Contact us at <a href="tel:+16174750619">+1-617-475-0619</a> or
+    text = """<p class="hidden-sm hidden-xs">Contact sales and support at <a href="tel:+16174750619">+1-617-475-0619</a> or
         <a href="mailto:support@openboxes.com">support@openboxes.com</a>.</p>
       <p class="hidden-md hidden-lg"><a href="tel:+16174750619" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
       <a href="mailto:support@openboxes.com" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>

@@ -19,7 +19,7 @@
             <!--/.navbar-header -->
 
             <div class="navbar-collapse collapse" id="navigation">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav">
                   {{ range .Site.Menus.main }}
                   <li class="dropdown">
                     {{ if .HasChildren }}
@@ -34,6 +34,14 @@
                     {{ end  }}
                   </li>
                   {{ end }}
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    {{ range .Site.Menus.topbar.ByWeight }}
+                    <li>
+                        <a href="{{ .URL }}" target="_blank" style="opacity: 1;">{{ .Pre }}</a>
+
+                    </li>
+                    {{ end }}
                 </ul>
             </div>
             <!--/.nav-collapse -->
