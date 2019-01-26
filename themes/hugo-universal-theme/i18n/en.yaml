@@ -78,6 +78,9 @@
 - id: organization
   translation: "Organization"
 
+- id: industry
+  translation: "Industry"
+
 - id: url
   translation: "Desired URL"
 
@@ -106,10 +109,10 @@
   translation: "Additional Requirements"
 
 - id: package
-  translation: "Desired Package"
+  translation: "Package"
 
 - id: signupButton
-  translation: "Submit Request"
+  translation: "Request Quote"
 
 - id: name
   translation: "Full Name"

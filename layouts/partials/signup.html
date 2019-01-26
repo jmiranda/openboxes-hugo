@@ -25,16 +25,165 @@
                                 <input type="text" class="form-control" name="email" id="email" required>
                             </div>
                         </div>
-                        <div class="col-sm-12">
+                        <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="name">{{ i18n "organization" }}</label>
                                 <input type="text" class="form-control" name="organization" id="organization">
                             </div>
                         </div>
-                        <div class="col-sm-12">
+                        <div class="col-sm-6">
                             <div class="form-group">
-                                <label for="name">{{ i18n "country" }}</label>
-                                <input type="text" class="form-control" name="country" id="country">
+                                <label for="name">{{ i18n "industry" }}</label>
+                                <select id="industry" name="industry" class="form-control">
+                                    <option value="" selected></option>
+                                    <option value="Accounting">Accounting</option>
+                                    <option value="Airlines/Aviation">Airlines/Aviation</option>
+                                    <option value="Alternative Dispute Resolution">Alternative Dispute Resolution</option>
+                                    <option value="Alternative Medicine">Alternative Medicine</option>
+                                    <option value="Animation">Animation</option>
+                                    <option value="Apparel/Fashion">Apparel/Fashion</option>
+                                    <option value="Architecture/Planning">Architecture/Planning</option>
+                                    <option value="Arts/Crafts">Arts/Crafts</option>
+                                    <option value="Automotive">Automotive</option>
+                                    <option value="Aviation/Aerospace">Aviation/Aerospace</option>
+                                    <option value="Banking/Mortgage">Banking/Mortgage</option>
+                                    <option value="Biotechnology/Greentech">Biotechnology/Greentech</option>
+                                    <option value="Broadcast Media">Broadcast Media</option>
+                                    <option value="Building Materials">Building Materials</option>
+                                    <option value="Business Supplies/Equipment">Business Supplies/Equipment</option>
+                                    <option value="Capital Markets/Hedge Fund/Private Equity">Capital Markets/Hedge Fund/Private Equity</option>
+                                    <option value="Chemicals">Chemicals</option>
+                                    <option value="Civic/Social Organization">Civic/Social Organization</option>
+                                    <option value="Civil Engineering">Civil Engineering</option>
+                                    <option value="Commercial Real Estate">Commercial Real Estate</option>
+                                    <option value="Computer Games">Computer Games</option>
+                                    <option value="Computer Hardware">Computer Hardware</option>
+                                    <option value="Computer Networking">Computer Networking</option>
+                                    <option value="Computer Software/Engineering">Computer Software/Engineering</option>
+                                    <option value="Computer/Network Security">Computer/Network Security</option>
+                                    <option value="Construction">Construction</option>
+                                    <option value="Consumer Electronics">Consumer Electronics</option>
+                                    <option value="Consumer Goods">Consumer Goods</option>
+                                    <option value="Consumer Services">Consumer Services</option>
+                                    <option value="Cosmetics">Cosmetics</option>
+                                    <option value="Dairy">Dairy</option>
+                                    <option value="Defense/Space">Defense/Space</option>
+                                    <option value="Design">Design</option>
+                                    <option value="E-Learning">E-Learning</option>
+                                    <option value="Education Management">Education Management</option>
+                                    <option value="Electrical/Electronic Manufacturing">Electrical/Electronic Manufacturing</option>
+                                    <option value="Entertainment/Movie Production">Entertainment/Movie Production</option>
+                                    <option value="Environmental Services">Environmental Services</option>
+                                    <option value="Events Services">Events Services</option>
+                                    <option value="Executive Office">Executive Office</option>
+                                    <option value="Facilities Services">Facilities Services</option>
+                                    <option value="Farming">Farming</option>
+                                    <option value="Financial Services">Financial Services</option>
+                                    <option value="Fine Art">Fine Art</option>
+                                    <option value="Fishery">Fishery</option>
+                                    <option value="Food Production">Food Production</option>
+                                    <option value="Food/Beverages">Food/Beverages</option>
+                                    <option value="Fundraising">Fundraising</option>
+                                    <option value="Furniture">Furniture</option>
+                                    <option value="Gambling/Casinos">Gambling/Casinos</option>
+                                    <option value="Glass/Ceramics/Concrete">Glass/Ceramics/Concrete</option>
+                                    <option value="Government Administration">Government Administration</option>
+                                    <option value="Government Relations">Government Relations</option>
+                                    <option value="Graphic Design/Web Design">Graphic Design/Web Design</option>
+                                    <option value="Health/Fitness">Health/Fitness</option>
+                                    <option value="Higher Education/Acadamia">Higher Education/Acadamia</option>
+                                    <option value="Hospital/Health Care">Hospital/Health Care</option>
+                                    <option value="Hospitality">Hospitality</option>
+                                    <option value="Human Resources/HR">Human Resources/HR</option>
+                                    <option value="Import/Export">Import/Export</option>
+                                    <option value="Individual/Family Services">Individual/Family Services</option>
+                                    <option value="Industrial Automation">Industrial Automation</option>
+                                    <option value="Information Services">Information Services</option>
+                                    <option value="Information Technology/IT">Information Technology/IT</option>
+                                    <option value="Insurance">Insurance</option>
+                                    <option value="International Affairs">International Affairs</option>
+                                    <option value="International Trade/Development">International Trade/Development</option>
+                                    <option value="Internet">Internet</option>
+                                    <option value="Investment Banking/Venture">Investment Banking/Venture</option>
+                                    <option value="Investment Management/Hedge Fund/Private Equity">Investment Management/Hedge Fund/Private Equity</option>
+                                    <option value="Judiciary">Judiciary</option>
+                                    <option value="Law Enforcement">Law Enforcement</option>
+                                    <option value="Law Practice/Law Firms">Law Practice/Law Firms</option>
+                                    <option value="Legal Services">Legal Services</option>
+                                    <option value="Legislative Office">Legislative Office</option>
+                                    <option value="Leisure/Travel">Leisure/Travel</option>
+                                    <option value="Library">Library</option>
+                                    <option value="Logistics/Procurement">Logistics/Procurement</option>
+                                    <option value="Luxury Goods/Jewelry">Luxury Goods/Jewelry</option>
+                                    <option value="Machinery">Machinery</option>
+                                    <option value="Management Consulting">Management Consulting</option>
+                                    <option value="Maritime">Maritime</option>
+                                    <option value="Market Research">Market Research</option>
+                                    <option value="Marketing/Advertising/Sales">Marketing/Advertising/Sales</option>
+                                    <option value="Mechanical or Industrial Engineering">Mechanical or Industrial Engineering</option>
+                                    <option value="Media Production">Media Production</option>
+                                    <option value="Medical Equipment">Medical Equipment</option>
+                                    <option value="Medical Practice">Medical Practice</option>
+                                    <option value="Mental Health Care">Mental Health Care</option>
+                                    <option value="Military Industry">Military Industry</option>
+                                    <option value="Mining/Metals">Mining/Metals</option>
+                                    <option value="Motion Pictures/Film">Motion Pictures/Film</option>
+                                    <option value="Museums/Institutions">Museums/Institutions</option>
+                                    <option value="Music">Music</option>
+                                    <option value="Nanotechnology">Nanotechnology</option>
+                                    <option value="Newspapers/Journalism">Newspapers/Journalism</option>
+                                    <option value="Non-Profit/Volunteering">Non-Profit/Volunteering</option>
+                                    <option value="Oil/Energy/Solar/Greentech">Oil/Energy/Solar/Greentech</option>
+                                    <option value="Online Publishing">Online Publishing</option>
+                                    <option value="Other Industry">Other Industry</option>
+                                    <option value="Outsourcing/Offshoring">Outsourcing/Offshoring</option>
+                                    <option value="Package/Freight Delivery">Package/Freight Delivery</option>
+                                    <option value="Packaging/Containers">Packaging/Containers</option>
+                                    <option value="Paper/Forest Products">Paper/Forest Products</option>
+                                    <option value="Performing Arts">Performing Arts</option>
+                                    <option value="Pharmaceuticals">Pharmaceuticals</option>
+                                    <option value="Philanthropy">Philanthropy</option>
+                                    <option value="Photography">Photography</option>
+                                    <option value="Plastics">Plastics</option>
+                                    <option value="Political Organization">Political Organization</option>
+                                    <option value="Primary/Secondary Education">Primary/Secondary Education</option>
+                                    <option value="Printing">Printing</option>
+                                    <option value="Professional Training">Professional Training</option>
+                                    <option value="Program Development">Program Development</option>
+                                    <option value="Public Relations/PR">Public Relations/PR</option>
+                                    <option value="Public Safety">Public Safety</option>
+                                    <option value="Publishing Industry">Publishing Industry</option>
+                                    <option value="Railroad Manufacture">Railroad Manufacture</option>
+                                    <option value="Ranching">Ranching</option>
+                                    <option value="Real Estate/Mortgage">Real Estate/Mortgage</option>
+                                    <option value="Recreational Facilities/Services">Recreational Facilities/Services</option>
+                                    <option value="Religious Institutions">Religious Institutions</option>
+                                    <option value="Renewables/Environment">Renewables/Environment</option>
+                                    <option value="Research Industry">Research Industry</option>
+                                    <option value="Restaurants">Restaurants</option>
+                                    <option value="Retail Industry">Retail Industry</option>
+                                    <option value="Security/Investigations">Security/Investigations</option>
+                                    <option value="Semiconductors">Semiconductors</option>
+                                    <option value="Shipbuilding">Shipbuilding</option>
+                                    <option value="Sporting Goods">Sporting Goods</option>
+                                    <option value="Sports">Sports</option>
+                                    <option value="Staffing/Recruiting">Staffing/Recruiting</option>
+                                    <option value="Supermarkets">Supermarkets</option>
+                                    <option value="Telecommunications">Telecommunications</option>
+                                    <option value="Textiles">Textiles</option>
+                                    <option value="Think Tanks">Think Tanks</option>
+                                    <option value="Tobacco">Tobacco</option>
+                                    <option value="Translation/Localization">Translation/Localization</option>
+                                    <option value="Transportation">Transportation</option>
+                                    <option value="Utilities">Utilities</option>
+                                    <option value="Venture Capital/VC">Venture Capital/VC</option>
+                                    <option value="Veterinary">Veterinary</option>
+                                    <option value="Warehousing">Warehousing</option>
+                                    <option value="Wholesale">Wholesale</option>
+                                    <option value="Wine/Spirits">Wine/Spirits</option>
+                                    <option value="Wireless">Wireless</option>
+                                    <option value="Writing/Editing">Writing/Editing</option>
+                                </select>
                             </div>
                         </div>
                         <div class="col-sm-12">
@@ -47,12 +196,12 @@
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="package">{{ i18n "package" }}</label>
-
                                 <select id="package" name="package" class="form-control" required="required" data-error="Please specify your desired hosting package." size="5">
-                                    <option value="diy">Self-Hosted (Do It Yourself)</option>
+                                    <option value="diy">Self-Hosted</option>
+                                    <option value="basic">Basic</option>
                                     <option value="premium">Premium</option>
                                     <option value="enterprise">Enterprise</option>
-                                    <option value="none">None of the above</option>
+                                    <option value=""></option>
                                 </select>
                             </div>
                         </div>
@@ -83,9 +232,9 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-12 text-center">
-                            <button type="submit" class="btn btn-template-main"><i class="fa fa-paper-plane"></i>{{ i18n "signupButton" }}</button>
-                            <a href="/pricing" class="btn btn-default"><i class="fa fa-coffee"></i> Back to Packages</button></a>
+                        <div class="col-sm-12">
+                            <button type="submit" class="btn btn-template-primary"><i class="fa fa-paper-plane"></i>{{ i18n "signupButton" }}</button>
+                            <a href="/pricing" class="btn btn-link pull-right"> Back to Pricing</button></a>
 
                         </div>
                     </div>
@@ -98,151 +247,148 @@
 
         </div>
         <div class="col-md-4">
-
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    Packages
-                </div>
-                <div class="panel-body">
-
-                    <table class="table table-striped table-primary">
-                        <thead>
-                        <tr>
-                            <th class="col-md-2"><label>Service</label></th>
-                            <th class="col-md-2"><label>Cost</label></th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>Self-Hosted</td>
-                            <td>
-                                No fee (do-it-yourself)
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Premium</td>
-                            <td>
-                                $600 per month
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Enterprise</td>
-                            <td>
-                                Contact Us
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-
-                    <a href="/pricing" class="btn btn-template-main btn-block">View Details</a>
-                </div>
+            <div class="heading">
+                <h4>Pricing</h4>
             </div>
 
-            <div class="panel panel-primary">
-                <div class="panel-heading">Additional Services</div>
-                <div class="panel-body">
 
-                    <table class="table table-striped">
-                        <thead>
-                        <tr>
-                            <th>Service</th>
-                            <th>Hourly</th>
-                            <th>Daily</th>
-                            <th>Weekly</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>Installation</td>
-                            <td colspan="3">
-                                $1000 per instance
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Upgrades</td>
-                            <td colspan="3">
-                                $500 per instance
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Configuration</td>
-                            <td>
-                                $100
-                            </td>
-                            <td>
-                                $600
-                            </td>
-                            <td>
-                                $3000
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Implementation</td>
-                            <td>
-                                $100
-                            </td>
-                            <td>
-                                $600
-                            </td>
-                            <td>
-                                $3000
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Training</td>
-                            <td>
-                                $100
-                            </td>
-                            <td>
-                                $600
-                            </td>
-                            <td>
-                                $3000
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Data Migration</td>
-                            <td>
-                                $100
-                            </td>
-                            <td>
-                                $600
-                            </td>
-                            <td>
-                                $3000
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Development</td>
-                            <td>
-                                $150
-                            </td>
-                            <td>
-                                $900
-                            </td>
-                            <td>
-                                $4000
-                            </td>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Integration</td>
-                            <td>
-                                $150
-                            </td>
-                            <td>
-                                $900
-                            </td>
-                            <td>
-                                $4000
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
+            <table class="table table-striped table-bordered">
+                <thead>
+                <tr>
+                    <th class="col-md-4"><label>Service</label></th>
+                    <th class="col-md-8"><label>Cost</label></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Self-Hosted</td>
+                    <td>
+                        No fee (do-it-yourself)
+                    </td>
+                </tr>
+                <tr>
+                    <td>Basic</td>
+                    <td>
+                        $250 per month
+                    </td>
+                </tr>
+                <tr>
+                    <td>Premium</td>
+                    <td>
+                        $2500 per month
+                    </td>
+                </tr>
+                <tr>
+                    <td>Enterprise</td>
+                    <td>
+                        Contact Us
+                    </td>
+                </tr>
+                </tbody>
+            </table>
 
-                    <a href="/pricing#additionalServices" class="btn btn-template-main btn-block">View Details</a>
-                </div>
+            <div class="heading">
+                <h4>Additional Services</h4>
             </div>
+
+            <table class="table table-striped table-bordered">
+                <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Hourly</th>
+                    <th>Daily</th>
+                    <th>Weekly</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Installation</td>
+                    <td colspan="3" class="text-center">
+                        $1000 per instance
+                    </td>
+                </tr>
+                <tr>
+                    <td>Upgrades</td>
+                    <td colspan="3" class="text-center">
+                        $500 per instance
+                    </td>
+                </tr>
+                <tr>
+                    <td>Configuration</td>
+                    <td>
+                        $100
+                    </td>
+                    <td>
+                        $600
+                    </td>
+                    <td>
+                        $3000
+                    </td>
+                </tr>
+                <tr>
+                    <td>Implementation</td>
+                    <td>
+                        $100
+                    </td>
+                    <td>
+                        $600
+                    </td>
+                    <td>
+                        $3000
+                    </td>
+                </tr>
+                <tr>
+                    <td>Training</td>
+                    <td>
+                        $100
+                    </td>
+                    <td>
+                        $600
+                    </td>
+                    <td>
+                        $3000
+                    </td>
+                </tr>
+                <tr>
+                    <td>Data Migration</td>
+                    <td>
+                        $100
+                    </td>
+                    <td>
+                        $600
+                    </td>
+                    <td>
+                        $3000
+                    </td>
+                </tr>
+                <tr>
+                    <td>Development</td>
+                    <td>
+                        $150
+                    </td>
+                    <td>
+                        $900
+                    </td>
+                    <td>
+                        $4000
+                    </td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Integration</td>
+                    <td>
+                        $150
+                    </td>
+                    <td>
+                        $900
+                    </td>
+                    <td>
+                        $4000
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
         </div>
     </div>
     <!-- /.row -->

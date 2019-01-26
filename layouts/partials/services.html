@@ -1,258 +1,263 @@
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
+
+<section class="bar background-white">
+    <div class="container">
 
 
-            <p>OpenBoxes is free to <a href="/getting-started">download and use</a>. The software is
-                therefore an attractive option for organizations with limited financial resources available to purchase licenses for
-                proprietary software. At the same time, depending on existing resources and infrastructure, OpenBoxes may require some
-                financial investment in human and information technology resources for a successful implementation. It is recommended
-                that an organization evaluate the total cost of ownership (TCO) for any software under consideration, including the
-                cost of hardware and personnel required for installation, implementation, maintenance, and custom development of the
-                software.
-            </p>
-
-            <p>Service requirements and pricing can be determined based on the specific needs of the implementing organization. Please
-                contact us at if you'd like to discuss your requirements.</p>
-
-            <p>Should an organization choose to consider OpenBoxes as their supply chain management software, community members can
-                be contracted to design implementation plans and manage the software roll-out. These services include, but are not
-                limited to the following: </p>
-
-            <div class="row">
-
-                <div class="col-md-6">
-
-                    <div class="heading">
-                        <h3>Supply Chain Services</h3>
-                    </div>
-
-                    <ul class="list-group">
-                        <li class="list-group-item">Sourcing & Procurement</li>
-                        <li class="list-group-item">Demand Forecasting</li>
-                        <li class="list-group-item">Warehouse Design</li>
-                        <li class="list-group-item">Workflow & Process Mapping</li>
-                        <li class="list-group-item">Standard Operating Procedures (SOPs) </li>
-                        <li class="list-group-item">Business Analysis </li>
-                        <li class="list-group-item">Training (remote or in-person)</li>
-                    </ul>
-
-                </div>
-
-                <div class="col-md-6">
-
-                    <div class="heading">
-                        <h3>Implementation Services</h3>
-                    </div>
-
-                    <ul class="list-group">
-                        <li class="list-group-item">Requirements & Cost Analysis</li>
-                        <li class="list-group-item">Server Hosting</li>
-                        <li class="list-group-item">Implementation</li>
-                        <li class="list-group-item">Technical Support</li>
-                        <li class="list-group-item">Installation & Upgrades</li>
-                        <li class="list-group-item">Performance Tuning </li>
-                        <li class="list-group-item">Data Cleaning & Migration</li>
-                    </ul>
-
-                </div>
-            </div>
-
-
-            {{ if isset .Site.Params "services" }}
-            {{ if .Site.Params.services.enable }}
-
-            <div class="heading">
-                <h3>Service Partners</h3>
-            </div>
-            <div class="lead">If your company is interested in providing any of the aforementioned services,
-            please contact us and we'll add your contact information below.
-            </div>
-
-
-            {{ if gt (len .Site.Data.services) 0 }}
-            <section class="bar background-white">
-                <div class="container">
-                    {{ range $index, $element := sort .Site.Data.services "weight" }}
-                    {{ if eq (mod $index 3) 0 }}
-                    <div class="col-md-12">
-                        <div class="row">
-                            {{ end }}
-                            <div class="col-md-4">
-                                <div class="box-simple">
-                                    <div class="icon">
-                                        <i class="{{ .icon }}"></i>
-                                    </div>
-                                    <h3>{{ $element.name }}</h3>
-                                    <p>{{ $element.description | markdownify }}</p>
-                                </div>
-                            </div>
-                            {{ if or (eq (mod $index 3) 2) (eq $index (sub (len $.Site.Data.services) 1 )) }}
-                        </div>
-                    </div>
-                    {{ end }}
-                    {{ end }}
-                </div>
-            </section>
-            {{ end }}
-            {{ end }}
-            {{ end }}
-
-
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-12">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="heading">
-                        <h3>Additional Services</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="lead">
-                        If you are looking to manage your own instance of OpenBoxes (i.e. Do It Yourself),
-                        but would like a little help with installation, implementation, customization, and/or
-                        support please review the pricing below and get in touch with us.
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-
-                <table class="table table-striped">
-                    <thead>
-                    <tr>
-                        <th class="col-md-2">Service</th>
-                        <th class="col-md-8">Description</th>
-                        <th class="col-md-2 text-center">Cost</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td><strong>Installation</strong></td>
-                        <td>
-                            One-time installation fee.
-                        </td>
-                        <td>
-                            <ul class="list-style-none">
-                                $1000
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Upgrades</strong></td>
-                        <td>
-                            One-time upgrade fee.
-                        </td>
-                        <td>
-                            <ul class="list-style-none">
-                                <li>$500</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Configuration</strong></td>
-                        <td>
-                            This costs involved in configuring the software as well as implementing your organization's workflows.
-                            This can usually be done in-house but may require external resources in cases where technical experise is not
-                            available. This should also include the cost of data backup / restoring processes and contingency plans if the software
-                            becomes unavailable due to power/Internet outages and hardware failures.
-                        </td>
-                        <td>
-                            <ul class="list-style-none">
-                                <li>$100 per hour</li>
-                                <li>$600 per day</li>
-                                <li>$3000 per week</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Training</strong></td>
-                        <td>
-                            The cost to train employees to use the software, which may include training materials like
-                            documentation, tutorials, videos, etc. This will likely be an on-going cost as you'll have
-                            to train new employees and update training materials as the software evolves. On-premise
-                            training is also available.
-                        </td>
-                        <td>
-                            <ul class="list-style-none">
-                                <li>$100 per hour</li>
-                                <li>$600 per day</li>
-                                <li>$3000 per week</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Data Migration</strong></td>
-                        <td>
-                            If your organization is using another software system (even if it's just Excel) to manage your supply chain data
-                            you'll probably want to move that data to OpenBoxes. In either case, you will need to export (e.g. download as CSV),
-                            transform (e.g. re-format the data to be imported), clean (e.g. remove duplicate and obsolete data) and
-                            most importantly test your data before you can start using the new system. This process can range from manual
-                            data-entry to automated data importing using APIs and other data migration tools.
-                        </td>
-                        <td>
-                            <ul class="list-style-none">
-                                <li>$100 per hour</li>
-                                <li>$600 per day</li>
-                                <li>$3000 per week</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Development</strong></td>
-                        <td>
-                            Hopefully OpenBoxes does everything you need. But let's be honest, it probably doesn't. Therefore,
-                            you may want to hire a developer to build new features and/or fix bugs.
-                        </td>
-                        <td>
-                            <ul class="list-style-none">
-                                <li>$150 per hour</li>
-                                <li>$900 per day</li>
-                                <li>$4000 per week</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Integration</strong></td>
-                        <td>
-                            At some point your organization may want to ingrate with an external system i.e. accounting software or an enterprise
-                            resource planning (ERP) system. Integration
-                            costs depend on how complicated it will be to communicate between the two systems. Today, most software utilize REST
-                            APIs to facilitate communication between systems while older systems use EDI (electronic data interchange). Integration
-                            costs should also include updates to standard operating procedures (SOPs) which may require re-training.
-                        </td>
-                        <td>
-                            <ul class="list-style-none">
-                                <li>$150 per hour</li>
-                                <li>$900 per day</li>
-                                <li>$4000 per week</li>
-                            </ul>
-                        </td>
-                    </tr>
-
-                    </tbody>
-                </table>
-            </div>
-
-
-        </div>
-    </div>
-
-    <section class="bar background-gray">
         <div class="row">
             <div class="col-md-12">
-                <div class="text-center">
-                    <p class="lead">Need some assistance improving your supply chain?</p>
 
-                    <a href="/signup" class="btn btn-template-primary">Contact Us</a>
+
+                <p>OpenBoxes is and will always be FREE to <a href="https://github.com/openboxes/openboxes">download and use</a>. The software is
+                    therefore an attractive option for organizations with limited financial resources available to purchase licenses for
+                    proprietary software. At the same time, depending on existing resources and infrastructure, OpenBoxes may require some
+                    financial investment in human and information technology resources for a successful implementation. It is recommended
+                    that an organization evaluate the total cost of ownership (TCO) for any software under consideration, including the
+                    cost of hardware and personnel required for installation, implementation, maintenance, and custom development of the
+                    software.
+                </p>
+
+                <p>Service requirements and pricing can be determined based on the specific needs of the implementing organization. Please
+                    contact us at if you'd like to discuss your requirements.</p>
+
+                <p>Should an organization choose to consider OpenBoxes as their supply chain management software, community members can
+                    be contracted to design implementation plans and manage the software roll-out. These services include, but are not
+                    limited to the following: </p>
+
+                <div class="row">
+
+                    <div class="col-md-6">
+
+                        <div class="heading">
+                            <h3>Supply Chain Services</h3>
+                        </div>
+
+                        <ul class="list-group">
+                            <li class="list-group-item">Sourcing & Procurement</li>
+                            <li class="list-group-item">Demand Forecasting</li>
+                            <li class="list-group-item">Warehouse Design</li>
+                            <li class="list-group-item">Workflow & Process Mapping</li>
+                            <li class="list-group-item">Standard Operating Procedures (SOPs) </li>
+                            <li class="list-group-item">Business Analysis </li>
+                            <li class="list-group-item">Training (remote or in-person)</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <div class="heading">
+                            <h3>Implementation Services</h3>
+                        </div>
+
+                        <ul class="list-group">
+                            <li class="list-group-item">Requirements & Cost Analysis</li>
+                            <li class="list-group-item">Server Hosting</li>
+                            <li class="list-group-item">Implementation</li>
+                            <li class="list-group-item">Technical Support</li>
+                            <li class="list-group-item">Installation & Upgrades</li>
+                            <li class="list-group-item">Performance Tuning </li>
+                            <li class="list-group-item">Data Cleaning & Migration</li>
+                        </ul>
+
+                    </div>
                 </div>
+
+
+                {{ if isset .Site.Params "services" }}
+                {{ if .Site.Params.services.enable }}
+
+                <div class="heading">
+                    <h3>Service Partners</h3>
+                </div>
+                <div class="lead">If your company is interested in providing any of the aforementioned services,
+                please contact us and we'll add your contact information below.
+                </div>
+
+
+                {{ if gt (len .Site.Data.services) 0 }}
+                <section class="bar background-white">
+                    <div class="container">
+                        {{ range $index, $element := sort .Site.Data.services "weight" }}
+                        {{ if eq (mod $index 3) 0 }}
+                        <div class="col-md-12">
+                            <div class="row">
+                                {{ end }}
+                                <div class="col-md-4">
+                                    <div class="box-simple">
+                                        <div class="icon">
+                                            <i class="{{ .icon }}"></i>
+                                        </div>
+                                        <h3>{{ $element.name }}</h3>
+                                        <p>{{ $element.description | markdownify }}</p>
+                                    </div>
+                                </div>
+                                {{ if or (eq (mod $index 3) 2) (eq $index (sub (len $.Site.Data.services) 1 )) }}
+                            </div>
+                        </div>
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                </section>
+                {{ end }}
+                {{ end }}
+                {{ end }}
+
 
             </div>
         </div>
-    </section>
-</div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="heading">
+                            <h3>Additional Services</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="lead">
+                            If you are looking to manage your own instance of OpenBoxes (i.e. Do It Yourself),
+                            but would like a little help with installation, implementation, customization, and/or
+                            support please review the pricing below and get in touch with us.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-md-2">Service</th>
+                            <th class="col-md-8">Description</th>
+                            <th class="col-md-2 text-center">Cost</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><strong>Installation</strong></td>
+                            <td>
+                                One-time installation fee.
+                            </td>
+                            <td>
+                                <ul class="list-style-none">
+                                    $1000
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Upgrades</strong></td>
+                            <td>
+                                One-time upgrade fee.
+                            </td>
+                            <td>
+                                <ul class="list-style-none">
+                                    <li>$500</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Configuration</strong></td>
+                            <td>
+                                This costs involved in configuring the software as well as implementing your organization's workflows.
+                                This can usually be done in-house but may require external resources in cases where technical experise is not
+                                available. This should also include the cost of data backup / restoring processes and contingency plans if the software
+                                becomes unavailable due to power/Internet outages and hardware failures.
+                            </td>
+                            <td>
+                                <ul class="list-style-none">
+                                    <li>$100 per hour</li>
+                                    <li>$600 per day</li>
+                                    <li>$3000 per week</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Training</strong></td>
+                            <td>
+                                The cost to train employees to use the software, which may include training materials like
+                                documentation, tutorials, videos, etc. This will likely be an on-going cost as you'll have
+                                to train new employees and update training materials as the software evolves. On-premise
+                                training is also available.
+                            </td>
+                            <td>
+                                <ul class="list-style-none">
+                                    <li>$100 per hour</li>
+                                    <li>$600 per day</li>
+                                    <li>$3000 per week</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Data Migration</strong></td>
+                            <td>
+                                If your organization is using another software system (even if it's just Excel) to manage your supply chain data
+                                you'll probably want to move that data to OpenBoxes. In either case, you will need to export (e.g. download as CSV),
+                                transform (e.g. re-format the data to be imported), clean (e.g. remove duplicate and obsolete data) and
+                                most importantly test your data before you can start using the new system. This process can range from manual
+                                data-entry to automated data importing using APIs and other data migration tools.
+                            </td>
+                            <td>
+                                <ul class="list-style-none">
+                                    <li>$100 per hour</li>
+                                    <li>$600 per day</li>
+                                    <li>$3000 per week</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Development</strong></td>
+                            <td>
+                                Hopefully OpenBoxes does everything you need. But let's be honest, it probably doesn't. Therefore,
+                                you may want to hire a developer to build new features and/or fix bugs.
+                            </td>
+                            <td>
+                                <ul class="list-style-none">
+                                    <li>$150 per hour</li>
+                                    <li>$900 per day</li>
+                                    <li>$4000 per week</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Integration</strong></td>
+                            <td>
+                                At some point your organization may want to ingrate with an external system i.e. accounting software or an enterprise
+                                resource planning (ERP) system. Integration
+                                costs depend on how complicated it will be to communicate between the two systems. Today, most software utilize REST
+                                APIs to facilitate communication between systems while older systems use EDI (electronic data interchange). Integration
+                                costs should also include updates to standard operating procedures (SOPs) which may require re-training.
+                            </td>
+                            <td>
+                                <ul class="list-style-none">
+                                    <li>$150 per hour</li>
+                                    <li>$900 per day</li>
+                                    <li>$4000 per week</li>
+                                </ul>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bar background-gray">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="text-center">
+                <p class="lead">Need some assistance improving your supply chain?</p>
+
+                <a href="/signup" class="btn btn-template-primary">Contact Us</a>
+            </div>
+
+        </div>
+    </div>
+</section>
 

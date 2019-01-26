@@ -68,12 +68,15 @@ paginate = 10
     url  = "/pricing/"
     weight = 20
 
-# Demo
 [[menu.main]]
     name = "Demo"
     url  = "https://demo.openboxes.com/openboxes"
     weight = 30
 
+[[menu.main]]
+    name = "Signup"
+    url  = "/signup/"
+    weight = 40
 
 
 # Footer social links menu
