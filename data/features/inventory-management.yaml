@@ -3,9 +3,11 @@ name: "Inventory Management"
 icon: "fa fa-archive"
 description: "Manage inventory at multiple levels: bin location, product, lot/serial number, and expiration date"
 items:
-- Create bin locations and storage areas within each storage facility
-- For each inventory location, make adjustments to quantity and bin location during inventory and cycle count activities, including comments field for reason for adjustment
-- Export report for suggested cycle count for each location based on last inventory date
+- Manage multiple facilities across multiple regions
+- Manage bin locations and bulk storage areas within each storage facility
+- Make adjustments to quantity and bin location during inventory activities
+- Track reasons for adjustment (i.e. expiry, damage, loss)
+- Export suggested cycle count for each location based on last inventory date
 - Remove quantity from inventory due to expiry, damage, or recall
 screenshots:
 - image: ../img/screenshots/inventory/browse-inventory.png
