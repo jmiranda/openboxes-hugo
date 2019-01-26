@@ -100,7 +100,7 @@
   translation: "Helps us determines the proper size of instance; does not change the pricing"
 
 - id: additionalServices
-  translation: "Additional Services"
+  translation: "Add-ons"
 
 - id: additionalServicesHelpText
   translation: "Use CTRL to select multiple"
