@@ -1,5 +1,5 @@
-weight: 1
-name: "Chat"
-icon: "fa fa-chat"
+weight: 3
+name: "Documentation"
+icon: "fa fa-book"
 description: "We're usually available to live chat between 9:00am - 4:00pm CST. If we aren't available send us an offline message with your name and email address and we'll get back to you as soon as we can."
 link: "https://openboxes.com/support#"
