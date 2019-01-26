@@ -1,65 +1,130 @@
 <footer id="footer">
     <div class="container">
 
-        {{ if isset .Site.Params "about_us" }}
-        <div class="col-md-4 col-sm-6">
-            <h4>{{ i18n "aboutUs" }}</h4>
+        <div class="row">
 
-            {{ .Site.Params.about_us | markdownify }}
+            <div class="col-md-4 col-sm-6">
 
-            <hr class="hidden-md hidden-lg hidden-sm">
+                {{ if isset .Site.Params "about_us" }}
+                <div class="row">
+                    <div class="col-md-12">
 
-            <p>{{ .Site.Params.topbar.text | safeHTML }}</p>
+                        <h4>{{ i18n "aboutUs" }}</h4>
 
+                        {{ .Site.Params.about_us | markdownify }}
 
-        </div>
-        <!-- /.col-md-4 -->
-        {{ end }}
-
-        <div class="col-md-4 col-sm-6">
-
-            {{ if isset .Site.Params "recent_posts" }} {{ if .Site.Params.recent_posts.enable }}
-            <h4>{{ i18n "recentPosts" }}</h4>
-
-            <div class="blog-entries">
-                {{ range first 3 (where .Site.Pages "Type" "blog") }}
-                <div class="item same-height-row clearfix">
-                    <div class="image same-height-always">
-                        <a href="{{ .Permalink }}">
-                          {{ if isset .Params "banner" }}
-                            <img src="{{ .Site.BaseURL}}{{ .Params.banner }}" class="img-responsive" alt="{{ .Title }}">
-                          {{ else }}
-                            <img src="{{ .Site.BaseURL}}img/placeholder.png" class="img-responsive" alt="{{ .Title }}">
-                          {{ end }}
-                        </a>
-                    </div>
-                    <div class="name same-height-always">
-                        <h5><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
+                        <hr class="hidden-md hidden-lg hidden-sm">
                     </div>
                 </div>
                 {{ end }}
             </div>
 
-            <hr class="hidden-md hidden-lg">
-            {{ end }} {{ end }}
+
+            <div class="col-md-4 col-sm-6">
+
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Learn More</h4>
+                        <ul>
+                            <li><a href="/about">About</a></li>
+                            <li><a href="/blog">News</a></li>
+                            <li><a href="/features">Features</a></li>
+                            <li><a href="/pricing">Pricing</a></li>
+                            <li><a href="/roadmap">Roadmap</a></li>
+                            <li><a href="/services">Services</a></li>
+                            <li><a href="https://discuss.openboxes.com">Community</a></li>
+                            <li><a href="/users">Implementations</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Get Started</h4>
+                        <ul>
+                            <li><a href="/signup">Signup</a></li>
+                            <li><a href="/tutorials">Tutorials</a></li>
+                            <li><a href="https://openboxes.readthedocs.io/en/develop/installation/">Installation</a></li>
+                            <li><a href="https://github.com/openboxes/openboxes">Source Code</a></li>
+                            <li><a href="https://github.com/openboxes/openboxes/issues">Issue Tracking</a></li>
+                            <li><a href="https://github.com/openboxes/openboxes/releases">Downloads</a></li>
+                            <li><a href="https://docs.openboxes.com/en/develop">Documentation</a></li>
+                            <li><a href="https://docs.openboxes.com/en/develop/api-guide/">REST API Docs</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <div class="col-md-4 col-sm-6">
+
+                {{ if isset .Site.Params "recent_posts" }} {{ if .Site.Params.recent_posts.enable }}
+                <h4>{{ i18n "recentPosts" }}</h4>
+
+                <div class="blog-entries">
+                    {{ range first 3 (where .Site.Pages "Type" "blog") }}
+                    <div class="item same-height-row clearfix">
+                        <div class="image same-height-always">
+                            <a href="{{ .Permalink }}">
+                                {{ if isset .Params "banner" }}
+                                <img src="{{ .Site.BaseURL}}{{ .Params.banner }}" class="img-responsive" alt="{{ .Title }}">
+                                {{ else }}
+                                <img src="{{ .Site.BaseURL}}img/placeholder.png" class="img-responsive" alt="{{ .Title }}">
+                                {{ end }}
+                            </a>
+                        </div>
+                        <div class="name same-height-always">
+                            <h5><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+
+                <hr class="hidden-md hidden-lg">
+                {{ end }} {{ end }}
+
+            </div>
+            <!-- /.col-md-4 -->
+
 
         </div>
-        <!-- /.col-md-4 -->
+        <div class="row">
 
-        {{ if isset .Site.Params "address" }}
-        <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-6">
+                <h4>Support</h4>
 
-          <h4>{{ i18n "contactTitle" }}</h4>
+                <p>{{ .Site.Params.topbar.text | safeHTML }}</p>
 
-            {{ .Site.Params.address | markdownify }}
+            </div>
+            <div class="col-md-4 col-sm-6">
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <h4>Social Media</h4>
+                <div class="social">
+                    {{ range .Site.Menus.social.ByWeight }}
+                    <a href="{{ .URL }}" target="_blank">{{ .Pre }}</a>
+                    {{ end }}
+                </div>
+            </div>
 
-            <a href="/contact" class="btn btn-small btn-template-main">{{ i18n "contactGoTo" }}</a>
 
-            <hr class="hidden-md hidden-lg hidden-sm">
+            {{ if isset .Site.Params "address" }}
+            <div class="col-md-4 col-sm-6">
+
+                <h4>{{ i18n "contactTitle" }}</h4>
+
+                {{ .Site.Params.address | markdownify }}
+
+                <a href="/contact" class="btn btn-small btn-template-main">{{ i18n "contactGoTo" }}</a>
+
+                <hr class="hidden-md hidden-lg hidden-sm">
+
+            </div>
+            <!-- /.col-md-4 -->
+            {{ end }}
 
         </div>
-        <!-- /.col-md-4 -->
-        {{ end }}
+
 
     </div>
     <!-- /.container -->

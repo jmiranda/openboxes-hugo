@@ -28,39 +28,40 @@ paginate = 10
 #    weight = 1
 
 # About
-[[menu.main]]
-    identifier = "about"
-    name = "About"
-    weight = 10
+#[[menu.main]]
+#    identifier = "about"
+#    name = "About"
+#    weight = 10
+
+
+#[[menu.main]]
+#    name = "About Us"
+#    parent = "about"
+#    url  = "/about"
+#    weight = 1
+
+#[[menu.main]]
+#    name = "Roadmap"
+#    parent = "about"
+#    url  = "/roadmap/"
+#    weight = 4
+
+#[[menu.main]]
+#    name = "Implementations"
+#    parent = "about"
+#    url  = "/users/"
+#    weight = 5
+
+#[[menu.main]]
+#    name = "News"
+#    parent = "about"
+#    url  = "/blog/"
+#    weight = 1
 
 [[menu.main]]
     name = "Features"
     url  = "/features/"
     weight = 15
-
-[[menu.main]]
-    name = "About Us"
-    parent = "about"
-    url  = "/about"
-    weight = 1
-
-[[menu.main]]
-    name = "Roadmap"
-    parent = "about"
-    url  = "/roadmap/"
-    weight = 4
-
-[[menu.main]]
-    name = "Implementations"
-    parent = "about"
-    url  = "/users/"
-    weight = 5
-
-[[menu.main]]
-    name = "News"
-    parent = "about"
-    url  = "/blog/"
-    weight = 1
 
 [[menu.main]]
     name = "Pricing"
@@ -70,133 +71,52 @@ paginate = 10
 # Demo
 [[menu.main]]
     name = "Demo"
-    url  = "https://demo.openboxes.com/openboxes/auth/signup"
+    url  = "https://demo.openboxes.com/openboxes"
     weight = 30
 
-# Getting Started
-[[menu.main]]
-    identifier = "getting-started"
-    name = "Get Started"
-    url  = "/getting-started/"
-    weight = 40
 
-[[menu.main]]
-    name = "Documentation"
-    parent = "getting-started"
-    url  = "http://docs.openboxes.com/en/develop/"
+
+# Footer social links menu
+
+[[menu.social]]
     weight = 1
+    name = "GitHub"
+    url = "https://github.com/openboxes/openboxes"
+    pre = "<i class='fa fa-2x fa-github'></i>"
 
-[[menu.main]]
-    name = "Downloads"
-    parent = "getting-started"
-    url  = "https://github.com/openboxes/openboxes/releases"
-    weight = 2
-
-[[menu.main]]
-    name = "Source Code"
-    parent = "getting-started"
-    url  = "https://github.com/openboxes/openboxes"
+[[menu.social]]
     weight = 3
+    name = "Twitter"
+    url = "https://twitter.com/openboxes_"
+    pre = "<i class='fa fa-2x fa-twitter'></i>"
 
-[[menu.main]]
-    name = "Installation"
-    parent = "getting-started"
-    url  = "https://openboxes.readthedocs.io/en/develop/installation/"
-    weight = 4
+[[menu.social]]
+    weight = 2
+   name = "Blogger"
+    url = "https://blog.openboxes.com"
+    pre = "<i class='fa fa-2x fa-rss'></i>"
 
-[[menu.main]]
-    name = "Tutorials"
-    parent = "getting-started"
-    url  = "/tutorials/"
-    weight = 5
+[[menu.social]]
+    weight = 1
+    name = "Support"
+    url = "/support"
+    pre = "<i class='fa fa-2x fa-phone'></i>"
 
-# Documentation
-#[[menu.main]]
-#    name = "Docs"
-#    pre = "<i class='fa fa-file'></i>"
-#    post = "<i class='fa fa-external-link'></i>"
-#    url  = "http://docs.openboxes.com/en/develop/"
-#    weight = 4
-
-# Community
-[[menu.main]]
-    identifier = "community"
-    name = "Community"
-    url  = "https://discuss.openboxes.com"
-    weight = 50
-
-
-
-#[[menu.main]]
-#    identifier = "discuss"
-#    name = "Discuss"
-#    parent = "community"
-#    pre = "<i class='fa fa-comment'></i>"
-#    url  = "http://discuss.openboxes.com"
-#    weight = 1
-
-#[[menu.main]]
-#    name = "Support"
-#    parent = "community"
-#    pre = "<i class='fa fa-phone'></i>"
-#    url  = "/support/"
-#    weight = 2
-
-# Services
-#[[menu.main]]
-#    name = "Services"
-#    pre = "<i class='fa fa-cog'></i>"
-#    post = ""
-#    url  = "/services/"
-#    weight = 60
-
-#[[menu.main]]
-#    identifier = "contribute"
-#    name = "Contribute"
-#    parent = "community"
-#    pre = "<i class='fa fa-github'></i>"
-#    url  = "/contribute/"
-#    weight = 5
-
+[[menu.social]]
+    weight = 3
+    name = "Chat"
+    url = "https://discuss.openboxes.com"
+    pre = "<i class='fa fa-2x fa-comments'></i>"
 
 # Top bar social links menu
 
-#[[menu.topbar]]
-#    weight = 1
-#    name = "GitHub"
-#    url = "https://github.com/openboxes/openboxes"
-#    pre = "<i class='fa fa-2x fa-github'></i>"
-
-#[[menu.topbar]]
-#    weight = 3
-#    name = "Twitter"
-#    url = "https://twitter.com/openboxes_"
-#    pre = "<i class='fa fa-2x fa-twitter'></i>"
-
-#[[menu.topbar]]
-#    weight = 2
-#   name = "Blogger"
-#    url = "https://blog.openboxes.com"
-#    pre = "<i class='fa fa-2x fa-rss'></i>"
-
-
-#[[menu.topbar]]
-#    weight = 1
-#    name = "Support"
-#    url = "/support"
-#    pre = "<i class='fa fa-2x fa-phone'></i>"
 
 [[menu.topbar]]
     weight = 2
-    name = "Email"
+    name = "support@openboxes.com"
     url = "mailto:support@openboxes.com"
-    pre = "<i class='fa fa-2x fa-envelope'></i>"
+    pre = "<i class='fa fa-1x fa-envelope'></i>"
 
-#[[menu.topbar]]
-#    weight = 3
-#    name = "Chat"
-#    url = "https://discuss.openboxes.com"
-#    pre = "<i class='fa fa-2x fa-comments'></i>"
 
 #[[menu.topbar]]
 #    weight = 3
@@ -210,6 +130,17 @@ paginate = 10
 #    name = "LinkedIn"
 #    url = "https://www.linkedin.com/company/openboxes"
 #    pre = "<i class='fa fa-2x fa-linkedin'></i>"
+
+
+# Top bar social links menu
+
+#[[menu.topbar]]
+#    weight = 1
+#    name = "GitHub"
+#    url = "https://github.com/openboxes/openboxes"
+#    pre = "<i class='fa fa-2x fa-github'></i>"
+
+
 
 
 [params]
@@ -303,7 +234,7 @@ paginate = 10
 
 [params.demo]
     enable = true
-    icon = "fa fa-file-code-o"
+    icon = "fa fa-rocket"
     title = "Demo"
     subtitle = "The moment we've all been waiting for ..."
     link_url = "https://demo.openboxes.com/openboxes/auth/signup"
@@ -324,3 +255,5 @@ paginate = 10
     enable = true
     title = "Recent news"
     subtitle = ""
+
+
