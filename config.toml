@@ -79,6 +79,67 @@ paginate = 10
     weight = 40
 
 
+# Getting Started
+[[menu.main]]
+    identifier = "getting-started"
+    name = "Get Started"
+    url  = "/getting-started/"
+    weight = 50
+
+# Community
+[[menu.main]]
+    identifier = "community"
+    parent = "getting-started"
+    name = "Community"
+    url  = "https://discuss.openboxes.com"
+    weight = 1
+
+[[menu.main]]
+    name = "Documentation"
+    parent = "getting-started"
+    url  = "https://openboxes.readthedocs.io/en/develop"
+    weight = 2
+
+[[menu.main]]
+    name = "Downloads"
+    parent = "getting-started"
+    url  = "https://github.com/openboxes/openboxes/releases"
+    weight = 3
+
+[[menu.main]]
+    name = "Installation"
+    parent = "getting-started"
+    url  = "https://openboxes.readthedocs.io/en/develop/installation/"
+    weight = 5
+
+[[menu.main]]
+    name = "Schedule a Demo"
+    parent = "getting-started"
+    url  = "https://calendly.com/openboxes"
+    weight = 6
+
+[[menu.main]]
+    name = "Source Code"
+    parent = "getting-started"
+    url  = "https://github.com/openboxes/openboxes"
+    weight = 7
+
+[[menu.main]]
+    name = "Tutorials"
+    parent = "getting-started"
+    url  = "/tutorials/"
+    weight = 8
+
+# Documentation
+#[[menu.main]]
+#    name = "Docs"
+#    pre = "<i class='fa fa-file'></i>"
+#    post = "<i class='fa fa-external-link'></i>"
+#    url  = "https://openboxes.readthedocs.io/en/develop"
+#    weight = 4
+
+
+
 # Footer social links menu
 
 [[menu.social]]
@@ -241,7 +302,9 @@ paginate = 10
     title = "Demo"
     subtitle = "The moment we've all been waiting for ..."
     link_url = "https://demo.openboxes.com/openboxes/auth/signup"
-    link_text = "Signup on our demo"
+    link_text = "Try the demo"
+    schedule_link_url = "https://calendly.com/openboxes"
+    schedule_link_text = "Schedule a Demo"
 
 [params.clients]
     enable = true
