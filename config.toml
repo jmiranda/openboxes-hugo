@@ -95,16 +95,23 @@ paginate = 10
     weight = 1
 
 [[menu.main]]
+    identifier = "cost-analysis"
+    parent = "getting-started"
+    name = "Cost Analysis"
+    url  = "/cost-analysis"
+    weight = 2
+
+[[menu.main]]
     name = "Documentation"
     parent = "getting-started"
     url  = "https://openboxes.readthedocs.io/en/develop"
-    weight = 2
+    weight = 3
 
 [[menu.main]]
     name = "Downloads"
     parent = "getting-started"
     url  = "https://github.com/openboxes/openboxes/releases"
-    weight = 3
+    weight = 4
 
 [[menu.main]]
     name = "Installation"
