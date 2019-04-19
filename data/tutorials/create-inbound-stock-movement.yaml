@@ -1,6 +1,6 @@
 weight: 7
-name: "Create an Incoming Stock Movement"
-icon: "fa fa-plus"
+name: "Create an Inbound Stock Movement"
+icon: "fa fa-ship"
 description: ""
 url: "https://www.loom.com/share/7b8305da64044faa95a4d098b8790b51"
 thumbnail: ""
