@@ -105,8 +105,12 @@
 - id: additionalServicesHelpText
   translation: "Use CTRL to select multiple"
 
+- id: business
+  translation: "Tell us about your business"
+
+
 - id: additionalRequirements
-  translation: "Additional Requirements"
+  translation: "Describe your requirements"
 
 - id: package
   translation: "Hosting Plan"
