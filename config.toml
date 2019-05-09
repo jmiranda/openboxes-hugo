@@ -267,11 +267,12 @@ paginate = 10
 # Enable or disable top bar with social icons
 [params.topbar]
     enable = true
-    text = """<p class="hidden-sm hidden-xs">Contact sales and support at <a href="tel:+16174750619">+1 (617) 475-0619</a> or
-        <a href="mailto:support@openboxes.com">support@openboxes.com</a>.</p>
-      <p class="hidden-md hidden-lg"><a href="tel:+16174750619" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
-      <a href="mailto:support@openboxes.com" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
-      </p>
+    text = """<p class="hidden-sm hidden-xs">Contact sales and support
+        <ul>
+        <li>By Phone: <a href="tel:+16174750619">+1 (617) 475-0619</a>
+        <li>By Email: <a href="mailto:support@openboxes.com">support@openboxes.com</a>
+        </ul>
+        </p>
       """
 
 # Enable and disable widgets for the right sidebar
@@ -310,7 +311,7 @@ paginate = 10
     subtitle = "The moment we've all been waiting for ..."
     link_url = "https://demo.openboxes.com/openboxes/auth/signup"
     link_text = "Try the demo"
-    schedule_link_url = "https://calendly.com/openboxes"
+    schedule_link_url = "https://calendly.com/openboxes/demo"
     schedule_link_text = "Schedule a Demo"
 
 [params.clients]

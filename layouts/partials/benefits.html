@@ -1,21 +1,23 @@
 {{ if isset .Site.Params "benefits" }}
 {{ if .Site.Params.benefits.enable }}
 {{ if gt (len .Site.Data.benefits) 0 }}
+
 <section class="bar background-white">
     <div class="container">
+
         {{ range $index, $element := sort .Site.Data.benefits "weight" }}
-		{{ if eq (mod $index 3) 0 }}
+		{{ if eq (mod $index 2) 0 }}
 		<div class="col-md-12">
             <div class="row">
 		{{ end }}
-				<div class="col-md-4">
-                    <div class="box-image">
+				<div class="col-md-6">
+                    <div class="">
                         <h3><i class="{{ .icon }}"></i>
                              {{ $element.name }}</h3>
                         <p>{{ $element.description | markdownify }}</p>
                     </div>
                 </div>
-		{{ if or (eq (mod $index 3) 2) (eq $index (sub (len $.Site.Data.benefits) 1 )) }}
+		{{ if or (eq (mod $index 2) 3) (eq $index (sub (len $.Site.Data.benefits) 1 )) }}
 			</div>
 		</div>
 		{{ end }}
