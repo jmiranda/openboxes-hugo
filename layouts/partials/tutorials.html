@@ -42,25 +42,31 @@
 
                 <div class="box-simple box-white">
                     <div class="icon">
-                        <i class="fa fa-lightbulb-o"></i>
+                        <i class="fa fa-question"></i>
                     </div>
-                    <h4>Ummm, what about ...?</h4>
+                    <h4>Ahh, what about ...?</h4>
 
                     <div class="row">
                         <div class="col-md-12">
-                            <p>Let us know if you'd like to see a tutorial for a specific topic.</p>
+                            <p>Let us know if you'd like to see a tutorial for a specific topic. Provide your email
+                                so we can contact you when the tutorial is ready.</p>
                         </div>
                     </div>
                     <form class="tutorials-form" method="post" action="https://formspree.io/support@openboxes.com">
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <textarea id="message" class="form-control" name="message" required placeholder="Describe a feature or process that you'd like to see covered."></textarea>
+                                    <input type="text" class="form-control" name="email" id="email" required placeholder="{{ i18n "email" }}">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <textarea id="message" class="form-control" name="message" required placeholder="Describe a feature that you'd like to see covered."></textarea>
                                 </div>
                             </div>
 
                             <div class="col-sm-12 text-center">
-                                <button type="submit" class="btn btn-template-primary"><i class="fa fa-paper-plane"></i> Submit Topic</button>
+                                <button type="submit" class="btn btn-template-primary btn-block"><i class="fa fa-paper-plane"></i> Submit Topic</button>
 
                             </div>
                         </div>
