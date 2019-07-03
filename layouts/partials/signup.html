@@ -9,7 +9,7 @@
 
                 {{ if isset .Site.Params "email" }}
 
-                <div id="signup-message" class="lead">Sign up for your very own hosted instance of OpenBoxes.</div>
+                <div id="signup-message" class="lead">Request a quote for services like installation, implementation and training.</div>
 
                 <form class="signup-form" method="post" action="https://formspree.io/{{ .Site.Params.email }}">
                     <div class="row">
@@ -187,24 +187,6 @@
                             </div>
                         </div>
                         <div class="col-sm-12">
-                            <div class="form-group">
-                                <label for="name">{{ i18n "url" }}</label>
-                                <span class="text-muted pull-right">{{ i18n "urlHelpText" }}</span>
-                                <input type="text" class="form-control" name="url" id="url">
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label for="package">{{ i18n "package" }}</label>
-                                <select id="package" name="package" class="form-control" required="required" data-error="Please specify your desired hosting package." size="5">
-                                    <option value="not-sure">Not Sure</option>
-                                    <option value="diy">Self-Hosted</option>
-                                    <option value="basic">Basic</option>
-                                    <option value="custom">Custom</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="additionalServices">{{ i18n "additionalServices" }}</label>
                                 <span class="text-muted pull-right">{{ i18n "additionalServicesHelpText" }}</span>

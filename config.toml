@@ -74,7 +74,7 @@ paginate = 10
     weight = 30
 
 [[menu.main]]
-    name = "Signup"
+    name = "Request Quote"
     url  = "/signup/"
     weight = 40
 
