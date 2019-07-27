@@ -1,7 +1,7 @@
 <div class="container" id="contact">
 
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-12">
 
             <section>
 
@@ -186,7 +186,19 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-sm-12">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="business">{{ i18n "business" }}</label>
+                                <textarea id="business" class="form-control" name="business" required rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="additionalRequirements">{{ i18n "additionalRequirements" }}</label>
+                                <textarea id="additionalRequirements" class="form-control" name="additionalRequirements" required rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="additionalServices">{{ i18n "additionalServices" }}</label>
                                 <span class="text-muted pull-right">{{ i18n "additionalServicesHelpText" }}</span>
@@ -207,20 +219,13 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-sm-12">
+                        <div class="col-sm-6">
                             <div class="form-group">
-                                <label for="business">{{ i18n "business" }}</label>
-                                <textarea id="business" class="form-control" name="business" required rows="5"></textarea>
+                                <label for="additionalServices">{{ i18n "budget" }}</label>
+                                <span class="text-muted pull-right">{{ i18n "budgetHelpText" }}</span>
+                                <textarea id="budget" class="form-control" name="budget" required rows="4"></textarea>
                             </div>
                         </div>
-
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <label for="additionalRequirements">{{ i18n "additionalRequirements" }}</label>
-                                <textarea id="additionalRequirements" class="form-control" name="additionalRequirements" required rows="5"></textarea>
-                            </div>
-                        </div>
-
                         <div class="col-sm-12">
                             <button type="submit" class="btn btn-template-primary"><i class="fa fa-paper-plane"></i>{{ i18n "signupButton" }}</button>
                             <a href="/pricing" class="btn btn-link pull-right"> Back to Pricing</button></a>

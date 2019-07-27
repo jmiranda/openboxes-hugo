@@ -100,7 +100,10 @@
   translation: "Helps us determines the proper size of instance; does not change the pricing"
 
 - id: additionalServices
-  translation: "Desired Services"
+  translation: "Services"
+
+- id: budget
+  translation: "Tell us about your budget"
 
 - id: additionalServicesHelpText
   translation: "Use CTRL to select multiple"
@@ -110,7 +113,7 @@
 
 
 - id: additionalRequirements
-  translation: "Describe your requirements"
+  translation: "Tell us about your goals"
 
 - id: package
   translation: "Hosting Plan"

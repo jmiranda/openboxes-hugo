@@ -74,10 +74,9 @@ paginate = 10
     weight = 30
 
 [[menu.main]]
-    name = "Request Quote"
+    name = "Signup"
     url  = "/signup/"
     weight = 40
-
 
 # Getting Started
 [[menu.main]]
