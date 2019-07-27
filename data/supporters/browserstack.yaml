@@ -1,0 +1,6 @@
+weight: 3
+name: "BrowserStack"
+image: "https://www.browserstack.com/images/layout/browserstack-logo-600x315.png"
+url: "http://browserstack.com/"
+
+

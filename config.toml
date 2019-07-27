@@ -285,6 +285,7 @@ paginate = 10
 
 [params.benefits]
     enable = true
+    title = "Benefits"
 
 [params.features]
     enable = true
@@ -313,20 +314,25 @@ paginate = 10
     schedule_link_url = "https://calendly.com/openboxes/demo"
     schedule_link_text = "Schedule a Demo"
 
-[params.clients]
+[params.users]
     enable = true
-    title = "Our Supporters"
-    subtitle = ""
+    title = "Featured Users"
+    subtitle = "The following organizations are currently using OpenBoxes for their healthcare supply chain needs."
 
 [params.partners]
     enable = true
-    title = "Our Partners"
-    subtitle = ""
+    title = "Implementation Partners"
+    subtitle = "The following organizations have provided open-source contributions, project management, implementations services and support to the OpenBoxes community. "
+
+[params.supporters]
+    enable = true
+    title = "Genorous Supporters"
+    subtitle = "Whether it's a free open-source license or discounted hosting, the following organizations have provided generous support to OpenBoxes throughout the years."
 
 
 [params.recent_posts]
     enable = true
-    title = "Recent news"
+    title = "Recent News"
     subtitle = ""
 
 
