@@ -64,19 +64,16 @@ paginate = 10
     weight = 15
 
 [[menu.main]]
-    name = "Pricing"
-    url  = "/pricing/"
+    name = "Demo"
+    url  = "https://demo.openboxes.com/openboxes"
     weight = 20
 
 [[menu.main]]
-    name = "Demo"
-    url  = "https://demo.openboxes.com/openboxes"
+    name = "Pricing"
+    url  = "/pricing/"
     weight = 30
 
-[[menu.main]]
-    name = "Signup"
-    url  = "/signup/"
-    weight = 40
+
 
 # Getting Started
 [[menu.main]]

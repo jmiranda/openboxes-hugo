@@ -99,8 +99,15 @@
 - id: sizeHelpText
   translation: "Helps us determines the proper size of instance; does not change the pricing"
 
+- id: basicServices
+  translation: "Basic Services"
+
 - id: additionalServices
-  translation: "Services"
+  translation: "Optional Services"
+
+- id: supportRequirements
+  translation: "Support Requirements"
+
 
 - id: budget
   translation: "Tell us about your budget"
@@ -112,13 +119,16 @@
   translation: "Tell us about your business"
 
 
-- id: additionalRequirements
+- id: goals
   translation: "Tell us about your goals"
 
 - id: package
   translation: "Hosting Plan"
 
 - id: signupButton
+  translation: "Signup"
+
+- id: quoteButton
   translation: "Request Quote"
 
 - id: name
