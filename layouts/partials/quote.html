@@ -14,6 +14,9 @@
                     Please provide as much details about your project as you can so that we can provide a cost estimate.</div>
 
                 <form class="signup-form" method="post" action="https://formspree.io/{{ .Site.Params.email }}">
+
+                    <input type="hidden" name="type" value="quote"/>
+
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="form-group">
@@ -216,43 +219,49 @@
                                         <h5>{{ i18n "basicServices" }}</h5>
                                         <div class="checkbox">
                                             <label for="cloud-hosting">
-                                                <input type="checkbox" id="cloud-hosting" name="additionalServices" value="cloud-hosting" />
+                                                <input type="checkbox" id="cloud-hosting" name="additionalServices" value="cloud-hosting" checked/>
                                                 Cloud Hosting
                                             </label>
                                         </div>
                                         <div class="checkbox">
                                             <label for="custom-domain">
-                                                <input type="checkbox" id="custom-domain" name="additionalServices" value="custom-domain" />
+                                                <input type="checkbox" id="custom-domain" name="additionalServices" value="custom-domain" checked/>
                                                 Custom Domain <span class="text-small">(*.openboxes.com)</span>
                                             </label>
                                         </div>
                                         <div class="checkbox">
                                             <label for="installation">
-                                                <input type="checkbox" id="installation" name="additionalServices" value="installation" />
+                                                <input type="checkbox" id="installation" name="additionalServices" value="installation" checked />
                                                 Installation
                                             </label>
                                         </div>
                                         <div class="checkbox">
                                             <label for="upgrades">
-                                                <input type="checkbox" id="upgrades" name="additionalServices" value="upgrades" />
+                                                <input type="checkbox" id="upgrades" name="additionalServices" value="upgrades" checked/>
                                                 Upgrades
                                             </label>
                                         </div>
                                         <div class="checkbox">
                                             <label for="monitoring">
-                                                <input type="checkbox" id="monitoring" name="additionalServices" value="monitoring" />
+                                                <input type="checkbox" id="monitoring" name="additionalServices" value="monitoring" checked/>
                                                 Monitoring
                                             </label>
                                         </div>
                                         <div class="checkbox">
                                             <label for="auto-backup">
-                                                <input type="checkbox" id="auto-backup" name="additionalServices" value="auto-backup" />
+                                                <input type="checkbox" id="auto-backup" name="additionalServices" value="auto-backup" checked/>
                                                 Automatic Backup
                                             </label>
                                         </div>
                                         <div class="checkbox">
+                                            <label for="email-notifications">
+                                                <input type="checkbox" id="email-notifications" name="additionalServices" value="email-notifications" checked/>
+                                                Email Notifications
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
                                             <label for="bugfixes">
-                                                <input type="checkbox" id="bugfixes" name="additionalServices" value="bugfixes" />
+                                                <input type="checkbox" id="bugfixes" name="additionalServices" value="bugfixes" checked/>
                                                 Priority Bug Fixes
                                             </label>
                                         </div>
@@ -260,40 +269,23 @@
                                     <div class="col-md-4">
                                         <h5>{{ i18n "additionalServices" }}</h5>
                                         <div class="checkbox">
-                                            <label for="on-premise-hosting">
-                                                <input type="checkbox" id="on-premise-hosting" name="additionalServices" value="on-premise-hosting"/>
-                                                On-Premise Hosting
+                                            <label for="demo">
+                                                <input type="checkbox" id="demo" name="additionalServices" value="demo"/>
+                                                Demo
+                                                <span class="text-small text-uppercase text-primary">Free</span>
                                             </label>
                                         </div>
-
+                                        <div class="checkbox">
+                                            <label for="cost-analysis">
+                                                <input type="checkbox" id="cost-analysis" name="additionalServices" value="cost-analysis"/>
+                                                Cost Analysis
+                                                <span class="text-small text-uppercase text-primary">Free</span>
+                                            </label>
+                                        </div>
                                         <div class="checkbox">
                                             <label for="custom-reports">
                                                 <input type="checkbox" id="custom-reports" name="additionalServices" value="custom-reports"/>
                                                 Custom Reports
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="development">
-                                                <input type="checkbox" id="development" name="additionalServices" value="development"/>
-                                                Development
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="integration">
-                                                <input type="checkbox" id="integration" name="additionalServices" value="integration"/>
-                                                Integration
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="implementation">
-                                                <input type="checkbox" id="implementation" name="additionalServices" value="implementation"/>
-                                                Implementation
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="training">
-                                                <input type="checkbox" id="training" name="additionalServices" value="training"/>
-                                                Training
                                             </label>
                                         </div>
                                         <div class="checkbox">
@@ -303,10 +295,33 @@
                                             </label>
                                         </div>
                                         <div class="checkbox">
-                                            <label for="demo-cost-analysis">
-                                                <input type="checkbox" id="demo-cost-analysis" name="additionalServices" value="demo-cost-analysis"/>
-                                                Demo & Cost Analysis
-                                                <span class="text-small text-uppercase text-primary">Free</span>
+                                            <label for="development">
+                                                <input type="checkbox" id="development" name="additionalServices" value="development"/>
+                                                Development
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="implementation">
+                                                <input type="checkbox" id="implementation" name="additionalServices" value="implementation"/>
+                                                Implementation
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="integration">
+                                                <input type="checkbox" id="integration" name="additionalServices" value="integration"/>
+                                                Integration
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="training">
+                                                <input type="checkbox" id="training" name="additionalServices" value="training"/>
+                                                Training
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="on-premise-hosting">
+                                                <input type="checkbox" id="on-premise-hosting" name="additionalServices" value="on-premise-hosting"/>
+                                                On-Premise
                                             </label>
                                         </div>
                                     </div>
