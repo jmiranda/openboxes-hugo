@@ -17,9 +17,9 @@ November 19, 2019
 
 ### **New Email Notification Feature**
 
-Administrators can now set up users to receive notification emails upon certain transactions or stock conditions. Users can elect to receive an email when a shipment ships, when a shipment is received, when items are about to expire, or when items are about to go out of stock. If you are interested in receiving notification emails, contact [openboxes@pih.org](mailto:openboxes@pih.org) and we will help you get set up.
+Administrators can now set up users to receive notification emails upon certain transactions or stock conditions. Users can elect to receive an email when a shipment ships, when a shipment is received, when items are about to expire, or when items are about to go out of stock. 
 
-### **Stock Card > Stock History** 
+### **Stock Card > Stock History**
 
 Stock history can now be collapsed by month and by year. This enables users to control what period of time they want to look at in detail, and minimizes scrolling.
 
