@@ -2,7 +2,6 @@
 banner = "/uploads/image001.jpg"
 categories = []
 date = 2019-11-19T06:00:00Z
-draft = true
 tags = []
 title = "OpenBoxes 0.8.10 has been released"
 
