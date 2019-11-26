@@ -6,8 +6,6 @@ tags = []
 title = "OpenBoxes 0.8.10 has been released"
 
 +++
-# OpenBoxes 0.8.10 has been released
-
 This release includes several improvements to the Stock Card (Stock History, Consumption) as well as improvements to Document Template and reporting features.
 
 <!--more-->
@@ -35,8 +33,8 @@ Stock history can now be collapsed by month and by year. This enables users to c
 ### Document Templates
 
 1. There is a new version of the COD and Packing List document that now includes an improved packing list AND a commercial invoice.
-2. The packing list excel download has been updated to remove several unnecessary columns and make formatting more clear. 
-3. The pick list has been modified to be easier to read and to provide more space for written comments. 
+2. The packing list excel download has been updated to remove several unnecessary columns and make formatting more clear.
+3. The pick list has been modified to be easier to read and to provide more space for written comments.
 
 ### Stock Movements
 
