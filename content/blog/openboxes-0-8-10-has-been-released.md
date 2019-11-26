@@ -60,7 +60,7 @@ The Bin Location report now shows the unit price and total cost in both HTML and
 
 Administrators can now set up users to receive notification emails upon certain transactions or stock conditions. Users can elect to receive an email when a shipment is shipped or received, as well as when items are about to expire, or when items are about to go out of stock.
 
-![](/uploads/_OpenBoxes  Shipment 780XUU has been shipped - justin openboxes com - OpenBoxes Mail.png "Shipment Notifications")
+![](/uploads/_OpenBoxes  Shipment 780XUU has been shipped - justin openboxes com - OpenBoxes Mail.resized.png)
 
 ### Miscellaneous Bug Fixes
 
