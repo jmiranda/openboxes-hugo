@@ -17,3 +17,5 @@ fields:
 - type: file
   name: banner
   label: banner
+pages:
+- content/blog/openboxes-0-8-10-has-been-released.md
