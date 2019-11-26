@@ -8,7 +8,7 @@ title = "OpenBoxes 0.8.10 has been released"
 +++
 # OpenBoxes 0.8.10 has been released
 
-This release includes several improvements to the Stock Card (Stock History, Consumption) as well as improvements to Document Templates and reports.
+This release includes several improvements to the Stock Card (Stock History, Consumption) as well as improvements to Document Template and reporting features.
 
 <!--more-->
 
