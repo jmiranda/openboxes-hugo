@@ -18,13 +18,11 @@ November 19, 2019
 
 ## Release Notes
 
-### New Email Notification Feature
-
-Administrators can now set up users to receive notification emails upon certain transactions or stock conditions. Users can elect to receive an email when a shipment is shipped or received, as well as when items are about to expire, or when items are about to go out of stock. 
-
 ### Stock Card > Stock History
 
 Stock history can now be collapsed by month and by year. This enables users to control what period of time they want to look at in detail, and minimizes scrolling.
+
+![](/uploads/image001-1.jpg)
 
 ### Stock Card > Consumption
 
@@ -32,11 +30,13 @@ Stock history can now be collapsed by month and by year. This enables users to c
 2. **Consumption tab now more configurable:** By clicking on the “configure” tab, the user can set a time period for the consumption data they want to see. They can also include or exclude certain reason codes.
 3. **Consumption month based on date of issue, not date of request:** Previously, the tab was summarizing consumption by the month of the request, not the month the stock was actually issued. This was confusing because it didn’t match up to the stock history tab. Now, the requests are summarized by issue date, but you can still see the request date in the details tab.
 
+![](/uploads/image002.jpg)
+
 ### Document Templates
 
-1. There is a new version of the COD and Packing List document that now includes an improved packing list AND a commercial invoice. See an example document attached.
-2. The packing list excel download has been updated to remove several unnecessary columns and make formatting more clear. See an example attached.
-3. The pick list has been modified to be easier to read and to provide more space for written comments. See an example attached.
+1. There is a new version of the COD and Packing List document that now includes an improved packing list AND a commercial invoice.
+2. The packing list excel download has been updated to remove several unnecessary columns and make formatting more clear. 
+3. The pick list has been modified to be easier to read and to provide more space for written comments. 
 
 ### Stock Movements
 
@@ -52,9 +52,17 @@ Stock history can now be collapsed by month and by year. This enables users to c
 
 The consumption report was showing expired and damaged transactions as well as transfer outs, which was creating confusion. As a temporary solution, we have implemented a transaction type filter on the report. The filter defaults to only showing transfer outs. If users want to see expired or damaged, they need to add those transaction type to the filter. Please note that this is only temporary – we will debut a new version of the consumption report soon.
 
+![](/uploads/image005.png)
+
 ### Bin Location Report
 
 The Bin Location report now shows the unit price and total cost in both HTML and CSV. Note: This can only be seen by users with permission to see financial data.
+
+### New Email Notification Feature
+
+Administrators can now set up users to receive notification emails upon certain transactions or stock conditions. Users can elect to receive an email when a shipment is shipped or received, as well as when items are about to expire, or when items are about to go out of stock.
+
+![](/uploads/_OpenBoxes  Shipment 780XUU has been shipped - justin openboxes com - OpenBoxes Mail.png "Shipment Notifications")
 
 ### Miscellaneous Bug Fixes
 
