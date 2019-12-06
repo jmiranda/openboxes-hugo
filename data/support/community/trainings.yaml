@@ -1,0 +1,6 @@
+weight: 12
+name: "Trainings"
+icon: "fa fa-graduation-cap"
+description: "Schedule a training session with us."
+link: "https://calendly.com/openboxes/demo"
+linkName: "Schedule a Training"

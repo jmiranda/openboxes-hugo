@@ -1,0 +1,6 @@
+weight: 4
+name: "Slack"
+icon: "fa fa-slack"
+description: "Discuss your questions in real-time with fellow developers and users."
+link: "http://slack-signup.openboxes.com"
+linkName: "Join Slack"

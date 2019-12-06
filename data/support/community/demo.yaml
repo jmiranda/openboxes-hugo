@@ -1,0 +1,6 @@
+weight: 10
+name: "Demos"
+icon: "fa fa-television"
+description: "Schedule a demo with us."
+link: "https://calendly.com/openboxes/demo"
+linkName: "Schedule a Demo"

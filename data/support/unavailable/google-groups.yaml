@@ -1,0 +1,6 @@
+weight: 7
+name: "Google Group"
+icon: "fa fa-google"
+description: "This is a moderated, public forum for developers and users to discuss issues related to OpenBoxes."
+link: "https://groups.google.com/forum/#!forum/openboxes"
+linkName: "Ask a Question"

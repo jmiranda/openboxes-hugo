@@ -1,0 +1,6 @@
+weight: 3
+name: "Tutorials"
+icon: "fa fa-video-camera"
+description: "Watch recorded screencasts of common features and workflows."
+link: "https://openboxes.com/tutorials"
+linkName: "Watch Tutorials"

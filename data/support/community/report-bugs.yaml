@@ -1,0 +1,6 @@
+weight: 5
+name: "Report Bugs"
+icon: "fa fa-bug"
+description: "Discovered a bug? Search existing bugs in our bug tracker. If yours has not been reported, take a screenshot and create a new issue on GitHub."
+link: "https://github.com/openboxes/openboxes/issues"
+linkName: "Report a Bug"
