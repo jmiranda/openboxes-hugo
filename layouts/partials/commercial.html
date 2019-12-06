@@ -3,7 +3,7 @@
 {{ if gt (len .Site.Data.support.commercial) 0 }}
 <section>
     <div class="container">
-        <p class="lead">Commercial support channels are available to customers who have subscribed to one of our commercial <a href="/pricing/#support">support plans</a>.</p>
+        <p class="lead">Commercial support channels are available to customers who have subscribed to one of our commercial <a href="/pricing">support plans</a>.</p>
 
         {{ range $index, $element := sort .Site.Data.support.commercial "weight" }}
         {{ if eq (mod $index 3) 0 }}
