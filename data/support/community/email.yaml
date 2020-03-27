@@ -1,7 +1,7 @@
 weight: 2
-name: "Email"
+name: "discuss@openboxes.com"
 icon: "fa fa-envelope"
 description:
   Email us with your questions. Your questions will be posted to our public forum.
 link: "mailto:discuss@openboxes.com"
-linkName: "Email Us"
+linkName: "Ask a Question"

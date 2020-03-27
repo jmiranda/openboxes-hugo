@@ -17,8 +17,8 @@
                         <div class="icon">
                             <i class="{{ .icon }}"></i>
                         </div>
-                        <h4>{{ $element.name }}</h4>
-                        <p>{{ $element.description | markdownify }}</p>
+                        <h4 class="">{{ $element.name }}</h4>
+                        <p style="height: 60px;">{{ $element.description | markdownify }}</p>
                         <a href="{{ $element.link }}" class="btn btn-block btn-template-main" target="_blank">{{ $element.linkName }}</a>
                     </div>
 

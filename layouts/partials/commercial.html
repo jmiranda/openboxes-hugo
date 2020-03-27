@@ -3,12 +3,15 @@
 {{ if gt (len .Site.Data.support.commercial) 0 }}
 <section>
     <div class="container">
-        <p class="lead">Commercial support channels are available to customers who have subscribed to one of our commercial <a href="/pricing">support plans</a>.</p>
+        <p class="lead">Commercial support channels are available to customers who have subscribed to one of our
+            support plans on our pricing page.
+            <a href="/pricing#support-plans">See supports plans & pricing details.</a>
+        </p>
 
         {{ range $index, $element := sort .Site.Data.support.commercial "weight" }}
         {{ if eq (mod $index 3) 0 }}
         <div class="col-md-12">
-            <div class="row d-flex align-items-stretch same-height">
+            <div class="row d-flex align-items-stretch">
                 {{ end }}
                 <div class="col-md-4">
                     <div class="box-simple box-white same-height">
@@ -16,7 +19,7 @@
                             <i class="{{ .icon }}"></i>
                         </div>
                         <h4>{{ $element.name }}</h4>
-                        <p>{{ $element.description | markdownify }}</p>
+                        <div class="box-image-text">{{ $element.description | markdownify }}</div>
                     </div>
                 </div>
                 {{ if or (eq (mod $index 3) 2) (eq $index (sub (len $.Site.Data.support.commercial) 1 )) }}

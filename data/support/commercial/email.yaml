@@ -2,4 +2,5 @@ weight: 2
 name: "Email"
 icon: "fa fa-envelope"
 description:
-  Email our support team <br/><a href="mailto:support@openboxes.com">support@openboxes.com</a>
+  <p class="lead">Email our support team</p>
+  <a href="mailto:support@openboxes.com" class="btn btn-primary btn-block" target="_blank">support@openboxes.com</a>

@@ -1,4 +1,6 @@
 weight: 3
 name: "Chat"
 icon: "fa fa-comment"
-description: Start a discussion with a <br/><a href="javascript:$zopim.livechat.window.show();">live support agent</a>
+description:
+  <p class="lead">Start a chat</p>
+  <a href="javascript:$zopim.livechat.window.show();" class="btn btn-primary btn-block">Start Chat</a>

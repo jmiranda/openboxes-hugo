@@ -2,6 +2,8 @@ weight: 3
 name: "Phone"
 icon: "fa fa-phone"
 description:
-  Call our support line at <br/><a href="tel:+16174750619">+1 (617) 475-0619</a>
+
+  <p class="lead">Call us +1 (617)475-0619</p>
+  <a href="tel:+16174750619" class="btn btn-primary btn-block" target="_blank">Call Us</a>
 link: ""
 linkName: "(617) 475-0619"

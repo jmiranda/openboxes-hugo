@@ -1,27 +1,47 @@
 
+<!--<div class="container">-->
+    <!--<div class="row">-->
+        <!--<div class="col-md-12">-->
+            <!--<ul class="nav nav-pills">-->
+                <!--<li class="nav-item active">-->
+                    <!--<a id="community-tab" data-toggle="pill" href="#community" role="tab">Community</a>-->
+                <!--</li>-->
+                <!--<li class="nav-item">-->
+                    <!--<a id="commercial-tab" data-toggle="pill"  href="#commercial">Commercial</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<!--<div id="pulls-tabContent" class="tab-content">-->
+    <!--<div id="community" class="tab-pane fade in active">-->
+        <!--{{ partial "community.html" . }}-->
+    <!--</div>-->
+    <!--<div id="commercial" class="tab-pane fade">-->
+        <!--{{ partial "commercial.html" . }}-->
+    <!--</div>-->
+<!--</div>-->
+
 <div class="container">
+    <a name="community"></a>
     <div class="row">
         <div class="col-md-12">
-            <ul class="nav nav-pills">
-                <li class="nav-item active">
-                    <a id="community-tab" data-toggle="pill" href="#community" role="tab">Community</a>
-                </li>
-                <li class="nav-item">
-                    <a id="commercial-tab" data-toggle="pill"  href="#commercial">Commercial</a>
-                </li>
-            </ul>
+            <div class="heading">
+                <h3>Community</h3>
+            </div>
+            {{ partial "community.html" . }}
         </div>
     </div>
-</div>
-
-<div id="pulls-tabContent" class="tab-content">
-    <div id="community" class="tab-pane fade in active">
-        {{ partial "community.html" . }}
+    <a name="professional"></a>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="heading">
+                <h3>Professional</h3>
+            </div>
+            {{ partial "commercial.html" . }}
+        </div>
     </div>
-    <div id="commercial" class="tab-pane fade">
-        {{ partial "commercial.html" . }}
-    </div>
-</div>
 
 
 
