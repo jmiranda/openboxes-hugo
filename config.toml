@@ -169,7 +169,7 @@ paginate = 10
 [[menu.social]]
     weight = 1
     name = "Support"
-    url = "/support"
+    url = "/community"
     pre = "<i class='fa fa-2x fa-phone'></i>"
 
 [[menu.social]]
@@ -184,7 +184,7 @@ paginate = 10
 [[menu.topbar]]
     weight = 2
     name = "Support"
-    url = "/support"
+    url = "/community"
     pre = "<i class='fa fa-1x fa-support'></i>"
 
 
