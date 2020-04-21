@@ -79,6 +79,11 @@ paginate = 10
     url  = "/roadmap"
     weight = 50
 
+[[menu.main]]
+    identifier = "tutorials"
+    name = "Tutorials"
+    url  = "/tutorials"
+    weight = 55
 
 # Getting Started
 [[menu.main]]
