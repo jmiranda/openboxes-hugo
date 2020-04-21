@@ -1,7 +1,6 @@
 weight: 2
-name: "Document Templates"
+name: "How to Create a Shipping Template"
 category: "Document Templates"
-
 icon: "fa fa-file"
 description: "Generate shipping documents with custom letterhead and content using Microsoft Document as a template."
 url: "https://www.youtube-nocookie.com/embed/whjvEZnWWLE?rel=0"

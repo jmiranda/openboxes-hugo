@@ -8,83 +8,116 @@
 {{ end }}
 
 {{ $categories := slice }}
-{{ range .Site.Data.tutorials }}
-{{ $categories = $categories | append .category }}
+{{ range $index, $category := sort .Site.Data.categories "weight" }}
+{{ $categories = $categories | append .name }}
 {{ end }}
-{{ $categories = uniq $categories | sort }}
+{{ $categories = $categories }}
 
 
 <section>
     <div class="container">
 
         <div class="row">
-            <nav class="col-xs-3 bs-docs-sidebar">
-                <ul id="sidebar" class="nav nav-stacked fixed">
-                    {{ range $index, $element := sort $categories }}
-                    <li><a href="#category-{{ $index }}">{{ . | safeHTML }}</a></li>
-                    {{ end }}
-                    <li>
-                    </li>
-                </ul>
-            </nav>
+            <div class="col-md-2">
+                <nav class="bs-docs-sidebar">
+                    <ul id="sidebar" class="nav nav-stacked fixed">
+                        {{ range $index, $element := sort .Site.Data.categories "weight" }}
+                        <li><a href="#category-{{ $index }}">{{ .name | safeHTML }}</a></li>
+                        {{ end }}
+                    </ul>
+                </nav>
+            </div>
 
-            <div class="col-md-9">
-                {{ range $index, $category := sort $categories }}
-                    <section id="category-{{ $index }}" class="post">
-                        <h3 class="with-border">{{ . }}</h3>
-                        <div class="col-md-12" >
-                            <div class="row d-flex align-items-stretch">
-                            {{ range $index, $element := sort (where $tutorials "category" $category) "published" "desc"}}
-                                <section class="post">
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <a class="btn video-btn" data-toggle="modal" data-src="{{ $element.url }}" data-target="#myModal">
-                                                <img src="{{ $element.thumbnail }}" class="img img-responsive"/>
-                                            </a>
-                                        </div>
-                                        <div class="col-md-9">
-                                            <div class="row">
-                                                <div class="col-md-8">
-                                                    <h4><i class="{{ .icon }}"></i> {{ $element.name }}
-                                                    </h4>
-                                                    <p class="small">
-                                                        By <a href="#">{{ $element.author }}</a>
-                                                    </p>
+            <div class="col-md-7">
+                {{ range $index, $category := sort .Site.Data.categories "weight" }}
+                    {{ $category = $category.name }}
+                    <section id="category-{{ $index }}">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="heading">
+                                    <h4 style="color: grey; border-bottom: 1px solid lightgrey; width: 100%">{{ .name }}</h4>
+                                </div>
+                                <div class="row">
+                                {{ range $index, $element := sort (where $tutorials "category" $category) "weight" }}
+                                    <section class="post">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <a class="btn video-btn" data-toggle="modal" data-src="{{ $element.url }}" data-target="#myModal">
+                                                    <img src="{{ $element.thumbnail }}" class="img img-responsive"/>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <h5><i class="{{ .icon }}"></i> {{ $element.name }}</h5>
+                                                        <p class="small">
+                                                            By <a href="#">{{ $element.author }}</a>
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                                <div class="col-md-4">
-                                                    <div style="margin-top: 10px" class="text-right">
-                                                        <p class="author-category">
-                                                            <i class="fa fa-calendar-o"></i> {{ dateFormat "Monday, Jan 2, 2006" $element.published }}
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <p class="intro">{{ $element.description | markdownify }}</p>
+                                                        <p class="text-left">
+                                                            <!-- Button trigger modal -->
+                                                            <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="{{ $element.url }}" data-target="#myModal">
+                                                                <i class="fa fa-external-link"></i>
+                                                                {{ if $element.linkName }}
+                                                                    {{ $element.linkName }}
+                                                                {{ else }}
+                                                                    Watch Video
+                                                                {{ end }}
+                                                            </button>
                                                         </p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <p class="intro">{{ $element.description | markdownify }}</p>
-                                                    <p class="text-left">
-                                                        <!-- Button trigger modal -->
-                                                        <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="{{ $element.url }}" data-target="#myModal">
-                                                            <i class="fa fa-external-link"></i>
-                                                            {{ if $element.linkName }}
-                                                                {{ $element.linkName }}
-                                                            {{ else }}
-                                                                Watch Video
-                                                            {{ end }}
-                                                        </button>
-                                                    </p>
-                                                </div>
-                                            </div>
                                         </div>
-                                    </div>
-                                </section>
-                            {{ end }}
+                                    </section>
+                                    {{ end }}
+                                </div>
                             </div>
                         </div>
                     </section>
                 {{ end }}
 
             </div>
+            <div class="col-md-3">
+                <div class="box-white box-simple">
+                    <h4>Tutorial Request</h4>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>Let us know if you'd like to see a tutorial for a specific topic. Provide your email
+                                so we can contact you when the tutorial is ready.</p>
+                        </div>
+                    </div>
+                    <form class="tutorials-form" method="post" action="https://formspree.io/support@openboxes.com">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" id="email" required placeholder="{{ i18n "email" }}">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                                    <textarea id="message" class="form-control" name="message" required
+                                                              placeholder="Describe a feature that you'd like to see covered."></textarea>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 text-center">
+                                <button type="submit" class="btn btn-template-primary btn-block"><i class="fa fa-paper-plane"></i> Submit Request</button>
+
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+
+
         </div>
 
     </div>
