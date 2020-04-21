@@ -1,5 +1,6 @@
 weight: 5
 name: "Create a stock list"
+category: "Stock Lists"
 icon: "fa fa-list-alt"
 description: ""
 url: "https://www.useloom.com/embed/a5b27f51a88145c2be2543cd09cafc4a"

@@ -1,5 +1,6 @@
 weight: 9
 name: "View and Print Stock Lists"
+category: "Stock Lists"
 icon: "fa fa-print"
 description: ""
 url: "https://www.loom.com/embed/6214be59145d484a92626baddf46c58e"

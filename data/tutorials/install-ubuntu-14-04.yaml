@@ -1,9 +1,10 @@
-weight: 1
+weight: 2
 name: "Install OpenBoxes on Ubuntu 14.04"
+category: "Installation"
 icon: "fa fa-laptop"
 description: "This video demonstrates the extreme lengths to which you'll need to go in order to install this software on an almost extinct operating system."
 url: "https://www.youtube.com/embed/TGC16JvbxiY"
-thumbnail: "https://i.ytimg.com/vi/TGC16JvbxiY/hqdefault.jpg"
+thumbnail: "https://betanews.com/wp-content/uploads/2018/01/ubuntu-logo.jpg"
 author: Justin Miranda
 published: 2016-10-27T00:00:00-05:00
 duration: 24m 24s

@@ -1,5 +1,6 @@
 weight: 2
 name: "Bin Locations"
+category: "Master Data"
 icon: "fa fa-archive"
 description: "Quick introduction to the Bin Location feature (somewhat outdated as Bin Location support has been added to almost all inventory pages)"
 url: "https://www.youtube-nocookie.com/embed/koaGx6FhHbs?rel=0"

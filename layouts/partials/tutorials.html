@@ -2,79 +2,91 @@
 {{ if .Site.Params.tutorials.enable }}
 {{ if gt (len .Site.Data.tutorials) 0 }}
 
+{{ $tutorials := slice }}
+{{ range .Site.Data.tutorials }}
+{{ $tutorials = $tutorials | append . }}
+{{ end }}
+
+{{ $categories := slice }}
+{{ range .Site.Data.tutorials }}
+{{ $categories = $categories | append .category }}
+{{ end }}
+{{ $categories = uniq $categories | sort }}
+
+
 <section>
     <div class="container">
 
-
         <div class="row">
-            <div class="col-md-9"  id="blog-listing-medium">
-                {{ range $index, $element := sort .Site.Data.tutorials "weight" }}
-                    <section class="post">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a class="btn video-btn" data-toggle="modal" data-src="{{ $element.url }}" data-target="#myModal">
-                                    <img src="{{ $element.thumbnail }}" class="img img-responsive"/>
-                                </a>
-                            </div>
-                            <div class="col-md-8">
-                                <h3><i class="{{ .icon }}"></i> {{ $element.name }}</h3>
-                                <div class="clearfix">
-                                    <p class="author-category">
-                                        By <a href="#">{{ $element.author }}</a>
-                                    </p>
-                                    <p class="date-comments">
-                                        <i class="fa fa-calendar-o"></i> {{ dateFormat "Monday, Jan 2, 2006" $element.published }}
-                                    </p>
-                                </div>
-                                <p class="intro">{{ $element.description | markdownify }}</p>
-                                <p class="text-left">
-                                    <!-- Button trigger modal -->
-                                    <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="{{ $element.url }}" data-target="#myModal">
-                                        <i class="fa fa-film"></i> Watch Video
-                                    </button>
-                                </p>
+            <nav class="col-xs-3 bs-docs-sidebar">
+                <ul id="sidebar" class="nav nav-stacked fixed">
+                    {{ range $index, $element := sort $categories }}
+                    <li><a href="#category-{{ $index }}">{{ . | safeHTML }}</a></li>
+                    {{ end }}
+                    <li>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="col-md-9">
+                {{ range $index, $category := sort $categories }}
+                    <section id="category-{{ $index }}" class="post">
+                        <h3 class="with-border">{{ . }}</h3>
+                        <div class="col-md-12" >
+                            <div class="row d-flex align-items-stretch">
+                            {{ range $index, $element := sort (where $tutorials "category" $category) "published" "desc"}}
+                                <section class="post">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <a class="btn video-btn" data-toggle="modal" data-src="{{ $element.url }}" data-target="#myModal">
+                                                <img src="{{ $element.thumbnail }}" class="img img-responsive"/>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <h4><i class="{{ .icon }}"></i> {{ $element.name }}
+                                                    </h4>
+                                                    <p class="small">
+                                                        By <a href="#">{{ $element.author }}</a>
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div style="margin-top: 10px" class="text-right">
+                                                        <p class="author-category">
+                                                            <i class="fa fa-calendar-o"></i> {{ dateFormat "Monday, Jan 2, 2006" $element.published }}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <p class="intro">{{ $element.description | markdownify }}</p>
+                                                    <p class="text-left">
+                                                        <!-- Button trigger modal -->
+                                                        <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="{{ $element.url }}" data-target="#myModal">
+                                                            <i class="fa fa-external-link"></i>
+                                                            {{ if $element.linkName }}
+                                                                {{ $element.linkName }}
+                                                            {{ else }}
+                                                                Watch Video
+                                                            {{ end }}
+                                                        </button>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            {{ end }}
                             </div>
                         </div>
                     </section>
                 {{ end }}
-            </div>
-            <div class="col-md-3">
 
-                <div class="box-simple box-white">
-                    <div class="icon">
-                        <i class="fa fa-question"></i>
-                    </div>
-                    <h4>Ahh, what about ...?</h4>
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p>Let us know if you'd like to see a tutorial for a specific topic. Provide your email
-                                so we can contact you when the tutorial is ready.</p>
-                        </div>
-                    </div>
-                    <form class="tutorials-form" method="post" action="https://formspree.io/support@openboxes.com">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" name="email" id="email" required placeholder="{{ i18n "email" }}">
-                                </div>
-                            </div>
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <textarea id="message" class="form-control" name="message" required placeholder="Describe a feature that you'd like to see covered."></textarea>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-12 text-center">
-                                <button type="submit" class="btn btn-template-primary btn-block"><i class="fa fa-paper-plane"></i> Submit Topic</button>
-
-                            </div>
-                        </div>
-
-                    </form>
-                </div>
             </div>
         </div>
+
     </div>
 </section>
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -96,6 +108,10 @@
         </div>
     </div>
 </div>
+
+
+</body>
+
 {{ end }}
 {{ end }}
 {{ end }}

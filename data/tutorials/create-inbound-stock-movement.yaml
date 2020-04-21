@@ -1,5 +1,6 @@
 weight: 7
 name: "Create an Inbound Stock Movement"
+category: "Stock Movements"
 icon: "fa fa-ship"
 description: ""
 url: "https://www.useloom.com/embed/7b8305da64044faa95a4d098b8790b51"

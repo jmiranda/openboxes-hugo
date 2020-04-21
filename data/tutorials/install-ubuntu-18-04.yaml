@@ -1,0 +1,11 @@
+weight: 0
+name: "Install OpenBoxes on Ubuntu 18.04"
+category: "Installation"
+icon: "fa fa-laptop"
+description: "This video does not exist yet, so this tutorial links to the installation documentation for Ubuntu 18.04"
+url: "https://docs.openboxes.com/en/develop/installation/ubuntu1804/"
+thumbnail: "https://betanews.com/wp-content/uploads/2018/01/ubuntu-logo.jpg"
+author: Justin Miranda
+published: 2020-05-01T00:00:00-05:00
+duration: 0m 0s
+linkName: Read Docs

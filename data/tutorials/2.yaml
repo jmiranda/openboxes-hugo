@@ -1,5 +1,6 @@
 weight: 2
 name: "Import Shipment Items"
+category: "Data Import"
 icon: "fa fa-truck"
 description: "Demonstrates the ability to import shipment items (including a recipient for each item)."
 url: "https://www.youtube-nocookie.com/embed/6K2cesri2yE?rel=0"

@@ -1,0 +1,11 @@
+weight: 2
+name: "Configure OpenBoxes"
+category: "Configuration"
+icon: "fa fa-gear"
+description: "Official configuration guide for OpenBoxes."
+url: "https://docs.openboxes.com/en/develop/configuration/"
+thumbnail: "https://avatars2.githubusercontent.com/u/5391464?s=400&v=4"
+author: Justin Miranda
+published: 2020-04-21T00:00:00-05:00
+duration: 0m 0s
+linkName: Read Docs

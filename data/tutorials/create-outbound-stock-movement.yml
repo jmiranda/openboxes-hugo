@@ -1,5 +1,6 @@
 weight: 10
 name: "Create an Outbound Stock Movement"
+category: "Stock Movements"
 icon: "fa fa-plus"
 description: ""
 url: "https://www.loom.com/embed/0b549d1724504edeb4f5ad8a4943508c"
