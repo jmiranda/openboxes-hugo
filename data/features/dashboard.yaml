@@ -13,7 +13,6 @@ items:
 - Product tags
 - Recent activities
 screenshots:
-- image: ../img/screenshots/dashboard/stock-value.png
 - image: ../img/screenshots/dashboard/inventory-summary.png
 - image: ../img/screenshots/dashboard/bin-location-summary.png
 - image: ../img/screenshots/dashboard/expiration-summary.png
@@ -22,3 +21,5 @@ screenshots:
 - image: ../img/screenshots/dashboard/product-tags.png
 - image: ../img/screenshots/dashboard/recent-activity.png
 - image: ../img/screenshots/dashboard/dashboard.png
+- image: ../img/screenshots/dashboard/stock-value-summary.png
+- image: ../img/screenshots/dashboard/stock-value-details.png

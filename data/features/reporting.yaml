@@ -5,17 +5,25 @@ icon: fa fa-bar-chart
 description: "Supports utilization and request (demand) tracking; Includes out-of-the-box
   reporting features for planning and warehouse management; Customized reports and
   integration with other software can be developed \n"
+items:
+  - Dashboard Indicators
+  - Consumption Report
+  - Stockout Report
+  - Expiration Report
+  - Transaction Report
+  - Stock Analytics
+  - Quantity On Hand Report
 screenshots:
-- image: ../img/screenshots/reporting/consumption.png
-- image: ../img/screenshots/reporting/stockout-items.png
-- image: ../img/screenshots/reporting/expired-stock.png
-- image: ../img/screenshots/reporting/expiring-stock.png
-- image: ../img/screenshots/reporting/monthly-consumption-data.png
-- image: ../img/screenshots/reporting/monthly-consumption-data-details.png
-- image: ../img/screenshots/reporting/stock-analytics.png
-- image: ../img/screenshots/reporting/stock-analytics-2.png
-- image: ../img/screenshots/reporting/baseline-qoh-report.png
-- image: ../img/screenshots/dashboard/dashboard.png
+  - image: ../img/screenshots/dashboard/dashboard.png
+  - image: ../img/screenshots/reporting/consumption.png
+  - image: ../img/screenshots/reporting/stockout-items.png
+  - image: ../img/screenshots/reporting/expired-stock.png
+  - image: ../img/screenshots/reporting/expiring-stock.png
+  - image: ../img/screenshots/reporting/monthly-consumption-data.png
+  - image: ../img/screenshots/reporting/monthly-consumption-data-details.png
+  - image: ../img/screenshots/reporting/stock-analytics.png
+  - image: ../img/screenshots/reporting/stock-analytics-2.png
+  - image: ../img/screenshots/reporting/baseline-qoh-report.png
 
 
 

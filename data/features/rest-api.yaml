@@ -1,0 +1,9 @@
+---
+weight: 0
+name: REST API
+icon: fa fa-code
+description: Build your own mobile app and integrate with third-party systems using our REST API.
+items:
+  - Check out our [REST API docs](https://docs.openboxes.com/en/latest/api-guide/) for more information.
+screenshots:
+  - image: ../img/screenshots/rest-api/product-list.png

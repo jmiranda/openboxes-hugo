@@ -9,19 +9,20 @@
 
             {{ if eq (mod $index 2) 0 }}
                 <div class="col-md-12">
+
                     <div class="row">
-
                         <div class="container">
-
+                            <h3 class="text-center"><i class="{{ .icon }}"></i> {{ $element.name }}</h3>
+                            <p class="lead text-center">{{ $element.description | markdownify }}</p>
                             <div class="col-md-6">
-                                <h3 class="text-center"><i class="{{ .icon }}"></i> {{ $element.name }}</h3>
-                                <p class="lead">{{ $element.description | markdownify }}</p>
+                                <ul class="list-group-flush">
                                 {{ range $element.items }}
-                                <p> &bull; {{ . }}</p>
+                                <li class="list-group-item">{{ . | markdownify }}</li>
                                 {{ end }}
+                                </ul>
                             </div>
                             <div class="col-md-6">
-                                <ul class="owl-carousel screenshots" style="margin-top: 25px">
+                                <ul class="owl-carousel screenshots">
                                     {{ range $element.screenshots }}
                                     <li class="item" title="{{ .name }}">
                                         {{ if .url }}
@@ -48,8 +49,10 @@
 
                         <div class="container">
 
+                            <h3 class="text-center"><i class="{{ .icon }}"></i> {{ $element.name }}</h3>
+                            <p class="lead text-center">{{ $element.description | markdownify }}</p>
                             <div class="col-md-6">
-                                <ul class="owl-carousel screenshots" style="margin-top: 50px">
+                                <ul class="owl-carousel screenshots">
                                     {{ range $element.screenshots }}
                                     <li class="item" title="{{ .name }}">
                                         {{ if .url }}
@@ -66,11 +69,11 @@
                                 </ul>
                             </div>
                             <div class="col-md-6">
-                                <h3 class="text-center"><i class="{{ .icon }}"></i> {{ $element.name }}</h3>
-                                <p class="lead">{{ $element.description | markdownify }}</p>
+                                <ul class="list-group">
                                 {{ range $element.items }}
-                                <p> &bull; {{ . }}</p>
+                                <li class="list-group-item">{{ . | markdownify }}</li>
                                 {{ end }}
+                                </ul>
                             </div>
                         </div>
                     </div>

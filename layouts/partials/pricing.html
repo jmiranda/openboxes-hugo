@@ -1,495 +1,470 @@
-
-
-<a name="server-plans"></a>
-
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
-            <div class="pull-right">
-                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
-                    <input type="hidden" name="cmd" value="_s-xclick">
-                    <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
-                    <input type="submit" class="btn btn-template-primary btn-large" border="0" name="submit" value="View Cart" alt="PayPal - The safer, easier way to pay online!">
-                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                </form>
-            </div>
-            <div class="heading">
-                <h3>Server Plans</h3>
-            </div>
-            <section>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="row packages">
-                            <div class="col-md-4">
-                                <div class="package">
-                                    <div class="package-header light-gray">
-                                        <div class="content">
-                                            <h5>Self-Hosted</h5>
+
+        <div class="col-md-2">
+
+            <nav class="bs-docs-sidebar">
+                <ul id="sidebar" class="nav nav-stacked fixed">
+                    <li><a href="#server-plans">Server Plans</a></li>
+                    <li><a href="#support-plans">Support Plans</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div class="col-md-10">
+
+
+            <div class="row">
+
+                <a name="server-plans"></a>
+                <div class="col-md-12">
+                    <div class="pull-right">
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+                            <input type="submit" class="btn btn-template-primary btn-large" name="submit" value="View Cart" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                    </div>
+                    <div class="heading">
+                        <h3>Server Plans</h3>
+                    </div>
+                    <section>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row packages">
+                                    <div class="col-md-4">
+                                        <div class="package">
+                                            <div class="package-header light-gray">
+                                                <div class="content">
+                                                    <h5>Self-Hosted</h5>
+                                                </div>
+                                            </div>
+                                            <div class="price-container d-flex align-items-end justify-content-center">
+                                                <div class="h2">
+                                                    FREE<sup>*</sup>
+                                                </div>
+                                            </div>
+                                            <ul class="list-unstyled">
+                                                <li class="text-muted"><i class="fa fa-circle-o"></i> Cloud Hosted</li>
+                                                <li class="text-muted"><i class="fa fa-circle-o"></i> On-Premise</li>
+                                                <li class="text-primary"><i class="fa fa-plus-circle"></i> Installation</li>
+                                                <li class="text-primary"><i class="fa fa-plus-circle"></i> Upgrades</li>
+                                                <li class="text-muted"><i class="fa fa-circle-o"></i> Monitoring</li>
+                                                <li class="text-muted"><i class="fa fa-circle-o"></i> Auto Backup</li>
+                                                <li class="text-primary"><i class="fa fa-plus-circle"></i> Bug Fixes</li>
+                                                <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Implementation</li>-->
+                                                <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Configuration</li>-->
+                                                <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Custom Reports</li>-->
+                                                <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Custom Development</li>-->
+                                                <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Integration</li>-->
+                                                <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Training</li>-->
+                                                <li class="text-success"><i class="fa fa-check-circle"></i> Community Support</li>
+                                                <li class="text-success"><i class="fa fa-check-circle"></i> Forum</li>
+                                                <li>
+                                                    <a href="https://openboxes.readthedocs.io/en/develop/installation/" class="btn btn-template-primary btn-block">Get Started</a>
+                                                </li>
+                                            </ul>
+                                            <br/>
                                         </div>
                                     </div>
-                                    <div class="price-container d-flex align-items-end justify-content-center">
-                                        <div class="h2">
-                                            FREE<sup>*</sup>
+                                    <div class="col-md-4">
+                                        <div class="package">
+                                            <div class="package-header light-gray">
+                                                <div class="content">
+                                                    <h5>Basic Hosted</h5>
+                                                </div>
+                                            </div>
+                                            <div class="price-container d-flex align-items-end justify-content-center">
+                                                <div class="h2">$250 <span class="text-small text-uppercase">Per Month</span></div>
+                                            </div>
+                                            <ul class="list-unstyled">
+                                                <li class="text-success"><i class="fa fa-check-circle"></i> Cloud Hosted</li>
+                                                <li class="text-primary"><i class="fa fa-plus-circle"></i> On-Premise<sup>**</sup></li>
+                                                <li class="text-success"><i class="fa fa-check-circle"></i> Installation</li>
+                                                <li class="text-success"><i class="fa fa-check-circle"></i> Upgrades</li>
+                                                <li class="text-success"><i class="fa fa-check-circle"></i> Monitoring</li>
+                                                <li class="text-success"><i class="fa fa-check-circle"></i> Auto Backup</li>
+                                                <li class="text-success"><i class="fa fa-check-circle"></i> Bug Fixes</li>
+                                                <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Implementation</li>-->
+                                                <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Configuration</li>-->
+                                                <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Custom Reports</li>-->
+                                                <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Custom Development</li>-->
+                                                <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Integration</li>-->
+                                                <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Training</li>-->
+                                                <li class="text-success"><i class="fa fa-check-circle"></i> Standard Support</li>
+                                                <li class="text-success"><i class="fa fa-check-circle"></i> Forum, Chat, Email</li>
+                                                <li>
+                                                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                                        <input type="hidden" name="cmd" value="_s-xclick">
+                                                        <input type="hidden" name="hosted_button_id" value="VL7QBH4GLK67L">
+                                                        <input type="submit" class="btn btn-block btn-template-primary" value="Sign Up" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                                        <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
+                                                    </form>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <ul class="list-unstyled">
-                                        <li class="text-muted"><i class="fa fa-circle-o"></i> Cloud Hosted</li>
-                                        <li class="text-muted"><i class="fa fa-circle-o"></i> On-Premise</li>
-                                        <li class="text-primary"><i class="fa fa-plus-circle"></i> Installation</li>
-                                        <li class="text-primary"><i class="fa fa-plus-circle"></i> Upgrades</li>
-                                        <li class="text-muted"><i class="fa fa-circle-o"></i> Monitoring</li>
-                                        <li class="text-muted"><i class="fa fa-circle-o"></i> Auto Backup</li>
-                                        <li class="text-primary"><i class="fa fa-plus-circle"></i> Bug Fixes</li>
-                                        <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Implementation</li>-->
-                                        <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Configuration</li>-->
-                                        <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Custom Reports</li>-->
-                                        <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Custom Development</li>-->
-                                        <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Integration</li>-->
-                                        <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Training</li>-->
-                                        <li class="text-success"><i class="fa fa-check-circle"></i> Community Support</li>
-                                        <li class="text-success"><i class="fa fa-check-circle"></i> Forum</li>
-                                        <li>
-                                            <a href="https://openboxes.readthedocs.io/en/develop/installation/" class="btn btn-template-primary btn-block">Get Started</a>
-                                        </li>
-                                    </ul>
-                                    <br/>
+                                    <div class="col-md-4">
+                                        <div class="package">
+                                            <div class="package-header light-gray">
+                                                <div class="content">
+                                                    <h5>Custom Hosted</h5>
+                                                </div>
+                                            </div>
+                                            <div class="price-container d-flex align-items-end justify-content-center">
+                                                <div class="h2">
+                                                    Request Quote
+                                                </div>
+                                            </div>
+                                            <ul class="list-style-none">
+                                                <li class="text-primary"><i class="fa fa-plus-circle"></i> Cloud Hosted</li>
+                                                <li class="text-primary"><i class="fa fa-plus-circle"></i> On-Premise<sup>**</sup></li>
+                                                <li class="text-primary"><i class="fa fa-plus-circle"></i> Installation</li>
+                                                <li class="text-primary"><i class="fa fa-plus-circle"></i> Upgrades</li>
+                                                <li class="text-primary"><i class="fa fa-plus-circle"></i> Monitoring</li>
+                                                <li class="text-primary"><i class="fa fa-plus-circle"></i> Auto Backup</li>
+                                                <li class="text-primary"><i class="fa fa-plus-circle"></i> Bug Fixes</li>
+                                                <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Implementation</li>-->
+                                                <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Configuration</li>-->
+                                                <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Custom Reports</li>-->
+                                                <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Custom Development</li>-->
+                                                <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Integration</li>-->
+                                                <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Training</li>-->
+                                                <li class="text-primary"><i class="fa fa-plus-circle"></i> Commercial Support<sup>***</sup></li>
+                                                <li class="text-primary"><i class="fa fa-plus-circle"></i> Forum, Chat, Email, Phone</li>
+                                                <li>
+                                                    <a href="/quote" class="btn btn-template-primary btn-block">Request Quote</a>
+                                                </li>
+                                            </ul>
+                                            <br/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="list-group">
+                                    <div class="list-group-item active">
+                                        <h6 class="list-group-item-heading text-uppercase">Notes</h6>
+                                    </div>
+                                    <p class="list-group-item text-small">All services (i.e. Installation, Development, Implementation) are available as add-ons (discounts available for long-term engagements).
+                                        See <a href="/services">Services</a> page for more info.</p>
+                                    <p class="list-group-item text-small"><sup>*</sup> OpenBoxes is free to download and use, but nothing is really ever free. Unless you plan to install OpenBoxes on your personal
+                                        laptop, you'll have costs associated with operating the software. Read <a href="/cost-analysis">Total Cost of Ownership</a> to better understand the costs associated with
+                                        any software system you plan to adopt.
+                                    </p>
+                                    <p class="list-group-item text-small"><sup>**</sup> On-Premise implementations are available as an add-on for Custom packages. In addition, we can configure
+                                        a network of on-premise servers to sync with a parent cloud server in case of Internet outages. Ask us about our On-Premise implementation plan when requesting a quote.
+                                    </p>
+                                    <p class="list-group-item text-small"><sup>***</sup> Professional Support is provided during our Business Hours, which are generally defined as 9:00 AM to 5:00 PM (US Central).
+                                        Business Hours can be negotiated through a Service Level Agreement (SLA) which can be purchased as an add-on. See Support Plan tab for more details.
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="package">
-                                    <div class="package-header light-gray">
-                                        <div class="content">
-                                            <h5>Basic Hosted</h5>
-                                        </div>
+                                <ul class="list-group">
+                                    <div class="list-group-item active">
+                                        <h6 class="list-group-item-heading text-uppercase">Key</h6>
                                     </div>
-                                    <div class="price-container d-flex align-items-end justify-content-center">
-                                        <div class="h2">$250 <span class="text-small text-uppercase">Per Month</span></div>
-                                    </div>
-                                    <ul class="list-unstyled">
-                                        <li class="text-success"><i class="fa fa-check-circle"></i> Cloud Hosted</li>
-                                        <li class="text-primary"><i class="fa fa-plus-circle"></i> On-Premise<sup>**</sup></li>
-                                        <li class="text-success"><i class="fa fa-check-circle"></i> Installation</li>
-                                        <li class="text-success"><i class="fa fa-check-circle"></i> Upgrades</li>
-                                        <li class="text-success"><i class="fa fa-check-circle"></i> Monitoring</li>
-                                        <li class="text-success"><i class="fa fa-check-circle"></i> Auto Backup</li>
-                                        <li class="text-success"><i class="fa fa-check-circle"></i> Bug Fixes</li>
-                                        <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Implementation</li>-->
-                                        <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Configuration</li>-->
-                                        <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Custom Reports</li>-->
-                                        <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Custom Development</li>-->
-                                        <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Integration</li>-->
-                                        <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Training</li>-->
-                                        <li class="text-success"><i class="fa fa-check-circle"></i> Standard Support</li>
-                                        <li class="text-success"><i class="fa fa-check-circle"></i> Forum, Chat, Email</li>
-                                        <li>
-                                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                                                <input type="hidden" name="cmd" value="_s-xclick">
-                                                <input type="hidden" name="hosted_button_id" value="VL7QBH4GLK67L">
-                                                <input type="submit" class="btn btn-block btn-template-primary" value="Sign Up" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                                                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                                            </form>
-                                        </li>
-                                    </ul>
+                                    <p class="list-group-item"><span class="text-muted"><i class="fa fa-circle-o"></i> indicates a service for which you are responsible</span></p>
+                                    <p class="list-group-item"><span class="text-success"><i class="fa fa-check-circle"></i> indicates a service included in package</span></p>
+                                    <p class="list-group-item"><span class="text-primary"><i class="fa fa-plus-circle"></i> indicates a service available as an add-on</span></p>
+                                    <p class="list-group-item"><span class="text-danger"><i class="fa fa-ban"></i> indicates a service excluded from package</span></p>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <a name="support-plans"></a>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading">
+                        <h3>Support Plans</h3>
+                    </div>
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-md-2"></th>
+                            <th class="col-md-2"></th>
+                            <th class="col-md-2 text-center">
+                                <h4 class="text-uppercase">Community</h4>
+                            </th>
+                            <th class="col-md-2 text-center">
+                                <h4 class="text-uppercase">Standard</h4>
+                            </th>
+                            <th class="col-md-2 text-center">
+                                <h4 class="text-uppercase">Premium</h4>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+
+                        <tr>
+                            <th rowspan="3" class="text-left">General</th>
+                            <td class="col-md-1 text-left">Cost</td>
+                            <td class="text-center">
+                                <div class="price-container">
+                                    <div class="text-uppercase"><b>Free</b></div>
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <div class="price-container">
+                                    <div class="text-uppercase"><b>$3600</b> <span class="text-small">per year</span></div>
+                                    <div class="text-small"><b>$300</b> <span class="text-small">per month</span></div>
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <div class="price-container">
+                                    <div class="text-uppercase"><b>$6000</b> <span class="text-small">per year</span></div>
+                                    <div class="text-small"><b>$500</b> <span class="text-small">per month</span></div>
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-1 text-left"># of Incidents</td>
+                            <td class="text-center">0</td>
+                            <td class="text-center">5 <span class="text-uppercase text-small">per month</span></td>
+                            <td class="text-center">10 <span class="text-uppercase text-small">per month</span></td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-1 text-left">Additional Incidents</td>
+                            <td class="text-center">0</td>
+                            <td class="text-center">$150 <span class="text-uppercase text-small">per incident</span></td>
+                            <td class="text-center">$100 <span class="text-uppercase text-small">per incident</span></td>
+                        </tr>
+
+
+                        <tr>
+                            <th rowspan="1" class="text-left">Availability</th>
+                            <td class="col-md-1 text-left">Working Hours</td>
+                            <td class="col-md-1 text-center">None</td>
+                            <td class="col-md-1 text-center">
+                                <div class="text-default">9am - 5pm CST</div>
+                                <div class="text-small">Monday - Friday</div>
+                            </td>
+                            <td class="col-md-1 text-center">
+                                <div class="text-default">9am - 5pm CST</div>
+                                <div class="text-small">Monday - Friday</div>
+                        </tr>
+
+
+                        <tr>
+                            <th rowspan="3" class="text-left">Response Times</th>
+                            <td class="col-md-1 text-left">High Priority</td>
+                            <td class="col-md-1 text-center">Best Effort</td>
+                            <td class="col-md-1 text-center">< 4 Hours</td>
+                            <td class="col-md-1 text-center">< 2 Hours</td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-1 text-left">Medium Priority</td>
+                            <td class="col-md-1 text-center">Best Effort</td>
+                            <td class="col-md-1 text-center">< 12 Hours</td>
+                            <td class="col-md-1 text-center">< 6 Hours</td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-1 text-left">Low Priority</td>
+                            <td class="col-md-1 text-center">Best Effort</td>
+                            <td class="col-md-1 text-center">Next Business Day</td>
+                            <td class="col-md-1 text-center">< 12 Hours</td>
+                        </tr>
+
+
+                        <tr>
+                            <th rowspan="4" class="text-left">Support Channels</th>
+                            <td class="col-md-1 text-left">Discussion Forum</td>
+                            <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
+                            <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
+                            <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-1 text-left">In-App Chat</td>
+                            <td class="col-md-1 text-center"><div class="text-danger"><i class="fa fa-ban"></i> Not Included</div></td>
+                            <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
+                            <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-1 text-left">Email Support</td>
+                            <td class="col-md-1 text-center"><div class="text-danger"><i class="fa fa-ban"></i> Not Included</div></td>
+                            <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
+                            <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-1 text-left">Phone Support</td>
+                            <td class="col-md-1 text-center"><div class="text-danger"><i class="fa fa-ban"></i> Not Included</div></td>
+                            <td class="col-md-1 text-center"><div class="text-danger"><i class="fa fa-ban"></i> Not Included</div></td>
+                            <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
+                        </tr>
+                        <tr>
+                            <th rowspan="5" class="text-left">Upgrades</th>
+                            <td class="col-md-1 text-left">Priority Bug Fixes</td>
+                            <td class="col-md-1 text-center"><div class="text-danger"><i class="fa fa-ban"></i> Not Included</div></td>
+                            <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
+                            <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-1 text-left">Major Releases</td>
+                            <td class="col-md-1 text-center"><div class="text-danger"><i class="fa fa-ban"></i> Not Included</div></td>
+                            <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
+                            <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-1 text-left">Minor Releases</td>
+                            <td class="col-md-1 text-center"><div class="text-danger"><i class="fa fa-ban"></i> Not Included</div></td>
+                            <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
+                            <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-1 text-left">Hotfix Releases</td>
+                            <td class="col-md-1 text-center"><div class="text-danger"><i class="fa fa-ban"></i> Not Included</div></td>
+                            <td class="col-md-1 text-center"><div class="text-danger"><i class="fa fa-ban"></i> Not Included</div></td>
+                            <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-1 text-left">Small Customizations</td>
+                            <td class="col-md-1 text-center"><div class="text-danger"><i class="fa fa-ban"></i> Not Included</div></td>
+                            <td class="col-md-1 text-center"><div class="text-danger"><i class="fa fa-ban"></i> Not Included</div></td>
+                            <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
+                        </tr>
+                        <tr>
+                            <th class="col-md-1 text-right"></th>
+                            <th class="col-md-1 text-right"></th>
+                            <td class="col-md-1 text-center">
+                                <a href="/support" class="btn btn-template-primary btn-block">See options</a>
+                            </td>
+                            <td class="col-md-1 text-center">
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input type="hidden" name="hosted_button_id" value="H9AHJJXEGUQ6U">
+                                    <input type="submit" class="btn btn-template-primary btn-block" value="Subscribe" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                    <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                                </form>
+                            </td>
+                            <td class="col-md-1 text-center">
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input type="hidden" name="hosted_button_id" value="L3AP85JKWHA6N">
+                                    <input type="submit" class="btn btn-template-primary btn-block" value="Subscribe" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                    <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                                </form>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <a name="faq"></a>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading">
+                        <h3>FAQ</h3>
+                    </div>
+                    <div class="panel-group" id="accordion">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse0">
+                                        Is OpenBoxes really "free"? <i class="fa fa-angle-up"></i></a>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="package">
-                                    <div class="package-header light-gray">
-                                        <div class="content">
-                                            <h5>Custom Hosted</h5>
-                                        </div>
-                                    </div>
-                                    <div class="price-container d-flex align-items-end justify-content-center">
-                                        <div class="h2">
-                                            Request Quote
-                                        </div>
-                                    </div>
-                                    <ul class="list-style-none">
-                                        <li class="text-primary"><i class="fa fa-plus-circle"></i> Cloud Hosted</li>
-                                        <li class="text-primary"><i class="fa fa-plus-circle"></i> On-Premise<sup>**</sup></li>
-                                        <li class="text-primary"><i class="fa fa-plus-circle"></i> Installation</li>
-                                        <li class="text-primary"><i class="fa fa-plus-circle"></i> Upgrades</li>
-                                        <li class="text-primary"><i class="fa fa-plus-circle"></i> Monitoring</li>
-                                        <li class="text-primary"><i class="fa fa-plus-circle"></i> Auto Backup</li>
-                                        <li class="text-primary"><i class="fa fa-plus-circle"></i> Bug Fixes</li>
-                                        <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Implementation</li>-->
-                                        <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Configuration</li>-->
-                                        <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Custom Reports</li>-->
-                                        <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Custom Development</li>-->
-                                        <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Integration</li>-->
-                                        <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Training</li>-->
-                                        <li class="text-primary"><i class="fa fa-plus-circle"></i> Commercial Support<sup>***</sup></li>
-                                        <li class="text-primary"><i class="fa fa-plus-circle"></i> Forum, Chat, Email, Phone</li>
-                                        <li>
-                                            <a href="/quote" class="btn btn-template-primary btn-block">Request Quote</a>
-                                        </li>
-                                    </ul>
-                                    <br/>
+                            <div id="collapse0" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    Yes, OpenBoxes is free to download and use. Our hosting and support packages cost money, but
+                                    you are free to install the software on your laptop or a server that you manage
+                                    without having to pay us for user licenses and other fees.
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                        If OpenBoxes is "free" then why do I need to pay for hosting?
+                                        <i class="fa fa-angle-up"></i></a>
+                                </div>
+                            </div>
+                            <div id="collapse1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    OpenBoxes is free to download and use ... but nothing is ever really free.
+                                    Unless you plan to install OpenBoxes on your personal laptop,
+                                    you'll have costs associated with operating the software.
+                                    Read our <a href="/cost-analysis">Cost Analysis Guide</a> to better
+                                    understand the costs associated with adopting software.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                        Why is Professional Support more expensive than hosting?
+                                        <i class="fa fa-angle-down"></i></a>
+                                </div>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>
+                                        Supporting software is time-consuming and expensive. In order to
+                                        provide support to our users we need a team to cover our support hours
+                                        even on days when there are no support requests.
+                                    </p>
+                                    <p>
+                                        If our support packages are too expensive, we highly recommend that you use
+                                        our <a href="/support#community">Community self-service support options</a>
+                                        until you need a guaranteed level of support.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                        Does OpenBoxes provide 24/7 support?
+                                        <i class="fa fa-angle-down"></i></a>
+                                </div>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    At the moment, we provide support for US Business Hours. However, we can provide 24/7
+                                    support to accommodate business outside of the US. Please email
+                                    <a href="mailto:support@openboxes.com">support@openboxes.com</a> if you would like
+                                    to discuss 24/7 support options.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                                        Can we pay to have a new feature developed?
+                                        <i class="fa fa-angle-down"></i></a>
+                                </div>
+                            </div>
+                            <div id="collapse4" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Yes, we can help you develop new features. Please send us an email
+                                    (<a href="mailto:support@openboxes.com">support@openboxes.com</a>) to discuss
+                                    your requirements and we'll provide a quote and timeline for your feature request.
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-8">
-                        <div class="list-group">
-                            <div class="list-group-item active">
-                                <h6 class="list-group-item-heading text-uppercase">Notes</h6>
-                            </div>
-                            <p class="list-group-item text-small">All services (i.e. Installation, Development, Implementation) are available as add-ons (discounts available for long-term engagements).
-                                See <a href="/services">Services</a> page for more info.</p>
-                            <p class="list-group-item text-small"><sup>*</sup> OpenBoxes is free to download and use, but nothing is really ever free. Unless you plan to install OpenBoxes on your personal
-                                laptop, you'll have costs associated with operating the software. Read <a href="/cost-analysis">Total Cost of Ownership</a> to better understand the costs associated with
-                                any software system you plan to adopt.
-                            </p>
-                            <p class="list-group-item text-small"><sup>**</sup> On-Premise implementations are available as an add-on for Custom packages. In addition, we can configure
-                                a network of on-premise servers to sync with a parent cloud server in case of Internet outages. Ask us about our On-Premise implementation plan when requesting a quote.
-                            </p>
-                            <p class="list-group-item text-small"><sup>***</sup> Professional Support is provided during our Business Hours, which are generally defined as 9:00 AM to 5:00 PM (US Central).
-                                Business Hours can be negotiated through a Service Level Agreement (SLA) which can be purchased as an add-on. See Support Plan tab for more details.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <ul class="list-group">
-                            <div class="list-group-item active">
-                                <h6 class="list-group-item-heading text-uppercase">Key</h6>
-                            </div>
-                            <p class="list-group-item"><span class="text-muted"><i class="fa fa-circle-o"></i> indicates a service for which you are responsible</span></p>
-                            <p class="list-group-item"><span class="text-success"><i class="fa fa-check-circle"></i> indicates a service included in package</span></p>
-                            <p class="list-group-item"><span class="text-primary"><i class="fa fa-plus-circle"></i> indicates a service available as an add-on</span></p>
-                            <p class="list-group-item"><span class="text-danger"><i class="fa fa-ban"></i> indicates a service excluded from package</span></p>
-                        </ul>
-                    </div>
-                </div>
-            </section>
+            </div>
         </div>
     </div>
 </div>
-
-
-<a name="support-plans"></a>
-
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="heading">
-                <h3>Support Plans</h3>
-            </div>
-            <table class="table table-striped">
-                <thead>
-                <tr>
-                    <th class="col-md-2"></th>
-                    <th class="col-md-2"></th>
-                    <th class="col-md-2 text-center">
-                        <h4 class="text-uppercase">Community</h4>
-                    </th>
-                    <th class="col-md-2 text-center">
-                        <h4 class="text-uppercase">Standard</h4>
-                    </th>
-                    <th class="col-md-2 text-center">
-                        <h4 class="text-uppercase">Premium</h4>
-                    </th>
-                </tr>
-                </thead>
-                <tbody>
-
-
-                <tr>
-                    <th rowspan="3" class="text-left">General</th>
-                    <td class="col-md-1 text-left">Cost</td>
-                    <td class="text-center">
-                        <div class="price-container">
-                            <div class="text-uppercase"><b>Free</b></div>
-                        </div>
-                    </td>
-                    <td class="text-center">
-                        <div class="price-container">
-                            <div class="text-uppercase"><b>$3600</b> <span class="text-small">per year</span></div>
-                            <div class="text-small"><b>$300</b> <span class="text-small">per month</span></div>
-                        </div>
-                    </td>
-                    <td class="text-center">
-                        <div class="price-container">
-                            <div class="text-uppercase"><b>$6000</b> <span class="text-small">per year</span></div>
-                            <div class="text-small"><b>$500</b> <span class="text-small">per month</span></div>
-
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-1 text-left"># of Incidents</td>
-                    <td class="text-center">0</td>
-                    <td class="text-center">5 <span class="text-uppercase text-small">per month</span></td>
-                    <td class="text-center">10 <span class="text-uppercase text-small">per month</span></td>
-                </tr>
-                <tr>
-                    <td class="col-md-1 text-left">Additional Incidents</td>
-                    <td class="text-center">0</td>
-                    <td class="text-center">$150 <span class="text-uppercase text-small">per incident</span></td>
-                    <td class="text-center">$100 <span class="text-uppercase text-small">per incident</span></td>
-                </tr>
-
-
-                <tr>
-                    <th rowspan="1" class="text-left">Availability</th>
-                    <td class="col-md-1 text-left">Working Hours</td>
-                    <td class="col-md-1 text-center">None</td>
-                    <td class="col-md-1 text-center">
-                        <div class="text-default">9am - 5pm CST</div>
-                        <div class="text-small">Monday - Friday</div>
-                    </td>
-                    <td class="col-md-1 text-center">
-                        <div class="text-default">9am - 5pm CST</div>
-                        <div class="text-small">Monday - Friday</div>
-                </tr>
-
-
-                <tr>
-                    <th rowspan="3" class="text-left">Response Times</th>
-                    <td class="col-md-1 text-left">High Priority</td>
-                    <td class="col-md-1 text-center">Best Effort</td>
-                    <td class="col-md-1 text-center">< 4 Hours</td>
-                    <td class="col-md-1 text-center">< 2 Hours</td>
-                </tr>
-                <tr>
-                    <td class="col-md-1 text-left">Medium Priority</td>
-                    <td class="col-md-1 text-center">Best Effort</td>
-                    <td class="col-md-1 text-center">< 12 Hours</td>
-                    <td class="col-md-1 text-center">< 6 Hours</td>
-                </tr>
-                <tr>
-                    <td class="col-md-1 text-left">Low Priority</td>
-                    <td class="col-md-1 text-center">Best Effort</td>
-                    <td class="col-md-1 text-center">Next Business Day</td>
-                    <td class="col-md-1 text-center">< 12 Hours</td>
-                </tr>
-
-
-                <tr>
-                    <th rowspan="4" class="text-left">Support Channels</th>
-                    <td class="col-md-1 text-left">Discussion Forum</td>
-                    <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
-                    <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
-                    <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
-                </tr>
-                <tr>
-                    <td class="col-md-1 text-left">In-App Chat</td>
-                    <td class="col-md-1 text-center"><div class="text-danger"><i class="fa fa-ban"></i> Not Included</div></td>
-                    <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
-                    <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
-                </tr>
-                <tr>
-                    <td class="col-md-1 text-left">Email Support</td>
-                    <td class="col-md-1 text-center"><div class="text-danger"><i class="fa fa-ban"></i> Not Included</div></td>
-                    <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
-                    <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
-                </tr>
-                <tr>
-                    <td class="col-md-1 text-left">Phone Support</td>
-                    <td class="col-md-1 text-center"><div class="text-danger"><i class="fa fa-ban"></i> Not Included</div></td>
-                    <td class="col-md-1 text-center"><div class="text-danger"><i class="fa fa-ban"></i> Not Included</div></td>
-                    <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
-                </tr>
-                <tr>
-                    <th rowspan="5" class="text-left">Upgrades</th>
-                    <td class="col-md-1 text-left">Priority Bug Fixes</td>
-                    <td class="col-md-1 text-center"><div class="text-danger"><i class="fa fa-ban"></i> Not Included</div></td>
-                    <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
-                    <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
-                </tr>
-                <tr>
-                    <td class="col-md-1 text-left">Major Releases</td>
-                    <td class="col-md-1 text-center"><div class="text-danger"><i class="fa fa-ban"></i> Not Included</div></td>
-                    <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
-                    <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
-                </tr>
-                <tr>
-                    <td class="col-md-1 text-left">Minor Releases</td>
-                    <td class="col-md-1 text-center"><div class="text-danger"><i class="fa fa-ban"></i> Not Included</div></td>
-                    <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
-                    <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
-                </tr>
-                <tr>
-                    <td class="col-md-1 text-left">Hotfix Releases</td>
-                    <td class="col-md-1 text-center"><div class="text-danger"><i class="fa fa-ban"></i> Not Included</div></td>
-                    <td class="col-md-1 text-center"><div class="text-danger"><i class="fa fa-ban"></i> Not Included</div></td>
-                    <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
-                </tr>
-                <tr>
-                    <td class="col-md-1 text-left">Small Customizations</td>
-                    <td class="col-md-1 text-center"><div class="text-danger"><i class="fa fa-ban"></i> Not Included</div></td>
-                    <td class="col-md-1 text-center"><div class="text-danger"><i class="fa fa-ban"></i> Not Included</div></td>
-                    <td class="col-md-1 text-center"><div class="text-success"><i class="fa fa-check-circle"></i> Included</div></td>
-                </tr>
-                <tr>
-                    <th class="col-md-1 text-right"></th>
-                    <th class="col-md-1 text-right"></th>
-                    <td class="col-md-1 text-center">
-                        <a href="/support" class="btn btn-template-primary btn-block">See options</a>
-                    </td>
-                    <td class="col-md-1 text-center">
-                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                            <input type="hidden" name="cmd" value="_s-xclick">
-                            <input type="hidden" name="hosted_button_id" value="H9AHJJXEGUQ6U">
-                            <input type="submit" class="btn btn-template-primary btn-block" value="Subscribe" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                        </form>
-                    </td>
-                    <td class="col-md-1 text-center">
-                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                            <input type="hidden" name="cmd" value="_s-xclick">
-                            <input type="hidden" name="hosted_button_id" value="L3AP85JKWHA6N">
-                            <input type="submit" class="btn btn-template-primary btn-block" value="Subscribe" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                        </form>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-            </div>
-        </div>
-    </div>
-</div>
-
-<a name="faq"></a>
-<section class="faq">
-    <div class="container">
-
-        <div class="row">
-            <div class="col-md-12">
-                <div class="heading">
-                    <h3>FAQ</h3>
-                </div>
-                <div class="panel-group" id="accordion">
-
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse0">
-                                    Is OpenBoxes really "free"? <i class="fa fa-angle-up"></i></a>
-                            </h4>
-                        </div>
-                        <div id="collapse0" class="panel-collapse collapse in">
-                            <div class="panel-body">
-                                Yes, OpenBoxes is free to download and use. Our hosting and support packages cost money, but
-                                you are free to install the software on your laptop or a server that you manage
-                                without having to pay us for user licenses and other fees.
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                                    If OpenBoxes is "free" then why do I need to pay for hosting?
-                                    <i class="fa fa-angle-up"></i></a>
-                            </h4>
-                        </div>
-                        <div id="collapse1" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                OpenBoxes is free to download and use ... but nothing is ever really free.
-                                Unless you plan to install OpenBoxes on your personal laptop,
-                                you'll have costs associated with operating the software.
-                                Read our <a href="/cost-analysis">Cost Analysis Guide</a> to better
-                                understand the costs associated with adopting software.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                                    Why is Professional Support more expensive than hosting?
-                                    <i class="fa fa-angle-down"></i></a>
-                            </h4>
-                        </div>
-                        <div id="collapse2" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <p>
-                                    Supporting software is time-consuming and expensive. In order to
-                                    provide support to our users we need a team to cover our supports hours
-                                    even on days when there are no support requests.
-                                </p>
-                                <p>
-                                    If our support packages are too expensive, we highly recommend that you use
-                                    our <a href="/support#community">Community self-service support options</a>
-                                    until you are need a guaranteed support level agreement (SLA).
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                                    Does OpenBoxes provide 24/7 support?
-                                    <i class="fa fa-angle-down"></i></a>
-                            </h4>
-                        </div>
-                        <div id="collapse3" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                At the moment, we provide support for US Business Hours. However, we can provide 24/7
-                                support to accommodate business outside of the US. Please email
-                                <a href="mailto:support@openboxes.com">support@openboxes.com</a> if you would like
-                                to discuss 24/7 support options.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-                                    Can we pay to have a new feature developed?
-                                    <i class="fa fa-angle-down"></i></a>
-                            </h4>
-                        </div>
-                        <div id="collapse4" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                Yes, we can help you develop new features. Please send us an email
-                                (<a href="mailto:support@openboxes.com">support@openboxes.com</a>) to discuss
-                                your requirements and we'll provide a quote and timeline for your feature request.
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-
-<!--<div class="row">-->
-    <!--<div class="col-md-12">-->
-        <!--<div class="heading">-->
-            <!--<h3>FAQ</h3>-->
-        <!--</div>-->
-        <!--{{ if gt (len .Site.Data.support.faq) 0 }}-->
-        <!--<section>-->
-            <!--<div class="container">-->
-                <!--<p class="lead">lead stuff</p>-->
-
-                <!--{{ range $index, $element := sort .Site.Data.support.faq "weight" }}-->
-                <!--<div class="row">-->
-                    <!--<div class="col-md-12">-->
-                        <!--<div-->
-                        <!--<h4>{{ $element.question }}</h4>-->
-                        <!--<p>{{ $element.answer | markdownify }}</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--{{ end }}-->
-            <!--</div>-->
-        <!--</section>-->
-        <!--{{ end }}-->
-
-    <!--</div>-->
-<!--</div>-->

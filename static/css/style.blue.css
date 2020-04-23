@@ -99,13 +99,14 @@ div.section {
 .heading h4,
 .heading h5 {
   display: inline-block;
-  border-bottom: solid 5px #467fbf;
+  border-bottom: solid 1px #467fbf;
   line-height: 1.1;
   margin-bottom: 0;
   padding-bottom: 10px;
   vertical-align: middle;
   text-transform: uppercase;
   letter-spacing: 0.06em;
+  width: 100%;
 }
 .heading h1 i.fa,
 .heading h2 i.fa,
@@ -3366,6 +3367,7 @@ h6,
   font-weight: 900;
   line-height: 1.1;
   color: #333333;
+  width: 100%;
 }
 h1,
 .h1,
