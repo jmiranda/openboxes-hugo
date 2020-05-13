@@ -338,6 +338,3 @@ paginate = 10
     enable = true
     title = "Recent News"
     subtitle = ""
-
-[services.rss]
-limit = 25
