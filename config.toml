@@ -334,10 +334,10 @@ paginate = 10
     title = "Generous Supporters"
     subtitle = "Whether it's a free open-source license or discounted hosting, the following organizations have provided generous support to OpenBoxes throughout the years."
 
-
 [params.recent_posts]
     enable = true
     title = "Recent News"
     subtitle = ""
 
-
+[services.rss]
+limit = 25
