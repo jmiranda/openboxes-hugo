@@ -3,7 +3,7 @@ banner = "/img/banners/rest-api.png"
 categories = ['announcements']
 date = 2020-05-14T06:00:00Z
 tags = []
-title = "Check out our all new REST API docs!"
+title = "Check out our REST API docs!"
 
 +++
 
@@ -11,6 +11,9 @@ We've created documentation for our fledgling REST API. Please check out the
 [API docs](https://docs.openboxes.com/en/develop/api-guide/)  
 and then head over to [discuss.openboxes.com](https://openboxes.com/community) 
 or [Slack](http://slack-signup.openboxes.com/) to discuss with our development team.
+
+We are hoping to implement [OpenAPI/Swagger](https://github.com/openboxes/openboxes/issues/1129) 
+docs soon. If you'd like to help with the migration, please start a discussion with me in the ticket. 
 
 <!--more-->
 
