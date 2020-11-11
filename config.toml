@@ -157,37 +157,31 @@ paginate = 10
     weight = 1
     name = "GitHub"
     url = "https://github.com/openboxes/openboxes"
-    pre = "<i class='fa fa-lg fa-github'></i>"
+    pre = "<i class='fa fa-github'></i>"
 
 [[menu.social]]
-    weight = 3
+    weight = 2
     name = "Twitter"
     url = "https://twitter.com/openboxes_"
-    pre = "<i class='fa fa-lg fa-twitter'></i>"
+    pre = "<i class='fa fa-twitter'></i>"
 
 [[menu.social]]
     weight = 4
    name = "Blogger"
     url = "https://openboxes.com/blog"
-    pre = "<i class='fa fa-lg fa-rss'></i>"
-
-[[menu.social]]
-    weight = 2
-    name = "Support"
-    url = "/community"
-    pre = "<i class='fa fa-lg fa-phone'></i>"
+    pre = "<i class='fa fa-rss-square'></i>"
 
 [[menu.social]]
     weight = 5
-    name = "Chat"
-    url = "https://discuss.openboxes.com"
-    pre = "<i class='fa fa-lg fa-comments'></i>"
+    name = "Discourse"
+    url = "/community"
+    pre = "<i class='fa fa-comment'></i>"
 
 [[menu.social]]
-    weight = 6
+    weight = 3
     name = "YouTube"
     url = "https://openboxes.com/videos"
-    pre = "<i class='fa fa-lg fa-youtube'></i>"
+    pre = "<i class='fa fa-youtube'></i>"
 
 
 # Top bar social links menu

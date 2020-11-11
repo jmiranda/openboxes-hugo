@@ -3,7 +3,7 @@
 
         <div class="row">
 
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-4 col-sm-6">
 
                 {{ if isset .Site.Params "about_us" }}
                 <div class="row">
@@ -24,7 +24,7 @@
                         <h4>{{ i18n "recentPosts" }}</h4>
 
                         <div class="blog-entries">
-                            {{ range first 4 (where .Site.Pages "Type" "blog") }}
+                            {{ range first 3 (where .Site.Pages "Type" "blog") }}
                             <div class="item same-height-row clearfix">
                                 <div class="image same-height-always">
                                     <a href="{{ .Permalink }}">
@@ -51,77 +51,71 @@
             </div>
 
 
-
-            <div class="col-md-3 col-sm-6">
-
-
+            <div class="col-md-8 col-sm-6">
                 <div class="row">
-                    <div class="col-md-12">
-                        <h4>Learn More</h4>
-                        <ul>
-                            <li><a href="/about" class="btn btn-link"><i class="fa fa-info-circle"></i>About</a></li>
-                            <li><a href="/blog" class="btn btn-link"><i class="fa fa-newspaper-o"></i>News</a></li>
-                            <li><a href="/features" class="btn btn-link"><i class="fa fa-tasks"></i>Features</a></li>
-                            <li><a href="/pricing" class="btn btn-link"><i class="fa fa-money"></i>Pricing</a></li>
-                            <li><a href="/quote" class="btn btn-link"><i class="fa fa-question-circle"></i>Request Quote</a></li>
-                            <li><a href="/cost-analysis" class="btn btn-link"><i class="fa fa-bar-chart"></i>Cost Analysis</a></li>
-                            <li><a href="/roadmap" class="btn btn-link"><i class="fa fa-road"></i>Roadmap</a></li>
-                            <li><a href="/services" class="btn btn-link"><i class="fa fa-handshake-o"></i>Services</a></li>
-                            <li><a href="/users" class="btn btn-link"><i class="fa fa-users"></i>Implementations</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4>Get Started</h4>
-                        <ul>
-                            <li><a href="/tutorials" class="btn btn-link"><i class="fa fa-tv"></i>Tutorials</a></li>
-                            <li><a href="https://openboxes.readthedocs.io/en/develop/installation/" class="btn btn-link"><i class="fa fa-server"></i>Installation</a></li>
-                            <li><a href="https://github.com/openboxes/openboxes" class="btn btn-link"><i class="fa fa-code"></i>Source Code</a></li>
-                            <li><a href="https://github.com/openboxes/openboxes/issues" class="btn btn-link"><i class="fa fa-bug"></i>Issue Tracking</a></li>
-                            <li><a href="https://github.com/openboxes/openboxes/releases" class="btn btn-link"><i class="fa fa-cloud-download"></i>Downloads</a></li>
-                            <li><a href="https://openboxes.readthedocs.io/en/develop" class="btn btn-link"><i class="fa fa-book"></i>Documentation</a></li>
-                            <li><a href="https://openboxes.readthedocs.io/en/develop/api-guide/" class="btn btn-link"><i class="fa fa-plug"></i>REST API Docs</a></li>
-                            <li><a href="https://calendly.com/openboxes" class="btn btn-link"><i class="fa fa-calendar"></i>Schedule a Demo</a></li>
-                            <li><a href="https://discuss.openboxes.com" class="btn btn-link"><i class="fa fa-comment"></i>Community</a></li>
-                        </ul>
-                    </div>
 
-                </div>
-
-
-
-            </div>
-
-            <!-- /.col-md-4 -->
-            <div class="col-md-3 col-sm-6">
-
-
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4>Contact Us</h4>
-                        <p>{{ .Site.Params.topbar.text | safeHTML }}</p>
-                    </div>
-                </div>
-                <br/>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4>Social Media</h4>
-                        <div class="social">
-                            {{ range .Site.Menus.social.ByWeight }}
-                            <a href="{{ .URL }}" target="_blank">{{ .Pre }}</a>
-                            {{ end }}
+                    <div class="col-md-4 col-sm-6">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>Learn More</h4>
+                                <ul>
+                                    <li><a href="/about" class="btn btn-link"><i class="fa fa-info-circle"></i>About</a></li>
+                                    <li><a href="/blog" class="btn btn-link"><i class="fa fa-newspaper-o"></i>News</a></li>
+                                    <li><a href="/features" class="btn btn-link"><i class="fa fa-tasks"></i>Features</a></li>
+                                    <li><a href="/pricing" class="btn btn-link"><i class="fa fa-money"></i>Pricing</a></li>
+                                    <li><a href="/quote" class="btn btn-link"><i class="fa fa-question-circle"></i>Request Quote</a></li>
+                                    <li><a href="/cost-analysis" class="btn btn-link"><i class="fa fa-bar-chart"></i>Cost Analysis</a></li>
+                                    <li><a href="/roadmap" class="btn btn-link"><i class="fa fa-road"></i>Roadmap</a></li>
+                                    <li><a href="/services" class="btn btn-link"><i class="fa fa-handshake-o"></i>Services</a></li>
+                                    <li><a href="/users" class="btn btn-link"><i class="fa fa-users"></i>Implementations</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <br/>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4>Reviews</h4>
-                        <div><a target="_blank" href="https://www.goodfirms.co/blog/the-best-9-free-and-open-source-shipping-software?utm_source=linkedin&utm_medium=social&utm_campaign=social_media">
-                            <img style="width:180px" src="https://goodfirms.s3.amazonaws.com/badges/white-button/inventory-management-software.svg" alt="GoodFirms Badge"></a></div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>Get Started</h4>
+                                <ul>
+                                    <li><a href="/tutorials" class="btn btn-link"><i class="fa fa-tv"></i>Tutorials</a></li>
+                                    <li><a href="https://openboxes.readthedocs.io/en/develop/installation/" class="btn btn-link"><i class="fa fa-server"></i>Installation</a></li>
+                                    <li><a href="https://github.com/openboxes/openboxes" class="btn btn-link"><i class="fa fa-code"></i>Source Code</a></li>
+                                    <li><a href="https://github.com/openboxes/openboxes/issues" class="btn btn-link"><i class="fa fa-bug"></i>Issue Tracking</a></li>
+                                    <li><a href="https://github.com/openboxes/openboxes/releases" class="btn btn-link"><i class="fa fa-cloud-download"></i>Downloads</a></li>
+                                    <li><a href="https://openboxes.readthedocs.io/en/develop" class="btn btn-link"><i class="fa fa-book"></i>Documentation</a></li>
+                                    <li><a href="https://openboxes.readthedocs.io/en/develop/api-guide/" class="btn btn-link"><i class="fa fa-plug"></i>REST API Docs</a></li>
+                                    <li><a href="https://calendly.com/openboxes" class="btn btn-link"><i class="fa fa-calendar"></i>Schedule a Demo</a></li>
+                                    <li><a href="https://discuss.openboxes.com" class="btn btn-link"><i class="fa fa-comment"></i>Community</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>Contact Us</h4>
+                                <p>{{ .Site.Params.topbar.text | safeHTML }}</p>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>Social Media</h4>
+                                <div class="social">
+                                    {{ range .Site.Menus.social.ByWeight }}
+                                    <a href="{{ .URL }}" target="_blank">{{ .Pre }}</a>
+                                    {{ end }}
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>Reviews</h4>
+                                <div><a target="_blank" href="https://www.goodfirms.co/blog/the-best-9-free-and-open-source-shipping-software?utm_source=linkedin&utm_medium=social&utm_campaign=social_media">
+                                    <img style="width:180px" src="https://goodfirms.s3.amazonaws.com/badges/white-button/inventory-management-software.svg" alt="GoodFirms Badge"></a></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
