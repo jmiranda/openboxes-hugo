@@ -56,7 +56,7 @@
   translation: "By"
 
 - id: recentPosts
-  translation: "Recent posts"
+  translation: "Recent News"
 
 - id: aboutUs
   translation: "About us"
@@ -108,7 +108,6 @@
 - id: supportRequirements
   translation: "Support Requirements"
 
-
 - id: budget
   translation: "Tell us about your budget"
 
@@ -116,11 +115,10 @@
   translation: "Use CTRL to select multiple"
 
 - id: business
-  translation: "Tell us about your business"
-
+  translation: "Tell us more about your business"
 
 - id: goals
-  translation: "Tell us about your goals"
+  translation: "Goals and requirements for your project"
 
 - id: package
   translation: "Hosting Plan"
@@ -129,7 +127,10 @@
   translation: "Signup"
 
 - id: quoteButton
-  translation: "Request Quote"
+  translation: "Submit"
+
+- id: attachment
+  translation: "Additional Requirements & Documentation"
 
 - id: name
   translation: "Full Name"
