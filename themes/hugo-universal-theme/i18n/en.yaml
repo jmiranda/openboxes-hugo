@@ -127,7 +127,7 @@
   translation: "Signup"
 
 - id: quoteButton
-  translation: "Submit"
+  translation: "Request Quote"
 
 - id: attachment
   translation: "Additional Requirements & Documentation"

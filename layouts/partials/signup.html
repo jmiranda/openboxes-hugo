@@ -13,7 +13,7 @@
                     and training as well as other services.
                     Please provide as much details about your project as you can so that we can provide a cost estimate.</div>
 
-                <form class="signup-form" method="post" action="https://formspree.io/{{ .Site.Params.email }}">
+                <form class="signup-form" method="post" action="https://formspree.io/f/xjvpoyar">
 
                     <input type="hidden" name="type" value="signup"/>
 
@@ -329,13 +329,13 @@
                                         <h5 for="supportRequirements">{{ i18n "supportRequirements" }}</h5>
                                         <div class="radio">
                                             <label for="community">
-                                                <input type="radio" id="community" name="support" value="community" checked/>
+                                                <input type="radio" id="community" name="support" value="community"/>
                                                 Community Forum
                                                 <div class="text-small"><a href="discuss.openboxes.com" target="_blank">discuss.openboxes.com</a></div>
                                             </label>
                                             <label for="business-hours">
-                                                <input type="radio" id="business-hours" name="support" value="business-hours" />
-                                                Business Hours
+                                                <input type="radio" id="business-hours" name="support" value="business-hours" checked/>
+                                                US Business Hours
                                                 <div class="text-small">(9am-5pm via Email)</div>
                                             </label>
                                             <label for="global-hours">
@@ -354,8 +354,8 @@
                             </div>
                         </div>
                         <div class="col-sm-12">
-                            <button type="submit" class="btn btn-template-primary pull-right"><i class="fa fa-paper-plane"></i>{{ i18n "signupButton" }}</button>
-                            <a href="/pricing" class="btn btn-link"> Back to Pricing</button></a>
+                            <button type="submit" class="btn btn-template-primary pull-right"><i class="fa fa-paper-plane"></i> {{ i18n "signupButton" }}</button>
+                            <a href="/pricing" class="btn btn-template-main"><i class="fa fa-arrow-left"></i> Back to Pricing</button></a>
 
                         </div>
                     </div>

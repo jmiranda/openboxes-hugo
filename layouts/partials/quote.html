@@ -13,7 +13,7 @@
                     and training as well as other services.
                     Please provide as much details about your project as you can so that we can provide a cost estimate.</div>
 
-                <form class="signup-form" method="post" action="https://formspree.io/{{ .Site.Params.email }}">
+                <form class="signup-form" method="post" action="https://formspree.io/f/mvovqkwo" enctype="multipart/form-data">
 
                     <input type="hidden" name="type" value="quote"/>
 
@@ -27,7 +27,7 @@
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="email">{{ i18n "email" }}</label>
-                                <input type="text" class="form-control" name="email" id="email" required>
+                                <input type="text" class="form-control" name="_replyto" id="email" required>
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -197,16 +197,24 @@
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <label for="business">{{ i18n "business" }}</label>
-                                        <textarea id="business" class="form-control" name="business" required rows="3"></textarea>
+                                        <textarea id="business" class="form-control" name="business" required rows="2"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <label for="goals">{{ i18n "goals" }}</label>
-                                        <textarea id="goals" class="form-control" name="goals" required rows="3"></textarea>
+                                        <textarea id="goals" class="form-control" name="goals" required rows="2"></textarea>
                                     </div>
                                 </div>
-
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <label for="attachment" class="input-group-label">{{ i18n "attachment" }}</label>
+                                    <div class="input-group">
+                                        <input type="file" id="attachment" name="attachment" class="form-control">
+                                        <span class="input-group-addon">.zip, .doc, .xls, .pdf</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -331,11 +339,11 @@
                                             <label for="community">
                                                 <input type="radio" id="community" name="support" value="community" checked/>
                                                 Community Forum
-                                                <div class="text-small"><a href="discuss.openboxes.com" target="_blank">discuss.openboxes.com</a></div>
+                                                <div class="text-small"><a href="https://discuss.openboxes.com" target="_blank">discuss.openboxes.com</a></div>
                                             </label>
                                             <label for="business-hours">
                                                 <input type="radio" id="business-hours" name="support" value="business-hours" />
-                                                Business Hours
+                                                US Business Hours
                                                 <div class="text-small">(9am-5pm via Email)</div>
                                             </label>
                                             <label for="global-hours">
@@ -349,17 +357,17 @@
                                                 <div class="text-small">(You decide)</div>
                                             </label>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-12">
-                            <button type="submit" class="btn btn-template-primary pull-right"><i class="fa fa-paper-plane"></i>{{ i18n "quoteButton" }}</button>
-                            <a href="/pricing" class="btn btn-link"> Back to Pricing</button></a>
-
+                            <a href="/pricing" class="btn btn-template-main"><i class="fa fa-arrow-left"></i> Back to Pricing</button></a>
+                            <button type="submit" class="btn btn-template-primary pull-right"><i class="fa fa-paper-plane"></i> {{ i18n "quoteButton" }}</button>
                         </div>
+
                     </div>
+
                     <!-- /.row -->
                 </form>
 
