@@ -65,7 +65,7 @@ paginate = 10
 
 [[menu.main]]
     name = "Demo"
-    url  = "https://openboxes.com/demo"
+    url  = "https://demo.openboxes.com/openboxes"
     weight = 20
 
 [[menu.main]]
