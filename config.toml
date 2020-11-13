@@ -338,3 +338,9 @@ paginate = 10
     enable = true
     title = "Recent News"
     subtitle = ""
+
+[params.ethicalads]
+    enable = true
+
+[params.adsense]
+    enable = false
