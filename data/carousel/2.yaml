@@ -1,12 +1,14 @@
 ---
 weight: 1
-title: Improve your workflows
+title: Streamline workflows
 description: |
   <ul class="list-style-none">
-    <li>Reduce stockouts</li>
-    <li>Respond to recalls</li>
-    <li>Prevent loss due to expiry</li>
-    <li>Forecast based on demand data</li>
+    <li><i class="fa fa-shopping-bag"></i> Replenish based on reorder levels </li>
+    <li><i class="fa fa-bar-chart"></i> Forecast needs based on demand</li>
+    <li><i class="fa fa-ban"></i> Prevent costly stockouts</li>
+    <li><i class="fa fa-refresh"></i> Quickly respond to recalls</li>
+    <li><i class="fa fa-hourglass"></i> Reduce loss due to expiry</li>
+    <li><i class="fa fa-recycle"></i> Move overstock to places of need</li>
   </ul>
-image: img/carousel/improve-workflows.png
+image: img/carousel/inventory-summary.resized.png
 link: /features
