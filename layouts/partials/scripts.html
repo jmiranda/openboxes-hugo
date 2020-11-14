@@ -64,3 +64,19 @@ $(function () {
         });
     });
 </script>
+<script>
+    // Should really only be executed on the signup page, but I can't figure out how to execute JS on Hugo partials
+    $(document).ready(function() {
+        let searchParams = new URLSearchParams(window.location.search);
+        if (searchParams.has('service')) {
+            let services = searchParams.getAll("service");
+            $.each(services, function(index, value) {
+                $("#" + value).prop("checked", true);
+            });
+        }
+        if (searchParams.has('support')) {
+            let support = searchParams.get("support");
+            $("#" + support).prop("checked", "checked");
+        }
+    });
+</script>

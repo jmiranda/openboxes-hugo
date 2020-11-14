@@ -226,6 +226,20 @@
                                     <div class="col-md-4">
                                         <h5>{{ i18n "basicServices" }}</h5>
                                         <div class="checkbox">
+                                            <label for="demo">
+                                                <input type="checkbox" id="demo" name="additionalServices" value="demo" checked/>
+                                                Demo
+                                                <span class="text-small text-uppercase text-primary">Free</span>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="cost-analysis">
+                                                <input type="checkbox" id="cost-analysis" name="additionalServices" value="cost-analysis" checked/>
+                                                Cost Analysis
+                                                <span class="text-small text-uppercase text-primary">Free</span>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
                                             <label for="cloud-hosting">
                                                 <input type="checkbox" id="cloud-hosting" name="additionalServices" value="cloud-hosting" />
                                                 Cloud Hosting
@@ -234,7 +248,7 @@
                                         <div class="checkbox">
                                             <label for="custom-domain">
                                                 <input type="checkbox" id="custom-domain" name="additionalServices" value="custom-domain" />
-                                                Custom Domain <span class="text-small">(*.openboxes.com)</span>
+                                                Custom Domain
                                             </label>
                                         </div>
                                         <div class="checkbox">
@@ -277,17 +291,9 @@
                                     <div class="col-md-4">
                                         <h5>{{ i18n "additionalServices" }}</h5>
                                         <div class="checkbox">
-                                            <label for="demo">
-                                                <input type="checkbox" id="demo" name="additionalServices" value="demo"/>
-                                                Demo
-                                                <span class="text-small text-uppercase text-primary">Free</span>
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="cost-analysis">
-                                                <input type="checkbox" id="cost-analysis" name="additionalServices" value="cost-analysis"/>
-                                                Cost Analysis
-                                                <span class="text-small text-uppercase text-primary">Free</span>
+                                            <label for="on-premise-hosting">
+                                                <input type="checkbox" id="on-premise-hosting" name="additionalServices" value="on-premise-hosting"/>
+                                                On-Premise
                                             </label>
                                         </div>
                                         <div class="checkbox">
@@ -326,33 +332,32 @@
                                                 Training
                                             </label>
                                         </div>
-                                        <div class="checkbox">
-                                            <label for="on-premise-hosting">
-                                                <input type="checkbox" id="on-premise-hosting" name="additionalServices" value="on-premise-hosting"/>
-                                                On-Premise
-                                            </label>
-                                        </div>
                                     </div>
                                     <div class="col-md-4">
-                                        <h5>{{ i18n "supportRequirements" }}</h5>
+                                        <h5 for="supportRequirements">{{ i18n "supportRequirements" }}</h5>
                                         <div class="radio">
                                             <label for="community">
-                                                <input type="radio" id="community" name="support" value="community" checked/>
+                                                <input type="radio" id="community" name="support" value="community"/>
                                                 Community Forum
-                                                <div class="text-small"><a href="https://discuss.openboxes.com" target="_blank">discuss.openboxes.com</a></div>
+                                                <div class="text-small"><a href="discuss.openboxes.com" target="_blank">discuss.openboxes.com</a></div>
                                             </label>
                                             <label for="business-hours">
-                                                <input type="radio" id="business-hours" name="support" value="business-hours" />
-                                                US Business Hours
-                                                <div class="text-small">(9am-5pm via Email)</div>
+                                                <input type="radio" id="support" name="support" value="standard"/>
+                                                Standard
+                                                <div class="text-small">(9am-5pm Email Only)</div>
+                                            </label>
+                                            <label for="business-hours">
+                                                <input type="radio" id="business-hours" name="support" value="business"/>
+                                                Business
+                                                <div class="text-small">(9am-5pm Phone or Email)</div>
                                             </label>
                                             <label for="global-hours">
-                                                <input type="radio" id="global-hours" name="support" value="global-hours" />
-                                                Global Hours
-                                                <div class="text-small">(24x7 via Phone or Email)</div>
+                                                <input type="radio" id="global-hours" name="support" value="enterprise" />
+                                                Enterprise
+                                                <div class="text-small">(24x7 Phone or Email)</div>
                                             </label>
                                             <label for="custom-support">
-                                                <input type="radio" id="custom-support" name="support" value="custom-support" />
+                                                <input type="radio" id="custom-support" name="support" value="custom" />
                                                 Custom SLA
                                                 <div class="text-small">(You decide)</div>
                                             </label>

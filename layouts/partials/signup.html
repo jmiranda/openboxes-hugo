@@ -4,7 +4,6 @@
         <div class="col-md-12">
 
             <section>
-
                 {{ .Content }}
 
                 {{ if isset .Site.Params "email" }}
@@ -196,8 +195,8 @@
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="form-group">
-                                        <label for="business">{{ i18n "business" }}</label>
-                                        <textarea id="business" class="form-control" name="business" required rows="3"></textarea>
+                                        <label for="business-details">{{ i18n "business" }}</label>
+                                        <textarea id="business-details" class="form-control" name="business" required rows="3"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
@@ -217,58 +216,6 @@
                                     <div class="col-md-4">
                                         <h5 for="basicServices">{{ i18n "basicServices" }}</h5>
                                         <div class="checkbox">
-                                            <label for="cloud-hosting">
-                                                <input type="checkbox" id="cloud-hosting" name="additionalServices" value="cloud-hosting" checked readonly/>
-                                                Cloud Hosting
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="custom-domain">
-                                                <input type="checkbox" id="custom-domain" name="additionalServices" value="custom-domain" checked readonly/>
-                                                Custom Domain <span class="text-small">(*.openboxes.com)</span>
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="installation">
-                                                <input type="checkbox" id="installation" name="additionalServices" value="installation" checked readonly/>
-                                                Installation
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="upgrades">
-                                                <input type="checkbox" id="upgrades" name="additionalServices" value="upgrades" checked readonly/>
-                                                Upgrades
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="monitoring">
-                                                <input type="checkbox" id="monitoring" name="additionalServices" value="monitoring" checked readonly/>
-                                                Monitoring
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="auto-backup">
-                                                <input type="checkbox" id="auto-backup" name="additionalServices" value="auto-backup" checked readonly/>
-                                                Automatic Backup
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="auto-backup">
-                                                <input type="checkbox" id="email-notifications" name="additionalServices" value="email-notifications" checked readonly/>
-                                                Email Notifications
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="bugfixes">
-                                                <input type="checkbox" id="bugfixes" name="additionalServices" value="bugfixes" checked readonly/>
-                                                Priority Bug Fixes
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <h5 for="additionalServices">{{ i18n "additionalServices" }}</h5>
-
-                                        <div class="checkbox">
                                             <label for="demo">
                                                 <input type="checkbox" id="demo" name="additionalServices" value="demo"/>
                                                 Demo
@@ -280,6 +227,64 @@
                                                 <input type="checkbox" id="cost-analysis" name="additionalServices" value="cost-analysis"/>
                                                 Cost Analysis
                                                 <span class="text-small text-uppercase text-primary">Free</span>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="cloud">
+                                                <input type="checkbox" id="cloud" name="additionalServices" value="cloud"/>
+                                                Cloud Hosting
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="domain">
+                                                <input type="checkbox" id="domain" name="additionalServices" value="domain"/>
+                                                Custom Domain
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="installation">
+                                                <input type="checkbox" id="installation" name="additionalServices" value="installation"/>
+                                                Installation
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="upgrades">
+                                                <input type="checkbox" id="upgrades" name="additionalServices" value="upgrades"/>
+                                                Upgrades
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="monitoring">
+                                                <input type="checkbox" id="monitoring" name="additionalServices" value="monitoring"/>
+                                                Monitoring & Alerts
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="backup">
+                                                <input type="checkbox" id="backup" name="additionalServices" value="backup"/>
+                                                Automated Backups
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="notifications">
+                                                <input type="checkbox" id="notifications" name="additionalServices" value="notifications"/>
+                                                Email Notifications
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="bugfixes">
+                                                <input type="checkbox" id="bugfixes" name="additionalServices" value="bugfixes"/>
+                                                Priority Bug Fixes
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h5 for="additionalServices">{{ i18n "additionalServices" }}</h5>
+
+                                        <div class="checkbox">
+                                            <label for="on-premise">
+                                                <input type="checkbox" id="on-premise" name="additionalServices" value="on-premise">
+                                                On-Premise Hosting
                                             </label>
                                         </div>
                                         <div class="checkbox">
@@ -318,12 +323,6 @@
                                                 Training
                                             </label>
                                         </div>
-                                        <div class="checkbox">
-                                            <label for="on-premise-hosting">
-                                                <input type="checkbox" id="on-premise-hosting" name="additionalServices" value="on-premise-hosting">
-                                                On-Premise Hosting
-                                            </label>
-                                        </div>
                                     </div>
                                     <div class="col-md-4">
                                         <h5 for="supportRequirements">{{ i18n "supportRequirements" }}</h5>
@@ -333,18 +332,23 @@
                                                 Community Forum
                                                 <div class="text-small"><a href="discuss.openboxes.com" target="_blank">discuss.openboxes.com</a></div>
                                             </label>
-                                            <label for="business-hours">
-                                                <input type="radio" id="business-hours" name="support" value="business-hours" checked/>
-                                                US Business Hours
-                                                <div class="text-small">(9am-5pm via Email)</div>
+                                            <label for="standard">
+                                                <input type="radio" id="standard" name="support" value="standard" checked/>
+                                                Standard
+                                                <div class="text-small">(9am-5pm Email Only)</div>
                                             </label>
-                                            <label for="global-hours">
-                                                <input type="radio" id="global-hours" name="support" value="global-hours" />
-                                                Global Hours
-                                                <div class="text-small">(24x7 via Phone or Email)</div>
+                                            <label for="business">
+                                                <input type="radio" id="business" name="support" value="business"/>
+                                                Business
+                                                <div class="text-small">(9am-5pm Phone or Email)</div>
                                             </label>
-                                            <label for="custom-support">
-                                                <input type="radio" id="custom-support" name="support" value="custom-support" />
+                                            <label for="enterprise">
+                                                <input type="radio" id="enterprise" name="support" value="enterprise" />
+                                                Enterprise
+                                                <div class="text-small">(24x7 Phone or Email)</div>
+                                            </label>
+                                            <label for="custom">
+                                                <input type="radio" id="custom" name="support" value="custom" />
                                                 Custom SLA
                                                 <div class="text-small">(You decide)</div>
                                             </label>
@@ -356,7 +360,6 @@
                         <div class="col-sm-12">
                             <button type="submit" class="btn btn-template-primary pull-right"><i class="fa fa-paper-plane"></i> {{ i18n "signupButton" }}</button>
                             <a href="/pricing" class="btn btn-template-main"><i class="fa fa-arrow-left"></i> Back to Pricing</button></a>
-
                         </div>
                     </div>
                     <!-- /.row -->
@@ -367,144 +370,7 @@
             </section>
 
         </div>
-        <!--<div class="col-md-4">
-            <div class="heading">
-                <h4>Pricing</h4>
-            </div>
 
-
-            <table class="table table-striped table-bordered">
-                <thead>
-                <tr>
-                    <th class="col-md-4"><label>Service</label></th>
-                    <th class="col-md-8"><label>Cost</label></th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Self-Hosted</td>
-                    <td>
-                        No fee (do-it-yourself)
-                    </td>
-                </tr>
-                <tr>
-                    <td>Basic</td>
-                    <td>
-                        $250 per month
-                    </td>
-                </tr>
-                <tr>
-                    <td>Custom</td>
-                    <td>
-                        Based on requirements
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-
-            <div class="heading">
-                <h4>Add-ons</h4>
-            </div>
-
-            <table class="table table-striped table-bordered">
-                <thead>
-                <tr>
-                    <th>Service</th>
-                    <th>Hourly</th>
-                    <th>Daily</th>
-                    <th>Weekly</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Installation</td>
-                    <td colspan="3" class="text-center">
-                        $500 per instance
-                    </td>
-                </tr>
-                <tr>
-                    <td>Upgrades</td>
-                    <td colspan="3" class="text-center">
-                        $500 per instance
-                    </td>
-                </tr>
-                <tr>
-                    <td>Configuration</td>
-                    <td>
-                        $100
-                    </td>
-                    <td>
-                        $600
-                    </td>
-                    <td>
-                        $3000
-                    </td>
-                </tr>
-                <tr>
-                    <td>Implementation</td>
-                    <td>
-                        $100
-                    </td>
-                    <td>
-                        $600
-                    </td>
-                    <td>
-                        $3000
-                    </td>
-                </tr>
-                <tr>
-                    <td>Training</td>
-                    <td>
-                        $100
-                    </td>
-                    <td>
-                        $600
-                    </td>
-                    <td>
-                        $3000
-                    </td>
-                </tr>
-                <tr>
-                    <td>Data Migration</td>
-                    <td>
-                        $100
-                    </td>
-                    <td>
-                        $600
-                    </td>
-                    <td>
-                        $3000
-                    </td>
-                </tr>
-                <tr>
-                    <td>Development</td>
-                    <td>
-                        $150
-                    </td>
-                    <td>
-                        $900
-                    </td>
-                    <td>
-                        $4000
-                    </td>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Integration</td>
-                    <td>
-                        $150
-                    </td>
-                    <td>
-                        $900
-                    </td>
-                    <td>
-                        $4000
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-
-        </div>-->
     </div>
     <!-- /.row -->
 </div>

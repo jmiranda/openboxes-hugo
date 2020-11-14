@@ -103,7 +103,7 @@
   translation: "Basic Services"
 
 - id: additionalServices
-  translation: "Optional Services"
+  translation: "Add-on Services"
 
 - id: supportRequirements
   translation: "Support Requirements"
