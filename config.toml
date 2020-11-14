@@ -74,6 +74,11 @@ paginate = 10
     weight = 30
 
 [[menu.main]]
+    name = "Signup"
+    url  = "/signup/"
+    weight = 40
+
+[[menu.main]]
     identifier = "roadmap"
     name = "Roadmap"
     url  = "/roadmap"

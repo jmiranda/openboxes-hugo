@@ -1,15 +1,13 @@
 ---
 weight: 4
-title: Let us help
+title: World-Class Support
 description: |
   <ul class="list-style-none">
      <li><i class="fa fa-calculator"></i> Cost Analysis</li>
      <li><i class="fa fa-server"></i> Server Hosting<li>
      <li><i class="fa fa-code"></i> Custom Development<li>
-     <li><i class="fa fa-bar-chart"></i> Custom Reports<li>
-     <li><i class="fa fa-handshake-o"></i> Implementation Services</li>
-     <li><i class="fa fa-support"></i> Support & Upgrades</li>
+     <li><i class="fa fa-support"></i> Customer Support</li>
      <li><i class="fa fa-database"></i> Data Migration</li>
    </ul>
-image: img/carousel/colleagues.jpg
+image: img/carousel/colleagues.resized.jpg
 link: /pricing

@@ -1,6 +1,6 @@
 ---
 weight: 2
-title: Improve Visibility
+title: Better Visibility
 description: |
   <ul class="list-style-none">
     <li><i class="fa fa-history"></i> View full stock history</li>
@@ -9,6 +9,5 @@ description: |
     <li><i class="fa fa-list"></i> Create standard formularies</li>
     <li><i class="fa fa-shopping-cart"></i> Track multiple suppliers</li>
   </ul>
-image: img/carousel/stock-history.png
-#image: img/screenshots/stock-card/stock-history-crop.png
+image: img/carousel/stock-history2.png
 link: /features

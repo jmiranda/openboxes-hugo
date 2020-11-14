@@ -8,18 +8,13 @@
             <div class="homepage owl-carousel">
                 {{ range sort .Site.Data.carousel "weight" }}
                 <div class="item">
-                    <div class="row">
-                        <div class="col-sm-5 right">
-                            <h1>{{ .title }}</h1>
+                    <div class="row bottom">
+                        <div class="col-sm-6 right">
+                            <h3 class="text-uppercase text-underline">{{ .title }}</h3>
                                 {{ .description | safeHTML }}
-                            <div class="row">
-                                <div class="col-sm-12 right">
-                                    <a href="{{ .link }}" class="btn btn-template-primary">Click for more information...</a>
-                                </div>
-                            </div>
 
                         </div>
-                        <div class="col-sm-7">
+                        <div class="col-sm-6">
                             <a href="{{ .image }}" target="_blank">
                                 <img class="img-responsive" src="{{ .image }}" alt="">
                             </a>

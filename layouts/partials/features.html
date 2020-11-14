@@ -1,7 +1,7 @@
 {{ if isset .Site.Params "features" }}
 {{ if .Site.Params.features.enable }}
 {{ if gt (len .Site.Data.features) 0 }}
-<section>
+<div class="container">
 
         {{ range $index, $element := sort .Site.Data.features "weight" }}
 
@@ -11,33 +11,31 @@
                 <div class="col-md-12">
 
                     <div class="row">
-                        <div class="container">
-                            <h3 class="text-center"><i class="{{ .icon }}"></i> {{ $element.name }}</h3>
-                            <p class="lead text-center">{{ $element.description | markdownify }}</p>
-                            <div class="col-md-6">
-                                <ul class="list-group-flush">
-                                {{ range $element.items }}
-                                <li class="list-group-item">{{ . | markdownify }}</li>
-                                {{ end }}
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <ul class="owl-carousel screenshots">
-                                    {{ range $element.screenshots }}
-                                    <li class="item" title="{{ .name }}">
-                                        {{ if .url }}
-                                        <a href="{{ .url }}" target="_blank">
-                                            <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
-                                        </a>
-                                        {{ else }}
-                                        <a href="{{ .image }}" target="_blank">
-                                            <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
-                                        </a>
-                                        {{ end }}
-                                    </li>
+                        <h3 class="text-center"><i class="{{ .icon }}"></i> {{ $element.name }}</h3>
+                        <p class="lead text-center">{{ $element.description | markdownify }}</p>
+                        <div class="col-md-6">
+                            <ul class="list-group-flush">
+                            {{ range $element.items }}
+                            <li class="list-group-item">{{ . | markdownify }}</li>
+                            {{ end }}
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="owl-carousel screenshots">
+                                {{ range $element.screenshots }}
+                                <li class="item" title="{{ .name }}">
+                                    {{ if .url }}
+                                    <a href="{{ .url }}" target="_blank">
+                                        <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
+                                    </a>
+                                    {{ else }}
+                                    <a href="{{ .image }}" target="_blank">
+                                        <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
+                                    </a>
                                     {{ end }}
-                                </ul>
-                            </div>
+                                </li>
+                                {{ end }}
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -47,34 +45,32 @@
                 <div class="col-md-12">
                     <div class="row bar background-gray">
 
-                        <div class="container">
 
-                            <h3 class="text-center"><i class="{{ .icon }}"></i> {{ $element.name }}</h3>
-                            <p class="lead text-center">{{ $element.description | markdownify }}</p>
-                            <div class="col-md-6">
-                                <ul class="owl-carousel screenshots">
-                                    {{ range $element.screenshots }}
-                                    <li class="item" title="{{ .name }}">
-                                        {{ if .url }}
-                                        <a href="{{ .url }}" target="_blank">
-                                            <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
-                                        </a>
-                                        {{ else }}
-                                        <a href="{{ .image }}" target="_blank">
-                                            <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
-                                        </a>
-                                        {{ end }}
-                                    </li>
+                        <h3 class="text-center"><i class="{{ .icon }}"></i> {{ $element.name }}</h3>
+                        <p class="lead text-center">{{ $element.description | markdownify }}</p>
+                        <div class="col-md-6">
+                            <ul class="owl-carousel screenshots">
+                                {{ range $element.screenshots }}
+                                <li class="item" title="{{ .name }}">
+                                    {{ if .url }}
+                                    <a href="{{ .url }}" target="_blank">
+                                        <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
+                                    </a>
+                                    {{ else }}
+                                    <a href="{{ .image }}" target="_blank">
+                                        <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
+                                    </a>
                                     {{ end }}
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <ul class="list-group">
-                                {{ range $element.items }}
-                                <li class="list-group-item">{{ . | markdownify }}</li>
+                                </li>
                                 {{ end }}
-                                </ul>
-                            </div>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-group">
+                            {{ range $element.items }}
+                            <li class="list-group-item">{{ . | markdownify }}</li>
+                            {{ end }}
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -84,7 +80,7 @@
 
         {{ end }}
 
-</section>
+</div>
 {{ end }}
 {{ end }}
 {{ end }}
