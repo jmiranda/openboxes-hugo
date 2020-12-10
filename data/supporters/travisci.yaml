@@ -1,0 +1,6 @@
+weight: 1
+name: "Travis CI"
+image: "/img/partners/travis-ci.svg"
+url: "https://travis-ci.com/"
+
+

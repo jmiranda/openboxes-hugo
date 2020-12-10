@@ -332,12 +332,12 @@ paginate = 10
 [params.partners]
     enable = true
     title = "Implementation Partners"
-    subtitle = "The following organizations have provided open-source contributions, project management, implementations services and support to the OpenBoxes community. "
+    subtitle = "The following organizations have provided funding, open-source contributions, project management, implementations services and support to the OpenBoxes community. "
 
 [params.supporters]
     enable = true
     title = "Generous Supporters"
-    subtitle = "Whether it's a free open-source license or discounted hosting, the following organizations have provided generous support to OpenBoxes throughout the years."
+    subtitle = "Whether it's a free open-source license or discounted hosting, the following organizations have provided generous support to OpenBoxes over the years."
 
 [params.recent_posts]
     enable = true

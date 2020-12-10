@@ -1,6 +1,4 @@
 weight: 3
 name: "ThoughtWorks"
-image: "https://pbs.twimg.com/profile_images/1229401464679927808/d62z1fuL_400x400.jpg"
-url: "https://www.thoughtworks.com/"
-
-
+image: "/img/partners/thoughtworks.jpg"
+url: "https://thoughtworks.com/"

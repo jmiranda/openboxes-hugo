@@ -1,6 +1,6 @@
 weight: 3
 name: "BrowserStack"
-image: "https://pbs.twimg.com/profile_images/451968255846928384/0pyDMTyp.png"
-url: "http://browserstack.com/"
+image: "/img/partners/browser-stack.svg"
+url: "https://www.browserstack.com/open-source"
 
 
