@@ -99,14 +99,17 @@
 - id: sizeHelpText
   translation: "Helps us determines the proper size of instance; does not change the pricing"
 
+- id: services
+  translation: "Services"
+
 - id: basicServices
-  translation: "Basic Services"
+  translation: "Default"
 
 - id: additionalServices
-  translation: "Add-on Services"
+  translation: "Optional"
 
 - id: supportRequirements
-  translation: "Support Requirements"
+  translation: "Support"
 
 - id: budget
   translation: "Tell us about your budget"
@@ -137,3 +140,6 @@
 
 - id: email
   translation: "Email"
+
+- id: servicesTooltip
+  translation: "Choose all that apply"

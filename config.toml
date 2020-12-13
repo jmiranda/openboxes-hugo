@@ -132,6 +132,7 @@ paginate = 10
     name = "Schedule a Demo"
     parent = "getting-started"
     url  = "https://calendly.com/openboxes"
+    onclick = "return triggerCalendlyPopup();"
     weight = 7
 
 [[menu.main]]
@@ -262,7 +263,7 @@ paginate = 10
 
     # Address
     #address = """<p><strong>OpenBoxes</strong>
-    #    <br>Milwaukee, WI 53211
+    #    <br>Shorewood, WI 53211
     #    <br>
     #    <strong>United States</strong>
     #  </p>
@@ -349,3 +350,8 @@ paginate = 10
 
 [params.adsense]
     enable = false
+
+[params.calendly]
+    enable = true
+    title = "Schedule a Demo"
+    url = ""
