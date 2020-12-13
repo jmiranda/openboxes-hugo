@@ -13,6 +13,8 @@ items:
 - Product tags
 - Recent activities
 screenshots:
+
+- image: ../img/carousel/customizable-dashboard.png
 - image: ../img/screenshots/dashboard/inventory-summary.png
 - image: ../img/screenshots/dashboard/bin-location-summary.png
 - image: ../img/screenshots/dashboard/expiration-summary.png
