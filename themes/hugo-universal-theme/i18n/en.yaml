@@ -103,7 +103,7 @@
   translation: "Services"
 
 - id: basicServices
-  translation: "Default"
+  translation: "Basic"
 
 - id: additionalServices
   translation: "Optional"

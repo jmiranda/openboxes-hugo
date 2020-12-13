@@ -217,28 +217,22 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-6">
+                            <div class="alert alert-warning">
+                                If you're just looking to schedule a live demo
+                                <a href="javascript:void(-1);" onclick="return triggerCalendlyPopup()" class="btn btn-link" target="_blank"><i class="fa fa-calendar"></i> Schedule a Demo</a>
+                            </div>
+                        </div>
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <span class="text-muted pull-right"></span>
+
+                                <label>{{ i18n "services" }}</label>
+                                <span class="text-muted text-small">{{ i18n "servicesTooltip" }}</span>
 
                                 <div class="row">
 
                                     <div class="col-md-4">
-                                        <h5>{{ i18n "basicServices" }}</h5>
-                                        <div class="checkbox">
-                                            <label for="demo">
-                                                <input type="checkbox" id="demo" name="additionalServices" value="demo" />
-                                                Demo
-                                                <span class="text-small text-uppercase text-primary">Free</span>
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="cost-analysis">
-                                                <input type="checkbox" id="cost-analysis" name="additionalServices" value="cost-analysis" />
-                                                Cost Analysis
-                                                <span class="text-small text-uppercase text-primary">Free</span>
-                                            </label>
-                                        </div>
+                                        <div class="text-muted text-small">{{ i18n "basicServices" }}</div>
                                         <div class="checkbox">
                                             <label for="cloud-hosting">
                                                 <input type="checkbox" id="cloud-hosting" name="additionalServices" value="cloud-hosting" />
@@ -266,7 +260,7 @@
                                         <div class="checkbox">
                                             <label for="monitoring">
                                                 <input type="checkbox" id="monitoring" name="additionalServices" value="monitoring" />
-                                                Monitoring
+                                                Server Monitoring
                                             </label>
                                         </div>
                                         <div class="checkbox">
@@ -289,7 +283,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-4">
-                                        <h5>{{ i18n "additionalServices" }}</h5>
+                                        <div class="text-muted text-small">{{ i18n "additionalServices" }}</div>
                                         <div class="checkbox">
                                             <label for="on-premise">
                                                 <input type="checkbox" id="on-premise" name="additionalServices" value="on-premise"/>
@@ -334,7 +328,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-4">
-                                        <h5 for="supportRequirements">{{ i18n "supportRequirements" }}</h5>
+                                        <div class="text-muted text-small">{{ i18n "supportRequirements" }}</div>
                                         <div class="radio">
                                             <label for="community">
                                                 <input type="radio" id="community" name="support" value="community"/>

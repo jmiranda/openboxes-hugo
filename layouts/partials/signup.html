@@ -17,6 +17,7 @@
                     <input type="hidden" name="type" value="signup"/>
 
                     <div class="row">
+
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="name">{{ i18n "name" }}</label>
@@ -35,6 +36,7 @@
                                 <input type="text" class="form-control" name="organization" id="organization">
                             </div>
                         </div>
+
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="name">{{ i18n "industry" }}</label>
@@ -205,81 +207,82 @@
                                         <textarea id="goals" class="form-control" name="goals" required rows="3"></textarea>
                                     </div>
                                 </div>
+                                <div class="col-md-12">
+                                    <label for="attachment" class="input-group-label">{{ i18n "attachment" }}</label>
+                                    <div class="input-group">
+                                        <input type="file" id="attachment" name="attachment" class="form-control">
+                                        <span class="input-group-addon">.zip, .doc, .xls, .pdf</span>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
+                        <div class="col-md-6">
+                            <div class="alert alert-warning">
+                                If you're just looking to schedule a live demo
+                                <a href="javascript:void(-1);" onclick="return triggerCalendlyPopup()" class="btn btn-link" target="_blank"><i class="fa fa-calendar"></i> Schedule a Demo</a>
+                            </div>
+                        </div>
+
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <span class="text-muted pull-right"></span>
+                                <label>{{ i18n "services" }}</label>
+                                <span class="text-muted text-small pull-right">{{ i18n "servicesTooltip" }}</span>
 
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <h5 for="basicServices">{{ i18n "basicServices" }}</h5>
-                                        <div class="checkbox">
-                                            <label for="demo">
-                                                <input type="checkbox" id="demo" name="additionalServices" value="demo"/>
-                                                Demo
-                                                <span class="text-small text-uppercase text-primary">Free</span>
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="cost-analysis">
-                                                <input type="checkbox" id="cost-analysis" name="additionalServices" value="cost-analysis"/>
-                                                Cost Analysis
-                                                <span class="text-small text-uppercase text-primary">Free</span>
-                                            </label>
-                                        </div>
+                                        <div class="text-muted text-small">{{ i18n "basicServices" }}</div>
                                         <div class="checkbox">
                                             <label for="cloud">
-                                                <input type="checkbox" id="cloud" name="additionalServices" value="cloud"/>
+                                                <input type="checkbox" id="cloud" name="additionalServices" value="cloud" />
                                                 Cloud Hosting
                                             </label>
                                         </div>
                                         <div class="checkbox">
                                             <label for="domain">
-                                                <input type="checkbox" id="domain" name="additionalServices" value="domain"/>
+                                                <input type="checkbox" id="domain" name="additionalServices" value="domain" />
                                                 Custom Domain
                                             </label>
                                         </div>
                                         <div class="checkbox">
                                             <label for="installation">
-                                                <input type="checkbox" id="installation" name="additionalServices" value="installation"/>
+                                                <input type="checkbox" id="installation" name="additionalServices" value="installation" />
                                                 Installation
                                             </label>
                                         </div>
                                         <div class="checkbox">
                                             <label for="upgrades">
-                                                <input type="checkbox" id="upgrades" name="additionalServices" value="upgrades"/>
+                                                <input type="checkbox" id="upgrades" name="additionalServices" value="upgrades" />
                                                 Upgrades
                                             </label>
                                         </div>
                                         <div class="checkbox">
                                             <label for="monitoring">
-                                                <input type="checkbox" id="monitoring" name="additionalServices" value="monitoring"/>
-                                                Monitoring & Alerts
+                                                <input type="checkbox" id="monitoring" name="additionalServices" value="monitoring" />
+                                                Server Monitoring
                                             </label>
                                         </div>
                                         <div class="checkbox">
                                             <label for="backup">
-                                                <input type="checkbox" id="backup" name="additionalServices" value="backup"/>
+                                                <input type="checkbox" id="backup" name="additionalServices" value="backup" />
                                                 Automated Backups
                                             </label>
                                         </div>
                                         <div class="checkbox">
                                             <label for="notifications">
-                                                <input type="checkbox" id="notifications" name="additionalServices" value="notifications"/>
+                                                <input type="checkbox" id="notifications" name="additionalServices" value="notifications" />
                                                 Email Notifications
                                             </label>
                                         </div>
                                         <div class="checkbox">
                                             <label for="bugfixes">
-                                                <input type="checkbox" id="bugfixes" name="additionalServices" value="bugfixes"/>
+                                                <input type="checkbox" id="bugfixes" name="additionalServices" value="bugfixes" />
                                                 Priority Bug Fixes
                                             </label>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
-                                        <h5 for="additionalServices">{{ i18n "additionalServices" }}</h5>
+                                        <span for="additionalServices" class="text-muted text-small">{{ i18n "additionalServices" }}</span>
 
                                         <div class="checkbox">
                                             <label for="on-premise">
@@ -325,42 +328,51 @@
                                         </div>
                                     </div>
                                     <div class="col-md-4">
-                                        <h5 for="supportRequirements">{{ i18n "supportRequirements" }}</h5>
+                                        <div class="text-muted text-small">{{ i18n "supportRequirements" }}</div>
                                         <div class="radio">
-                                            <label for="community">
-                                                <input type="radio" id="community" name="support" value="community"/>
-                                                Community Forum
-                                                <div class="text-small"><a href="discuss.openboxes.com" target="_blank">discuss.openboxes.com</a></div>
-                                            </label>
                                             <label for="standard">
-                                                <input type="radio" id="standard" name="support" value="standard" checked/>
+                                                <input type="radio" id="standard" name="support" value="standard" />
                                                 Standard
-                                                <div class="text-small">(9am-5pm Email Only)</div>
+                                                <span class="text-small text-muted">(9am-5pm)</span>
+                                                <i class="fa fa-envelope"></i>
                                             </label>
                                             <label for="business">
                                                 <input type="radio" id="business" name="support" value="business"/>
                                                 Business
-                                                <div class="text-small">(9am-5pm Phone or Email)</div>
+                                                <span class="text-small text-muted">(9am-5pm)</span>
+                                                <i class="fa fa-phone"></i>
                                             </label>
                                             <label for="enterprise">
                                                 <input type="radio" id="enterprise" name="support" value="enterprise" />
                                                 Enterprise
-                                                <div class="text-small">(24x7 Phone or Email)</div>
+                                                <span class="text-small text-muted">(24x7)</span>
+                                                <i class="fa fa-phone"></i>
                                             </label>
                                             <label for="custom">
                                                 <input type="radio" id="custom" name="support" value="custom" />
-                                                Custom SLA
-                                                <div class="text-small">(You decide)</div>
+                                                Custom
+                                                <span class="text-small text-muted">(flexible)</span>
+                                            </label>
+                                            <label for="community">
+                                                <input type="radio" id="community" name="support" value="community" checked/>
+                                                Community <span class="text-small text-muted">(n/a)</span>
+                                                <span class="text-small text-muted">
+                                                    <a href="https://discuss.openboxes.com" target="_blank">discuss.openboxes.com</a>
+                                                </span>
+                                                <i class="fa fa-forum"></i>
                                             </label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
                             <button type="submit" class="btn btn-template-primary pull-right"><i class="fa fa-paper-plane"></i> {{ i18n "signupButton" }}</button>
                             <a href="/pricing" class="btn btn-template-main"><i class="fa fa-arrow-left"></i> Back to Pricing</button></a>
                         </div>
+
                     </div>
                     <!-- /.row -->
                 </form>
