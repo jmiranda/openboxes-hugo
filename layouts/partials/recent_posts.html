@@ -16,7 +16,7 @@
 
             <div class="row">
 
-                {{ $posts := .Paginate (where .Data.Pages "Type" "blog") }}
+                {{ $posts := .Paginate (where .Site.Pages "Type" "blog") }}
                 {{ range first 3 $posts.Pages }}
                 <div class="col-md-4 col-sm-4">
                     <div class="box-image-text blog">
@@ -30,14 +30,23 @@
                             </div>
                             <div class="bg"></div>
                             <div class="text">
+
                                 <p class="buttons">
+                                    {{ if .Params.redirectUrl }}
+                                    <a href="{{ .Params.redirectUrl }}" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> {{ i18n "readMore" }}</a>
+                                    {{ else }}
                                     <a href="{{ .Permalink }}" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> {{ i18n "readMore" }}</a>
+                                    {{ end }}
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
+                            {{ if .Params.redirectUrl }}
+                            <h4><a href="{{ .Params.redirectUrl  }}">{{ .Title }}</a></h4>
+                            {{ else }}
                             <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                            {{ end }}
                             <p class="author-category">
                             {{ with .Params.author }}
                             {{ i18n "authorBy" }} <a href="#">{{ . }}</a>
@@ -46,12 +55,16 @@
                             </p>
                             <p class="intro">{{ .Summary }}</p>
                             <p class="read-more">
-                              <a href="{{ .Permalink }}" class="btn btn-template-main">{{ i18n "continueReading" }}</a>
+                                {{ if .Params.redirectUrl }}
+                                    <a href="{{ .Params.redirectUrl }}" class="btn btn-template-main">{{ i18n "continueReading" }}</a>
+                                {{ else }}
+                                    <a href="{{ .Permalink }}" class="btn btn-template-main">{{ i18n "continueReading" }}</a>
+                                {{ end }}
+
                             </p>
                         </div>
+                        <!-- /.box-image-text -->
                     </div>
-                    <!-- /.box-image-text -->
-
                 </div>
                 {{ end }}
 
