@@ -142,4 +142,4 @@
   translation: "Email"
 
 - id: servicesTooltip
-  translation: "Choose all that apply"
+  translation: "(choose all that apply)"

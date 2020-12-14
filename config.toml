@@ -27,68 +27,90 @@ paginate = 10
 #    url = "/"
 #    weight = 1
 
-# About
-#[[menu.main]]
-#    identifier = "about"
-#    name = "About"
-#    weight = 10
+# Learn More
+[[menu.main]]
+    identifier = "about"
+    name = "Learn More"
+    weight = 55
 
+[[menu.main]]
+    name = "About OpenBoxes"
+    parent = "about"
+    url  = "/about"
+    weight = 1
 
-#[[menu.main]]
-#    name = "About Us"
-#    parent = "about"
-#    url  = "/about"
-#    weight = 1
+[[menu.main]]
+    name = "Recent News"
+    parent = "about"
+    url  = "/blog/"
+    weight = 2
 
-#[[menu.main]]
-#    name = "Roadmap"
-#    parent = "about"
-#    url  = "/roadmap/"
-#    weight = 4
+[[menu.main]]
+    name = "Roadmap"
+    parent = "about"
+    url  = "/roadmap/"
+    weight = 3
 
-#[[menu.main]]
-#    name = "Implementations"
-#    parent = "about"
-#    url  = "/users/"
-#    weight = 5
+[[menu.main]]
+    name = "Implementations"
+    parent = "about"
+    url  = "/users/"
+    weight = 4
 
-#[[menu.main]]
-#    name = "News"
-#    parent = "about"
-#    url  = "/blog/"
-#    weight = 1
+# Features
 
 [[menu.main]]
     name = "Features"
     url  = "/features/"
     weight = 15
 
+# Demo
+
 [[menu.main]]
+    identifier = "demo"
     name = "Demo"
-    url  = "https://demo.openboxes.com/openboxes/auth/signup"
     weight = 20
+
+[[menu.main]]
+    name = "Try our Live Demo"
+    parent = "demo"
+    url  = "https://demo.openboxes.com/openboxes/auth/signup"
+    weight = 1
+
+[[menu.main]]
+    name = "Schedule a Demo"
+    parent = "demo"
+    url = "https://calendly.com/openboxes/demo"
+    weight = 2
+
+
+
+
+# Pricing
 
 [[menu.main]]
     name = "Pricing"
     url  = "/pricing/"
     weight = 30
 
+# Signup
+
 [[menu.main]]
     name = "Signup"
     url  = "/signup/"
     weight = 40
 
-[[menu.main]]
-    identifier = "roadmap"
-    name = "Roadmap"
-    url  = "/roadmap"
-    weight = 50
+#[[menu.main]]
+#    identifier = "roadmap"
+#    name = "Roadmap"
+#    url  = "/roadmap"
+#    weight = 50
 
-[[menu.main]]
-    identifier = "tutorials"
-    name = "Tutorials"
-    url  = "/tutorials"
-    weight = 55
+#[[menu.main]]
+#    identifier = "tutorials"
+#    name = "Tutorials"
+#    url  = "/tutorials"
+#    weight = 55
 
 # Getting Started
 [[menu.main]]
@@ -128,12 +150,6 @@ paginate = 10
     url  = "/roadmap"
     weight = 6
 
-[[menu.main]]
-    name = "Schedule a Demo"
-    parent = "getting-started"
-    url  = "https://calendly.com/openboxes"
-    onclick = "return triggerCalendlyPopup();"
-    weight = 7
 
 [[menu.main]]
     name = "Source Code"

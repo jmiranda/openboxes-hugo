@@ -227,10 +227,11 @@
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label>{{ i18n "services" }}</label>
-                                <span class="text-muted text-small pull-right">{{ i18n "servicesTooltip" }}</span>
+                                <span class="text-muted text-small">{{ i18n "servicesTooltip" }}</span>
 
                                 <div class="row">
                                     <div class="col-md-4">
+
                                         <div class="text-muted text-small">{{ i18n "basicServices" }}</div>
                                         <div class="checkbox">
                                             <label for="cloud">
@@ -282,7 +283,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-4">
-                                        <span for="additionalServices" class="text-muted text-small">{{ i18n "additionalServices" }}</span>
+                                        <div for="additionalServices" class="text-muted text-small">{{ i18n "additionalServices" }}</div>
 
                                         <div class="checkbox">
                                             <label for="on-premise">
@@ -330,11 +331,11 @@
                                     <div class="col-md-4">
                                         <div class="text-muted text-small">{{ i18n "supportRequirements" }}</div>
                                         <div class="radio">
-                                            <label for="standard">
-                                                <input type="radio" id="standard" name="support" value="standard" />
-                                                Standard
-                                                <span class="text-small text-muted">(9am-5pm)</span>
-                                                <i class="fa fa-envelope"></i>
+                                            <label for="enterprise">
+                                                <input type="radio" id="enterprise" name="support" value="enterprise" />
+                                                Enterprise
+                                                <span class="text-small text-muted">(24x7)</span>
+                                                <i class="fa fa-phone"></i>
                                             </label>
                                             <label for="business">
                                                 <input type="radio" id="business" name="support" value="business"/>
@@ -342,15 +343,15 @@
                                                 <span class="text-small text-muted">(9am-5pm)</span>
                                                 <i class="fa fa-phone"></i>
                                             </label>
-                                            <label for="enterprise">
-                                                <input type="radio" id="enterprise" name="support" value="enterprise" />
-                                                Enterprise
-                                                <span class="text-small text-muted">(24x7)</span>
-                                                <i class="fa fa-phone"></i>
+                                            <label for="standard">
+                                                <input type="radio" id="standard" name="support" value="standard" />
+                                                Standard
+                                                <span class="text-small text-muted">(9am-5pm)</span>
+                                                <i class="fa fa-envelope"></i>
                                             </label>
                                             <label for="custom">
                                                 <input type="radio" id="custom" name="support" value="custom" />
-                                                Custom
+                                                Custom SLA
                                                 <span class="text-small text-muted">(flexible)</span>
                                             </label>
                                             <label for="community">

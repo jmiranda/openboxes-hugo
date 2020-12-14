@@ -196,8 +196,8 @@
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="form-group">
-                                        <label for="business">{{ i18n "business" }}</label>
-                                        <textarea id="business" class="form-control" name="business" required rows="2"></textarea>
+                                        <label for="business-details">{{ i18n "business" }}</label>
+                                        <textarea id="business-details" class="form-control" name="business" required rows="2"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
@@ -330,30 +330,36 @@
                                     <div class="col-md-4">
                                         <div class="text-muted text-small">{{ i18n "supportRequirements" }}</div>
                                         <div class="radio">
-                                            <label for="community">
-                                                <input type="radio" id="community" name="support" value="community"/>
-                                                Community Forum
-                                                <div class="text-small"><a href="discuss.openboxes.com" target="_blank">discuss.openboxes.com</a></div>
-                                            </label>
-                                            <label for="business-hours">
-                                                <input type="radio" id="support" name="support" value="standard"/>
-                                                Standard
-                                                <div class="text-small">(9am-5pm Email Only)</div>
-                                            </label>
-                                            <label for="business-hours">
-                                                <input type="radio" id="business-hours" name="support" value="business"/>
-                                                Business
-                                                <div class="text-small">(9am-5pm Phone or Email)</div>
-                                            </label>
-                                            <label for="global-hours">
-                                                <input type="radio" id="global-hours" name="support" value="enterprise" />
+                                            <label for="enterprise">
+                                                <input type="radio" id="enterprise" name="support" value="enterprise" />
                                                 Enterprise
-                                                <div class="text-small">(24x7 Phone or Email)</div>
+                                                <span class="text-small text-muted">(24x7)</span>
+                                                <i class="fa fa-phone"></i>
                                             </label>
-                                            <label for="custom-support">
-                                                <input type="radio" id="custom-support" name="support" value="custom" />
+                                            <label for="business">
+                                                <input type="radio" id="business" name="support" value="business"/>
+                                                Business
+                                                <span class="text-small text-muted">(9am-5pm)</span>
+                                                <i class="fa fa-phone"></i>
+                                            </label>
+                                            <label for="standard">
+                                                <input type="radio" id="standard" name="support" value="standard" />
+                                                Standard
+                                                <span class="text-small text-muted">(9am-5pm)</span>
+                                                <i class="fa fa-envelope"></i>
+                                            </label>
+                                            <label for="custom">
+                                                <input type="radio" id="custom" name="support" value="custom" />
                                                 Custom SLA
-                                                <div class="text-small">(You decide)</div>
+                                                <span class="text-small text-muted">(flexible)</span>
+                                            </label>
+                                            <label for="community">
+                                                <input type="radio" id="community" name="support" value="community" checked/>
+                                                Community <span class="text-small text-muted">(n/a)</span>
+                                                <span class="text-small text-muted">
+                                                    <a href="https://discuss.openboxes.com" target="_blank">discuss.openboxes.com</a>
+                                                </span>
+                                                <i class="fa fa-forum"></i>
                                             </label>
                                         </div>
                                     </div>

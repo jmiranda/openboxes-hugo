@@ -20,3 +20,12 @@
 .ea-content {
   background-color: white !important;
 }
+
+.table-wrapper {
+  max-width: 100%;
+  overflow-x: scroll;
+}
+
+.border-top {
+  border-top: 2px solid lightgrey;
+}
