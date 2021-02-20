@@ -1,6 +1,6 @@
 {{ if isset .Site.Params "recent_posts" }}
 {{ if .Site.Params.recent_posts.enable }}
-<section class="bar background-white no-mb">
+<section class="bar background-white">
     <div class="container">
 
         <div class="col-md-12">
@@ -14,12 +14,11 @@
 
             <!-- *** BLOG HOMEPAGE *** -->
 
-            <div class="row">
-
+            <div class="row same-height-row">
                 {{ $posts := .Paginate (where .Site.Pages "Type" "blog") }}
-                {{ range first 3 $posts.Pages }}
+                {{ range first 6 $posts.Pages }}
                 <div class="col-md-4 col-sm-4">
-                    <div class="box-image-text blog">
+                    <div class="box-image-text blog same-height">
                         <div class="top">
                             <div class="image" style="overflow:hidden">
                                 {{ if isset .Params "banner" }}
@@ -30,7 +29,6 @@
                             </div>
                             <div class="bg"></div>
                             <div class="text">
-
                                 <p class="buttons">
                                     {{ if .Params.redirectUrl }}
                                     <a href="{{ .Params.redirectUrl }}" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> {{ i18n "readMore" }}</a>
@@ -40,7 +38,6 @@
                                 </p>
                             </div>
                         </div>
-
                         <div class="content">
                             {{ if .Params.redirectUrl }}
                             <h4><a href="{{ .Params.redirectUrl  }}">{{ .Title }}</a></h4>
@@ -54,14 +51,13 @@
                             {{ i18n "publishedOn" }} {{ .Date.Format .Site.Params.date_format }}
                             </p>
                             <p class="intro">{{ .Summary }}</p>
-                            <p class="read-more">
-                                {{ if .Params.redirectUrl }}
-                                    <a href="{{ .Params.redirectUrl }}" class="btn btn-template-main">{{ i18n "continueReading" }}</a>
-                                {{ else }}
-                                    <a href="{{ .Permalink }}" class="btn btn-template-main">{{ i18n "continueReading" }}</a>
-                                {{ end }}
-
-                            </p>
+<!--                            <p class="read-more">-->
+<!--                                {{ if .Params.redirectUrl }}-->
+<!--                                    <a href="{{ .Params.redirectUrl }}" class="btn btn-template-main">{{ i18n "continueReading" }}</a>-->
+<!--                                {{ else }}-->
+<!--                                    <a href="{{ .Permalink }}" class="btn btn-template-main">{{ i18n "continueReading" }}</a>-->
+<!--                                {{ end }}-->
+<!--                            </p>-->
                         </div>
                         <!-- /.box-image-text -->
                     </div>

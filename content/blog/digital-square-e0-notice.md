@@ -3,7 +3,7 @@ banner = "/img/banners/deploy-to-azure.png"
 categories = ['announcements']
 date = 2020-05-19T06:00:00Z
 tags = []
-title = "Push Button Deployment & User Onboarding"
+title = "Self-Service Deployment & User On-boarding"
 
 +++
 
