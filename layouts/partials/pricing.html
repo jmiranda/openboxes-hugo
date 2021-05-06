@@ -27,30 +27,23 @@
                                                 <div class="price-container d-flex align-items-end justify-content-center">
                                                     <div class="h3">
                                                         FREE<sup>*</sup>
-                                                        <div class="text-small">Do It Yourself</div>
+                                                        <div class="text-small">Self-Hosted with any provider</div>
                                                     </div>
                                                 </div>
                                                 <ul class="list-unstyled">
-                                                    <li class="text-danger"><i class="fa fa-ban"></i> Cloud Hosted</li>
+                                                    <li class="text-danger"><i class="fa fa-ban"></i> Cloud Hosted </li>
                                                     <li class="text-danger"><i class="fa fa-ban"></i> On-Premise</li>
                                                     <li class="text-danger"><i class="fa fa-ban"></i> Installation</li>
                                                     <li class="text-danger"><i class="fa fa-ban"></i> Upgrades</li>
                                                     <li class="text-danger"><i class="fa fa-ban"></i> Monitoring</li>
                                                     <li class="text-danger"><i class="fa fa-ban"></i> Auto Backup</li>
                                                     <li class="text-danger"><i class="fa fa-ban"></i> Bug Fixes</li>
-                                                    <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Implementation</li>-->
-                                                    <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Configuration</li>-->
-                                                    <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Custom Reports</li>-->
-                                                    <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Custom Development</li>-->
-                                                    <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Integration</li>-->
-                                                    <!--<li class="text-primary"><i class="fa fa-plus-circle"></i> Training</li>-->
-                                                    <li class="text-success"><i class="fa fa-check-circle"></i> Community Support</li>
-                                                    <li class="text-success"><i class="fa fa-check-circle"></i> Forum</li>
+                                                    <li class="text-danger"><i class="fa fa-ban"></i> Excludes Support</li>
                                                     <li>
                                                         <a href="https://openboxes.readthedocs.io/en/latest/installation/" class="btn btn-template-primary btn-block">Get Started</a>
                                                     </li>
                                                 </ul>
-                                                <div class="text-muted text-small text-italic">Good for super-users <br/>
+                                                <div class="text-muted text-small text-italic">Recommended for super-users <br/>
                                                     who want complete control.</div>
                                             </div>
                                         </div>
@@ -64,24 +57,23 @@
                                                 <div class="price-container d-flex align-items-end justify-content-center">
                                                     <div class="h3">
                                                         $10<sup class="text-small">+</sup>/mo
-                                                        <div class="text-small">Self-Service Deployment</div>
+                                                        <div class="text-small">Self-Hosted with DigitalOcean</div>
                                                     </div>
                                                 </div>
                                                 <ul class="list-unstyled">
-                                                    <li class="text-success"><i class="fa fa-check-circle"></i> Cloud Hosted</li>
+                                                    <li class="text-success"><i class="fa fa-check-circle"></i> Cloud Hosted</small></li>
                                                     <li class="text-danger"><i class="fa fa-ban"></i> On-Premise</li>
                                                     <li class="text-success"><i class="fa fa-check-circle"></i> Installation</li>
                                                     <li class="text-danger"><i class="fa fa-ban"></i> Upgrades</li>
                                                     <li class="text-danger"><i class="fa fa-ban"></i> Monitoring</li>
                                                     <li class="text-danger"><i class="fa fa-ban"></i> Auto Backup</li>
                                                     <li class="text-danger"><i class="fa fa-ban"></i> Bug Fixes</li>
-                                                    <li class="text-success"><i class="fa fa-check-circle"></i> Community Support</li>
-                                                    <li class="text-success"><i class="fa fa-check-circle"></i> Forum</li>
+                                                    <li class="text-danger"><i class="fa fa-ban"></i> Excludes Support</li>
                                                     <li>
-                                                        <a href="https://discuss.openboxes.com/t/openboxes-1-click-app-install-via-digitalocean-marketplace/311" class="btn btn-template-primary btn-block">Get Started</a>
+                                                        <a href="https://marketplace.digitalocean.com/apps/openboxes?refcode=da4712a483b4" class="btn btn-template-primary btn-block">Launch Droplet</a>
                                                     </li>
                                                 </ul>
-                                                <div class="text-muted text-small text-italic">Good for tech-savvy users <br/>
+                                                <div class="text-muted text-small text-italic">Recommended for tech-savvy users <br/>
                                                     who want easy install.</div>
                                             </div>
                                         </div>
@@ -106,13 +98,13 @@
                                                     <li class="text-success"><i class="fa fa-check-circle"></i> Monitoring</li>
                                                     <li class="text-success"><i class="fa fa-check-circle"></i> Auto Backup</li>
                                                     <li class="text-success"><i class="fa fa-check-circle"></i> Bug Fixes</li>
-                                                    <li class="text-success"><i class="fa fa-check-circle"></i> Standard Support</li>
-                                                    <li class="text-success"><i class="fa fa-check-circle"></i> Forum, Chat, Email</li>
+                                                    <li class="text-success"><i class="fa fa-check-circle"></i> Includes Support</li>
                                                     <li>
-                                                        <a href="/signup?support=standard&service=demo&service=cost-analysis&service=cloud&service=domain&service=notifications&service=monitoring&service=installation&service=upgrades&service=backup&service=notifications&service=bugfixes" class="btn btn-template-primary btn-block">Sign Up</a>
+<!--                                                        <a href="/signup?support=standard&service=demo&service=cost-analysis&service=cloud&service=domain&service=notifications&service=monitoring&service=installation&service=upgrades&service=backup&service=notifications&service=bugfixes">Sign Up</a>-->
+                                                        {{ partial "checkout-button.html" . }}
                                                     </li>
                                                 </ul>
-                                                <div class="text-muted text-small text-italic">Good for smaller organizations
+                                                <div class="text-muted text-small text-italic">Recommended for smaller organizations
                                                     <br/>with limited resources.</div>
                                             </div>
                                         </div>
@@ -137,15 +129,14 @@
                                                     <li class="text-primary"><i class="fa fa-plus-circle"></i> Monitoring</li>
                                                     <li class="text-primary"><i class="fa fa-plus-circle"></i> Auto Backup</li>
                                                     <li class="text-primary"><i class="fa fa-plus-circle"></i> Bug Fixes</li>
-                                                    <li class="text-primary"><i class="fa fa-plus-circle"></i> Any Support</li>
-                                                    <li class="text-primary"><i class="fa fa-plus-circle"></i> Forum, Chat, Email, Phone</li>
+                                                    <li class="text-primary"><i class="fa fa-plus-circle"></i> Includes Support</li>
                                                     <li>
                                                         <a href="/quote?support=community" class="btn btn-template-primary btn-block">Request Quote</a>
                                                     </li>
                                                 </ul>
                                                 <div class="text-muted text-small text-italic">
-                                                    Good for larger organizations <br/>
-                                                    with deep pockets who prefer to delegate.
+                                                    Recommended for larger organizations <br/>
+                                                    who prefer to delegate.
                                                 </div>
                                             </div>
                                         </div>
@@ -168,8 +159,8 @@
                                     any software system you plan to adopt.
                                 </p>
                                 <p class="list-group-item text-small"><sup>**</sup> Pricing for the Business package
-                                    fluctuates based on our availability and capacity to provide support. At the moment,
-                                    we recommend the
+                                    fluctuates based on our availability and capacity to provide quality hosting and support. At the moment,
+                                    we recommend the Basic Hosting with Standard Support if you think the Business Hosting is too expensive.
                                 </p>
                                 <p class="list-group-item text-small"><sup>***</sup> On-Premise implementations are available as an add-on for any package. In addition, we can configure
                                     a network of on-premise servers to sync with a parent cloud server in case of Internet outages. Ask us about our On-Premise implementation plan when requesting a quote.
@@ -491,65 +482,65 @@
                         <p class="text-small"><sup>1</sup> Cost may vary depending on complexity of requirements. Please specify requirements when requesting a quote.
                     </div>
 
-                    <a name="services"></a>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="heading">
-                                <h3>Special Offers</h3>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="panel panel-primary">
-                                <div class="panel-heading">
-                                    Development Packages
-                                </div>
-                                <div class="panel-body">
-                                    If you would like to purchase larger increments of time in order to
-                                    develop multiple customizations at one time, we'd be happy to discuss discounted rates.
-                                    Contact our support team provide them with details about your requirements and
-                                    we'll get back to you with a quote.
-                                </div>
-                                <div class="panel-footer">
-                                    <a href="mailto:support@openboxes.com?subject=Development+Discounts" class="btn btn-block btn-link">Contact Us</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="panel panel-primary">
-                                <div class="panel-heading">
-                                    Non-Profits
-                                </div>
-                                <div class="panel-body">
-                                    <p>If you are a non-profit or small business and feel like you
-                                    cannot afford these rates, please let us know.</p> 
-                                    <p>We can work with you on your budget and/or reach out to some of our
-                                        partners for alternative quotes. Provide details to our support team 
-                                        and we'll try to accommodate your budget constraints.</p>
+<!--                    <a name="services"></a>-->
+<!--                    <div class="row">-->
+<!--                        <div class="col-md-12">-->
+<!--                            <div class="heading">-->
+<!--                                <h3>Special Offers</h3>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-4">-->
+<!--                            <div class="panel panel-primary">-->
+<!--                                <div class="panel-heading">-->
+<!--                                    Development Packages-->
+<!--                                </div>-->
+<!--                                <div class="panel-body">-->
+<!--                                    If you would like to purchase larger increments of time in order to-->
+<!--                                    develop multiple customizations at one time, we'd be happy to discuss discounted rates.-->
+<!--                                    Contact our support team provide them with details about your requirements and-->
+<!--                                    we'll get back to you with a quote.-->
+<!--                                </div>-->
+<!--                                <div class="panel-footer">-->
+<!--                                    <a href="mailto:support@openboxes.com?subject=Development+Discounts" class="btn btn-block btn-link">Contact Us</a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-4 ">-->
+<!--                            <div class="panel panel-primary">-->
+<!--                                <div class="panel-heading">-->
+<!--                                    Non-Profits-->
+<!--                                </div>-->
+<!--                                <div class="panel-body">-->
+<!--                                    <p>If you are a non-profit or small business and feel like you-->
+<!--                                        cannot afford these rates, please let us know.</p>-->
+<!--                                    <p>We can work with you on your budget and/or reach out to some of our-->
+<!--                                        partners for alternative quotes. Provide details to our support team-->
+<!--                                        and we'll try to accommodate your budget constraints.</p>-->
 
-                                </div>
-                                <div class="panel-footer">
-                                    <a href="mailto:support@openboxes.com?subject=Non-profits" class="btn btn-block btn-link">Contact Us</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="panel panel-primary">
-                                <div class="panel-heading">
-                                    Referral Discounts
-                                </div>
-                                <div class="panel-body">
-                                    <p>
-                                        If you refer OpenBoxes to anyone, please let us know and we'll discuss discounts 
-                                        for hosting, support, and development costs.
-                                    </p>
+<!--                                </div>-->
+<!--                                <div class="panel-footer">-->
+<!--                                    <a href="mailto:support@openboxes.com?subject=Non-profits" class="btn btn-block btn-link">Contact Us</a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-4">-->
+<!--                            <div class="panel panel-primary">-->
+<!--                                <div class="panel-heading">-->
+<!--                                    Referral Discounts-->
+<!--                                </div>-->
+<!--                                <div class="panel-body">-->
+<!--                                    <p>-->
+<!--                                        If you refer OpenBoxes to anyone, please let us know and we'll discuss discounts-->
+<!--                                        for hosting, support, and development costs.-->
+<!--                                    </p>-->
 
-                                </div>
-                                <div class="panel-footer">
-                                    <a href="mailto:support@openboxes.com?subject=Referrals" class="btn btn-block btn-link">Contact Us</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<!--                                </div>-->
+<!--                                <div class="panel-footer">-->
+<!--                                    <a href="mailto:support@openboxes.com?subject=Referrals" class="btn btn-block btn-link">Contact Us</a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
 
                 </div>
             </div>
