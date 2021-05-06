@@ -33,7 +33,7 @@
                  * https://stripe.com/docs/payments/checkout/fulfill-orders
                  */
                 successUrl: window.location.protocol + '//openboxes.com/checkout/order-successful',
-                cancelUrl: window.location.protocol + '//openboxes.com/checkout/order-canceled',
+                cancelUrl: window.location.protocol + '//openboxes.com/checkout/order-cancelled',
             })
                 .then(function (result) {
                     if (result.error) {
