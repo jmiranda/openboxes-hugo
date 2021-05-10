@@ -315,6 +315,9 @@ paginate = 10
 [params.features]
     enable = true
 
+[params.pricingfaqs]
+    enable = true
+
 [params.tutorials]
     enable = true
 

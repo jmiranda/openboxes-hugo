@@ -1,0 +1,13 @@
+weight: 3
+question: Why is Professional Support more expensive than hosting?
+answer: |
+  Supporting software is time-consuming and expensive. In order to provide support to our users we need a team to
+  cover our support hours even on days when there are no support requests.
+
+  If our support packages are too expensive, we highly recommend that you use our
+  [Community self-service support options](/support#community) until you need a guaranteed level of support.
+
+alert: |
+  **NOTE:** We would also like to encourage third-party organizations who would like to
+  offer support and hosting to contact us.
+alertClass: info

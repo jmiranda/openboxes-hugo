@@ -1,0 +1,77 @@
+{{ if isset .Site.Params "pricingfaqs" }}
+{{ if .Site.Params.pricingfaqs.enable }}
+<div class="row">
+    <div class="col-md-12">
+        <div class="heading">
+            <h3>FAQ</h3>
+        </div>
+
+
+        {{ if gt (len .Site.Data.pricingfaqs) 0 }}
+            {{ range $index, $element := sort .Site.Data.pricingfaqs "weight" }}
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h5 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ $index }}">
+                                        {{ $element.question | markdownify }}<i class="fa fa-angle-up"></i></a>
+                                </h5>
+                            </div>
+                            <div id="collapse{{ $index }}" class="panel-collapse collapse out">
+                                <div class="panel-body">
+                                    <p>
+                                        {{ $element.answer | markdownify }}
+                                    </p>
+                                </div>
+
+                                {{ if $element.alert }}
+                                <div class="alert alert-{{ $element.alertClass }}">
+                                    {{ $element.alert | markdownify }}
+                                </div>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        {{ end }}
+    </div>
+</div>
+{{ end }}
+{{ end }}
+            <!--                                    </p>-->
+            <!--                                </div>-->
+            <!--                            </div>-->
+            <!--                        </div>-->
+            <!--                        <div class="col-md-12">-->
+            <!--                            <div class="panel panel-primary">-->
+            <!--                                <div class="panel-heading">-->
+            <!--                                    -->
+            <!--                                </div>-->
+            <!--                                <div class="panel-body">-->
+            <!--                                </div>-->
+            <!--                            </div>-->
+            <!--                        </div>-->
+            <!--                        <div class="col-md-12">-->
+            <!--                            <div class="panel panel-primary">-->
+            <!--                                <div class="panel-heading">-->
+            <!--                                    <p class="panel-title">-->
+            <!--                                        -->
+
+            <!--                                    </p>-->
+            <!--                                </div>-->
+                                            <div class="panel-body">
+                                            </div>
+            <!--                            </div>-->
+            <!--                        </div>-->
+            <!--                        <div class="col-md-12">-->
+            <!--                            <div class="panel panel-primary">-->
+            <!--                                <div class="panel-heading">-->
+            <!--                                    -->
+            <!--                                </div>-->
+            <!--                                <div class="panel-body">-->
+            <!--                            </div>-->
+            <!--                        </div>-->

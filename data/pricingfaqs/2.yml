@@ -1,0 +1,10 @@
+weight: 2
+question: If OpenBoxes is "free" then why do I need to pay for hosting and support?
+answer: |
+  OpenBoxes, the software, is free to download and use.
+
+  But unless you plan to install OpenBoxes on your personal laptop or desktop,
+  you'll have costs associated with operating the software.
+
+  Read our [Total Cost of Ownership guide](/cost-analysis) to better
+  understand the costs associated with adopting and using OpenBoxes.

@@ -3454,7 +3454,7 @@ address {
 .panel-heading {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 0.08em;
   padding: 15px 15px;
 }
