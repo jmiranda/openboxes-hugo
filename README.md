@@ -1,1 +1,6 @@
-# openboxes-hugo
+# OpenBoxes Website
+
+## Run Server
+```
+hugo serve
+```

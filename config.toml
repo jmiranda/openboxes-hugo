@@ -344,17 +344,17 @@ paginate = 10
 
 [params.users]
     enable = true
-    title = "Featured Users"
+    title = "Users"
     subtitle = "The following organizations are currently using OpenBoxes for their healthcare supply chain needs."
 
 [params.partners]
     enable = true
-    title = "Implementation Partners"
-    subtitle = "The following organizations have provided funding, open-source contributions, project management, implementations services and support to the OpenBoxes community. "
+    title = "Partners"
+    subtitle = "The following organizations provide funding, contributions, project management, implementations services and support to the OpenBoxes community."
 
 [params.supporters]
     enable = true
-    title = "Generous Supporters"
+    title = "Supporters"
     subtitle = "Whether it's a free open-source license or discounted hosting, the following organizations have provided generous support to OpenBoxes over the years."
 
 [params.recent_posts]
