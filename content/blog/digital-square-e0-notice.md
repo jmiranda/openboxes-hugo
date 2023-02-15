@@ -9,7 +9,7 @@ title = "Self-Service Deployment & User On-boarding"
 
 In collaboration with Partners In Health, we have submitted a concept note for the
 [Digital Square's Notice EO Phase 1 Shelf Readiness](https://applications.digitalsquare.io/notice-e0) 
-project and we need [your feedback](https://discuss.openboxes.com/t/push-button-deployment-new-user-onboarding/227). 
+project and we need [your feedback](https://community.openboxes.com/t/push-button-deployment-new-user-onboarding/227). 
 
 <!--more-->
 

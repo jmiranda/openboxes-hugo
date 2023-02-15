@@ -7,7 +7,7 @@ title = "Community Support"
 
 +++
 
-We've created a new discussion forum at [discuss.openboxes.com](https://openboxes.com/community)
+We've created a new discussion forum at [community.openboxes.com](https://community.openboxes.com)
 powered by [Discourse](https://www.discourse.org/). Join us to find out about new releases, 
 request features, and report bugs.
 

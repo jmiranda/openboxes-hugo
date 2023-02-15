@@ -83,11 +83,11 @@ paginate = 10
     url = "https://calendly.com/openboxes/demo"
     weight = 2
 
-[[menu.main]]
-    name = "Deploy your Own Server"
-    parent = "demo"
-    url = "https://discuss.openboxes.com/t/openboxes-1-click-app-install-via-digitalocean-marketplace/311"
-    weight = 3
+#[[menu.main]]
+#    name = "Deploy your Own Server"
+#    parent = "demo"
+#    url = "https://community.openboxes.com/t/openboxes-1-click-app-install-via-digitalocean-marketplace/311"
+#    weight = 3
 
 
 

@@ -3,7 +3,7 @@ title = "Improving User Experience in OpenBoxes"
 date = "2022-04-11T00:00:00+02:00"
 tags = [""]
 categories = ["news"]
-banner = "/img/banners/happy_and_sad_child_art.jpg"
+banner = "/img/banners/usability.jpg"
 +++
 
 OpenBoxes is an open source Logistics Management Information System designed for government and non-profit health systems in the developing world. Historically, the OpenBoxes team has focused its efforts on remaining free and accessible to all who desire to implement the software. This means that software improvements have often been driven by available funding, and user experience improvements have not been a priority despite advocacy by the OpenBoxes team.
