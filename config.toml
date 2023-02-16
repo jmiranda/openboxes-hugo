@@ -363,10 +363,10 @@ paginate = 10
     subtitle = ""
 
 [params.ethicalads]
-    enable = false
+    enable = true
 
 [params.adsense]
-    enable = true
+    enable = false
 
 [params.calendly]
     enable = true
