@@ -139,8 +139,8 @@ paginate = 10
     weight = 3
 
 [[menu.main]]
-    identifier = "get-answers"
-    name = "Get Answers"
+    identifier = "join-community"
+    name = "Join Community"
     parent = "getting-started"
     url = "https://community.openboxes.com"
     weight = 4
@@ -159,8 +159,6 @@ paginate = 10
     url  = "https://calendly.com/openboxes/training"
     post = "<i class='fa fa-cash'></i>"
     weight = 6
-
-
 
 # Documentation
 
@@ -212,31 +210,38 @@ paginate = 10
     weight = 6
 
 [[menu.main]]
+    identifier = "contributing"
+    name = "Contributing Guide"
+    parent = "docs"
+    url = "https://github.com/openboxes/openboxes/blob/develop/CONTRIBUTING.md"
+    weight = 7
+
+[[menu.main]]
     identifier = "api-guide"
     name = "API Guide"
     parent = "docs"
     url  = "https://docs.openboxes.com/en/develop/api-guide"
-    weight = 7
+    weight = 8
 
 [[menu.main]]
     identifier = "openapi-docs"
     name = "OpenAPI Docs"
     parent = "docs"
     url  = "https://community.openboxes.com/t/swagger-docs-yes-swagger-docs/480"
-    post = "<span class='badge bg-primary'>Beta</span>"
-    weight = 7
+    post = "<span class='badge bg-primary'>beta</span>"
+    weight = 9
 
 [[menu.main]]
     name = "Database Schema"
     parent = "docs"
     url  = "https://dbdocs.io/jmiranda/openboxes"
-    weight = 8
+    weight = 10
 
 [[menu.main]]
     name = "Tutorials"
     parent = "docs"
     url  = "/tutorials/"
-    weight = 9
+    weight = 11
 
 # Documentation
 #[[menu.main]]
