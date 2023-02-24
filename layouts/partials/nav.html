@@ -25,13 +25,21 @@
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ .Pre }}{{ .Name }}{{ .Post }}<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                           {{ range .Children }}
-                            <li><a href="{{ .URL }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a></li>
+                            <li>
+                                <a href="{{ .URL }}"
+                                   {{ if hasPrefix .URL "http" }}
+                                   target="_blank" rel="noopener noreferrer"
+                                   {{ end }}
+                            >
+                                {{ .Pre }}{{ .Name }} {{ .Post }}
+                                </a>
+                            </li>
                           {{ end }}
                         </ul>
                     </li>
                     {{ else }}
                     <li>
-                        <a href="{{ .URL }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a>
+                        <a href="{{ .URL }}">{{ .Pre }} {{ .Name }} {{ .Post }}</a>
                     </li>
                     {{ end  }}
                   </li>

@@ -30,13 +30,20 @@ paginate = 10
 # Learn More
 [[menu.main]]
     identifier = "about"
-    name = "Learn More"
-    weight = 55
+    pre = "<i class='fa fa-info-circle'></i>"
+    name = "About"
+    weight = 1
 
 [[menu.main]]
     name = "About OpenBoxes"
     parent = "about"
     url  = "/about"
+    weight = 1
+
+[[menu.main]]
+    name = "Benefits"
+    parent = "about"
+    url  = "/#benefits"
     weight = 1
 
 [[menu.main]]
@@ -61,6 +68,7 @@ paginate = 10
 
 [[menu.main]]
     name = "Features"
+    pre = "<i class='fa fa-star'></i>"
     url  = "/features/"
     weight = 15
 
@@ -68,20 +76,10 @@ paginate = 10
 
 [[menu.main]]
     identifier = "demo"
-    name = "Demo"
-    weight = 20
-
-[[menu.main]]
-    name = "Sign into our Demo Server"
-    parent = "demo"
+    pre = "<i class='fa fa-desktop'></i>"
+    name = "Try Demo"
     url  = "https://demo.openboxes.com/openboxes/auth/signup"
-    weight = 1
-
-[[menu.main]]
-    name = "Schedule a Demo"
-    parent = "demo"
-    url = "https://calendly.com/openboxes/demo"
-    weight = 2
+    weight = 30
 
 #[[menu.main]]
 #    name = "Deploy your Own Server"
@@ -95,8 +93,9 @@ paginate = 10
 
 [[menu.main]]
     name = "Pricing"
+    pre = "<i class='fa fa-usd'></i>"
     url  = "/pricing/"
-    weight = 30
+    weight = 20
 
 #[[menu.main]]
 #    identifier = "roadmap"
@@ -113,51 +112,130 @@ paginate = 10
 # Getting Started
 [[menu.main]]
     identifier = "getting-started"
+    pre = "<i class='fa fa-play'></i>"
     name = "Get Started"
     url  = "/getting-started/"
     weight = 60
 
 [[menu.main]]
-    identifier = "cost-analysis"
+    identifier = "try-demo"
     parent = "getting-started"
-    name = "Cost Analysis"
-    url  = "/cost-analysis"
+    name = "Try Demo"
+    url  = "https://demo.openboxes.com/openboxes/auth/signup"
+    weight = 1
+
+[[menu.main]]
+    identifier = "schedule-demo"
+    name = "Schedule Demo"
+    parent = "getting-started"
+    url = "https://calendly.com/openboxes/demo"
     weight = 2
 
 [[menu.main]]
-    name = "Documentation"
+    identifier = "request-quote"
     parent = "getting-started"
-    url  = "https://openboxes.readthedocs.io/en/develop"
+    name = "Request Quote"
+    url  = "/quote"
     weight = 3
 
 [[menu.main]]
-    name = "Downloads"
+    identifier = "ask-questions"
+    name = "Ask Questions"
     parent = "getting-started"
-    url  = "https://github.com/openboxes/openboxes/releases"
+    url = "https://community.openboxes.com"
     weight = 4
 
 [[menu.main]]
-    name = "Installation"
+    identifier = "cost-analysis"
     parent = "getting-started"
-    url  = "https://openboxes.readthedocs.io/en/develop/installation/"
+    name = "Cost Analysis"
+    url  = "https://calendly.com/openboxes/cost-analysis"
     weight = 5
 
 [[menu.main]]
-    name = "Roadmap"
+    identifier = "training"
     parent = "getting-started"
-    url  = "/roadmap"
+    name = "Schedule Training"
+    url  = "https://calendly.com/openboxes/training"
     weight = 6
 
 
+
+# Documentation
+
+[[menu.main]]
+    identifier = "docs"
+    pre = "<i class='fa fa-book'></i>"
+    name = "Docs"
+    weight = 70
+
 [[menu.main]]
     name = "Source Code"
-    parent = "getting-started"
+    parent = "docs"
     url  = "https://github.com/openboxes/openboxes"
+    weight = 1
+
+[[menu.main]]
+    identifier = "latest-release"
+    name = "Latest Release"
+    parent = "docs"
+    url  = "https://github.com/openboxes/openboxes/releases/latest"
+    weight = 2
+
+[[menu.main]]
+    identifier = "user-guide"
+    name = "User Guide"
+    parent = "docs"
+    url  = "https://help.openboxes.com"
+    weight = 3
+
+[[menu.main]]
+    identifier = "installation-guide"
+    name = "Installation Guide"
+    parent = "docs"
+    url  = "https://docs.openboxes.com/en/develop/installation/"
+    weight = 4
+
+[[menu.main]]
+    identifier = "configuration-guide"
+    name = "Configuration Guide"
+    parent = "docs"
+    url  = "https://docs.openboxes.com/en/develop/configuration-guide"
+    weight = 5
+
+[[menu.main]]
+    identifier = "developer-guide"
+    name = "Developer Guide"
+    parent = "docs"
+    url  = "https://docs.openboxes.com/en/develop/"
+    weight = 6
+
+[[menu.main]]
+    identifier = "api-guide"
+    name = "API Guide"
+    parent = "docs"
+    url  = "https://docs.openboxes.com/en/develop/api-guide"
+    weight = 7
+
+[[menu.main]]
+    identifier = "openapi-docs"
+    name = "OpenAPI Docs"
+    parent = "docs"
+    url  = "https://community.openboxes.com/t/swagger-docs-yes-swagger-docs/480"
+    post = "<span class='label label-warning'>beta</span>"
+    weight = 7
+
+
+
+[[menu.main]]
+    name = "Database Schema"
+    parent = "docs"
+    url  = "https://dbdocs.io/jmiranda/openboxes"
     weight = 8
 
 [[menu.main]]
     name = "Tutorials"
-    parent = "getting-started"
+    parent = "docs"
     url  = "/tutorials/"
     weight = 9
 
