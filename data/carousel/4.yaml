@@ -4,10 +4,11 @@ title: World-Class Support
 description: |
   <ul class="list-style-none">
      <li><i class="fa fa-calculator"></i> Cost Analysis</li>
-     <li><i class="fa fa-server"></i> Server Hosting<li>
-     <li><i class="fa fa-code"></i> Custom Development<li>
-     <li><i class="fa fa-support"></i> Customer Support</li>
      <li><i class="fa fa-database"></i> Data Migration</li>
+     <li><i class="fa fa-server"></i> Server Hosting<li>
+     <li><i class="fa fa-cloud"></i> Remote Training<li>
+     <li><i class="fa fa-support"></i> Dedicated Support</li>
+     <li><i class="fa fa-code"></i> Custom Development<li>
    </ul>
 image: img/carousel/colleagues.resized.jpg
 link: /pricing

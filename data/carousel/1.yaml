@@ -3,9 +3,9 @@ weight: 2
 title: Better Visibility
 description: |
   <ul class="list-style-none">
-    <li><i class="fa fa-history"></i> View full stock history</li>
-    <li><i class="fa fa-globe"></i> Manage multiple facilities</li>
-    <li><i class="fa fa-truck"></i> Send & receive stock movements</li>
+    <li><i class="fa fa-history"></i> View Stock History</li>
+    <li><i class="fa fa-industry"></i> Access Multiple facilities</li>
+    <li><i class="fa fa-history"></i> Record Inventory Transactions</li>
     <li><i class="fa fa-list"></i> Create standard formularies</li>
     <li><i class="fa fa-shopping-cart"></i> Track multiple suppliers</li>
   </ul>

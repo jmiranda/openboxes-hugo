@@ -5,8 +5,8 @@ description: |
   <ul class="list-style-none">
     <li><i class="fa fa-code"></i> Customize source code</li>
     <li><i class="fa fa-sign-in"></i> Sign in from anywhere</li>
-    <li><i class="fa fa-cloud"></i> Deploy on-premise or in the cloud</li>
     <li><i class="fa fa-flag"></i> Translate to any language</li>
     <li><i class="fa fa-group"></i> No limit on users, products, etc</li>
+    <li><i class="fa fa-cloud"></i> Deploy on-premise or in the cloud</li>
   </ul>
 image: img/carousel/template-easy-code.png
