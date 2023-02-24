@@ -30,7 +30,7 @@
                                    {{ if hasPrefix .URL "http" }}
                                    target="_blank" rel="noopener noreferrer"
                                    {{ end }}
-                            >
+                                >
                                 {{ .Pre }}{{ .Name }} {{ .Post }}
                                 </a>
                             </li>
@@ -39,7 +39,13 @@
                     </li>
                     {{ else }}
                     <li>
-                        <a href="{{ .URL }}">{{ .Pre }} {{ .Name }} {{ .Post }}</a>
+                        <a href="{{ .URL }}"
+                           {{ if hasPrefix .URL "http" }}
+                        target="_blank" rel="noopener noreferrer"
+                        {{ end }}
+                        >
+                            {{ .Pre }} {{ .Name }} {{ .Post }}
+                        </a>
                     </li>
                     {{ end  }}
                   </li>
@@ -48,7 +54,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     {{ range .Site.Menus.topbar.ByWeight }}
                     <li>
-                        <a href="{{ .URL }}" style="opacity: 1;" title="{{ .Name }}">{{ .Pre }} {{ .Name }}</a>
+                       <a href="{{ .URL }}" style="opacity: 1;" title="{{ .Name }}">{{ .Pre }} {{ .Name }}</a>
                     </li>
                     {{ end }}
                 </ul>

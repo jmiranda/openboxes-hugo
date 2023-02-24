@@ -139,8 +139,8 @@ paginate = 10
     weight = 3
 
 [[menu.main]]
-    identifier = "ask-questions"
-    name = "Ask Questions"
+    identifier = "get-answers"
+    name = "Get Answers"
     parent = "getting-started"
     url = "https://community.openboxes.com"
     weight = 4
@@ -157,6 +157,7 @@ paginate = 10
     parent = "getting-started"
     name = "Schedule Training"
     url  = "https://calendly.com/openboxes/training"
+    post = "<i class='fa fa-cash'></i>"
     weight = 6
 
 
@@ -222,10 +223,8 @@ paginate = 10
     name = "OpenAPI Docs"
     parent = "docs"
     url  = "https://community.openboxes.com/t/swagger-docs-yes-swagger-docs/480"
-    post = "<span class='label label-warning'>beta</span>"
+    post = "<span class='badge bg-primary'>Beta</span>"
     weight = 7
-
-
 
 [[menu.main]]
     name = "Database Schema"
