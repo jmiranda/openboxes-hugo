@@ -1,5 +1,8 @@
 {{ if isset .Site.Params "recent_posts" }}
 {{ if .Site.Params.recent_posts.enable }}
+
+<a id="recent-news"></a>
+
 <section class="bar background-white">
     <div class="container">
 
@@ -16,9 +19,9 @@
 
             <div class="row same-height-row">
                 {{ $posts := .Paginate (where .Site.Pages "Type" "blog") }}
-                {{ range first 6 $posts.Pages }}
-                <div class="col-md-4 col-sm-4">
-                    <div class="box-image-text blog same-height">
+                {{ range first 8 $posts.Pages }}
+                <div class="col-md-3 col-sm-3">
+                    <div class="box-image-text blog">
                         <div class="top">
                             <div class="image" style="overflow:hidden">
                                 {{ if isset .Params "banner" }}
