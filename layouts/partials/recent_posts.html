@@ -21,7 +21,7 @@
                 {{ $posts := .Paginate (where .Site.Pages "Type" "blog") }}
                 {{ range first 8 $posts.Pages }}
                 <div class="col-md-3 col-sm-3">
-                    <div class="box-image-text blog">
+                    <div class="box-image-text blog same-height">
                         <div class="top">
                             <div class="image" style="overflow:hidden">
                                 {{ if isset .Params "banner" }}
