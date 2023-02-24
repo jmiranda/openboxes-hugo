@@ -7,8 +7,7 @@ banner = "/img/banners/usability.jpg"
 +++
 
 Historically, the OpenBoxes team has focused its efforts on remaining free and accessible to all who desire to implement the software. 
-This means that software improvements have often been driven by available funding, and user experience improvements have 
-not been a priority despite advocacy by the OpenBoxes team.
+This means that software improvements have often been driven by ...
 
 <!--more-->
 
