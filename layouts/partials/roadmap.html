@@ -1,86 +1,83 @@
 
 <div class="container">
+
+    <p class="text-large">Please read our blog entry <a href="/blog/2016/09/23/3/">The Road Ahead</a> to get more details about the items in the roadmap. And as always, please contact us with any feedback or questions.</p>
+
     <div class="row">
         <div class="col-md-8">
 
-            <p class="text-large">Please read our blog entry <a href="/blog/2016/09/23/3/">The Road Ahead</a> to get more details about the items in the roadmap. And as always, please contact us with any feedback or questions.</p>
 
-
-
-
-            <h3>Improved UI & Workflows</h3>
+            <h3>Workflow Improvements</h3>
             <div class="row same-height-row">
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="box-simple box-white same-height">
                         <div class="icon"><i class="fa fa-desktop"></i></div>
-                        <h4>UI Redesign</h4>
-                        <p>Replace existing user interface with a more mobile-friendly (progressive) UI using modern technologies and frameworks (ReactJS, Bootstrap, Material UI)</p>
-                        <div class="label label-success">In-Progress</div>
+                        <h4>Usability</h4>
+                        <p>Improve usability and replace existing user interface with more modern technologies and frameworks (ReactJS, Bootstrap, Material UI)</p>
+                        <div class="label label-success">Completed</div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="box-simple box-white same-height">
-                        <div class="icon"><i class="fa fa-barcode"></i></div>
-                        <h4>Barcoding</h4>
-                        <p>Workflows that incorporate barcoding to improve efficiency of receipt and putaway as well as requisition fulfillment and replenishment.</p>
-                        <div class="label label-success">In-Progress</div>
+                        <div class="icon"><i class="fa fa-spinner"></i></div>
+                        <h4>Offline Capability</h4>
+                        <p>Add offline capabilities and improve usability in environments with unreliable Internet</p>
+                        <div class="label label-warning">In Progress</div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="box-simple box-white same-height">
                         <div class="icon"><i class="fa fa-mobile"></i></div>
                         <h4>Mobile</h4>
-                        <p>Mobile app to improve usability for workers within the warehouse. Complete picking and
-                            cycle count tasks from your mobile (React Native).</p>
-                        <div class="label label-info">Prototyping</div>
+                        <p>We've completed a proof of concept of our <a href="https://github.com/openboxes/openboxes-mobile">mobile app</a> but need funding in order to make it publicly available.</p>
+                        <div class="label label-info">Requires Funding</div>
                     </div>
                 </div>
             </div>
 
-            <h3>External Services & Integration</h3>
+            <h3>Core Features & Improvements</h3>
             <div class="row same-height-row">
-                <div class="col-md-6">
+                <div class="col-md-3">
+                    <div class="box-simple box-white same-height">
+                        <div class="icon"><i class="fa fa-comments-o"></i></div>
+                        <h4>Translation</h4>
+                        <p>Integrated with Crowdin to allow users to translate application into any language.</p>
+                        <div class="label label-warning">In Progress</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box-simple box-white same-height">
+                        <div class="icon"><i class="fa fa-code-fork"></i></div>
+                        <h4>Merge Products</h4>
+                        <p>Merge duplicate or obsolete products.</p>
+                        <div class="label label-warning">In Progress</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
                     <div class="box-simple box-white same-height">
                         <div class="icon"><i class="fa fa-send"></i></div>
                         <h4>Automated Alerts</h4>
                         <p>Connect with email and telelphony services to provide email and SMS notifications for stock alerts.</p>
-                        <div class="label label-success">In-Progress</div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="box-simple box-white same-height">
-                        <div class="icon"><i class="fa fa-calculator"></i></div>
-                        <h4>Accounting</h4>
-                        <p>Connect with third-party accounting and constituent relationship management (CRM) systems like QuickBooks, Salesforce</p>
                         <div class="label label-danger">Not Started</div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-3">
                     <div class="box-simple box-white same-height">
-                        <div class="icon"><i class="fa fa-tablet"></i></div>
-                        <h4>Point-of-Service (POS)</h4>
-                        <p>Connect with pharmacy point-of-service (POS) / electronic medical records (EMR) systems in order to close the consumption loop.</p>
-                        <div class="label label-danger">Not Started</div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="box-simple box-white same-height">
-                        <div class="icon"><i class="fa fa-cloud"></i></div>
-                        <h4>IoT</h4>
-                        <p>Integration with IoT devices like cold chain thermometers to record the temperature of cold-chain items in real-time</p>
-                        <div class="label label-danger">Not Started</div>
+                        <div class="icon"><i class="fa fa-barcode"></i></div>
+                        <h4>Barcoding</h4>
+                        <p>Incorporate barcoding to improve efficiency of receipt, putaway, and picking.</p>
+                        <div class="label label-warning">In Progress</div>
                     </div>
                 </div>
             </div>
-
-            <h3>Features & Improvements</h3>
+            <h3>Technical Debt & Devops</h3>
             <div class="row same-height-row">
                 <div class="col-md-6">
                     <div class="box-simple box-white same-height">
-                        <div class="icon"><i class="fa fa-tachometer"></i></div>
-                        <h4>Reporting</h4>
-                        <p>Advanced analytics to improve forecasting decisions.</p>
-                        <div class="label label-success">In-Progress</div>
+                        <div class="icon"><i class="fa fa-trophy"></i></div>
+                        <h4>Upgrade to Grails 3 </h4>
+                        <p></p>
+                        <div class="label label-success">In Progress</div>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -91,40 +88,82 @@
                         <div class="label label-warning">Planning</div>
                     </div>
                 </div>
-                <div class="col-md-6">
+            </div>
+
+            <h3>External Services & Integration</h3>
+            <div class="row same-height-row">
+                <div class="col-md-4">
                     <div class="box-simple box-white same-height">
-                        <div class="icon"><i class="fa fa-list"></i></div>
-                        <h4>Stocklists</h4>
-                        <p>Revamped user-friendly stock list management functionality</p>
+                        <div class="icon"><i class="fa fa-tachometer"></i></div>
+                        <h4>Reporting</h4>
+                        <p>Advanced analytics to improve forecasting decisions.</p>
+                        <div class="label label-warning">Planning</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box-simple box-white same-height">
+                        <div class="icon"><i class="fa fa-plug"></i></div>
+                        <h4>Interoperability</h4>
+                        <p>Integrate within OpenHIE </p>
+                        <div class="label label-info">Requires Funding</div>
                         <div class="label label-danger">Not Started</div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
+                    <div class="box-simple box-white same-height">
+                        <div class="icon"><i class="fa fa-shopping-cart"></i></div>
+                        <h4>Sales & Shipping</h4>
+                        <p>Integrate with sales platforms like Shopify and shipping software like ShipStation to provide seamless outbound capabilities </p>
+                        <div class="label label-info">Requires Funding</div>
+                        <div class="label label-danger">Not Started</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box-simple box-white same-height">
+                        <div class="icon"><i class="fa fa-tablet"></i></div>
+                        <h4>Point-of-Service (POS)</h4>
+                        <p>Connect with pharmacy point-of-service (POS) / electronic medical records (EMR) systems in order to close the consumption loop.</p>
+                        <div class="label label-info">Requires Funding</div>
+                        <div class="label label-danger">Not Started</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box-simple box-white same-height">
+                        <div class="icon"><i class="fa fa-thermometer"></i></div>
+                        <h4>Internet of Things (IoT)</h4>
+                        <p>Integration with IoT devices like cold chain thermometers to record the temperature of cold-chain items in real-time</p>
+                        <div class="label label-info">Requires Funding</div>
+                        <div class="label label-danger">Not Started</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
                     <div class="box-simple box-white same-height">
                         <div class="icon"><i class="fa fa-wrench"></i></div>
-                        <h4>Assets</h4>
-                        <p>Track fixed asset status, location, repairs, and warranties</p>
+                        <h4>Asset Management</h4>
+                        <p>Integrate with existing asset management tools like Snipe-IT in order to allow users to track fixed asset status, location, repairs, and warranties</p>
+                        <div class="label label-info">Requires Funding</div>
                         <div class="label label-danger">Not Started</div>
                     </div>
                 </div>
             </div>
         </div>
+
+
         <div class="col-md-4">
-            <div class="box-simple box-white">
-                <h3>Roadmap</h3>
-                <p class="text-justify">You can help us prioritize our feature backlog by suggesting new ideas and
+            <div class="box-simple bg-dark box-dark">
+                <h3>Live Roadmap</h3>
+                <p class="text-justify">Help us prioritize our roadmap by suggesting new ideas and
                     voting on features that you'd like to see implemented in an upcoming version of OpenBoxes.</p>
                 <div>
-
-                <blockquote class="trello-board-compact">
-                    <a href="https://trello.com/b/5RJMqUwa/openboxes-roadmap">OpenBoxes Roadmap</a>
-                </blockquote>
+                    <blockquote class="trello-board-compact">
+                        <a href="https://trello.com/b/5RJMqUwa/openboxes-roadmap">OpenBoxes Roadmap</a>
+                    </blockquote>
                 </div>
-
                 <p>
-                Or ask us about a particular feature in our
-                <a href="https://discuss.openboxes.com">discussion forum.</a>
+                    Or if you don't see what you're looking for, request a feature in our
+                    <a href="https://community.openboxes.com">discussion forum.</a>
                 </p>
+
             </div>
         </div>
 
