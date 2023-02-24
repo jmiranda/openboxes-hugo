@@ -12,7 +12,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <p class="lead">
-                                        We highly recommend the <span class="h5 package-header text-uppercase bg-primary">Self-Hosted</span> option.
+                                        We highly recommend the <strong class="text-primary">Self-Hosted</strong> option.
                                         However, we understand that not everyone has the capacity or skills to
                                         self-host. If that's you, please don't hesitate to reach out for a quote
                                         on our managed hosting and support options.
@@ -31,20 +31,20 @@
                                                         <div class="text-small">Self-Hosted on-premise or cloud</div>
                                                     </div>
                                                 </div>
-                                                <div class="text-muted text-small text-italic">Recommended for super-users <br/>
-                                                    who want complete control.</div>
+                                                <div class="text-muted text-small text-italic">Recommended for Superusers <br/>
+                                                    who want complete control and don't need help.</div>
                                                 <ul class="list-unstyled">
                                                     <li></li>
                                                     <li class="text-secondary"><i class="fa fa-minus"></i> Cloud Hosted </li>
                                                     <li class="text-secondary"><i class="fa fa-minus"></i> On-Premise</li>
                                                     <li class="text-secondary"><i class="fa fa-minus"></i> Installation</li>
-                                                    <li class="text-secondary"><i class="fa fa-minus"></i> Server Maintenance</li>
                                                     <li class="text-secondary"><i class="fa fa-minus"></i> Monitoring</li>
                                                     <li class="text-secondary"><i class="fa fa-minus"></i> Upgrades</li>
                                                     <li class="text-secondary"><i class="fa fa-minus"></i> Hotfixes</li>
                                                     <li class="text-secondary"><i class="fa fa-minus"></i> Auto Backup</li>
+                                                    <li class="text-secondary"><i class="fa fa-minus"></i> Email Notifications</li>
+                                                    <li class="text-primary"><i class="fa fa-plus-square"></i> Dedicated Support</li>
                                                     <li class="text-success"><i class="fa fa-check-circle"></i> Community Support</li>
-                                                    <li class="text-primary"><i class="fa fa-plus-square"></i> Professional Support</li>
                                                     <li>
                                                         <a href="https://openboxes.readthedocs.io/en/latest/installation/" class="btn btn-template-main btn-block">Get Started</a>
                                                     </li>
@@ -64,7 +64,7 @@
                                                         <div class="text-small">Self-Hosted with DigitalOcean</div>
                                                     </div>
                                                 </div>
-                                                <div class="text-muted text-small text-italic">Recommended for tech-savvy users <br/>
+                                                <div class="text-muted text-small text-italic">Recommended for tech-savvy businesses <br/>
                                                     who want an easy deployment option.</div>
 
                                                 <ul class="list-unstyled">
@@ -72,13 +72,13 @@
                                                     <li class="text-success"><i class="fa fa-check-circle"></i> Cloud Hosted</small></li>
                                                     <li class="text-danger"><i class="fa fa-ban"></i> On-Premise</li>
                                                     <li class="text-success"><i class="fa fa-check-circle"></i> Installation</li>
-                                                    <li class="text-danger"><i class="fa fa-ban"></i> Server Maintenance</li>
                                                     <li class="text-danger"><i class="fa fa-ban"></i> Monitoring</li>
                                                     <li class="text-danger"><i class="fa fa-ban"></i> Upgrades</li>
                                                     <li class="text-danger"><i class="fa fa-ban"></i> Hotfixes</li>
                                                     <li class="text-danger"><i class="fa fa-ban"></i> Auto Backup</li>
+                                                    <li class="text-danger"><i class="fa fa-ban"></i> Email Notifications</li>
+                                                    <li class="text-primary"><i class="fa fa-plus-square"></i> Dedicated Support</li>
                                                     <li class="text-success"><i class="fa fa-check-circle"></i> Community Support</li>
-                                                    <li class="text-primary"><i class="fa fa-plus-square"></i> Professional Support</li>
                                                     <li>
                                                         <a target="_blank" href="https://marketplace.digitalocean.com/apps/openboxes-server?refcode=da4712a483b4&action=deploy" class="btn btn-template-primary btn-block">Launch Droplet</a>
                                                     </li>
@@ -94,7 +94,7 @@
                                                 </div>
                                                 <div class="price-container d-flex align-items-end justify-content-center">
                                                     <div class="h3">
-                                                        $500+ per month<sup>3</sup>
+                                                        $500 per month<sup>3</sup>
                                                         <div class="text-small">Hosting + Support</div>
                                                     </div>
                                                 </div>
@@ -105,20 +105,16 @@
                                                     <li class="text-success"><i class="fa fa-check-circle"></i> Cloud Hosted</li>
                                                     <li class="text-primary"><i class="fa fa-plus-square"></i> On-Premise<sup>4</sup></li>
                                                     <li class="text-success"><i class="fa fa-check-circle"></i> Installation</li>
-                                                    <li class="text-success"><i class="fa fa-check-circle"></i> Server Maintenance</li>
                                                     <li class="text-success"><i class="fa fa-check-circle"></i> Monitoring</li>
                                                     <li class="text-success"><i class="fa fa-check-circle"></i> Upgrades</li>
                                                     <li class="text-success"><i class="fa fa-check-circle"></i> Hotfixes</li>
                                                     <li class="text-success"><i class="fa fa-check-circle"></i> Auto Backup</li>
+                                                    <li class="text-success"><i class="fa fa-check-circle"></i> Email Notifications</li>
+                                                    <li class="text-success"><i class="fa fa-check-circle"></i> Dedicated Support</li>
                                                     <li class="text-success"><i class="fa fa-check-circle"></i> Community Support</li>
-                                                    <li class="text-success"><i class="fa fa-check-circle"></i> Professional Support</li>
                                                     <li>
-                                                        <a href="/quote" class="btn btn-template-main btn-block">Request Quote</a>
+                                                        {{ partial "checkout-button.html" . }}
                                                     </li>
-<!--                                                    <li>-->
-<!--&lt;!&ndash;                                                        <a href="/signup?support=standard&service=demo&service=cost-analysis&service=cloud&service=domain&service=notifications&service=monitoring&service=installation&service=upgrades&service=backup&service=notifications&service=bugfixes">Sign Up</a>&ndash;&gt;-->
-<!--                                                        {{ partial "checkout-button.html" . }}-->
-<!--                                                    </li>-->
                                                 </ul>
                                             </div>
                                         </div>
@@ -131,8 +127,8 @@
                                                 </div>
                                                 <div class="price-container d-flex align-items-end justify-content-center">
                                                     <div class="h3">
-                                                        Negotiable
-                                                        <div class="text-small">Hosting, Support & More</div>
+                                                        TBD
+                                                        <div class="text-small">Hosting, Support & Maybe More?</div>
                                                     </div>
                                                 </div>
                                                 <div class="text-muted text-small text-italic">
@@ -144,27 +140,42 @@
                                                     <li class="text-primary"><i class="fa fa-plus-square"></i> Cloud Hosted</li>
                                                     <li class="text-primary"><i class="fa fa-plus-square"></i> On-Premise<sup>4</sup></li>
                                                     <li class="text-primary"><i class="fa fa-plus-square"></i> Installation</li>
-                                                    <li class="text-primary"><i class="fa fa-plus-square"></i> Server Maintenance</li>
                                                     <li class="text-primary"><i class="fa fa-plus-square"></i> Monitoring</li>
                                                     <li class="text-primary"><i class="fa fa-plus-square"></i> Upgrades</li>
                                                     <li class="text-primary"><i class="fa fa-plus-square"></i> Hotfixes</li>
                                                     <li class="text-primary"><i class="fa fa-plus-square"></i> Auto Backup</li>
+                                                    <li class="text-primary"><i class="fa fa-plus-square"></i> Email Notifications</li>
+                                                    <li class="text-primary"><i class="fa fa-plus-square"></i> Dedicated Support</li>
                                                     <li class="text-success"><i class="fa fa-check-circle"></i> Community Support</li>
-                                                    <li class="text-primary"><i class="fa fa-plus-square"></i> Professional Support</li>
                                                     <li>
                                                         <a href="/quote" class="btn btn-template-main btn-block">Request Quote</a>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-4">
                             <ul class="list-group">
+                                <div class="list-group-item active">
+                                    <h6 class="list-group-item-heading text-uppercase">Key</h6>
+                                </div>
+                                <p class="list-group-item"><span class="text-secondary"><i class="fa fa-minus"></i> indicates a service that is do it yourself</span></p>
+                                <p class="list-group-item"><span class="text-danger"><i class="fa fa-ban"></i> indicates a service not included in package</span></p>
+                                <p class="list-group-item"><span class="text-success"><i class="fa fa-check-circle"></i> indicates a service included in package</span></p>
+                                <p class="list-group-item"><span class="text-primary"><i class="fa fa-plus-square"></i> indicates a service available as an add-on</span></p>
+                            </ul>
+                        </div>
+                        <div class="col-md-8">
+                            <ul class="list-group">
+                                <div class="list-group-item active">
+                                    <h6 class="list-group-item-heading text-uppercase">Notes</h6>
+                                </div>
                                 <li class="list-group-item text-small">All services (i.e. Installation, Development, Implementation) are available as add-ons (discounts available for long-term engagements).
                                     See <a href="/services">Services</a> page for more info.</li>
 
@@ -181,16 +192,6 @@
                                 <li class="list-group-item text-small"><sup>4</sup> On-Premise implementations are available as an add-on for any package. In addition, we can configure
                                     a network of on-premise servers to sync with a parent cloud server in case of Internet outages. Ask us about our On-Premise implementation plan when requesting a quote.
                                 </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-12">
-                            <ul class="list-group">
-                                <div class="list-group-item active">
-                                    <h6 class="list-group-item-heading text-uppercase">Key</h6>
-                                </div>
-                                <p class="list-group-item"><span class="text-danger"><i class="fa fa-ban"></i> indicates a service not included in package</span></p>
-                                <p class="list-group-item"><span class="text-success"><i class="fa fa-check-circle"></i> indicates a service included in package</span></p>
-                                <p class="list-group-item"><span class="text-primary"><i class="fa fa-plus-square"></i> indicates a service available as an add-on</span></p>
                             </ul>
                         </div>
                     </div>
