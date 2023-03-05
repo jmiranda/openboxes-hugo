@@ -11,7 +11,7 @@ defaultContentLanguage = "en"
 disqusShortname = "openboxes"
 
 # Enable Google Analytics by entering your tracking code
-googleAnalytics = "UA-37396941-2"
+googleAnalytics = "G-4244ZMRC67"
 
 # Define the number of posts per page
 paginate = 10
