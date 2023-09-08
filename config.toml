@@ -31,37 +31,41 @@ paginate = 10
 # Learn More
 [[menu.main]]
     identifier = "about"
-    pre = "<i class='fa fa-info-circle'></i>"
     name = "About"
     weight = 1
 
 [[menu.main]]
     name = "About OpenBoxes"
     parent = "about"
+    pre = "<i class='fa fa-info-circle'></i>"
     url  = "/about"
     weight = 1
 
 [[menu.main]]
     name = "Benefits"
     parent = "about"
+    pre = "<i class='fa fa-trophy'></i>"
     url  = "/#benefits"
     weight = 1
 
 [[menu.main]]
     name = "Recent News"
     parent = "about"
+    pre = "<i class='fa fa-newspaper-o'></i>"
     url  = "/blog/"
     weight = 2
 
 [[menu.main]]
     name = "Roadmap"
     parent = "about"
+    pre = "<i class='fa fa-road'></i>"
     url  = "/roadmap/"
     weight = 3
 
 [[menu.main]]
     name = "Implementations"
     parent = "about"
+    pre = "<i class='fa fa-map'></i>"
     url  = "/users/"
     weight = 4
 
@@ -69,7 +73,6 @@ paginate = 10
 
 [[menu.main]]
     name = "Features"
-    pre = "<i class='fa fa-star'></i>"
     url  = "/features/"
     weight = 15
 
@@ -77,24 +80,30 @@ paginate = 10
 
 [[menu.main]]
     identifier = "demo"
-    pre = "<i class='fa fa-desktop'></i>"
-    name = "Try Demo"
+    name = "Demo"
     url  = "https://demo.openboxes.com/openboxes/auth/signup"
     weight = 30
 
-#[[menu.main]]
-#    name = "Deploy your Own Server"
-#    parent = "demo"
-#    url = "https://community.openboxes.com/t/openboxes-1-click-app-install-via-digitalocean-marketplace/311"
-#    weight = 3
+[[menu.main]]
+    identifier = "try-demo"
+    parent = "demo"
+    pre = "<i class='fa fa-laptop'></i>"
+    name = "Try a Demo"
+    url  = "https://demo.openboxes.com/openboxes/auth/signup"
+    weight = 1
 
-
+[[menu.main]]
+    identifier = "schedule-demo"
+    name = "Schedule a Demo"
+    parent = "demo"
+    pre = "<i class='fa fa-calendar-check-o'></i>"
+    url = "https://calendly.com/openboxes/demo"
+    weight = 2
 
 # Pricing
 
 [[menu.main]]
-    name = "Pricing"
-    pre = "<i class='fa fa-usd'></i>"
+    name = "Hosting"
     url  = "/pricing/"
     weight = 20
 
@@ -113,65 +122,78 @@ paginate = 10
 # Getting Started
 [[menu.main]]
     identifier = "getting-started"
-    pre = "<i class='fa fa-play'></i>"
     name = "Get Started"
     url  = "/getting-started/"
     weight = 60
 
 [[menu.main]]
-    identifier = "try-demo"
+    identifier = "join-community"
+    name = "Join our Community"
     parent = "getting-started"
-    name = "Try Demo"
-    url  = "https://demo.openboxes.com/openboxes/auth/signup"
-    weight = 1
-
-[[menu.main]]
-    identifier = "schedule-demo"
-    name = "Schedule Demo"
-    parent = "getting-started"
-    url = "https://calendly.com/openboxes/demo"
+    pre = "<i class='fa fa-comments-o'></i>"
+    url = "https://community.openboxes.com"
     weight = 2
 
 [[menu.main]]
-    identifier = "request-quote"
+    identifier = "schedule-discussion"
+    name = "Schedule a Discussion"
     parent = "getting-started"
-    name = "Request Quote"
-    url  = "/quote"
+    pre = "<i class='fa fa-phone'></i>"
+    url = "https://calendly.com/openboxes/discussion"
     weight = 3
-
-[[menu.main]]
-    identifier = "join-community"
-    name = "Join Community"
-    parent = "getting-started"
-    url = "https://community.openboxes.com"
-    weight = 4
-
-[[menu.main]]
-    identifier = "cost-analysis"
-    parent = "getting-started"
-    name = "Cost Analysis"
-    url  = "https://calendly.com/openboxes/cost-analysis"
-    weight = 5
 
 [[menu.main]]
     identifier = "training"
     parent = "getting-started"
-    name = "Schedule Training"
+    name = "Schedule a Training"
     url  = "https://calendly.com/openboxes/training"
-    post = "<i class='fa fa-cash'></i>"
-    weight = 6
+    pre = "<i class='fa fa-calendar'></i>"
+    weight = 5
+
+#[[menu.main]]
+#    identifier = "cost-analysis"
+#    parent = "getting-started"
+#    pre = "<i class='fa fa-dollar'></i>"
+#    name = "Cost Analysis"
+#    url  = "https://calendly.com/openboxes/cost-analysis"
+#    weight = 6
+
+[[menu.main]]
+    identifier = "request-quote"
+    parent = "getting-started"
+    pre = "<i class='fa fa-money'></i>"
+    name = "Request Quote"
+    url  = "/quote"
+    weight = 7
+
+[[menu.main]]
+    name = "Deploy to Digital Ocean"
+    parent = "getting-started"
+    pre = "<i class='fa fa-cloud-upload'></i>"
+    url = "https://marketplace.digitalocean.com/apps/openboxes-server?refcode=da4712a483b4"
+    weight = 8
+
+[[menu.main]]
+    name = "Deploy to Azure"
+    parent = "getting-started"
+    pre = "<i class='fa fa-cloud-download'></i>"
+    url = "https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fopenboxes%2Fopenboxes-devops%2Fmaster%2Farm-template%2Fopenboxes-arm.json"
+    weight = 9
+
+
+
 
 # Documentation
 
 [[menu.main]]
     identifier = "docs"
-    pre = "<i class='fa fa-book'></i>"
     name = "Docs"
-    weight = 70
+    weight = 50
 
 [[menu.main]]
     name = "Source Code"
     parent = "docs"
+    pre = "<i class='fa fa-code'></i>"
     url  = "https://github.com/openboxes/openboxes"
     weight = 1
 
@@ -179,48 +201,39 @@ paginate = 10
     identifier = "latest-release"
     name = "Latest Release"
     parent = "docs"
+    pre = "<i class='fa fa-cloud-download'></i>"
     url  = "https://github.com/openboxes/openboxes/releases/latest"
     weight = 2
 
 [[menu.main]]
     identifier = "user-guide"
-    name = "User Guide"
+    name = "User Documentation"
     parent = "docs"
+    pre = "<i class='fa fa-user-circle'></i>"
     url  = "https://help.openboxes.com"
     weight = 3
 
 [[menu.main]]
     identifier = "installation-guide"
-    name = "Installation Guide"
+    name = "Technical Documentation"
     parent = "docs"
-    url  = "https://docs.openboxes.com/en/develop/installation/"
-    weight = 4
-
-[[menu.main]]
-    identifier = "configuration-guide"
-    name = "Configuration Guide"
-    parent = "docs"
-    url  = "https://docs.openboxes.com/en/develop/configuration-guide"
-    weight = 5
-
-[[menu.main]]
-    identifier = "developer-guide"
-    name = "Developer Guide"
-    parent = "docs"
+    pre = "<i class='fa fa-cog'></i>"
     url  = "https://docs.openboxes.com/en/develop/"
-    weight = 6
+    weight = 4
 
 [[menu.main]]
     identifier = "contributing"
     name = "Contributing Guide"
     parent = "docs"
+    pre = "<i class='fa fa-code-fork'></i>"
     url = "https://github.com/openboxes/openboxes/blob/develop/CONTRIBUTING.md"
     weight = 7
 
 [[menu.main]]
     identifier = "api-guide"
-    name = "API Guide"
+    name = "REST API Guide"
     parent = "docs"
+    pre = "<i class='fa fa-link'></i>"
     url  = "https://docs.openboxes.com/en/develop/api-guide"
     weight = 8
 
@@ -228,6 +241,7 @@ paginate = 10
     identifier = "openapi-docs"
     name = "OpenAPI Docs"
     parent = "docs"
+    pre = "<i class='fa fa-terminal'></i>"
     url  = "https://community.openboxes.com/t/swagger-docs-yes-swagger-docs/480"
     post = "<span class='badge bg-primary'>beta</span>"
     weight = 9
@@ -235,19 +249,20 @@ paginate = 10
 [[menu.main]]
     name = "Database Schema"
     parent = "docs"
+    pre = "<i class='fa fa-database'></i>"
     url  = "https://dbdocs.io/jmiranda/openboxes"
     weight = 10
 
 [[menu.main]]
     name = "Tutorials"
     parent = "docs"
+    pre = "<i class='fa fa-youtube-play'></i>"
     url  = "/tutorials/"
     weight = 11
 
 # Documentation
 #[[menu.main]]
 #    name = "Docs"
-#    pre = "<i class='fa fa-file'></i>"
 #    post = "<i class='fa fa-external-link'></i>"
 #    url  = "https://openboxes.readthedocs.io/en/develop"
 #    weight = 4
