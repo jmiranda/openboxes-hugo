@@ -25,14 +25,38 @@
 <script src="{{ .Site.BaseURL }}js/owl.carousel.min.js"></script>
 
 <!--Start of Zendesk Chat Script-->
-<script type="text/javascript">
+<!--<script type="text/javascript">
     window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
-            d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+        d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
     _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
         $.src="https://v2.zopim.com/?2T7RMi7ERqr3s8N20KQ3wOBRudcwosBA";z.t=+new Date;$.
-                type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
-</script>
+            type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>-->
 <!--End of Zendesk Chat Script-->
+
+<!-- Start of HubSpot Embed Code -->
+<!--  <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/24076135.js"></script>-->
+<!-- End of HubSpot Embed Code -->
+
+<!--Start of Chatwoot Script-->
+<script>
+  window.chatwootSettings = {"position":"right","type":"expanded_bubble","launcherTitle":"Chat with us"};
+  (function(d,t) {
+    var BASE_URL="https://app.chatwoot.com";
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=BASE_URL+"/packs/js/sdk.js";
+    g.defer = true;
+    g.async = true;
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
+      window.chatwootSDK.run({
+        websiteToken: 'ruvNemA7fzACsJRh6sMf4Xn2',
+        baseUrl: BASE_URL
+      })
+    }
+  })(document,"script");
+</script>
+<!-- End of Chatwoot Script -->
 
 <!-- netlify cms -->
 <script>
