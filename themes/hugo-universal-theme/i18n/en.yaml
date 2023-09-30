@@ -106,10 +106,10 @@
   translation: "Basic"
 
 - id: additionalServices
-  translation: "Optional"
+  translation: "Additional"
 
 - id: supportRequirements
-  translation: "Support"
+  translation: "Support Preference"
 
 - id: budget
   translation: "Tell us about your budget"
@@ -118,10 +118,36 @@
   translation: "Use CTRL to select multiple"
 
 - id: business
-  translation: "Tell us more about your business"
+  translation: "Business Details"
+
+- id: business-placeholder
+  translation: "Tell us a little about your business"
+
+- id: motivation
+  translation: "Motivation"
+
+- id: motivation-placeholder
+  translation: "What problems are you trying to solve? Why now?"
 
 - id: goals
-  translation: "Goals and requirements for your project"
+  translation: "Objectives"
+
+- id: goals-placeholder
+  translation: "What are your top priorities and objectives for a solution?"
+
+- id: budget
+  translation: "Budget"
+
+- id: budget-placeholder
+  translation: "Do you have a budget allocated to this project?"
+
+- id: timeline
+  translation: "Timeline"
+
+- id: timeline-placeholder
+  translation: "How soon are you looking to implement a solution?"
+
+
 
 - id: package
   translation: "Hosting Plan"
@@ -133,7 +159,7 @@
   translation: "Request Quote"
 
 - id: attachment
-  translation: "Additional Requirements & Documentation"
+  translation: "Requirements"
 
 - id: name
   translation: "Full Name"

@@ -3,7 +3,7 @@
 
 <a id="recent-news"></a>
 
-<section class="bar background-white">
+<section class="bar background-gray no-mb text-center">
     <div class="container">
 
         <div class="col-md-12">
@@ -21,7 +21,7 @@
                 {{ $posts := .Paginate (where .Site.Pages "Type" "blog") }}
                 {{ range first 8 $posts.Pages }}
                 <div class="col-md-3 col-sm-3">
-                    <div class="box-image-text blog same-height">
+                    <div class="box-simple box-white box-image-text blog same-height">
                         <div class="top">
                             <div class="image" style="overflow:hidden">
                                 {{ if isset .Params "banner" }}
