@@ -1,12 +1,7 @@
-
 <div class="container">
-
     <p class="text-large">Please read our blog entry <a href="/blog/2016/09/23/3/">The Road Ahead</a> to get more details about the items in the roadmap. And as always, please contact us with any feedback or questions.</p>
-
     <div class="row">
         <div class="col-md-8">
-
-
             <h3>Workflow Improvements</h3>
             <div class="row same-height-row">
                 <div class="col-md-4">
@@ -21,9 +16,9 @@
                 <div class="col-md-4">
                     <div class="box-simple box-white same-height">
                         <div class="icon"><i class="fa fa-spinner"></i></div>
-                        <h4>Offline Capability</h4>
+                        <h4>Offline</h4>
                         <p>Add offline capabilities and improve usability in environments with unreliable Internet</p>
-                        <div class="label label-warning">In Progress</div><br/>
+                        <div class="label label-success">Completed</div><br/>
                         <div class="badge bg-primary">v0.8.22</div>
                     </div>
                 </div>
@@ -31,7 +26,7 @@
                     <div class="box-simple box-white same-height">
                         <div class="icon"><i class="fa fa-mobile"></i></div>
                         <h4>Mobile</h4>
-                        <p>We've completed a beta version of our <a href="https://github.com/openboxes/openboxes-mobile">mobile app</a>
+                        <p>We've completed a <span class="beta">beta</span> version of our <a href="https://github.com/openboxes/openboxes-mobile">mobile app</a>
                             that was used in a recent implementation but need funding to make it publicly available.</p>
                         <div class="label label-danger">Requires Funding</div>
                     </div>
@@ -152,21 +147,34 @@
 
 
         <div class="col-md-4">
-            <div class="box-simple bg-dark box-dark">
-                <h3>Live Roadmap</h3>
+            <div class="box-simple box-white">
+                <div class="heading box-header">
+                    <h4>Live Roadmap</h4>
+                </div>
                 <p class="text-justify">Help us prioritize our roadmap by suggesting new ideas and
                     voting on features that you'd like to see implemented in an upcoming version of OpenBoxes.</p>
                 <div>
-                    <blockquote class="trello-board-compact">
+                    <blockquote class="trello-board-compact" style="width: 75%">
                         <a href="https://trello.com/b/5RJMqUwa/openboxes-roadmap">OpenBoxes Roadmap</a>
                     </blockquote>
-                </div>
-                <p>
-                    Or if you don't see what you're looking for, request a feature in our
-                    <a href="https://community.openboxes.com">discussion forum.</a>
-                </p>
 
+                    <a href="https://trello.com/b/5RJMqUwa/roadmap" class="btn btn-template-primary" target="_blank">View Roadmap</a>
+                </div>
             </div>
+
+            <div class="alert alert-info text-center">
+                <p>
+                    If you don't see what you're looking for, you can request a feature.
+                </p>
+                <br/>
+                <a href="https://community.openboxes.com/new-topic?category=features" class="btn btn-template-primary" target="_blank">Request a Feature</a>
+            </div>
+
+            <div class="text-center">
+                {{ partial "widgets/ethicalads.html" }}
+            </div>
+
+
         </div>
 
     </div>
