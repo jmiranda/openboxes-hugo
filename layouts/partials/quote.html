@@ -1,9 +1,5 @@
 <div class="container" id="contact">
     <div class="row">
-        <a href="/pricing" class="btn btn-link pull-left"><i class="fa fa-arrow-left"></i> Back to Pricing</button></a>
-    </div>
-
-    <div class="row">
         <div class="col-md-9">
 
             <section>
@@ -195,40 +191,37 @@
                             </div>
                         </div>
                         <div class="col-sm-6">
-
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="form-group">
-                                        <label for="business-details">{{ i18n "business" }}</label>
-                                        <textarea id="business-details" class="form-control" name="business" required rows="5"></textarea>
+                                        <label for="motivation">{{ i18n "business" }}</label>
+                                        <textarea id="business-details" class="form-control" name="business" required rows="1" placeholder='{{ i18n "business-placeholder" }}'></textarea>
                                     </div>
-                                </div>
-                                <div class="col-sm-12">
                                     <div class="form-group">
                                         <label for="goals">{{ i18n "goals" }}</label>
-                                        <textarea id="goals" class="form-control" name="goals" required rows="5"></textarea>
+                                        <textarea id="goals" class="form-control" name="goals" required rows="1" placeholder='{{ i18n "goals-placeholder" }}'></textarea>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <label for="attachment" class="input-group-label">{{ i18n "attachment" }}</label>
-                                    <div class="input-group">
-                                        <input type="file" id="attachment" name="attachment" class="form-control">
-                                        <span class="input-group-addon">.zip, .doc, .xls, .pdf</span>
+                                    <div class="form-group">
+                                        <label for="motivation">{{ i18n "motivation" }}</label>
+                                        <textarea id="motivation" class="form-control" name="motivation" required rows="1" placeholder='{{ i18n "motivation-placeholder" }}'></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="budget">{{ i18n "budget" }}</label>
+                                        <textarea id="budget" class="form-control" name="budget" required rows="1" placeholder='{{ i18n "budget-placeholder" }}'></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="timeline">{{ i18n "timeline" }}</label>
+                                        <textarea id="timeline" class="form-control" name="timeline" required rows="1" placeholder='{{ i18n "timeline-placeholder" }}'></textarea>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
-
                                 <label>{{ i18n "services" }}</label>
                                 <span class="text-muted text-small">{{ i18n "servicesTooltip" }}</span>
-
                                 <div class="row">
-
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                         <h6 class="text-muted text-small">{{ i18n "basicServices" }}</h6>
                                         <div class="checkbox">
                                             <label for="cloud-hosting">
@@ -251,29 +244,29 @@
                                         <div class="checkbox">
                                             <label for="upgrades">
                                                 <input type="checkbox" id="upgrades" name="additionalServices" value="upgrades" />
-                                                Upgrades
+                                                Upgrades & Hotfixes
                                             </label>
                                         </div>
                                         <div class="checkbox">
                                             <label for="monitoring">
                                                 <input type="checkbox" id="monitoring" name="additionalServices" value="monitoring" />
-                                                Monitoring
+                                                Server Monitoring
                                             </label>
                                         </div>
                                         <div class="checkbox">
                                             <label for="auto-backup">
                                                 <input type="checkbox" id="auto-backup" name="additionalServices" value="auto-backup" />
-                                                Backups
+                                                Automatic Backups
                                             </label>
                                         </div>
                                         <div class="checkbox">
                                             <label for="email-notifications">
                                                 <input type="checkbox" id="email-notifications" name="additionalServices" value="email-notifications" />
-                                                Emails
+                                                Email Notifications
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                         <h6 class="text-muted text-small">{{ i18n "additionalServices" }}</h6>
                                         <div class="checkbox">
                                             <label for="implementation">
@@ -288,21 +281,21 @@
                                             </label>
                                         </div>
                                         <div class="checkbox">
-                                            <label for="bugfixes">
-                                                <input type="checkbox" id="bugfixes" name="additionalServices" value="bugfixes" />
-                                                Bug Fixes
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
                                             <label for="development">
                                                 <input type="checkbox" id="development" name="additionalServices" value="development"/>
-                                                New Features
+                                                Custom Development
                                             </label>
                                         </div>
                                         <div class="checkbox">
                                             <label for="custom-reports">
                                                 <input type="checkbox" id="custom-reports" name="additionalServices" value="custom-reports"/>
-                                                Custom Reports
+                                                Reporting & Analytics
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="training">
+                                                <input type="checkbox" id="training" name="additionalServices" value="training"/>
+                                                Remote Training
                                             </label>
                                         </div>
                                         <div class="checkbox">
@@ -312,53 +305,73 @@
                                             </label>
                                         </div>
                                         <div class="checkbox">
-                                            <label for="training">
-                                                <input type="checkbox" id="training" name="additionalServices" value="training"/>
-                                                Training
+                                            <label for="consulting">
+                                                <input type="checkbox" id="consulting" name="additionalServices" value="consulting"/>
+                                                Consulting
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
                                         <h6 class="text-muted text-small">{{ i18n "supportRequirements" }}</h6>
                                         <div class="radio">
-                                            <div>
-                                                <label for="none">
-                                                    <input type="radio" id="none" name="support" value="none"/> None
-                                                    <span class="text-small text-muted">(No SLA)</span>
-                                                </label>
-                                            </div>
-                                            <div>
-                                                <label for="community">
-                                                    <input type="radio" id="community" name="support" value="community"/> Community
-                                                    <span class="text-small text-muted">(Free, Self-Service)</span>
-                                                </label>
-                                            </div>
-                                            <div>
-                                                <label for="standard">
-                                                    <input type="radio" id="standard" name="support" value="standard" /> Standard
-                                                    <span class="text-small text-muted">(US 9am-5pm)</span>
-                                                </label>
-                                            </div>
-                                            <div>
-                                                <label for="custom">
-                                                    <input type="radio" id="custom" name="support" value="custom" /> Custom
-                                                    <span class="text-small text-muted">(24/7)</span>
-                                                </label>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div>
+                                                        <label for="standard-us">
+                                                            <input type="radio" id="standard-us" name="support" value="standard-us" /> US Business
+                                                            <span class="text-small text-muted">(9am-5pm CDT)</span>
+                                                        </label>
+                                                    </div>
+                                                    <div>
+                                                        <label for="standard-eu">
+                                                            <input type="radio" id="standard-eu" name="support" value="standard-eu" /> EU Business
+                                                            <span class="text-small text-muted">(9am-5pm UTC)</span>
+                                                        </label>
+                                                    </div>
+                                                    <div>
+                                                        <label for="custom">
+                                                            <input type="radio" id="custom" name="support" value="custom" /> Custom SLA
+                                                            <span class="text-small text-muted">(up to 24/7)</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div>
+                                                        <label for="community">
+                                                            <input type="radio" id="community" name="support" value="community"/> <a href="https://community.openboxes.com" target="_blank">Community Forum</a>
+                                                            <span class="text-small text-muted">(Free)</span>
+                                                        </label>
+                                                    </div>
+                                                    <div>
+                                                        <label for="none">
+                                                            <input type="radio" id="none" name="support" value="none"/> No Support
+                                                            <span class="text-small text-muted">(No SLA)</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group">
-
-
-
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <label for="attachment" class="input-group-label">{{ i18n "attachment" }}</label>
+                            <div class="input-group">
+                                <input type="file" id="attachment" name="attachment" class="form-control">
+                                <span class="input-group-addon">.zip, .doc, .xls, .pdf</span>
                             </div>
                         </div>
                     </div>
-                    <div class="row row-padding">
 
+                    <hr/>
+                    <div class="row row-padding">
                         <div class="col-sm-12">
+                            <a href="/pricing" class="btn btn-link pull-left"><i class="fa fa-arrow-left"></i> Back to Pricing</button></a>
                             <button type="submit" class="btn btn-template-primary pull-right"><i class="fa fa-paper-plane"></i> {{ i18n "quoteButton" }}</button>
                         </div>
 
@@ -374,10 +387,18 @@
         </div>
 
         <div class="col-md-3">
-            <div class="alert alert-warning">
-                If you're just looking to schedule a live demo
-                <a href="javascript:void(-1);" onclick="return triggerCalendlyPopup()" class="btn btn-link" target="_blank"><i class="fa fa-calendar"></i> Schedule a Demo</a>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    If you'd prefer to talk this over with a human, just click the link below to schedule a call with us<br/><br/>
+                    <a href="javascript:void(-1);" onclick="return triggerCalendlyPopup()" class="btn  btn-default" target="_blank"><i class="fa fa-calendar"></i> Schedule a call</a>
+                </div>
+                <hr/>
+                <div class="text-center">
+                    {{ partial "widgets/ethicalads.html" }}
+                </div>
             </div>
+
+
         </div>
 
 

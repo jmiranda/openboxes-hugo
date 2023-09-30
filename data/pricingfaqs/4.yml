@@ -11,8 +11,10 @@ answer: |
   your requirements and we'll provide a proposal with a quote and timeline for your feature request.
 
 alert: |
-  **NOTE:** Please take caution when maintaining your own fork. You could
+  **NOTE** 
+  
+  Please take caution when maintaining your own fork. You could
   inadvertently end up in a situation where you lose the ability to pull the latest
   code from core into your fork. Don't hesitate to contact us for recommendations
   if you do go down this route.
-alertClass: warning
+alertClass: info
