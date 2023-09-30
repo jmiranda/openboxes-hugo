@@ -7,6 +7,8 @@ title = "Wheels up: Air PIH is ready for departure"
 
 +++
 
+[Originally posted to pih.org on January 26, 2010](https://www.pih.org/article/wheels-up-air-pih-is-ready-for-departure)
+
 Justin Miranda is examining a white board covered in notes about the model, 
 cargo load, and location of dozens of planes. Generous donors have them made 
 available to PIH in order to shuttle desperately needed medical staff and 
@@ -36,5 +38,3 @@ Once a landing slot is secured, the arrival time, tail number, and contents of t
 As they work together in an office now dedicated to “Air PIH” activities, a major theme emerges: gratitude and admiration for the people providing their planes, and for the pilots flying them. Because PIH must take landing slots whenever they are available, but also must achieve “wheels down” status within a twenty minute window on either side of that time, the planes are operating both on very short notice and on extremely tight schedules. Luke shakes his head in amazement as he gets off the phone with the pilot who brought PIH Executive Director Ophelia Dahl, along with medical volunteers and supplies to Port-au-Prince, and was bringing home a group of volunteers on the return flight.  “The pilots are awesome,” says Luke. “They’re so clear headed and reasonable. And willing to do whatever it takes.”
 
 In the coming weeks and months, the flights will surely slow down and will no longer need the full time attention of people like Justin and Julia. PIH’s strategy in Haiti has always been a long term one, and will need additional resources for many years to come, but eventually Justin will be able to return to his duties improving the Electronic Medical Records system, and Julia will dedicate 100 percent of her time to Russia project. For the time being however, Air PIH is ready to fly. 
-
-[Originally posted to pih.org on January 26, 2010](https://www.pih.org/article/wheels-up-air-pih-is-ready-for-departure)
