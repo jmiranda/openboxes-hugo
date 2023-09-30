@@ -196,13 +196,13 @@ paginate = 10
     pre = "<i class='fa fa-calendar'></i>"
     weight = 5
 
-#[[menu.main]]
-#    identifier = "cost-analysis"
-#    parent = "getting-started"
-#    pre = "<i class='fa fa-dollar'></i>"
-#    name = "Cost Analysis"
-#    url  = "https://calendly.com/openboxes/cost-analysis"
-#    weight = 6
+[[menu.main]]
+    identifier = "cost-analysis"
+    parent = "getting-started"
+    pre = "<i class='fa fa-dollar'></i>"
+    name = "Cost Analysis"
+    url  = "https://calendly.com/openboxes/cost-analysis"
+    weight = 6
 
 [[menu.main]]
     identifier = "request-quote"
@@ -231,8 +231,15 @@ paginate = 10
     name = "Consulting Services"
     parent = "getting-started"
     pre = "<i class='fa fa-search'></i>"
-    url  = "/services"
-    weight = 4
+    url  = "/pricing/#services"
+    weight = 10
+
+[[menu.main]]
+    name = "Total Cost of Ownership (TCO)"
+    parent = "getting-started"
+    pre = "<i class='fa fa-search'></i>"
+    url  = "/cost-analysis"
+    weight = 11
 
 
 # Contribution
