@@ -1,6 +1,5 @@
 weight: 4
-name: "Better Forecasting"
+name: "Forecasting"
 icon: "fa fa-bar-chart"
-description: "Improve planning and forecasting by analyzing demand data that is easily accessible."
-
+description: "Provides the ability to track demand data, helping your organization make more accurate predictions about future inventory needs. This can reduce the risk of overstocking and prevent stockouts."
 

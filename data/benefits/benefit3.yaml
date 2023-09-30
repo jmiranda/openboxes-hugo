@@ -1,5 +1,5 @@
 weight: 3
-name: "Reduce wastage"
+name: "Efficiency"
 icon: "fa fa-trash"
 description: "Reduce wastage through use of first-expiry-first-out (FEFO) picking strategy that ensures medicines will be used before their expiry."
 

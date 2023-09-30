@@ -1,4 +1,5 @@
 weight: 2
-name: "Eliminate Stockouts"
-icon: "fa fa-thumbs-up"
-description: "Reduce the risk of stock outs by informing users when stock levels are at or below reorder and minimum quantity."
+name: "Accuracy"
+icon: "fa fa-bullseye"
+description: "OpenBoxes uses real-time data to track inventory levels and movements accurately. This reduces the risk of overstocking or understocking, minimizing costly errors."
+
