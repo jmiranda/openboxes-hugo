@@ -26,9 +26,6 @@
                                 <li>
                                     <div class="yamm-content">
                                         <div class="row">
-                                            <div class="col-sm-3">
-                                                {{ partial "widgets/ethicalads.html" . }}
-                                            </div>
                                             {{ range .Children }}
                                             <div class="col-sm-3">
                                                 {{ if .HasChildren }}
@@ -49,72 +46,25 @@
                                                     {{ end }}
                                                     </ul>
                                                 {{ else }}
-                                                <div class="box-simple box-white">
+                                                <div class="">
                                                     <a href="{{ .URL }}">
-                                                    <div class="icon">
-                                                        {{ .Pre}}
-                                                    </div>
-                                                    <h4>{{ .Name }}</h4>
+                                                        <h4>{{ .Pre}} {{ .Name }}</h4>
+                                                        <p>{{ .Post }}</p>
                                                     </a>
                                                 </div>
 
                                                 {{ end }}
                                             </div>
                                             {{ end }}
-<!--                                            <div class="col-sm-3">-->
-<!--                                                <h5>Shortcodes</h5>-->
-<!--                                                <ul>-->
-<!--                                                    <li><a href="template-accordions.html">Accordions</a>-->
-<!--                                                    </li>-->
-<!--                                                    <li><a href="template-alerts.html">Alerts</a>-->
-<!--                                                    </li>-->
-<!--                                                    <li><a href="template-buttons.html">Buttons</a>-->
-<!--                                                    </li>-->
-<!--                                                    <li><a href="template-content-boxes.html">Content boxes</a>-->
-<!--                                                    </li>-->
-<!--                                                    <li><a href="template-blocks.html">Horizontal blocks</a>-->
-<!--                                                    </li>-->
-<!--                                                    <li><a href="template-pagination.html">Pagination</a>-->
-<!--                                                    </li>-->
-<!--                                                    <li><a href="template-tabs.html">Tabs</a>-->
-<!--                                                    </li>-->
-<!--                                                    <li><a href="template-typography.html">Typography</a>-->
-<!--                                                    </li>-->
-<!--                                                </ul>-->
-<!--                                            </div>-->
-<!--                                            <div class="col-sm-3">-->
-<!--                                                <h5>Header variations</h5>-->
-<!--                                                <ul>-->
-<!--                                                    <li><a href="template-header-default.html">Default sticky header</a>-->
-<!--                                                    </li>-->
-<!--                                                    <li><a href="template-header-nosticky.html">No sticky header</a>-->
-<!--                                                    </li>-->
-<!--                                                    <li><a href="template-header-light.html">Light header</a>-->
-<!--                                                    </li>-->
-<!--                                                </ul>-->
-<!--                                            </div>-->
+                                            <div class="col-sm-3">
+                                                {{ partial "widgets/ethicalads.html" . }}
+                                            </div>
+
                                         </div>
                                     </div>
                                 </li>
                             </ul>
                         </li>
-
-<!--                    <li class="dropdown">-->
-<!--                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ .Pre }}{{ .Name }}{{ .Post }}<span class="caret"></span></a>-->
-<!--                        <ul class="dropdown-menu">-->
-<!--                          {{ range .Children }}-->
-<!--                            <li>-->
-<!--                                <a href="{{ .URL }}"-->
-<!--                                   {{ if hasPrefix .URL "http" }}-->
-<!--                                   target="_blank" rel="noopener noreferrer"-->
-<!--                                   {{ end }}-->
-<!--                                >-->
-<!--                                {{ .Pre }}{{ .Name }} {{ .Post }}-->
-<!--                                </a>-->
-<!--                            </li>-->
-<!--                          {{ end }}-->
-<!--                        </ul>-->
-<!--                    </li>-->
                     {{ else }}
                     <li>
                         <a href="{{ .URL }}"

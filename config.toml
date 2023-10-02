@@ -51,7 +51,7 @@ paginate = 10
 [[menu.main]]
     identifier = "demo"
     name = "Demo"
-    weight = 40
+    weight = 50
 
 [[menu.main]]
     identifier = "try-demo"
@@ -59,7 +59,7 @@ paginate = 10
     pre = "<i class='fa fa-desktop'></i>"
     name = "Try our Demo"
     url  = "https://demo.openboxes.com/openboxes/auth/signup"
-    post = "Please try the demo"
+    post = "<p class='text-large'>Experience OpenBoxes firsthand with our interactive demo.</p> Take a guided tour of our inventory management software and explore its powerful features in action. Get a feel for how OpenBoxes can transform your supply chain operations and streamline your inventory management processes. It's the perfect way to see if OpenBoxes is the right fit for your organization without any commitment."
     weight = 1
 
 [[menu.main]]
@@ -67,6 +67,7 @@ paginate = 10
     name = "Schedule a Demo"
     parent = "demo"
     pre = "<i class='fa fa-calendar-check-o'></i>"
+    post = "<p class='text-large'>Ready for a more personalized demonstration?</p> Schedule a one-on-one demo with our experts. During this session, we'll delve into your specific needs and challenges, showcasing how OpenBoxes can address them effectively. Our team will provide insights, answer your questions, and tailor the demo to your industry and use case. Schedule your demo today to discover how OpenBoxes can optimize your supply chain."
     url = "https://calendly.com/openboxes/demo"
     weight = 2
 
@@ -75,8 +76,10 @@ paginate = 10
     name = "Launch your own Demo"
     parent = "demo"
     pre = "<i class='fa fa-server'></i>"
+    post = "<p class='text-large'>Want to explore OpenBoxes at your own pace?</p> Launch your own demo server and get hands-on experience with our software. This option allows you to test, configure, and experiment with OpenBoxes in a dedicated environment. It's an ideal choice for those who prefer a self-guided approach to evaluate the capabilities and flexibility of OpenBoxes. Start your demo server now and discover the potential of our inventory management solution."
     url = "https://marketplace.digitalocean.com/apps/openboxes-server?refcode=da4712a483b4"
     weight = 3
+
 
 
 # Pricing
@@ -84,7 +87,7 @@ paginate = 10
 [[menu.main]]
     name = "Hosting"
     url  = "/pricing/"
-    weight = 50
+    weight = 40
 
 # Resources
 
@@ -97,6 +100,7 @@ paginate = 10
     name = "Source Code"
     parent = "community"
     pre = "<i class='fa fa-code'></i>"
+    post = "<i class='fa fa-external-link'></i>"
     url  = "https://github.com/openboxes/openboxes"
     weight = 1
 
@@ -115,7 +119,7 @@ paginate = 10
     parent = "community"
     pre = "<i class='fa fa-terminal'></i>"
     url  = "https://community.openboxes.com/t/swagger-docs-yes-swagger-docs/480"
-    post = "<span class='badge bg-primary'>beta</span>"
+    post = "<span class='badge bg-secondary'>beta</span>"
     weight = 9
 
 [[menu.main]]
@@ -128,23 +132,17 @@ paginate = 10
 
 
 # About
-[[menu.main]]
-    identifier = "about1"
-    name = "About Us"
-    parent = "about"
-    pre = "<i class='fa fa-info-circle'></i> "
-    weight = 4
 
 [[menu.main]]
     name = "About OpenBoxes"
-    parent = "about1"
+    parent = "docs"
     pre = "<i class='fa fa-cube'></i>"
     url  = "/about"
     weight = 1
 
 [[menu.main]]
     name = "Benefits"
-    parent = "about1"
+    parent = "docs"
     pre = "<i class='fa fa-trophy'></i>"
     url  = "/#benefits"
     weight = 2
@@ -152,21 +150,21 @@ paginate = 10
 
 [[menu.main]]
     name = "Latest Announcements"
-    parent = "about1"
+    parent = "docs"
     pre = "<i class='fa fa-newspaper-o'></i>"
     url  = "/blog/"
     weight = 2
 
 [[menu.main]]
     name = "Roadmap"
-    parent = "about1"
+    parent = "docs"
     pre = "<i class='fa fa-road'></i>"
     url  = "/roadmap/"
     weight = 3
 
 [[menu.main]]
     name = "Implementations"
-    parent = "about1"
+    parent = "docs"
     pre = "<i class='fa fa-map'></i>"
     url  = "/users/"
     weight = 4
@@ -184,7 +182,7 @@ paginate = 10
     identifier = "schedule-discussion"
     name = "Schedule a Discussion"
     parent = "getting-started"
-    pre = "<i class='fa fa-phone-square'></i>"
+    pre = "<i class='fa fa-phone'></i>"
     url = "https://calendly.com/openboxes/discussion"
     weight = 3
 
@@ -200,14 +198,14 @@ paginate = 10
     identifier = "cost-analysis"
     parent = "getting-started"
     pre = "<i class='fa fa-dollar'></i>"
-    name = "Cost Analysis"
+    name = "Schedule a Cost Analysis"
     url  = "https://calendly.com/openboxes/cost-analysis"
     weight = 6
 
 [[menu.main]]
     identifier = "request-quote"
     parent = "getting-started"
-    pre = "<i class='fa fa-money'></i>"
+    pre = "<i class='fa fa-question'></i>"
     name = "Request Quote"
     url  = "/quote"
     weight = 7
@@ -230,14 +228,14 @@ paginate = 10
 [[menu.main]]
     name = "Consulting Services"
     parent = "getting-started"
-    pre = "<i class='fa fa-search'></i>"
+    pre = "<i class='fa fa-handshake-o'></i>"
     url  = "/pricing/#services"
     weight = 10
 
 [[menu.main]]
     name = "Total Cost of Ownership (TCO)"
     parent = "getting-started"
-    pre = "<i class='fa fa-search'></i>"
+    pre = "<i class='fa fa-money'></i>"
     url  = "/cost-analysis"
     weight = 11
 
@@ -276,7 +274,7 @@ paginate = 10
 [[menu.main]]
     name = "Request a Feature"
     parent = "community"
-    pre = "<i class='fa fa-bell'></i>"
+    pre = "<i class='fa fa-key'></i>"
     url = "https://community.openboxes.com/new-topic?category=features"
     weight = 4
 
