@@ -1,29 +1,63 @@
 {{ if isset .Site.Params "features" }}
 {{ if .Site.Params.features.enable }}
 {{ if gt (len .Site.Data.features) 0 }}
+<style>
+    #content { width: 99%; }
+</style>
+    <div class="row">
+        <div class="col-md-10">
+            {{ range $index, $element := sort .Site.Data.features "weight" }}
 
-<div class="row">
-    <div class="col-md-10">
-        {{ range $index, $element := sort .Site.Data.features "weight" }}
-
-            {{ if eq (mod $index 2) 0 }}
-            <section class="bar background-white no-mb text-center-sm">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="text-center">
-                                <a name="feature-{{ $index }}"></a>
-                                <h3><i class="{{ .icon }}"></i> {{ $element.name }}</h3>
-                                <p class="lead">{{ $element.description | markdownify }}</p>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <ul class="list-group-none">
-                                    {{ range $element.items }}
-                                    <li class="list-group-item">{{ . | markdownify }}</li>
-                                    {{ end }}
-                                    </ul>
+                {{ if eq (mod $index 2) 0 }}
+                <section class="bar background-white no-mb text-center-sm">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="text-center">
+                                    <a name="feature-{{ $index }}"></a>
+                                    <h3><i class="{{ .icon }}"></i> {{ $element.name }}</h3>
+                                    <p class="lead">{{ $element.description | markdownify }}</p>
                                 </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul class="list-group-none">
+                                        {{ range $element.items }}
+                                        <li class="list-group-item">{{ . | markdownify }}</li>
+                                        {{ end }}
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="owl-carousel screenshots">
+                                            {{ range $element.screenshots }}
+                                            <li class="item" title="{{ .name }}">
+                                                {{ if .url }}
+                                                <a href="{{ .url }}" target="_blank">
+                                                    <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
+                                                </a>
+                                                {{ else }}
+                                                <a href="{{ .image }}" target="_blank">
+                                                    <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
+                                                </a>
+                                                {{ end }}
+                                            </li>
+                                            {{ end }}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                {{ end }}
+
+                {{ if eq (mod $index 2) 1 }}
+
+                <section class="bar background-pentagon text-center-sm no-mb">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3 class="text-center"><i class="{{ .icon }}"></i> {{ $element.name }}</h3>
+                                <p class="lead text-center">{{ $element.description | markdownify }}</p>
                                 <div class="col-md-6">
                                     <ul class="owl-carousel screenshots">
                                         {{ range $element.screenshots }}
@@ -41,69 +75,35 @@
                                         {{ end }}
                                     </ul>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            {{ end }}
-
-            {{ if eq (mod $index 2) 1 }}
-
-            <section class="bar background-pentagon text-center-sm no-mb">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3 class="text-center"><i class="{{ .icon }}"></i> {{ $element.name }}</h3>
-                            <p class="lead text-center">{{ $element.description | markdownify }}</p>
-                            <div class="col-md-6">
-                                <ul class="owl-carousel screenshots">
-                                    {{ range $element.screenshots }}
-                                    <li class="item" title="{{ .name }}">
-                                        {{ if .url }}
-                                        <a href="{{ .url }}" target="_blank">
-                                            <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
-                                        </a>
-                                        {{ else }}
-                                        <a href="{{ .image }}" target="_blank">
-                                            <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
-                                        </a>
+                                <div class="col-md-6">
+                                        <ul class="list-group">
+                                        {{ range $element.items }}
+                                        <li class="list-group-item">{{ . | markdownify }}</li>
                                         {{ end }}
-                                    </li>
-                                    {{ end }}
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                    <ul class="list-group">
-                                    {{ range $element.items }}
-                                    <li class="list-group-item">{{ . | markdownify }}</li>
-                                    {{ end }}
-                                    </ul>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-            {{ end }}
-
-
-        {{ end }}
-
-    </div>
-    <div class="col-md-2 offset-md-1">
-        <nav class="bs-docs-sidebar">
-            <ul id="sidebar" class="nav nav-stacked fixed">
-                <li><h5>Features</h5>
-
-                </li>
-                {{ range $index, $element := sort .Site.Data.features "weight" }}
-                <li><a href="#feature-{{ $index }}">{{ .name | safeHTML }}</a></li>
+                    </section>
                 {{ end }}
-            </ul>
-        </nav>
+            {{ end }}
+        </div>
+        <div class="col-md-2">
+            <nav class="bs-docs-sidebar">
+                <ul id="sidebar" class="nav nav-stacked fixed">
+                    <li>
+                        <div class="heading mb-small">
+                        <h5>Features</h5>
+                        </div>
+                    </li>
+                    {{ range $index, $element := sort .Site.Data.features "weight" }}
+                    <li><a href="#feature-{{ $index }}">{{ .name | safeHTML }}</a></li>
+                    {{ end }}
+                </ul>
+            </nav>
+        </div>
     </div>
-
-</div>
 {{ end }}
 {{ end }}
 {{ end }}
