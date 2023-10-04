@@ -8,8 +8,7 @@ redirectUrl = "https://community.openboxes.com/t/openboxes-v0-8-22-release-notes
 +++
 
 In this release, we are introducing some exciting new features, including Product Merge,
-AutoSaveBETA, and Data management features! We have also continued our work in translations
-through Product Synonyms.
+AutoSaveBETA, and Data management features! 
 
 <!--more-->
 
