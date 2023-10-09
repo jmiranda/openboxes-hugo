@@ -96,42 +96,13 @@ paginate = 10
     name = "Resources"
     weight = 60
 
-[[menu.main]]
-    name = "Source Code"
-    parent = "community"
-    pre = "<i class='fa fa-code'></i>"
-    post = "<i class='fa fa-external-link'></i>"
-    url  = "https://github.com/openboxes/openboxes"
-    weight = 1
-
+# Documentation
 
 [[menu.main]]
-    identifier = "api-guide"
-    name = "REST API Guide"
-    parent = "community"
-    pre = "<i class='fa fa-link'></i>"
-    url  = "https://docs.openboxes.com/en/develop/api-guide"
-    weight = 8
-
-[[menu.main]]
-    identifier = "openapi-docs"
-    name = "OpenAPI Docs"
-    parent = "community"
-    pre = "<i class='fa fa-terminal'></i>"
-    url  = "https://community.openboxes.com/t/swagger-docs-yes-swagger-docs/480"
-    post = "<span class='badge bg-secondary'>beta</span>"
-    weight = 9
-
-[[menu.main]]
-    name = "Database Schema"
-    parent = "community"
-    pre = "<i class='fa fa-database'></i>"
-    url  = "https://dbdocs.io/jmiranda/openboxes"
-    weight = 10
-
-
-
-# About
+    identifier = "docs"
+    name = "Documentation"
+    parent = "resources"
+    weight = 50
 
 [[menu.main]]
     name = "About OpenBoxes"
@@ -141,36 +112,62 @@ paginate = 10
     weight = 1
 
 [[menu.main]]
-    name = "Benefits"
+    identifier = "user-guide"
+    name = "User Guide"
     parent = "docs"
-    pre = "<i class='fa fa-trophy'></i>"
-    url  = "/#benefits"
-    weight = 2
-
+    pre = "<i class='fa fa-user-circle'></i>"
+    url  = "https://help.openboxes.com"
+    weight = 1
 
 [[menu.main]]
-    name = "Latest Announcements"
+    identifier = "installation-guide"
+    name = "Installation Guide"
     parent = "docs"
-    pre = "<i class='fa fa-newspaper-o'></i>"
-    url  = "/blog/"
+    pre = "<i class='fa fa-wrench'></i>"
+    url  = "https://docs.openboxes.com/en/develop/"
     weight = 2
+
+[[menu.main]]
+    name = "Contributing Guide"
+    parent = "docs"
+    pre = "<i class='fa fa-check-square'></i>"
+    url = "https://github.com/openboxes/openboxes/blob/develop/CONTRIBUTING.md"
+    weight = 4
+
 
 [[menu.main]]
     name = "Roadmap"
     parent = "docs"
     pre = "<i class='fa fa-road'></i>"
     url  = "/roadmap/"
-    weight = 3
+    weight = 5
 
 [[menu.main]]
-    name = "Implementations"
+    identifier = "release-notes"
+    name = "Release Notes"
     parent = "docs"
-    pre = "<i class='fa fa-map'></i>"
-    url  = "/users/"
-    weight = 4
+    pre = "<i class='fa fa-file-text-o'></i>"
+    url  = "https://community.openboxes.com/tag/release-notes"
+    weight = 6
+
+[[menu.main]]
+    name = "Latest Announcements"
+    parent = "docs"
+    pre = "<i class='fa fa-newspaper-o'></i>"
+    url  = "/blog/"
+    weight = 7
+
+[[menu.main]]
+    name = "Total Cost of Ownership (TCO)"
+    parent = "docs"
+    pre = "<i class='fa fa-money'></i>"
+    url  = "/cost-analysis"
+    weight = 8
+
 
 
 # Getting Started
+
 [[menu.main]]
     identifier = "getting-started"
     name = "Getting Started"
@@ -187,12 +184,26 @@ paginate = 10
     weight = 3
 
 [[menu.main]]
+    name = "Follow a Tutorial"
+    parent = "getting-started"
+    pre = "<i class='fa fa-laptop'></i>"
+    url  = "/tutorials/"
+    weight = 4
+
+[[menu.main]]
+    name = "Watch a YouTube Video"
+    parent = "getting-started"
+    pre = "<i class='fa fa-youtube-play'></i>"
+    url  = "https://www.youtube.com/@openboxes/videos"
+    weight = 5
+
+[[menu.main]]
     identifier = "training"
     parent = "getting-started"
     name = "Schedule a Training"
     url  = "https://calendly.com/openboxes/training"
     pre = "<i class='fa fa-calendar'></i>"
-    weight = 5
+    weight = 6
 
 [[menu.main]]
     identifier = "cost-analysis"
@@ -200,29 +211,29 @@ paginate = 10
     pre = "<i class='fa fa-dollar'></i>"
     name = "Schedule a Cost Analysis"
     url  = "https://calendly.com/openboxes/cost-analysis"
-    weight = 6
+    weight = 7
 
 [[menu.main]]
     identifier = "request-quote"
     parent = "getting-started"
-    pre = "<i class='fa fa-question'></i>"
-    name = "Request Quote"
+    pre = "<i class='fa fa-file-text-o'></i>"
+    name = "Request a Quote"
     url  = "/quote"
-    weight = 7
+    weight = 8
 
 [[menu.main]]
     name = "Deploy to Digital Ocean"
     parent = "getting-started"
-    pre = "<i class='fa fa-play'></i>"
+    pre = "<i class='fa fa-cloud'></i>"
     url = "https://marketplace.digitalocean.com/apps/openboxes-server?refcode=da4712a483b4"
-    weight = 8
-
-[[menu.main]]
-    name = "Deploy to Azure"
-    parent = "getting-started"
-    pre = "<i class='fa fa-server'></i>"
-    url = "https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fopenboxes%2Fopenboxes-devops%2Fmaster%2Farm-template%2Fopenboxes-arm.json"
     weight = 9
+
+#[[menu.main]]
+#    name = "Deploy to Azure"
+#    parent = "getting-started"
+#    pre = "<i class='fa fa-cloud'></i>"
+#    url = "https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fopenboxes%2Fopenboxes-devops%2Fmaster%2Farm-template%2Fopenboxes-arm.json"
+#    weight = 10
 
 
 [[menu.main]]
@@ -230,31 +241,16 @@ paginate = 10
     parent = "getting-started"
     pre = "<i class='fa fa-handshake-o'></i>"
     url  = "/pricing/#services"
-    weight = 10
-
-[[menu.main]]
-    name = "Total Cost of Ownership (TCO)"
-    parent = "getting-started"
-    pre = "<i class='fa fa-money'></i>"
-    url  = "/cost-analysis"
     weight = 11
 
 
-# Contribution
+# Community
 
 [[menu.main]]
     identifier = "community"
     name = "Community"
     parent = "resources"
     weight = 70
-
-
-[[menu.main]]
-    name = "Contributing Guide"
-    parent = "community"
-    pre = "<i class='fa fa-check-square'></i>"
-    url = "https://github.com/openboxes/openboxes/blob/develop/CONTRIBUTING.md"
-    weight = 1
 
 [[menu.main]]
     identifier = "join-community"
@@ -278,53 +274,48 @@ paginate = 10
     url = "https://community.openboxes.com/new-topic?category=features"
     weight = 4
 
-
-
-# Documentation
-
 [[menu.main]]
-    identifier = "docs"
-    name = "Documentation"
-    parent = "resources"
-    weight = 50
-
-[[menu.main]]
-    identifier = "user-guide"
-    name = "User Documentation"
-    parent = "docs"
-    pre = "<i class='fa fa-user-circle'></i>"
-    url  = "https://help.openboxes.com"
-    weight = 1
-
-[[menu.main]]
-    identifier = "installation-guide"
-    name = "Technical Documentation"
-    parent = "docs"
-    pre = "<i class='fa fa-wrench'></i>"
-    url  = "https://docs.openboxes.com/en/develop/"
-    weight = 2
-
-[[menu.main]]
-    identifier = "release-notes"
-    name = "Release Notes"
-    parent = "docs"
-    pre = "<i class='fa fa-file-text-o'></i>"
-    url  = "https://community.openboxes.com/tag/release-notes"
-    weight = 3
-
-[[menu.main]]
-    name = "Tutorials"
-    parent = "docs"
-    pre = "<i class='fa fa-laptop'></i>"
-    url  = "/tutorials/"
-    weight = 4
-
-[[menu.main]]
-    name = "YouTube"
-    parent = "docs"
-    pre = "<i class='fa fa-youtube-play'></i>"
-    url  = "https://www.youtube.com/@openboxes/videos"
+    name = "Implementations"
+    parent = "community"
+    pre = "<i class='fa fa-map'></i>"
+    url  = "/users/"
     weight = 5
+
+[[menu.main]]
+    name = "Source Code"
+    parent = "community"
+    pre = "<i class='fa fa-code'></i>"
+    post = "<i class='fa fa-external-link'></i>"
+    url  = "https://github.com/openboxes/openboxes"
+    weight = 6
+
+[[menu.main]]
+    identifier = "api-guide"
+    name = "REST API Guide"
+    parent = "community"
+    pre = "<i class='fa fa-link'></i>"
+    url  = "https://docs.openboxes.com/en/develop/api-guide"
+    weight = 7
+
+[[menu.main]]
+    identifier = "openapi-docs"
+    name = "OpenAPI Docs"
+    parent = "community"
+    pre = "<i class='fa fa-terminal'></i>"
+    url  = "https://community.openboxes.com/t/swagger-docs-yes-swagger-docs/480"
+    post = "<span class='badge bg-secondary'>beta</span>"
+    weight = 8
+
+[[menu.main]]
+    name = "Database Schema"
+    parent = "community"
+    pre = "<i class='fa fa-database'></i>"
+    url  = "https://dbdocs.io/jmiranda/openboxes"
+    weight = 9
+
+
+
+
 
 # Footer social links menu
 
