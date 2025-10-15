@@ -1,4 +1,4 @@
-weight: 6
-name: "Customizations"
-icon: "fa fa-cogs"
-description: "Being open-source, OpenBoxes can be customized to suit the specific needs and workflows of your organization. You can modify the code to add new features or integrate it with other software systems."
+weight: 7
+name: "Customizable & Extensible"
+icon: "fa fa-sliders"
+description: "Modify workflows, integrate with external systems, or add new features to fit your organization’s needs."

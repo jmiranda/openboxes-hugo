@@ -1,4 +1,4 @@
-weight: 6
-name: "Continuous Improvement"
+weight: 2
+name: "Real-time Inventory Control"
 icon: "fa fa-line-chart"
-description: "OpenBoxes is actively developed to meet the needs of our users and we encourage community contributions and involvement during the software development process."
+description: "Track stock levels, movements, and adjustments instantly to prevent overstocking, expiry, and stockouts."
