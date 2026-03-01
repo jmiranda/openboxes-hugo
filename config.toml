@@ -509,6 +509,11 @@ paginate = 10
 [params.adsense]
     enable = false
 
+[params.digitalocean]
+    enable = false
+    deploy_url = "https://marketplace.digitalocean.com/apps/openboxes-server?refcode=da4712a483b4&action=deploy"
+    marketplace_url = "https://marketplace.digitalocean.com/apps/openboxes-server"
+
 [params.waitlist]
     enable = true
     title = "Cloud Hosting Waitlist"

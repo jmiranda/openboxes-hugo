@@ -6,19 +6,19 @@
                 <h3>Packages</h3>
             </div>
             <p class="lead">
-                If you're looking to get started as quickly as possible, we recommend the
+                Our <strong class="text-primary">Community Edition</strong> is free and fully DIY.
+                If you're looking to get started quickly, we recommend the
                 <strong class="text-primary">Self-Hosted</strong> option.
                 If you'd prefer a fully managed experience, join the waitlist for our upcoming
                 <strong class="text-primary">Cloud Hosting</strong> solution.
             </p>
             <div class="row packages">
                 <div class="col-md-4">
-                    <div class="best-value">
-                        <div class="package">
-                            <div class="package-header">
-                                <h5>Open-Source</h5>
-                                <div class="meta-text text-small">Free Forever</div>
-                            </div>
+                    <div class="package">
+                        <div class="package-header light-gray">
+                            <h5>Community Edition</h5>
+                            <div class="meta-text text-small">Free Forever</div>
+                        </div>
                         <div class="price-container d-flex align-items-end justify-content-center">
                             <div class="h3">
                                 $0 License<sup class="text-small">1</sup>
@@ -30,22 +30,20 @@
                         <ul class="list-unstyled">
                             <li></li>
                             <li class="text-secondary"><i class="fa fa-minus"></i> Cloud Hosting</li>
-                            <li class="text-secondary"><i class="fa fa-minus"></i> On-Premise</li>
                             <li class="text-secondary"><i class="fa fa-minus"></i> SSL / HTTPS</li>
                             <li class="text-secondary"><i class="fa fa-minus"></i> Installation</li>
                             <li class="text-secondary"><i class="fa fa-minus"></i> Configuration</li>
                             <li class="text-secondary"><i class="fa fa-minus"></i> Data Migration</li>
                             <li class="text-secondary"><i class="fa fa-minus"></i> Server Management <i class="fa fa-info-circle text-muted" data-toggle="tooltip" title="Includes server monitoring, automatic backups, and software updates."></i></li>
                             <li class="text-secondary"><i class="fa fa-minus"></i> Email Delivery <i class="fa fa-info-circle text-muted" data-toggle="tooltip" title="SMTP service for shipment notifications, stockout warnings, expiry alerts, and other transactional emails."></i></li>
-                            <li class="text-danger"><i class="fa fa-times"></i> Excludes Support</li>
+                            <li class="text-success"><i class="fa fa-check"></i> Community Support</li>
                             <li>
                                 <a href="https://docs.openboxes.com/en/develop/" class="btn btn-template-primary btn-block">Get Started</a>
                             </li>
                             <li class="text-small">
-                                Powered by you
+                                Community-supported
                             </li>
                         </ul>
-                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -67,31 +65,35 @@
                             <ul class="list-style-none">
                                 <li></li>
                                 <li class="text-success"><i class="fa fa-check"></i> Cloud Hosting</li>
-                                <li class="text-danger"><i class="fa fa-times"></i> On-Premise</li>
                                 <li class="text-success"><i class="fa fa-check"></i> SSL / HTTPS</li>
                                 <li class="text-success"><i class="fa fa-check"></i> Installation</li>
                                 <li class="text-primary"><i class="fa fa-plus"></i> Configuration</li>
                                 <li class="text-primary"><i class="fa fa-plus"></i> Data Migration</li>
                                 <li class="text-primary"><i class="fa fa-plus"></i> Server Management <i class="fa fa-info-circle text-muted" data-toggle="tooltip" title="Includes server monitoring, automatic backups, and software updates."></i></li>
                                 <li class="text-primary"><i class="fa fa-plus"></i> Email Delivery <i class="fa fa-info-circle text-muted" data-toggle="tooltip" title="SMTP service for shipment notifications, stockout warnings, expiry alerts, and other transactional emails."></i></li>
-                                <li class="text-danger"><i class="fa fa-times"></i> Excludes Support</li>
+                                <li class="text-primary"><i class="fa fa-plus"></i> Dedicated Support <i class="fa fa-info-circle text-muted" data-toggle="tooltip" title="Add Standard, Business, or Enterprise support for guaranteed SLAs, email, live chat, and phone support."></i></li>
                                 <li>
-                                    <a target="_blank" href="https://marketplace.digitalocean.com/apps/openboxes-server?refcode=da4712a483b4&action=deploy" class="btn btn-template-primary btn-block">Create Droplet</a>
+                                    {{ if .Site.Params.digitalocean.enable }}
+                                    <a target="_blank" href="{{ .Site.Params.digitalocean.deploy_url }}" class="btn btn-template-primary btn-block"
+                                       onclick="gtag('event', 'deploy_click', {'event_category': 'digitalocean', 'event_label': 'packages'});">Deploy Now</a>
+                                    {{ else }}
+                                    <a href="#" class="btn btn-template-primary btn-block" data-toggle="modal" data-target="#deploy-unavailable"
+                                       onclick="gtag('event', 'deploy_click_unavailable', {'event_category': 'digitalocean', 'event_label': 'packages'});">Deploy Now</a>
+                                    {{ end }}
                                 </li>
                                 <li class="text-small">
-                                    Powered by <a href="https://marketplace.digitalocean.com/apps/openboxes-server" target="_blank">DigitalOcean</a>
+                                    Powered by <a href="{{ .Site.Params.digitalocean.marketplace_url }}" target="_blank">DigitalOcean</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="best-value">
-                        <div class="package">
-                            <div class="package-header">
-                                <h5>Cloud Hosting</h5>
-                                <div class="meta-text text-small">Coming Soon</div>
-                            </div>
+                    <div class="package">
+                        <div class="package-header light-gray">
+                            <h5>Cloud Hosting</h5>
+                            <div class="meta-text text-small">Coming Soon</div>
+                        </div>
                         <div class="price-container d-flex align-items-end justify-content-center">
                             <div class="h3">
                                 Starting at $149/mo<sup class="text-small">3</sup>
@@ -105,14 +107,13 @@
                         <ul class="list-style-none">
                             <li></li>
                             <li class="text-success"><i class="fa fa-check"></i> Cloud Hosting</li>
-                            <li class="text-primary"><i class="fa fa-plus"></i> On-Premise<sup>4</sup></li>
                             <li class="text-success"><i class="fa fa-check"></i> SSL / HTTPS</li>
                             <li class="text-success"><i class="fa fa-check"></i> Installation</li>
                             <li class="text-primary"><i class="fa fa-plus"></i> Configuration</li>
                             <li class="text-primary"><i class="fa fa-plus"></i> Data Migration</li>
                             <li class="text-success"><i class="fa fa-check"></i> Server Management <i class="fa fa-info-circle text-muted" data-toggle="tooltip" title="Includes server monitoring, automatic backups, and software updates."></i></li>
                             <li class="text-success"><i class="fa fa-check"></i> Email Delivery <i class="fa fa-info-circle text-muted" data-toggle="tooltip" title="SMTP service for shipment notifications, stockout warnings, expiry alerts, and other transactional emails."></i></li>
-                            <li class="text-primary"><i class="fa fa-plus"></i> Support</li>
+                            <li class="text-success"><i class="fa fa-check"></i> Basic Support <i class="fa fa-info-circle text-muted" data-toggle="tooltip" title="Email-based support with 48-hour response time included. Upgrade to Standard, Business, or Enterprise for faster SLAs."></i></li>
                             <li>
                                 <a href="/waitlist" class="btn btn-template-primary btn-block">Join Waitlist</a>
                             </li>
@@ -120,7 +121,6 @@
                                 Powered by OpenBoxes
                             </li>
                         </ul>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -130,10 +130,9 @@
                         <div class="list-group-item active">
                             <h6 class="list-group-item-heading text-uppercase">Key</h6>
                         </div>
-                        <p class="list-group-item"><span class="text-secondary"><i class="fa fa-minus"></i> indicates a service that you provide on your own</span></p>
-                        <p class="list-group-item"><span class="text-danger"><i class="fa fa-times"></i> indicates a service not included in package</span></p>
-                        <p class="list-group-item"><span class="text-success"><i class="fa fa-check"></i> indicates a service included in package</span></p>
-                        <p class="list-group-item"><span class="text-primary"><i class="fa fa-plus"></i> indicates a service available as an add-on</span></p>
+                        <p class="list-group-item"><span class="text-success"><i class="fa fa-check"></i> included in package</span></p>
+                        <p class="list-group-item"><span class="text-primary"><i class="fa fa-plus"></i> available as an add-on</span></p>
+                        <p class="list-group-item"><span class="text-secondary"><i class="fa fa-minus"></i> you handle it yourself (DIY)</span></p>
                     </ul>
                 </div>
                 <div class="col-md-8">
@@ -161,3 +160,43 @@
         </div>
     </div>
 </section>
+
+<!-- Deploy Unavailable Modal -->
+<div class="modal fade" id="deploy-unavailable" tabindex="-1" role="dialog" aria-labelledby="deploy-unavailable-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="deploy-unavailable-label">
+                    <i class="fa fa-cloud text-primary"></i> DigitalOcean Deployment
+                </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body" style="padding: 30px;">
+                <div class="text-center" style="margin-bottom: 20px;">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-clock-o fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h5 style="margin-top: 10px;">Coming Soon</h5>
+                    <p class="text-muted">Our DigitalOcean 1-Click App is currently under review<br/> and will be available shortly.</p>
+                </div>
+                <hr/>
+                <p><strong>In the meantime, you can:</strong></p>
+                <div class="list-group">
+                    <a href="https://docs.openboxes.com/en/develop/" class="list-group-item list-group-item-action">
+                        <i class="fa fa-wrench text-primary"></i>&nbsp; Install OpenBoxes manually on any server
+                    </a>
+                    <a href="/waitlist" class="list-group-item list-group-item-action">
+                        <i class="fa fa-cloud text-primary"></i>&nbsp; Join the Cloud Hosting waitlist
+                    </a>
+                    <a href="https://calendly.com/openboxes/discussion" class="list-group-item list-group-item-action">
+                        <i class="fa fa-calendar text-primary"></i>&nbsp; Schedule a discussion with our team
+                    </a>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-template-main" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
