@@ -1,5 +1,5 @@
 +++
-title = "Hosting"
+title = "Pricing"
 id = "pricing"
 +++
 

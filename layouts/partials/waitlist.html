@@ -1,0 +1,178 @@
+{{ if isset .Site.Params "waitlist" }}
+{{ if .Site.Params.waitlist.enable }}
+<div class="container" id="waitlist">
+
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+
+            <section>
+
+                <div class="heading text-center">
+                    <h3>{{ .Site.Params.waitlist.title }}</h3>
+                </div>
+
+                <p class="lead text-center">
+                    {{ .Site.Params.waitlist.subtitle }}
+                </p>
+
+                <form class="waitlist-form" method="post" action="{{ .Site.Params.waitlist.form_endpoint }}">
+
+                    <input type="hidden" name="type" value="waitlist"/>
+                    <input type="hidden" name="source" value="cloud-hosting"/>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="name">Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Your full name" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="email">Email <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="you@organization.com" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default" style="margin-top: 10px;">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#optional-fields">
+                                    Tell us more <span class="text-muted text-small">(optional, but helps us prioritize)</span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="optional-fields" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="organization">Organization</label>
+                                            <input type="text" class="form-control" name="organization" id="organization">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="country">Country</label>
+                                            <input type="text" class="form-control" name="country" id="country">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="users">Estimated Number of Users <i class="fa fa-info-circle text-muted" data-toggle="tooltip" title="We don't charge per-user license fees. This just helps us determine what server resources you'll need."></i></label>
+                                            <select id="users" name="users" class="form-control">
+                                                <option value="" selected></option>
+                                                <option value="1-10">1 - 10</option>
+                                                <option value="11-50">11 - 50</option>
+                                                <option value="51-200">51 - 200</option>
+                                                <option value="200+">200+</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="locations">Number of Facilities <i class="fa fa-info-circle text-muted" data-toggle="tooltip" title="Includes warehouses, clinics, distribution centers, or any location that manages inventory."></i></label>
+                                            <select id="locations" name="locations" class="form-control">
+                                                <option value="" selected></option>
+                                                <option value="1">1</option>
+                                                <option value="2-5">2 - 5</option>
+                                                <option value="6-20">6 - 20</option>
+                                                <option value="20+">20+</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label for="product-types">What products do you manage?</label>
+                                            <input type="text" class="form-control" name="product-types" id="product-types" placeholder="e.g. medicines, medical supplies, food, building materials">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="timeline">When do you need this?</label>
+                                            <select id="timeline" name="timeline" class="form-control">
+                                                <option value="" selected></option>
+                                                <option value="immediately">As soon as possible</option>
+                                                <option value="1-3 months">1 - 3 months</option>
+                                                <option value="3-6 months">3 - 6 months</option>
+                                                <option value="just-exploring">Just exploring</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="budget">Monthly budget for hosting + support</label>
+                                            <select id="budget" name="budget" class="form-control">
+                                                <option value="" selected></option>
+                                                <option value="under-100">Under $100</option>
+                                                <option value="100-250">$100 - $250</option>
+                                                <option value="250-500">$250 - $500</option>
+                                                <option value="500-1000">$500 - $1,000</option>
+                                                <option value="1000+">$1,000+</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="current-setup">How are you currently managing inventory?</label>
+                                            <select id="current-setup" name="current-setup" class="form-control">
+                                                <option value="" selected></option>
+                                                <option value="spreadsheets">Spreadsheets (Excel, Google Sheets)</option>
+                                                <option value="paper">Paper-based</option>
+                                                <option value="openboxes-self-hosted">OpenBoxes (self-hosted)</option>
+                                                <option value="other-software">Other software</option>
+                                                <option value="nothing">No system in place</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="referral">How did you hear about OpenBoxes?</label>
+                                            <select id="referral" name="referral" class="form-control">
+                                                <option value="" selected></option>
+                                                <option value="search-engine">Search engine (Google, Bing)</option>
+                                                <option value="social-media">Social media</option>
+                                                <option value="colleague">Colleague or friend</option>
+                                                <option value="conference">Conference or event</option>
+                                                <option value="github">GitHub</option>
+                                                <option value="blog">Blog or article</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label for="comments">Anything else you'd like us to know?</label>
+                                            <textarea id="comments" class="form-control" name="comments" rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-template-primary pull-right"><i class="fa fa-paper-plane"></i> Join Waitlist</button>
+                            <a href="/pricing" class="btn btn-template-main"><i class="fa fa-arrow-left"></i> Back to Pricing</a>
+                        </div>
+                    </div>
+                </form>
+
+            </section>
+
+        </div>
+    </div>
+</div>
+{{ end }}
+{{ end }}

@@ -85,7 +85,7 @@ paginate = 10
 # Pricing
 
 [[menu.main]]
-    name = "Hosting"
+    name = "Pricing"
     url  = "/pricing/"
     weight = 40
 
@@ -508,6 +508,12 @@ paginate = 10
 
 [params.adsense]
     enable = false
+
+[params.waitlist]
+    enable = true
+    title = "Cloud Hosting Waitlist"
+    subtitle = "We're building a fully managed cloud hosting solution for OpenBoxes. Join the waitlist to get early access and help us shape the offering."
+    form_endpoint = "https://formspree.io/f/xzdaqjje"
 
 [params.calendly]
     enable = true
