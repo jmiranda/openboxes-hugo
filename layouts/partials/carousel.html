@@ -11,12 +11,15 @@
                     <div class="row bottom">
                         <div class="col-sm-6 text-center">
                             <h3 class="text-uppercase text-underline">{{ .title }}</h3>
-                                {{ .description | safeHTML }}
+                            {{ .description | safeHTML }}
+                            {{ if .link }}
+                            <a href="{{ .link }}" class="btn btn-template-primary btn-lg">{{ .link_text | default "Learn More" }}</a>
+                            {{ end }}
                         </div>
                         <div class="col-sm-6">
-                            <a href="{{ .image }}" target="_blank">
-                                <img class="img-responsive" src="{{ .image }}" alt="">
-                            </a>
+                            {{ if .image }}
+                            <img class="img-responsive" src="{{ .image }}" alt="{{ .title }}">
+                            {{ end }}
                         </div>
                     </div>
                 </div>

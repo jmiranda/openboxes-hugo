@@ -1,13 +1,8 @@
 ---
-weight: 2
-title: Better Visibility
+weight: 1
+title: Open-Source Supply Chain
 description: |
-  <ul class="list-style-none">
-    <li><i class="fa fa-history"></i> View Stock History</li>
-    <li><i class="fa fa-industry"></i> Access Multiple facilities</li>
-    <li><i class="fa fa-history"></i> Record Inventory Transactions</li>
-    <li><i class="fa fa-list"></i> Create standard formularies</li>
-    <li><i class="fa fa-shopping-cart"></i> Track multiple suppliers</li>
-  </ul>
-image: img/carousel/stock-history2.png
-link: /features
+  <p class="lead">Free inventory software for healthcare, warehouses, and distribution.</p>
+image: img/carousel/pih-haiti-warehouse.jpg
+link: https://demo.openboxes.com/openboxes/auth/signup
+link_text: Try the Demo

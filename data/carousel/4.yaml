@@ -1,14 +1,8 @@
 ---
 weight: 4
-title: World-Class Support
+title: Built by the Community
 description: |
-  <ul class="list-style-none">
-     <li><i class="fa fa-calculator"></i> Cost Analysis</li>
-     <li><i class="fa fa-database"></i> Data Migration</li>
-     <li><i class="fa fa-server"></i> Server Hosting<li>
-     <li><i class="fa fa-cloud"></i> Remote Training<li>
-     <li><i class="fa fa-support"></i> Dedicated Support</li>
-     <li><i class="fa fa-code"></i> Custom Development<li>
-   </ul>
-image: img/carousel/colleagues.resized.jpg
-link: /pricing
+  <p class="lead">Open source. No license fees. No user limits.</p>
+image: img/carousel/pih-haiti-hospital.jpg
+link: /pricing/#support
+link_text: Get Started

@@ -1,13 +1,8 @@
 ---
-weight: 1
-title: Streamlined workflows
+weight: 2
+title: Track Every Item, Everywhere
 description: |
-  <ul class="list-style-none">
-    <li><i class="fa fa-clock-o"></i> Reduce loss due to expiry</li>
-    <li><i class="fa fa-money"></i> Prevent costly stockouts</li>
-    <li><i class="fa fa-shopping-bag"></i> Replenish based on reorder levels </li>
-    <li><i class="fa fa-bar-chart"></i> Forecast needs based on consumption</li>
-    <li><i class="fa fa-refresh"></i> Respond to recalls in a timely manner</li>
-  </ul>
-image: img/carousel/customizable-dashboard.png
+  <p class="lead">Multi-facility stock management with lot tracking, expiry alerts, and real-time visibility.</p>
+image: img/carousel/pih-malawi-pharmacy.jpg
 link: /features
+link_text: Explore Features
