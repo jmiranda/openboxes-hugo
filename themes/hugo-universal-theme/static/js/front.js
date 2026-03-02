@@ -81,7 +81,7 @@ function sliderHomepage () {
     // var owl = $('#slider')
 
     $('#slider').owlCarousel({
-      autoPlay: 3000,
+      autoPlay: 10000,
       items: 4,
       itemsDesktopSmall: [900, 3],
       itemsTablet: [600, 3],
