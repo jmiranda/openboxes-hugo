@@ -1,202 +1,167 @@
 <a name="services"></a>
-<section class="bar background-white no-mb">
+<section class="bar background-white no-mb padding-big">
     <div class="row">
         <div class="col-md-12">
             <div class="heading">
                 <h3>Add-on Services</h3>
             </div>
+            <p class="lead text-center">
+                All services are available individually or bundled with any package.
+                Prices are starting points — contact us to discuss your specific needs.
+            </p>
 
-            <h4>Support</h4>
-
-            <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                <tr>
-                    <th class="col-md-2">Service</th>
-                    <th class="col-md-4">Description</th>
-                    <th class="col-md-3 text-center">Rates</th>
-                    <th class="col-md-1 text-center">Action</th>
-                </tr>
-                </thead>
+            <h4 class="text-uppercase">Support</h4>
+            <table class="table table-condensed table-striped services-list">
                 <tbody>
                 <tr>
-                    <td>Installation</td>
-                    <td>One-time installation fee. This assumes that you have an account with a hosting provider
-                        and just need help installing the software.</td>
-                    <td class="text-center">
-                        $500 per server
+                    <td class="col-md-8">
+                        <strong>Installation</strong>
+                        <div class="text-muted text-small" style="padding-left: 15px;">One-time setup on your hosting provider</div>
                     </td>
-                    <td>
-                        <a href="/quote?service=installation" class="btn btn-template-main btn-block">Get Quote</a>
-                    </td>
+                    <td class="col-md-4 text-right">$750 <span class="text-muted text-small">per server</span></td>
                 </tr>
                 <tr>
-                    <td>Upgrades</td>
-                    <td>One-time upgrade fee. This assumes that you have a working OpenBoxes installation
-                        based on an official WAR file (see <a href="https://github.com/openboxes/openboxes/releases/latest">Latest Release</a>).</td>
-                    <td class="text-center">
-                        $250 per upgrade <div class="text-small">(included with any support plan)</div>
-                    </td>
                     <td>
-                        <a href="/quote?service=upgrades" class="btn btn-template-main btn-block">Get Quote</a>
+                        <strong>Upgrades</strong> <i class="fa fa-info-circle text-muted" data-toggle="tooltip" title="Included with Business and Enterprise support plans."></i>
+                        <div class="text-muted text-small" style="padding-left: 15px;">Upgrade to the latest release</div>
                     </td>
+                    <td class="text-right">$500 <span class="text-muted text-small">per upgrade</span></td>
                 </tr>
                 <tr>
-                    <td>Troubleshooting</td>
                     <td>
-                        If you've encountered a problem with your self-hosted server you can request
-                        support from us for a fee. Or use the community support forum for free.
+                        <strong>Troubleshooting</strong>
+                        <div class="text-muted text-small" style="padding-left: 15px;">One-off help with a self-hosted server issue · Typical: 1–3 hours ($150–$450)</div>
                     </td>
-                    <td class="text-center">
-                        $150 per incident
-                    </td>
-                    <td>
-                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                            <div class="input-group">
-                                <input type="number" name="quantity" value="1" class="form-control">
-                                <span class="input-group-addon">incidents</span>
-                            </div>
-                            <input type="hidden" name="cmd" value="_s-xclick">
-                            <input type="hidden" name="hosted_button_id" value="NVHEYMG5M6PMU">
-                            <input type="submit" class="btn btn-template-primary btn-block" value="Add to Cart" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                        </form>
-                    </td>
+                    <td class="text-right">$150 <span class="text-muted text-small">per hour</span></td>
                 </tr>
                 </tbody>
             </table>
 
-            <h4>Implementation</h4>
-            <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                <tr>
-                    <th class="col-md-2">Service</th>
-                    <th class="col-md-4">Description</th>
-                    <th class="col-md-3 text-center">Rates</th>
-                    <th class="col-md-1 text-center">Action</th>
-                </tr>
-                </thead>
+            <h4 class="text-uppercase">Development</h4>
+            <table class="table table-condensed table-striped services-list">
                 <tbody>
                 <tr>
-                    <td>Custom Development</td>
-                    <td>
-                        For organizations with specific requirements, OpenBoxes offers custom development services
-                        to create additional features, modules, or enhancements to the software.
+                    <td class="col-md-8">
+                        <strong>Custom Development</strong>
+                        <div class="text-muted text-small" style="padding-left: 15px;">New features, modules, or enhancements · Typical: 10–40 hours ($1,500–$6,000)</div>
                     </td>
-                    <td class="text-center">
-                        $125 per hour
-                    </td>
-                    <td>
-                        <a href="/quote?service=development" class="btn btn-template-main btn-block">Get Quote</a>
-                    </td>
+                    <td class="col-md-4 text-right">$150 <span class="text-muted text-small">per hour</span></td>
                 </tr>
                 <tr>
-                    <td>Custom Reports & Analytics</td>
-                    <td>OpenBoxes can create custom reporting and analytics solutions to help organizations gain valuable insights into their inventory management processes and make data-driven decisions.</td>
-                    <td class="text-center">
-                        $500 per report <sup>1</sup>
-                    </td>
                     <td>
-                        <a href="/quote?service=custom-reports" class="btn btn-template-main btn-block">Get Quote</a>
+                        <strong>Custom Reports</strong>
+                        <div class="text-muted text-small" style="padding-left: 15px;">Reporting and analytics solutions · Typical: 4–8 hours ($500–$1,200)</div>
                     </td>
+                    <td class="text-right">from $500 <span class="text-muted text-small">per report</span></td>
                 </tr>
                 <tr>
-                    <td>Implementation & Configuration</td>
-                    <td>OpenBoxes offers consulting and implementation services to help organizations tailor the software to their specific needs. This includes system setup, configuration, and customization to align with unique workflows.</td>
-                    <td class="text-center">
-                        Depends on requirements
-                    </td>
                     <td>
-                        <a href="/quote?service=implementation" class="btn btn-template-main btn-block">Get Quote</a>
+                        <strong>Data Integration</strong>
+                        <div class="text-muted text-small" style="padding-left: 15px;">Connect with accounting, ERP, or other systems · Typical: 20–40 hours ($2,500–$6,000)</div>
                     </td>
-                </tr>
-                <tr>
-                    <td>User Training & Education</td>
-                    <td>
-                        OpenBoxes provides training programs and resources to ensure users and administrators are
-                        proficient in using the software effectively. This includes user training, administrator
-                        training, and educational materials.
-                    </td>
-                    <td class="text-center">
-                        $800 per session
-                    </td>
-                    <td>
-                        <a href="/quote?service=training" class="btn btn-template-main btn-block">Get Quote</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Data Migration</td>
-                    <td>OpenBoxes can assist organizations in migrating their existing inventory data into the OpenBoxes platform, ensuring a smooth transition to the new system.</td>
-                    <td class="text-center">
-                        Depends on requirements
-                    </td>
-                    <td>
-                        <a href="/quote?service=data-migration" class="btn btn-template-main btn-block">Get Quote</a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <h4>Advanced</h4>
-        <table class="table table-bordered table-striped table-condensed">
-            <thead>
-            <tr>
-                <th class="col-md-2">Service</th>
-                <th class="col-md-4">Description</th>
-                <th class="col-md-3 text-center">Rates</th>
-                <th class="col-md-1 text-center">Action</th>
-            </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Data Integration</td>
-                    <td>OpenBoxes can assist organizations in integrating their inventory management system with other
-                        software solutions, such as accounting software, e-commerce platforms, and more, to create a
-                        cohesive workflow.</td>
-                    <td class="text-center">
-                        $2500 per integration <sup>1</sup>
-                    </td>
-                    <td>
-                        <a href="/quote?service=integration" class="btn btn-template-main btn-block">Get Quote</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Data Replication</td>
-                    <td>If you want to host OpenBoxes on-premise as well as in the cloud, we can assist in
-                        configuring a robust
-                        and efficient solution designed to ensure the seamless synchronization and duplication of
-                        critical inventory and supply chain data across multiple locations or systems.
-                    </td>
-                    <td class="text-center">
-                        $5000 per environment<sup>1</sup>
-                    </td>
-                    <td>
-                        <a href="/quote?service=integration" class="btn btn-template-main btn-block">Get Quote</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Supply Chain Consulting</td>
-                    <td>
-                        <p>OpenBoxes offers consulting and implementation services to help organizations tailor the
-                        software to their specific needs. This includes, but is not limited to, the following services</p>
-                        <ul>
-                            <li>Demand Planning and Forecasting</li>
-                            <li>Performance Monitoring and KPIs</li>
-                            <li>Standard Operating Procedures</li>
-                            <li>Technology Evaluation (barcoding, RFID)</li>
-                            <li>Warehouse Design and Layout</li>
-                            <li>Workflow Optimization</li>
-
-                        </ul>
-                    </td>
-                    <td class="text-center">
-                        $125 per hour
-                    </td>
-                    <td>
-                        <a href="/quote?service=consulting" class="btn btn-template-main btn-block">Get Quote</a>
-                    </td>
+                    <td class="text-right">from $2,500 <span class="text-muted text-small">per integration</span></td>
                 </tr>
                 </tbody>
             </table>
-            <p class="text-small"><sup>1</sup> Cost may vary depending on complexity of requirements. Please specify requirements when requesting a quote.</p>
+
+            <h4 class="text-uppercase">Implementation</h4>
+            <table class="table table-condensed table-striped services-list">
+                <tbody>
+                <tr>
+                    <td class="col-md-8">
+                        <strong>Discovery & Requirements</strong>
+                        <div class="text-muted text-small" style="padding-left: 15px;">Needs assessment, workflow analysis, and project scoping · Typical: 4–8 hours ($600–$1,200)</div>
+                    </td>
+                    <td class="col-md-4 text-right">$150 <span class="text-muted text-small">per hour</span></td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Configuration</strong>
+                        <div class="text-muted text-small" style="padding-left: 15px;">Locations, product catalogs, user roles, and workflows · Typical: 8–20 hours ($1,200–$3,000)</div>
+                    </td>
+                    <td class="text-right">Varies</td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Data Migration</strong>
+                        <div class="text-muted text-small" style="padding-left: 15px;">Migrate existing inventory data into OpenBoxes · Typical: 4–16 hours ($600–$2,400)</div>
+                    </td>
+                    <td class="text-right">Varies</td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>User Training</strong> <i class="fa fa-info-circle text-muted" data-toggle="tooltip" title="Includes up to 5 users. $100 per additional user."></i>
+                        <div class="text-muted text-small" style="padding-left: 15px;">Training for users and administrators · Typical: 2–4 hours per session</div>
+                    </td>
+                    <td class="text-right">$800 <span class="text-muted text-small">per session</span></td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Go-Live Support</strong>
+                        <div class="text-muted text-small" style="padding-left: 15px;">On-site or remote support during launch · Typical: 8–16 hours ($1,200–$2,400)</div>
+                    </td>
+                    <td class="text-right">$150 <span class="text-muted text-small">per hour</span></td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Post-Launch Review</strong>
+                        <div class="text-muted text-small" style="padding-left: 15px;">Performance review and optimization after rollout · Typical: 2–4 hours ($300–$600)</div>
+                    </td>
+                    <td class="text-right">$150 <span class="text-muted text-small">per hour</span></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <h4 class="text-uppercase">Advanced</h4>
+            <table class="table table-condensed table-striped services-list">
+                <tbody>
+                <tr>
+                    <td class="col-md-8">
+                        <strong>Data Replication</strong>
+                        <div class="text-muted text-small" style="padding-left: 15px;">Sync on-premise and cloud instances · Typical: 40–80 hours ($5,000–$12,000)</div>
+                    </td>
+                    <td class="col-md-4 text-right">from $5,000 <span class="text-muted text-small">per environment</span></td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Supply Chain Consulting</strong>
+                        <div class="text-muted text-small" style="padding-left: 15px;">Forecasting, SOPs, warehouse design, workflow optimization · Typical: 8–20 hours ($1,200–$3,000)</div>
+                    </td>
+                    <td class="text-right">$150 <span class="text-muted text-small">per hour</span></td>
+                </tr>
+                </tbody>
+            </table>
+
+            {{ if .Site.Params.services.prepaid_hours }}
+            <h4 class="text-uppercase" style="margin-top: 40px;">Pre-Paid Hours</h4>
+            <p class="text-muted">Save by pre-purchasing hours. Use them for any service within the category. Valid for 12 months.</p>
+            <table class="table table-condensed table-striped services-list">
+                <tbody>
+                {{ range sort .Site.Params.services.packages "weight" }}
+                <tr>
+                    <td class="col-md-8">
+                        <strong>{{ .name }}</strong>
+                        <div class="text-muted text-small" style="padding-left: 15px;">{{ .hours }} hours at ${{ .rate }}/hr · Save ${{ .savings }}</div>
+                        <div class="text-muted text-small text-italic" style="padding-left: 15px;">{{ .description }}</div>
+                    </td>
+                    <td class="col-md-2 text-right">${{ lang.NumFmt 0 .price }}</td>
+                    <td class="col-md-2 text-right">
+                        <a href="{{ .payment_url }}" target="_blank" class="btn btn-template-primary btn-sm"><i class="fa fa-credit-card"></i> Purchase</a>
+                    </td>
+                </tr>
+                {{ end }}
+                </tbody>
+            </table>
+            {{ end }}
+
+            <p class="text-small text-muted text-center" style="margin-top: 10px;">
+                All prices are starting points and may vary based on complexity. Please specify your requirements when requesting a quote.
+            </p>
+
+            <div class="text-center" style="margin-top: 30px;">
+                <a href="https://calendly.com/openboxes/discussion" class="btn btn-template-primary"><i class="fa fa-calendar"></i> Schedule a Consultation</a>
+                <a href="/quote" class="btn btn-template-main" style="margin-left: 10px;"><i class="fa fa-file-text-o"></i> Request a Quote</a>
+            </div>
 
         </div>
     </div>

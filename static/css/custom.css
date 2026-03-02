@@ -23,9 +23,61 @@
 
 .table-wrapper {
   max-width: 100%;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .border-top {
   border-top: 2px solid lightgrey;
+}
+
+.pricing-page section.bar {
+  padding: 20px 0;
+}
+
+.pricing-page section.bar:first-child {
+  padding-top: 40px;
+}
+
+.pricing-page table td[colspan] {
+  background-color: #e8edf3 !important;
+  padding-top: 12px !important;
+  padding-bottom: 8px !important;
+}
+
+.pricing-page .table th,
+.pricing-page .table td {
+  padding: 8px 6px;
+  font-size: 13px;
+}
+
+.pricing-page .table th:first-child,
+.pricing-page .table td:first-child {
+  white-space: nowrap;
+}
+
+.pricing-page .table-wrapper {
+  overflow-x: hidden;
+}
+
+.pricing-page .table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.pricing-page .table th:first-child,
+.pricing-page .table td:first-child {
+  width: 22%;
+}
+
+.pricing-page .table th:not(:first-child),
+.pricing-page .table td:not(:first-child) {
+  width: calc(78% / 5);
+}
+
+.services-list tbody tr {
+  transition: background-color 0.15s ease;
+}
+
+.services-list tbody tr:hover {
+  background-color: #f0f6ff !important;
 }

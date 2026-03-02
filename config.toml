@@ -463,7 +463,38 @@ paginate = 10
     enable = true
 
 [params.services]
-    enable = false
+    enable = true
+    prepaid_hours = false
+
+[params.services.packages.starter]
+    weight = 1
+    name = "Starter"
+    hours = 40
+    rate = 130
+    price = 5200
+    savings = 800
+    description = "e.g., Installation + configuration + training, or a custom feature build"
+    payment_url = "https://buy.stripe.com/REPLACE_WITH_STARTER_PACKAGE_LINK"
+
+[params.services.packages.growth]
+    weight = 2
+    name = "Growth"
+    hours = 160
+    rate = 120
+    price = 19200
+    savings = 4800
+    description = "e.g., Full implementation from discovery through go-live"
+    payment_url = "https://buy.stripe.com/REPLACE_WITH_GROWTH_PACKAGE_LINK"
+
+[params.services.packages.enterprise]
+    weight = 3
+    name = "Enterprise"
+    hours = 480
+    rate = 110
+    price = 52800
+    savings = 19200
+    description = "e.g., Multi-facility rollout with custom development and integrations"
+    payment_url = "https://buy.stripe.com/REPLACE_WITH_ENTERPRISE_PACKAGE_LINK"
 
 [params.support]
     enable = true
@@ -492,6 +523,7 @@ paginate = 10
     enable = true
     title = "Partners"
     subtitle = "The following organizations provide funding, contributions, project management, implementations services and support to the OpenBoxes community."
+    form_endpoint = "https://formspree.io/f/maqdzgrk"
 
 [params.supporters]
     enable = true
