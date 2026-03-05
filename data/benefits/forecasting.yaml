@@ -1,4 +1,4 @@
-weight: 4
-name: "Forecasting & Planning"
+weight: 5
+name: "Reduce Waste from Stockouts and Expiry"
 icon: "fa fa-bar-chart"
-description: "Leverage demand data to predict future inventory needs and improve replenishment accuracy."
+description: "Automatic reorder point calculations flag what to order before shelves go empty. FEFO picking and expiry alerts keep products moving before they expire, so less stock ends up in the bin."

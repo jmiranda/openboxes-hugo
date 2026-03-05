@@ -1,4 +1,4 @@
 weight: 2
-name: "Real-time Inventory Control"
-icon: "fa fa-line-chart"
-description: "Track stock levels, movements, and adjustments instantly to prevent overstocking, expiry, and stockouts."
+name: "Built for Healthcare. Ready for Any Industry."
+icon: "fa fa-medkit"
+description: "Born in hospitals and pharmacies, with native support for cold chain, controlled substances, lot tracking, and expiry management. But the same tools work just as well for warehouses, NGOs, and manufacturers."

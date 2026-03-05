@@ -1,4 +1,4 @@
-weight: 7
-name: "Customizable & Extensible"
+weight: 6
+name: "Runs Anywhere, Integrates with Anything"
 icon: "fa fa-sliders"
-description: "Modify workflows, integrate with external systems, or add new features to fit your organization’s needs."
+description: "Deploy on your own infrastructure or in the cloud. Connect to DHIS2, ERP systems, or your own tools via REST APIs. You own the data and the deployment."

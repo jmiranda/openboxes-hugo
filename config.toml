@@ -452,6 +452,7 @@ paginate = 10
 [params.benefits]
     enable = true
     title = "Benefits"
+    subtitle = "Why organizations choose OpenBoxes to manage their supply chains."
 
 [params.features]
     enable = true
