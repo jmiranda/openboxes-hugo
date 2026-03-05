@@ -38,7 +38,7 @@ paginate = 10
 [[menu.main]]
     identifier = "get-started"
     name = "Get Started"
-    weight = 50
+    weight = 80
 
 # Get Started > Explore
 [[menu.main]]

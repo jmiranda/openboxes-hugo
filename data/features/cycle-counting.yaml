@@ -10,4 +10,7 @@ items:
 - Record variances and adjustment reasons
 - Export cycle count worksheets
 screenshots:
-- image: ../img/screenshots/inventory/record-inventory.png
+- image: ../img/screenshots/inventory/cycle-count-candidates.png
+  name: "Cycle Count Candidates"
+- image: ../img/screenshots/inventory/cycle-count-blind-count.png
+  name: "Blind Count"

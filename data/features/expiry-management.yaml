@@ -1,7 +1,7 @@
 weight: 30
 name: "Expiry Management"
-category: "Product"
-categoryWeight: 0
+category: "Inventory"
+categoryWeight: 1
 icon: "fa fa-calendar-times-o"
 description: "Track expiration dates and manage stock removal due to expiry, damage, or recall."
 items:

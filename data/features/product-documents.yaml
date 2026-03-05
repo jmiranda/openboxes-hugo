@@ -1,0 +1,17 @@
+weight: 8
+name: "Product Documents"
+category: "Product"
+categoryWeight: 0
+icon: "fa fa-file-image-o"
+description: "Attach images, warranty documents, spec sheets, and other files to product records."
+items:
+- Upload product images for easy identification
+- Attach warranty documents and certificates
+- Store spec sheets, SDS, and compliance documents
+- Support for multiple file types (PDF, images, Word, Excel)
+- View and download documents from the product detail page
+screenshots:
+- image: ../img/screenshots/product/upload-image.png
+  name: "Upload Product Image"
+- image: ../img/screenshots/product/upload-documents.png
+  name: "Upload Documents"
