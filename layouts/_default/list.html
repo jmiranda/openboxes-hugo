@@ -27,23 +27,21 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      {{ if .Params.redirectUrl }}
-                                      <a href="{{ .Params.redirectUrl  }}">
+                                      <a href="#" class="blog-preview-trigger"
+                                         data-toggle="modal"
+                                         data-target="#blog-preview-modal"
+                                         data-title="{{ .Title }}"
+                                         data-summary="{{ .Summary }}"
+                                         data-date="{{ .Date.Format $.Site.Params.date_format }}"
+                                         data-image="{{ if .Params.banner }}{{ $.Site.BaseURL}}{{ .Params.banner }}{{ else }}{{ $.Site.BaseURL}}img/placeholder.png{{ end }}"
+                                         data-url="{{ if .Params.redirectUrl }}{{ .Params.redirectUrl }}{{ else }}{{ .Permalink }}{{ end }}"
+                                         data-category="{{ if .Params.categories }}{{ if gt (len .Params.categories) 0 }}{{ index .Params.categories 0 }}{{ end }}{{ end }}">
                                           {{ if .Params.banner }}
-                                          <img src="{{ .Site.BaseURL}}{{ .Params.banner }}" class="img-responsive" alt="">
+                                          <img src="{{ $.Site.BaseURL}}{{ .Params.banner }}" class="img-responsive" alt="{{ .Title }}">
                                           {{ else }}
-                                          <img src="{{ .Site.BaseURL}}img/placeholder.png" class="img-responsive" alt="">
+                                          <img src="{{ $.Site.BaseURL}}img/placeholder.png" class="img-responsive" alt="{{ .Title }}">
                                           {{ end }}
                                       </a>
-                                      {{ else }}
-                                      <a href="{{ .Permalink }}">
-                                          {{ if .Params.banner }}
-                                          <img src="{{ .Site.BaseURL}}{{ .Params.banner }}" class="img-responsive" alt="">
-                                          {{ else }}
-                                          <img src="{{ .Site.BaseURL}}img/placeholder.png" class="img-responsive" alt="">
-                                          {{ end }}
-                                      </a>
-                                      {{ end }}
                                   </div>
                                 </div>
                                 <div class="col-md-8">
@@ -124,6 +122,49 @@
             <!-- /.container -->
         </div>
         <!-- /#content -->
+
+        <!-- Blog Preview Modal -->
+        <div class="modal fade" id="blog-preview-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="blog-preview-title"></h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body" style="padding: 0;">
+                        <img id="blog-preview-image" src="" alt="" style="width: 100%; display: block;">
+                        <div style="padding: 20px 30px;">
+                            <p class="text-muted" style="margin-bottom: 5px;">
+                                <span id="blog-preview-category" class="label label-default" style="margin-right: 8px;"></span>
+                                <i class="fa fa-calendar-o"></i> <span id="blog-preview-date"></span>
+                            </p>
+                            <p id="blog-preview-summary" style="margin-top: 15px;"></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <a id="blog-preview-link" href="#" class="btn btn-template-primary">Continue Reading</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(document).on('click', '.blog-preview-trigger', function() {
+                var $el = $(this);
+                $('#blog-preview-title').text($el.data('title'));
+                $('#blog-preview-image').attr('src', $el.data('image')).attr('alt', $el.data('title'));
+                $('#blog-preview-date').text($el.data('date'));
+                $('#blog-preview-summary').text($el.data('summary'));
+                $('#blog-preview-link').attr('href', $el.data('url'));
+                var cat = $el.data('category');
+                if (cat) {
+                    $('#blog-preview-category').text(cat).show();
+                } else {
+                    $('#blog-preview-category').hide();
+                }
+            });
+        </script>
 
         {{ partial "footer.html" . }}
 
