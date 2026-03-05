@@ -1,0 +1,16 @@
+weight: 15
+name: "Goods Receipt"
+category: "Inbound"
+categoryWeight: 3
+categoryDescription: "Receive, inspect, and put away incoming shipments with lot-level accuracy."
+icon: "fa fa-sign-in"
+description: "Receive inbound shipments against purchase orders or stock transfers with lot tracking and quantity verification."
+items:
+- Receive against purchase orders and stock transfers
+- Capture lot numbers and expiration dates on receipt
+- Partial receiving with backorder tracking
+- Print receiving labels
+docs: "https://help.openboxes.com/article/300-partial-receiving"
+screenshots:
+- image: ../img/screenshots/receiving/create-receiving-location.png
+- image: ../img/screenshots/receiving/create-receiving-location2.png

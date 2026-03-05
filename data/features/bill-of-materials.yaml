@@ -1,0 +1,14 @@
+weight: 44
+name: "Bill of Materials"
+category: "Product"
+categoryWeight: 0
+icon: "fa fa-sitemap"
+description: "Define component lists for kits and assemblies to manage composite products."
+items:
+- Define multi-level bill of materials for kits
+- Assemble kits from component inventory
+- Track component availability and shortages
+- Automatic inventory deduction on kit assembly
+screenshots:
+- image: ../img/screenshots/product/bill-of-materials.png
+  name: "Bill of Materials"

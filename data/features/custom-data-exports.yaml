@@ -1,0 +1,12 @@
+---
+weight: 35
+name: "Custom Data Exports"
+category: "Reporting"
+categoryWeight: 6
+icon: "fa fa-download"
+description: "Export data from OpenBoxes in custom formats to support external analysis and integration."
+items:
+  - Export inventory, transaction, and consumption data to CSV
+  - Build custom export templates for recurring reporting needs
+  - Schedule automated data extracts
+  - Integrate exported data with external BI and analytics tools

@@ -1,0 +1,16 @@
+weight: 23
+name: "Integration Platforms"
+category: "Integrations"
+categoryWeight: 8
+icon: "fa fa-cogs"
+description: "Connect OpenBoxes to hundreds of apps using integration platforms like n8n, OpenFn, and Boomi."
+items:
+- "**n8n** — open-source workflow automation with an OpenBoxes node"
+- "**OpenFn** — integration platform purpose-built for health and humanitarian systems"
+- "**Boomi** — enterprise iPaaS for connecting cloud and on-premise applications"
+- Combine the REST API and webhooks with any iPaaS to build custom workflows
+- Sync data between OpenBoxes and ERP, LMIS, or reporting systems
+- No-code and low-code options for non-technical users
+screenshots:
+- image: ../img/screenshots/integration/n8n-workflow.png
+  name: "n8n Workflow"

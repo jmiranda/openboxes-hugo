@@ -1,0 +1,16 @@
+weight: 33
+name: "Forecasting & Demand"
+category: "Reporting"
+categoryWeight: 6
+icon: "fa fa-line-chart"
+description: "Analyze consumption trends and forecast demand to inform procurement decisions."
+items:
+- Historical consumption analysis
+- Demand trend visualization
+- Identify fast-moving and slow-moving items
+- Inform reorder quantities and timing
+screenshots:
+- image: ../img/screenshots/reporting/monthly-consumption-data.png
+- image: ../img/screenshots/reporting/monthly-consumption-data-details.png
+- image: ../img/screenshots/dashboard/fast-movers.png
+- image: ../img/screenshots/stock-card/product-demand.png

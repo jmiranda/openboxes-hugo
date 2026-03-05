@@ -1,0 +1,14 @@
+weight: 15
+name: "Webhooks"
+category: "Integrations"
+categoryWeight: 8
+icon: "fa fa-share-alt"
+description: "Subscribe to real-time event notifications to trigger actions in external systems."
+items:
+- Subscribe to inventory, shipment, and order events
+- Configurable webhook endpoints per event type
+- Retry logic for failed deliveries
+- Event payload includes full resource details
+screenshots:
+- image: ../img/screenshots/integration/webhooks.png
+  name: "Webhooks"

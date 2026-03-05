@@ -1,0 +1,14 @@
+weight: 42
+name: "Bin Replenishment"
+category: "Inventory"
+categoryWeight: 1
+icon: "fa fa-level-up"
+description: "Replenish forward-pick locations from bulk storage to keep pick bins stocked."
+items:
+- Automatic replenishment triggers based on min/max levels
+- Generate replenishment tasks from bulk to pick locations
+- Prioritize replenishment by demand or stockout risk
+- Track replenishment history
+screenshots:
+- image: ../img/screenshots/inventory/bin-replenishment.png
+  name: "Bin Replenishment"

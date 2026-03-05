@@ -1,0 +1,13 @@
+weight: 3
+name: "Stock History"
+category: "Inventory"
+categoryWeight: 1
+icon: "fa fa-history"
+description: "Track every stock movement with a complete audit trail of debits, credits, and balance changes."
+items:
+- Full transaction history per product and location
+- Debits and credits with running balance
+- Filter by date range, transaction type, or lot number
+- Trace stock movements back to source documents
+screenshots:
+- image: ../img/screenshots/stock-card/stock-history.png

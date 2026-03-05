@@ -1,0 +1,14 @@
+weight: 43
+name: "Reorder Points"
+category: "Product"
+categoryWeight: 0
+icon: "fa fa-flag"
+description: "Set minimum and maximum stock levels to trigger reorder alerts and automate procurement."
+items:
+- Configure min/max quantities per product and location
+- Dashboard alerts when stock falls below reorder point
+- Overstock warnings when quantity exceeds maximum level
+- Inform purchase order quantities based on reorder levels
+screenshots:
+- image: ../img/screenshots/product/reorder-warning.png
+- image: ../img/screenshots/product/overstock.png

@@ -1,5 +1,7 @@
 weight: 12
-name: "Stock List Management"
+name: "Stock Lists"
+category: "Outbound"
+categoryWeight: 4
 icon: "fa fa-list"
 description: "Organize items by formulary and assign to stock lists."
 items:

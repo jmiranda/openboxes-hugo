@@ -1,0 +1,15 @@
+weight: 7
+name: "Unit of Measure"
+category: "Product"
+categoryWeight: 0
+icon: "fa fa-balance-scale"
+description: "Support multiple units of measure per product for purchasing, storage, and distribution."
+items:
+- Define multiple UOMs per product (e.g. each, box, case, pallet)
+- Set conversion factors between units of measure
+- Purchase in one UOM and distribute in another
+- Display quantities in the appropriate UOM per workflow
+- Support for fractional and whole-unit conversions
+screenshots:
+- image: ../img/screenshots/product/product-packages.png
+  name: "Product Packages"

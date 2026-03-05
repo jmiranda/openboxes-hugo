@@ -1,6 +1,9 @@
 ---
 weight: 3
 name: Stock Movements
+category: "Outbound"
+categoryWeight: 4
+categoryDescription: "Pick, pack, and ship stock with workflows optimized for speed and accuracy."
 icon: fa fa-random
 description: Intuitive workflows to manage movement of stock from a supplier to depot,
   from depot to depot, and from depot to consumption location.

@@ -1,0 +1,13 @@
+weight: 38
+name: "Barcode Scanning"
+category: "Integrations"
+categoryWeight: 8
+icon: "fa fa-barcode"
+description: "Scan barcodes with handheld scanners or mobile device cameras to speed up warehouse operations."
+items:
+- Support for handheld barcode scanners
+- Mobile camera-based barcode scanning
+- Scan to receive, pick, putaway, and count
+- RFID receiver integration
+screenshots:
+- image: ../img/screenshots/integration/barcode-scanner-integration-alert.png

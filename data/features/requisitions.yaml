@@ -1,0 +1,13 @@
+weight: 17
+name: "Requisitions"
+category: "Outbound"
+categoryWeight: 4
+icon: "fa fa-file-text"
+description: "Request stock from upstream facilities using stock lists or ad-hoc item selection."
+items:
+- Create requests based on preset stock lists
+- Ad-hoc requisitions for non-standard items
+- Approval workflows for requisition review
+- Track requisition status from request to fulfillment
+screenshots:
+- image: ../img/screenshots/stock-movement/search.jpg

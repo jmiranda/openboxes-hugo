@@ -1,5 +1,7 @@
 weight: 4
 name: "Inventory Tracking"
+category: "Inventory"
+categoryWeight: 1
 icon: "fa fa-sort"
 description: "Adjust inventory quantity and remove quantity due to expiry and damage."
 items:
@@ -7,6 +9,7 @@ items:
 - Easily identify affected inventory in the event of a recall
 - View and export dashboard reports on expiring stock
 - Access information about incoming shipments and pending outgoing shipments for each item by location
+docs: "https://help.openboxes.com/article/41-inventory-adjustments-and-stock-counts"
 screenshots:
 - image: ../img/screenshots/inventory/track-lot-number-exp-date.png
 - image: ../img/screenshots/inventory/report-expired.png

@@ -1,0 +1,14 @@
+weight: 18
+name: "Allocation"
+category: "Outbound"
+categoryWeight: 4
+icon: "fa fa-balance-scale"
+description: "Allocate available inventory to outbound orders based on demand priority and stock availability."
+items:
+- Automatic allocation based on FEFO or FIFO rules
+- Manual allocation overrides when needed
+- Visibility into allocated vs available stock
+- Allocation across multiple lot numbers
+screenshots:
+- image: ../img/screenshots/stock-movement/stock-movement-edit-pick.png
+  name: "Edit Pick"

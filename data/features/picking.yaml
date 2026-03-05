@@ -1,0 +1,13 @@
+weight: 19
+name: "Picking"
+category: "Outbound"
+categoryWeight: 4
+icon: "fa fa-hand-rock-o"
+description: "Generate and execute picklists to efficiently pull stock from bin locations."
+items:
+- Automated picklist generation based on FEFO algorithm
+- Print and export picklists
+- Mobile-friendly picking workflow
+- Substitution suggestions during picking
+screenshots:
+- image: ../img/screenshots/stock-movement/stock-movement-edit-pick.png

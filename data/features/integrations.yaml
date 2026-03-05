@@ -1,0 +1,14 @@
+weight: 13
+name: "Integrations"
+category: "Integrations"
+categoryWeight: 8
+icon: "fa fa-plug"
+description: "Connect OpenBoxes with third-party systems to streamline your supply chain workflows."
+items:
+- Integration with ERP systems
+- Electronic Data Interchange (EDI) support
+- Barcode scanner and RFID integration
+- Webhook-based event notifications
+screenshots:
+- image: ../img/screenshots/integration/barcode-scanner-integration-alert.png
+  name: "Barcode Scanner Integration"

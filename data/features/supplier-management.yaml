@@ -1,0 +1,13 @@
+weight: 31
+name: "Supplier Management"
+category: "Procurement"
+categoryWeight: 2
+icon: "fa fa-truck"
+description: "Manage supplier and vendor master data for procurement and sourcing."
+items:
+- Maintain supplier contact information and addresses
+- Associate suppliers and manufacturers with products
+- Track supplier pricing and lead times
+- Link suppliers to purchase orders
+screenshots:
+- image: ../img/screenshots/product/edit-master-product.png

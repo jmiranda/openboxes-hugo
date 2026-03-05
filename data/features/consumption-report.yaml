@@ -1,0 +1,17 @@
+---
+weight: 8
+name: "Consumption Report"
+category: "Reporting"
+categoryWeight: 6
+icon: "fa fa-line-chart"
+description: "Track consumption and demand data to support forecasting and replenishment decisions."
+items:
+  - View consumption by product and location
+  - Analyze monthly consumption trends
+  - Export consumption data for external analysis
+  - Support demand-based forecasting with historical data
+docs: "https://help.openboxes.com/article/84-the-consumption-report"
+screenshots:
+  - image: ../img/screenshots/reporting/consumption.png
+  - image: ../img/screenshots/reporting/monthly-consumption-data.png
+  - image: ../img/screenshots/reporting/monthly-consumption-data-details.png

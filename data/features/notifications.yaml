@@ -1,6 +1,8 @@
 ---
 weight: 10
 name: Email Notifications
+category: "System"
+categoryWeight: 7
 icon: fa fa-envelope
 description: Configure email notifications for users
 items:
@@ -9,3 +11,6 @@ items:
 - Stock alerts (coming soon)
 screenshots:
 - image: ../img/screenshots/system/shipment-notifications.png
+- image: ../img/screenshots/emails/daily-stock-alerts.png
+- image: ../img/screenshots/emails/daily-expiry-alerts.png
+- image: ../img/screenshots/emails/daily-alert-subscriptions.png

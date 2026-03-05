@@ -1,0 +1,15 @@
+weight: 40
+name: "Returns"
+category: "Inbound"
+categoryWeight: 3
+icon: "fa fa-undo"
+description: "Process returned stock back into inventory with reason tracking and inspection workflows."
+items:
+- Receive returned items against original outbound shipments
+- Track return reasons for reporting and analysis
+- Inspect returned stock for damage or expiry
+- Restock or dispose of returned items
+docs: "https://help.openboxes.com/article/103-inbound-returns"
+screenshots:
+- image: ../img/screenshots/receiving/create-receiving-location.png
+  name: "Receiving Location"

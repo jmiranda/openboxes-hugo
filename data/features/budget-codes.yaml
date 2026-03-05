@@ -1,0 +1,15 @@
+weight: 29
+name: "Budget Codes"
+category: "Procurement"
+categoryWeight: 2
+icon: "fa fa-money"
+description: "Assign budget codes to purchase orders and line items for financial tracking and cost allocation."
+items:
+- Assign budget codes to purchase orders and line items
+- Track spending against budgets and funding sources
+- Filter purchase history by budget code
+- Support for GL account codes and cost center mapping
+- Export budget reports for reconciliation with accounting systems
+screenshots:
+- image: ../img/screenshots/purchasing/budget-codes.png
+  name: "Budget Codes"

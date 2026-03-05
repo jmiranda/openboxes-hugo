@@ -1,0 +1,17 @@
+---
+weight: 4
+name: "Product Associations"
+category: "Product"
+categoryWeight: 0
+icon: "fa fa-link"
+description: "Define relationships between products to support substitutions, equivalents, and kitting during fulfillment."
+items:
+  - Link substitute products for use when primary items are out of stock
+  - Define product equivalents across manufacturers
+  - Associate components for kit and assembly management
+  - Act on suggested substitutions during stock movement workflows
+docs: "https://help.openboxes.com/article/320-create-product-associations"
+screenshots:
+  - video: "https://www.youtube.com/embed/nsDJll1_kc4"
+    name: "Product Associations"
+  - image: ../img/screenshots/product/substitutions.png

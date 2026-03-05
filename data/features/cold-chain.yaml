@@ -1,13 +1,15 @@
 ---
 weight: 11
 name: Custom Attributes
-icon: fa fa-thermometer
-description: Record metadata required for proper handling of particular items.
+category: "Product"
+categoryWeight: 0
+icon: fa fa-sliders
+description: Extend product records with custom fields tailored to your organization's needs.
 items:
-- Controlled-substance classification
-- Temperature requirements (for cold chain)
-- Hazardous materials classification
-- Import/export license requirements
+- Define custom attributes per product category or globally
+- Support for text, numeric, date, and list field types
+- Use attributes for regulatory compliance, handling instructions, or internal classification
+- Display custom attributes on product pages, reports, and exports
+- Filter and search products by attribute values
 screenshots:
-- image: ../img/screenshots/product/materials-handling.png
 - image: ../img/screenshots/product/edit-attribute2.png

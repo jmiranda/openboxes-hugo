@@ -1,0 +1,15 @@
+weight: 5
+name: "Product Classification"
+category: "Product"
+categoryWeight: 0
+icon: "fa fa-tags"
+description: "Organize products into categories, subcategories, and custom classification schemes."
+items:
+- Hierarchical category and subcategory structure
+- Assign products to multiple classification groups
+- Filter and search inventory by classification
+- Support for custom classification schemes (e.g. ABC analysis, commodity codes)
+- Use classifications to drive reporting and replenishment rules
+screenshots:
+- image: ../img/screenshots/product/product-classification.png
+  name: "Product Classification"

@@ -1,0 +1,14 @@
+weight: 25
+name: "DHIS2"
+category: "Integrations"
+categoryWeight: 8
+icon: "fa fa-database"
+description: "Integrate with DHIS2 to share health commodity data with national health information systems."
+items:
+- Push stock and consumption data to DHIS2
+- Map OpenBoxes products to DHIS2 data elements
+- Scheduled and on-demand data synchronization
+- Support for aggregate and tracker data models
+screenshots:
+- image: ../img/screenshots/dhis2.png
+  name: "DHIS2 Integration"

@@ -1,0 +1,16 @@
+weight: 37
+name: "User Management"
+category: "Configuration"
+categoryWeight: 9
+icon: "fa fa-users"
+description: "Manage user accounts, roles, and location-based access control."
+items:
+- Create and manage user accounts
+- Assign roles with granular permissions
+- Restrict user access by location
+- LDAP and directory service authentication
+docs: "https://help.openboxes.com/article/89-create-and-manage-users"
+screenshots:
+- image: ../img/screenshots/security/user-roles.png
+- image: ../img/screenshots/security/signup.png
+- image: ../img/screenshots/user/user-location-role.png

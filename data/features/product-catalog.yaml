@@ -1,0 +1,17 @@
+weight: 3
+name: "Product Catalog"
+category: "Product"
+categoryWeight: 0
+icon: "fa fa-th-list"
+description: "Manage product master data including categories, tags, images, and documents."
+items:
+- Organize products by category and classification
+- Tag products for filtering and search
+- Upload product images and documents
+- Track product substitutions and equivalents
+screenshots:
+- image: ../img/screenshots/product/product-list.png
+- image: ../img/screenshots/product/edit-product-master-data.png
+- image: ../img/screenshots/product/upload-image2.png
+- image: ../img/screenshots/product/upload-documents.png
+- image: ../img/screenshots/product/substitutions.png

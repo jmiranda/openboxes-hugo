@@ -1,0 +1,14 @@
+weight: 36
+name: "Label Printing"
+category: "Configuration"
+categoryWeight: 9
+icon: "fa fa-print"
+description: "Generate and print barcode labels for products, bin locations, and shipments."
+items:
+- Product barcode labels with lot and expiry information
+- Bin location labels for warehouse organization
+- Shipping and packing labels
+- Support for standard label printers
+screenshots:
+- video: "https://www.youtube.com/embed/4-S4IYFuMKI"
+  name: "Label Printing Demo"

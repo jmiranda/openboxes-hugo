@@ -1,6 +1,9 @@
 ---
 weight: 14
 name: REST API
+category: "Integrations"
+categoryWeight: 8
+categoryDescription: "Connect OpenBoxes with external systems through APIs, webhooks, and pre-built integrations."
 icon: fa fa-code
 description: Build your own mobile app and integrate with third-party systems using our REST API.
 items:
@@ -9,4 +12,5 @@ items:
   - Basic Authentication leaves much to be desired (Bearer Token, OAuth 2.0, JWT coming soon)
   - Check out our [REST API docs](https://docs.openboxes.com/en/latest/api-guide/) for more information.
 screenshots:
-  - image: ../img/screenshots/rest-api/product-list.png
+- image: ../img/screenshots/integration/product-list.png
+  name: "REST API Product List"

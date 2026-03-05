@@ -1,0 +1,21 @@
+weight: 21
+name: "Mobile App"
+category: "Mobile"
+categoryWeight: 5
+categoryDescription: "Run warehouse operations from any device with a mobile-optimized interface."
+icon: "fa fa-mobile"
+description: "Access OpenBoxes on the go with a mobile-friendly interface for warehouse operations."
+items:
+- Mobile-optimized picking and putaway workflows
+- Barcode scanning with device camera
+- Real-time inventory lookups
+- Receive and ship from mobile devices
+screenshots:
+- image: ../img/screenshots/mobile/mobile-choose-location.png
+  name: "Choose Location"
+- image: ../img/screenshots/mobile/mobile-dashboard.png
+  name: "Mobile Dashboard"
+- image: ../img/screenshots/mobile/mobile-pick-product.png
+  name: "Pick Product with Barcode Scanning"
+- image: ../img/screenshots/mobile/mobile-inbound-sortation.png
+  name: "Inbound Sortation"

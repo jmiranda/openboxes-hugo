@@ -1,0 +1,13 @@
+weight: 32
+name: "Shipping"
+category: "Outbound"
+categoryWeight: 4
+icon: "fa fa-paper-plane"
+description: "Manage outbound shipments with carrier tracking and documentation."
+items:
+- Assign tracking numbers and carrier information
+- Generate packing lists and shipping documents
+- Customs clearance documentation for international shipments
+- Track shipment status from dispatch to delivery
+screenshots:
+- image: ../img/screenshots/stock-movement/view-shipment.png

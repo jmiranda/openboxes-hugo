@@ -1,0 +1,25 @@
+weight: 26
+name: "Data Imports"
+category: "Configuration"
+categoryWeight: 9
+icon: "fa fa-upload"
+description: "Import products, inventory, locations, and other master data from spreadsheets and external sources."
+items:
+- "**Products** — bulk import products and categories via CSV"
+- "**Product Sources** — import supplier and manufacturer associations"
+- "**Inventory Levels** — import quantity on hand and bin locations"
+- "**Locations** — import locations and organization hierarchy"
+- "**Preferred Bin Locations** — assign default bin locations per product"
+- "**Formulary Lists** — import stock lists with category fields"
+- "**Receipts** — import receipt data from Excel"
+- "**Outbound Stock Movements** — import outbound shipment data"
+- "**Purchase Orders** — import PO line items and actual ready dates"
+- Validation and error reporting on all imports
+docs: "https://help.openboxes.com/article/30-import-products-from-excel"
+screenshots:
+- image: ../img/screenshots/system/data-import.png
+- image: ../img/screenshots/system/import-data.png
+- image: ../img/screenshots/system/import-product-sources.png
+- image: ../img/screenshots/product/upload-products.png
+- image: ../img/banners/import-outbound.png
+  name: "Outbound Stock Movement Import"

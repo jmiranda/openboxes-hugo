@@ -1,5 +1,8 @@
 weight: 2
-name: "Stock Card"
+name: "Product Management"
+category: "Product"
+categoryWeight: 0
+categoryDescription: "Define, organize, and enrich your product catalog with flexible attributes and classifications."
 icon: "fa fa-list"
 description: "OpenBoxes supports any type of item including, but not limited to, medications, medical supplies and devices, office supplies, and building materials. In addition, the software can be used to track the location of fixed assets like automobiles, IT equipment, and hospital furniture."
 items:
@@ -7,6 +10,7 @@ items:
 - Create custom attributes for temperature requirements, hazardous material class, and import/export requirements (e.g. for controlled substances).
 - View quantity on hand within each inventory location by bin location, lot/serial number, and expiration date
 - View stock history including debits, credits, and inventory adjustments
+docs: "https://help.openboxes.com/article/39-electronic-stock-card"
 screenshots:
 - image: ../img/screenshots/stock-card/current-inventory.png
 - image: ../img/screenshots/stock-card/stock-history.png

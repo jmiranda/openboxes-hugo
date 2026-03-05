@@ -1,0 +1,14 @@
+weight: 8
+name: "Recall Lots"
+category: "Product"
+categoryWeight: 0
+icon: "fa fa-exclamation-triangle"
+description: "Quickly identify and isolate recalled lot numbers across all locations to protect patient safety."
+items:
+- Search by lot number to find all affected stock
+- View quantities and locations holding recalled lots
+- Initiate stock removals directly from recall results
+- Maintain audit trail of recall actions
+screenshots:
+- video: "https://www.youtube.com/embed/3gc8OtFRfrc"
+  name: "Recall Lots Demo"

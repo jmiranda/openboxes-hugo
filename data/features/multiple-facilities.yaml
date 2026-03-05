@@ -1,11 +1,15 @@
 weight: 6
-name: "Flexible Location Hierachy"
+name: "Location Hierarchy"
+category: "Configuration"
+categoryWeight: 9
+categoryDescription: "Tailor OpenBoxes to your operations with flexible location hierarchies, data imports, and settings."
 icon: "fa fa-building"
 description: "Organize and manage stock within multiple facilities, thousands of bin locations, receiving and staging area, supply closets, etc"
 items:
 - Location Groups (geographic region)
 - Location (facility, storage area, room, closet, locked cabinet, crash cart)
 - Internal locations (bin location, receiving area, staging area, cross-docking, bulk storage)
+docs: "https://help.openboxes.com/article/90-manage-locations"
 screenshots:
 - image: ../img/screenshots/stock-card/bin-locations.png
 - image: ../img/screenshots/stock-card/multiple-facilities.png

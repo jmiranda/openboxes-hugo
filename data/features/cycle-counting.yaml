@@ -1,0 +1,13 @@
+weight: 29
+name: "Cycle Counting"
+category: "Inventory"
+categoryWeight: 1
+icon: "fa fa-refresh"
+description: "Perform periodic inventory counts to maintain accuracy without full physical inventory."
+items:
+- Generate suggested cycle counts based on last inventory date
+- Count by bin location, product, or zone
+- Record variances and adjustment reasons
+- Export cycle count worksheets
+screenshots:
+- image: ../img/screenshots/inventory/record-inventory.png

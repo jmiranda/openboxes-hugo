@@ -1,109 +1,231 @@
 {{ if isset .Site.Params "features" }}
 {{ if .Site.Params.features.enable }}
 {{ if gt (len .Site.Data.features) 0 }}
-<style>
-    #content { width: 99%; }
-</style>
-    <div class="row">
-        <div class="col-md-10">
-            {{ range $index, $element := sort .Site.Data.features "weight" }}
 
-                {{ if eq (mod $index 2) 0 }}
-                <section class="bar background-white no-mb text-center-sm">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="text-center">
-                                    <a name="feature-{{ $index }}"></a>
-                                    <h3><i class="{{ .icon }}"></i> {{ $element.name }}</h3>
-                                    <p class="lead">{{ $element.description | markdownify }}</p>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <ul class="list-group-none">
-                                        {{ range $element.items }}
-                                        <li class="list-group-item">{{ . | markdownify }}</li>
-                                        {{ end }}
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <ul class="owl-carousel screenshots">
-                                            {{ range $element.screenshots }}
-                                            <li class="item" title="{{ .name }}">
-                                                {{ if .url }}
-                                                <a href="{{ .url }}" target="_blank">
-                                                    <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
-                                                </a>
-                                                {{ else }}
-                                                <a href="{{ .image }}" target="_blank">
-                                                    <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
-                                                </a>
-                                                {{ end }}
-                                            </li>
-                                            {{ end }}
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+{{/* Build a sorted list of features */}}
+{{ $allFeatures := sort .Site.Data.features "weight" }}
+
+{{/* Build unique categories ordered by categoryWeight */}}
+{{ $categories := slice }}
+{{ $seen := slice }}
+{{ range $allFeatures }}
+    {{ if not (in $seen .category) }}
+        {{ $categories = $categories | append (dict "name" .category "weight" .categoryWeight "description" (.categoryDescription | default "")) }}
+        {{ $seen = $seen | append .category }}
+    {{ end }}
+{{ end }}
+{{ $categories = sort $categories "weight" }}
+
+<!-- Feature Layout: Vertical Tabs + Content -->
+<section class="bar background-white feature-nav-section">
+    <div class="container">
+        <div class="feature-layout">
+            <!-- Left: Vertical Tab Nav -->
+            <nav class="feature-nav">
+                {{ range $categories }}
+                <a href="#category-{{ .name | urlize }}" class="feature-nav-btn">{{ .name }}</a>
                 {{ end }}
-
-                {{ if eq (mod $index 2) 1 }}
-
-                <section class="bar background-pentagon text-center-sm no-mb">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h3 class="text-center"><i class="{{ .icon }}"></i> {{ $element.name }}</h3>
-                                <p class="lead text-center">{{ $element.description | markdownify }}</p>
-                                <div class="col-md-6">
-                                    <ul class="owl-carousel screenshots">
-                                        {{ range $element.screenshots }}
-                                        <li class="item" title="{{ .name }}">
-                                            {{ if .url }}
-                                            <a href="{{ .url }}" target="_blank">
-                                                <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
-                                            </a>
-                                            {{ else }}
-                                            <a href="{{ .image }}" target="_blank">
-                                                <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
-                                            </a>
-                                            {{ end }}
-                                        </li>
-                                        {{ end }}
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                        <ul class="list-group">
-                                        {{ range $element.items }}
-                                        <li class="list-group-item">{{ . | markdownify }}</li>
-                                        {{ end }}
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                {{ end }}
-            {{ end }}
-        </div>
-        <div class="col-md-2">
-            <nav class="bs-docs-sidebar">
-                <ul id="sidebar" class="nav nav-stacked fixed">
-                    <li>
-                        <div class="heading mb-small">
-                        <h5>Features</h5>
-                        </div>
-                    </li>
-                    {{ range $index, $element := sort .Site.Data.features "weight" }}
-                    <li><a href="#feature-{{ $index }}">{{ .name | safeHTML }}</a></li>
-                    {{ end }}
-                </ul>
             </nav>
+
+            <!-- Right: Feature Content -->
+            <div class="feature-content">
+                {{ range $cat := $categories }}
+                {{ $catSlug := $cat.name | urlize }}
+                <div id="category-{{ $catSlug }}" class="feature-category-section" style="display:none;">
+                    <div class="feature-category-header">
+                        <h3 class="feature-category-heading">{{ $cat.name }}</h3>
+                        {{ with $cat.description }}<p class="feature-category-summary">{{ . }}</p>{{ end }}
+                    </div>
+                    <div class="feature-grid row">
+                        {{ range $index, $feature := where $allFeatures "category" $cat.name }}
+                        <div class="col-md-4 col-sm-6">
+                            <div class="feature-card" data-feature-id="cat-{{ $catSlug }}-{{ $index }}">
+                                <div class="feature-card-icon">
+                                    <i class="{{ $feature.icon }}"></i>
+                                </div>
+                                <h4>{{ $feature.name }}</h4>
+                                <p>{{ $feature.description | markdownify | truncate 120 }}</p>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+            </div>
         </div>
     </div>
+</section>
+
+<!-- Hidden feature content blocks (source data for modal) -->
+{{ range $cat := $categories }}
+{{ $catSlug := $cat.name | urlize }}
+{{ range $index, $feature := where $allFeatures "category" $cat.name }}
+<div class="feature-source" id="source-cat-{{ $catSlug }}-{{ $index }}" style="display:none;">
+    <div class="feature-source-header">
+        <h3><i class="{{ $feature.icon }}"></i> {{ $feature.name }}</h3>
+        <p class="lead">{{ $feature.description | markdownify }}</p>
+        {{ if $feature.docs }}<a href="{{ $feature.docs }}" target="_blank" class="feature-docs-link"><i class="fa fa-book"></i> View documentation</a>{{ end }}
+    </div>
+    <div class="feature-source-items">
+        {{ if $feature.items }}
+        <ul class="feature-items">
+            {{ range $feature.items }}
+            <li>{{ . | markdownify }}</li>
+            {{ end }}
+        </ul>
+        {{ end }}
+    </div>
+    <div class="feature-source-screenshots">
+        {{ range $feature.screenshots }}
+        <div class="feature-source-slide" data-image="{{ .image }}" data-video="{{ .video }}" data-url="{{ .url }}" data-name="{{ .name }}"></div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}
+{{ end }}
+
+<!-- Feature Modal -->
+<div class="feature-modal-overlay" id="featureModal">
+    <div class="feature-modal">
+        <button class="feature-modal-close" aria-label="Close">&times;</button>
+        <div class="feature-modal-header"></div>
+        <div class="feature-modal-body">
+            <div class="feature-modal-items"></div>
+            <div class="feature-modal-screenshots">
+                <ul class="owl-carousel screenshots-deferred feature-modal-carousel"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+(function($) {
+
+    var $overlay = $('#featureModal');
+    var $header = $overlay.find('.feature-modal-header');
+    var $itemsCol = $overlay.find('.feature-modal-items');
+    var $carouselEl = $overlay.find('.feature-modal-carousel');
+    var $ssWrap = $overlay.find('.feature-modal-screenshots');
+    var currentCarousel = null;
+
+    var owlOpts = {
+        navigation: true,
+        navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+        slideSpeed: 300,
+        paginationSpeed: 400,
+        autoPlay: 5000,
+        stopOnHover: true,
+        singleItem: true,
+        lazyLoad: true,
+        addClassActive: true
+    };
+
+    function openModal(featureId) {
+        var $source = $('#source-' + featureId);
+        if (!$source.length) return;
+
+        $header.html($source.find('.feature-source-header').html());
+        $itemsCol.html($source.find('.feature-source-items').html());
+
+        if (currentCarousel) {
+            currentCarousel.destroy();
+            currentCarousel = null;
+        }
+
+        $carouselEl.empty();
+        var $slides = $source.find('.feature-source-slide');
+        if ($slides.length) {
+            $slides.each(function() {
+                var img = $(this).data('image');
+                var video = $(this).data('video');
+                var url = $(this).data('url') || img;
+                var name = $(this).data('name') || '';
+                if (video) {
+                    $carouselEl.append(
+                        '<li class="item" title="' + name + '">' +
+                        '<div class="feature-video-wrap">' +
+                        '<iframe src="' + video + '" frameborder="0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>' +
+                        '</div></li>'
+                    );
+                } else {
+                    $carouselEl.append(
+                        '<li class="item" title="' + name + '">' +
+                        '<a href="' + url + '" target="_blank">' +
+                        '<img src="' + img + '" alt="' + name + '" class="img-responsive" />' +
+                        '</a></li>'
+                    );
+                }
+            });
+            $ssWrap.show();
+        } else {
+            $ssWrap.hide();
+        }
+
+        $overlay.fadeIn(200, function() {
+            if ($slides.length) {
+                setTimeout(function() {
+                    $carouselEl.owlCarousel(owlOpts);
+                    currentCarousel = $carouselEl.data('owlCarousel');
+                }, 50);
+            }
+        });
+        $('body').css('overflow', 'hidden');
+
+        $('.feature-card').removeClass('active');
+        $('.feature-card[data-feature-id="' + featureId + '"]').addClass('active');
+    }
+
+    function closeModal() {
+        $overlay.fadeOut(200, function() {
+            if (currentCarousel) {
+                currentCarousel.destroy();
+                currentCarousel = null;
+            }
+            $carouselEl.empty();
+        });
+        $('body').css('overflow', '');
+        $('.feature-card').removeClass('active');
+    }
+
+    $('.feature-card').on('click', function() {
+        openModal($(this).data('feature-id'));
+    });
+
+    $overlay.find('.feature-modal-close').on('click', closeModal);
+
+    $overlay.on('click', function(e) {
+        if ($(e.target).is($overlay)) {
+            closeModal();
+        }
+    });
+
+    $(document).on('keydown', function(e) {
+        if (e.key === 'Escape' && $overlay.is(':visible')) {
+            closeModal();
+        }
+    });
+
+    // Tab switching
+    var $tabs = $('.feature-nav .feature-nav-btn');
+    var $sections = $('.feature-category-section');
+
+    // Show first tab on load
+    $tabs.first().addClass('active');
+    $sections.first().show();
+
+    $tabs.on('click', function(e) {
+        e.preventDefault();
+        $tabs.removeClass('active');
+        $(this).addClass('active');
+        $sections.hide();
+        $($(this).attr('href')).show();
+    });
+
+})(jQuery);
+});
+</script>
+
 {{ end }}
 {{ end }}
 {{ end }}

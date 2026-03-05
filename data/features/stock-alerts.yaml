@@ -1,0 +1,16 @@
+weight: 34
+name: "Stock Alerts"
+category: "Reporting"
+categoryWeight: 6
+icon: "fa fa-exclamation-triangle"
+description: "Get notified about low stock, stockouts, overstock, and expiring inventory."
+items:
+- Configurable reorder point and max level alerts
+- Daily email digests for stock exceptions
+- Dashboard indicators for items needing attention
+- Stockout and overstock reports
+screenshots:
+- image: ../img/screenshots/dashboard/stock-level-indicators.png
+- image: ../img/screenshots/emails/daily-stock-alerts.png
+- image: ../img/screenshots/product/reorder-warning.png
+- image: ../img/screenshots/product/overstock.png

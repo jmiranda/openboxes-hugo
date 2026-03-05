@@ -1,6 +1,8 @@
 ---
 weight: 5
 name: Dashboard
+category: "Reporting"
+categoryWeight: 6
 icon: fa fa-tachometer
 description: Useful indicators to help inform stakeholders on important decisions that need to be made and advise users on what they neeed to work on next.
 items:
@@ -12,6 +14,7 @@ items:
 - Global search
 - Product tags
 - Recent activities
+docs: "https://help.openboxes.com/article/7-dashboard"
 screenshots:
 
 - image: ../img/carousel/customizable-dashboard.png

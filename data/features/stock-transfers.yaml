@@ -1,0 +1,14 @@
+weight: 41
+name: "Stock Transfers"
+category: "Inventory"
+categoryWeight: 1
+icon: "fa fa-exchange"
+description: "Move stock between bin locations within the same facility."
+items:
+- Transfer inventory between bin locations
+- Bulk transfers for warehouse reorganization
+- Track transfer history and reasons
+- Mobile-friendly transfer workflow
+screenshots:
+- image: ../img/screenshots/inventory/browse-inventory.png
+  name: "Browse Inventory"

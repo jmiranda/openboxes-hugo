@@ -1,0 +1,14 @@
+weight: 24
+name: "Crowdin"
+category: "Integrations"
+categoryWeight: 8
+icon: "fa fa-globe"
+description: "Manage translations collaboratively through Crowdin's localization platform."
+items:
+- Crowdsourced translation management
+- Sync translations directly with OpenBoxes
+- Support for 20+ languages
+- Community-driven translation contributions
+screenshots:
+- image: ../img/banners/crowdin.png
+  name: "Crowdin Translation Platform"

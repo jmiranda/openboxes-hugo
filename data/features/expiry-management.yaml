@@ -1,0 +1,17 @@
+weight: 30
+name: "Expiry Management"
+category: "Product"
+categoryWeight: 0
+icon: "fa fa-calendar-times-o"
+description: "Track expiration dates and manage stock removal due to expiry, damage, or recall."
+items:
+- Dashboard alerts for expiring and expired stock
+- Automated FEFO picking to minimize waste
+- Bulk removal of expired inventory
+- Recall tracking by lot number
+docs: "https://help.openboxes.com/article/311-expired-stock-report"
+screenshots:
+- image: ../img/screenshots/inventory/report-expired.png
+- image: ../img/screenshots/inventory/mark-expired.png
+- image: ../img/screenshots/inventory/stock-expiration-alerts.png
+- image: ../img/screenshots/dashboard/expiration-summary.png

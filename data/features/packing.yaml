@@ -1,0 +1,13 @@
+weight: 20
+name: "Packing"
+category: "Outbound"
+categoryWeight: 4
+icon: "fa fa-cube"
+description: "Pack picked items by pallet and box with support for packing lists and customs documentation."
+items:
+- Pack items by pallet and box
+- Generate and print packing lists
+- Customs clearance documentation
+- Attach and store shipping documents
+screenshots:
+- image: ../img/screenshots/stock-movement/view-shipment.png

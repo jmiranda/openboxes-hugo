@@ -1,0 +1,17 @@
+weight: 6
+name: "Cold Chain"
+category: "Product"
+categoryWeight: 0
+icon: "fa fa-snowflake-o"
+description: "Track temperature requirements and ensure proper handling of cold chain products throughout the supply chain."
+items:
+- Define temperature zones (frozen, refrigerated, ambient) per product
+- Flag products requiring cold chain handling during picking and shipping
+- Track temperature-sensitive lot numbers and expiration dates
+- Monitor cold chain compliance across storage locations
+- Alert when cold chain products are stored in non-compliant locations
+screenshots:
+- image: ../img/screenshots/product/material-handling-indicator.png
+  name: "Material Handling Indicator"
+- image: ../img/screenshots/product/material-handling-requirements.png
+  name: "Material Handling Requirements"

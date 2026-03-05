@@ -1,0 +1,13 @@
+weight: 16
+name: "Putaway"
+category: "Inbound"
+categoryWeight: 3
+icon: "fa fa-download"
+description: "Direct received stock to appropriate bin locations with suggested putaway rules."
+items:
+- Suggested putaway locations based on product configuration
+- Split putaway across multiple bin locations
+- Mobile-friendly putaway workflow
+- Putaway confirmation and audit trail
+screenshots:
+- image: ../img/screenshots/putaway/putaway-report.png

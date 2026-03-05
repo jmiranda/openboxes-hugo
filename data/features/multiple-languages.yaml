@@ -1,5 +1,7 @@
 weight: 9
-name: "Support for Multiple Languages"
+name: "Localization"
+category: "System"
+categoryWeight: 7
 icon: "fa fa-language"
 description: "Supports English, Spanish, and French out of the box and can easily be translated into any other language."
 items:
@@ -11,3 +13,5 @@ screenshots:
 - image: ../img/screenshots/product/translation.png
 - image: ../img/screenshots/system/metadata-translations.png
 - image: ../img/screenshots/system/label-translations.png
+- image: ../img/banners/crowdin.png
+  name: "Crowdin Translation Platform"

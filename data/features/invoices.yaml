@@ -1,0 +1,15 @@
+weight: 28
+name: "Invoices"
+category: "Procurement"
+categoryWeight: 2
+icon: "fa fa-file-text-o"
+description: "Track and manage supplier invoices linked to purchase orders and shipments."
+items:
+- Create invoices from purchase orders or shipments
+- Match invoice line items against received quantities
+- Track payment status and due dates
+- Export invoice data for accounting systems
+docs: "https://help.openboxes.com/article/78-invoicing"
+screenshots:
+- image: ../img/screenshots/purchasing/purchase-orders.png
+  name: "Purchase Orders"

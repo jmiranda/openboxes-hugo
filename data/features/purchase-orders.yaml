@@ -1,0 +1,17 @@
+weight: 27
+name: "Purchase Orders"
+category: "Procurement"
+categoryWeight: 2
+categoryDescription: "Manage the full purchasing lifecycle from requisition through supplier delivery."
+icon: "fa fa-shopping-cart"
+description: "Create and manage purchase orders to procure stock from suppliers."
+items:
+- Create purchase orders against approved suppliers
+- Track order status from placement through delivery
+- Support for partial deliveries and backorders
+- Link purchase orders to inbound shipments on receipt
+docs: "https://help.openboxes.com/article/42-create-a-purchase-order"
+screenshots:
+- image: ../img/screenshots/purchasing/purchase-orders.png
+- image: ../img/screenshots/purchasing/purchase-orders2.png
+- image: ../img/screenshots/purchasing/puchase-order.png

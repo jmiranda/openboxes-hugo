@@ -1,0 +1,16 @@
+weight: 39
+name: "Zones & Bin Locations"
+category: "Inventory"
+categoryWeight: 1
+icon: "fa fa-map-marker"
+description: "Organize warehouse space into zones and bin locations for efficient storage and retrieval."
+items:
+- Define zones for receiving, staging, bulk storage, and cross-docking
+- Manage thousands of bin locations within each facility
+- Assign preferred bin locations per product
+- Track inventory quantity by individual bin location
+docs: "https://help.openboxes.com/article/289-managing-bin-and-zone-locations"
+screenshots:
+- image: ../img/screenshots/stock-card/bin-locations.png
+- image: ../img/screenshots/stock-card/preferred-bin-location.png
+- image: ../img/screenshots/dashboard/bin-location-summary.png

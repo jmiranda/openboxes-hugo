@@ -1,6 +1,9 @@
 ---
 weight: 8
 name: Security
+category: "System"
+categoryWeight: 7
+categoryDescription: "Manage users, roles, permissions, and deployment options for your organization."
 icon: fa fa-id-card
 description: 'Assign permission levels by role'
 items:
