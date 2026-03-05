@@ -405,6 +405,10 @@ paginate = 10
 [Permalinks]
     blog = "/blog/:year/:month/:day/:filename/"
 
+# Crisp Chat
+[params.crisp]
+    websiteId = "1f2ea104-4f89-4e68-a59a-62de1019641a"
+
 # Enable or disable top bar with social icons
 [params.topbar]
     enable = true
