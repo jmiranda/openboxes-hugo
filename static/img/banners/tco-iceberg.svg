@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Sky -->
+  <rect width="800" height="200" fill="#e8f4f8"/>
+
+  <!-- Water -->
+  <rect y="200" width="800" height="300" fill="#1a6b8a"/>
+
+  <!-- Waterline -->
+  <line x1="0" y1="200" x2="800" y2="200" stroke="#2d8fad" stroke-width="2" stroke-dasharray="8,4" opacity="0.6"/>
+
+  <!-- Iceberg tip (above water) -->
+  <polygon points="360,120 440,120 460,200 340,200" fill="#dceef5" stroke="#b0d4e8" stroke-width="1"/>
+
+  <!-- Iceberg body (below water) -->
+  <polygon points="340,200 460,200 520,280 540,360 500,430 300,430 260,360 280,280" fill="#a8cfe0" stroke="#7db8d4" stroke-width="1" opacity="0.85"/>
+
+  <!-- Tip label -->
+  <text x="400" y="108" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#555" font-weight="bold">License Fee</text>
+  <text x="400" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#1a6b8a" font-weight="bold">$0</text>
+
+  <!-- Below water labels -->
+  <text x="400" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#ffffff">Infrastructure</text>
+  <text x="400" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#ffffff">Setup &amp; Configuration</text>
+  <text x="400" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#ffffff">Data Migration</text>
+  <text x="400" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#ffffff">Training</text>
+  <text x="400" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#ffffff">Ongoing Maintenance</text>
+  <text x="400" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#ffffff">Support</text>
+</svg>
