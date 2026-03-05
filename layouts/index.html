@@ -15,6 +15,20 @@
 
         {{ partial "benefits.html" . }}
 
+        {{ if isset .Site.Params "ethicalads" }}
+        {{ if .Site.Params.ethicalads.enable }}
+        <section class="bar background-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <div data-ea-publisher="openboxescom" data-ea-type="image" data-ea-style="stickybox"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {{ end }}
+        {{ end }}
+
         {{ partial "recent_posts.html" . }}
 
         {{ partial "demo.html" . }}
