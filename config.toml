@@ -92,7 +92,7 @@ paginate = 10
     name = "Release Notes"
     parent = "get-started-explore"
     pre = "<i class='fa fa-file-text-o'></i>"
-    url  = "https://community.openboxes.com/tag/release-notes"
+    url  = "/blog/categories/releases/"
     weight = 6
 
 # Get Started > Deploy
@@ -103,28 +103,36 @@ paginate = 10
     weight = 2
 
 [[menu.main]]
+    identifier = "deploy-managed-cloud"
+    name = "Deploy on Managed Cloud"
+    parent = "get-started-deploy"
+    pre = "<i class='fa fa-cloud-upload'></i>"
+    url = "https://demo.openboxes.com/openboxes/auth/signup"
+    weight = 1
+
+[[menu.main]]
     identifier = "deploy-digitalocean"
     name = "Deploy on DigitalOcean"
     parent = "get-started-deploy"
     pre = "<i class='fa fa-cloud'></i>"
     url = "https://marketplace.digitalocean.com/apps/openboxes-server?refcode=da4712a483b4"
-    weight = 1
-
-[[menu.main]]
-    identifier = "installation-guide"
-    name = "Installation Guide"
-    parent = "get-started-deploy"
-    pre = "<i class='fa fa-book'></i>"
-    url  = "https://docs.openboxes.com/en/develop/"
     weight = 2
 
 [[menu.main]]
-    identifier = "consulting-services"
-    name = "Consulting Services"
+    identifier = "deploy-self-hosted"
+    name = "Deploy on Self-Hosted Server"
+    parent = "get-started-deploy"
+    pre = "<i class='fa fa-server'></i>"
+    url  = "https://docs.openboxes.com/en/develop/"
+    weight = 3
+
+[[menu.main]]
+    identifier = "deploy-professional-services"
+    name = "Deploy with Professional Services"
     parent = "get-started-deploy"
     pre = "<i class='fa fa-handshake-o'></i>"
     url  = "/pricing/#services"
-    weight = 3
+    weight = 4
 
 # Get Started > Talk to Us
 [[menu.main]]
@@ -215,8 +223,16 @@ paginate = 10
     name = "Contributing Guide"
     parent = "docs-items"
     pre = "<i class='fa fa-code-fork'></i>"
-    url = "https://github.com/openboxes/openboxes/blob/develop/CONTRIBUTING.md"
+    url = "https://openboxes.gitbook.io/contributor-guide/"
     weight = 4
+
+[[menu.main]]
+    identifier = "guides"
+    name = "Guides & Tutorials"
+    parent = "docs-items"
+    pre = "<i class='fa fa-graduation-cap'></i>"
+    url  = "/blog/categories/guides/"
+    weight = 5
 
 [[menu.main]]
     identifier = "database-schema"
@@ -224,7 +240,7 @@ paginate = 10
     parent = "docs-items"
     pre = "<i class='fa fa-database'></i>"
     url  = "https://dbdocs.io/jmiranda/openboxes"
-    weight = 5
+    weight = 6
 
 # Community
 [[menu.main]]
@@ -244,23 +260,39 @@ paginate = 10
     parent = "community-items"
     pre = "<i class='fa fa-users'></i>"
     url = "https://community.openboxes.com"
-    weight = 0
+    weight = 1
 
 [[menu.main]]
-    identifier = "blog"
-    name = "Blog"
+    identifier = "source-code"
+    name = "View the Source Code"
+    parent = "community-items"
+    pre = "<i class='fa fa-github'></i>"
+    url  = "https://github.com/openboxes/openboxes"
+    weight = 2
+
+[[menu.main]]
+    identifier = "latest-news"
+    name = "Latest News"
     parent = "community-items"
     pre = "<i class='fa fa-newspaper-o'></i>"
-    url  = "/blog/"
-    weight = 1
+    url  = "/blog/categories/news/"
+    weight = 3
+
+[[menu.main]]
+    identifier = "start-discussion"
+    name = "Start a Discussion"
+    parent = "community-items"
+    pre = "<i class='fa fa-comments'></i>"
+    url = "https://community.openboxes.com/new-topic?category=general"
+    weight = 4
 
 [[menu.main]]
     identifier = "ask-question"
     name = "Ask a Question"
     parent = "community-items"
     pre = "<i class='fa fa-question-circle'></i>"
-    url = "https://community.openboxes.com/new-topic?category=general"
-    weight = 2
+    url = "https://community.openboxes.com/new-topic?category=troubleshooting"
+    weight = 5
 
 [[menu.main]]
     identifier = "report-bug"
@@ -268,7 +300,7 @@ paginate = 10
     parent = "community-items"
     pre = "<i class='fa fa-bug'></i>"
     url = "https://community.openboxes.com/new-topic?category=bugs"
-    weight = 3
+    weight = 6
 
 [[menu.main]]
     identifier = "request-feature"
@@ -276,15 +308,7 @@ paginate = 10
     parent = "community-items"
     pre = "<i class='fa fa-lightbulb-o'></i>"
     url = "https://community.openboxes.com/new-topic?category=features"
-    weight = 4
-
-[[menu.main]]
-    identifier = "source-code"
-    name = "Source Code"
-    parent = "community-items"
-    pre = "<i class='fa fa-github'></i>"
-    url  = "https://github.com/openboxes/openboxes"
-    weight = 5
+    weight = 7
 
 
 

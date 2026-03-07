@@ -3,7 +3,7 @@
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ .Title }}</title>
+  <title>{{ if .IsHome }}{{ .Site.Title }} - Open-Source Inventory Management{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
   <meta name="author" content="{{ .Site.Author.name }}" />
 
   {{ if .Keywords }}
@@ -55,6 +55,9 @@
 
 
   <!-- Favicon and apple touch icons-->
+  <link rel="icon" href="{{ "img/favicon.svg" | relURL }}" type="image/svg+xml" />
+  <link rel="icon" href="{{ "img/favicon-32x32.png" | relURL }}" type="image/png" sizes="32x32" />
+  <link rel="icon" href="{{ "img/favicon-16x16.png" | relURL }}" type="image/png" sizes="16x16" />
   <link rel="shortcut icon" href="{{ "img/favicon.ico" | relURL }}" type="image/x-icon" />
   <link rel="apple-touch-icon" href="{{ "img/apple-touch-icon.png" | relURL }}" />
   <!-- owl carousel css -->
