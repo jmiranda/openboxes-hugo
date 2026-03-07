@@ -38,7 +38,8 @@
                             <li class="text-secondary"><i class="fa fa-minus"></i> Email Delivery <i class="fa fa-info-circle text-muted" data-toggle="tooltip" title="SMTP service for shipment notifications, stockout warnings, expiry alerts, and other transactional emails."></i></li>
                             <li class="text-success"><i class="fa fa-check"></i> Community Support</li>
                             <li>
-                                <a href="https://docs.openboxes.com/en/develop/" class="btn btn-template-primary btn-block">Get Started</a>
+                                <a href="https://docs.openboxes.com/en/develop/" class="btn btn-template-primary btn-block"
+                                   onclick="gtag('event', 'click', {'event_category': 'pricing', 'event_label': 'community_get_started'});">Get Started</a>
                             </li>
                             <li class="text-small">
                                 Community-supported
@@ -115,7 +116,8 @@
                             <li class="text-success"><i class="fa fa-check"></i> Email Delivery <i class="fa fa-info-circle text-muted" data-toggle="tooltip" title="SMTP service for shipment notifications, stockout warnings, expiry alerts, and other transactional emails."></i></li>
                             <li class="text-success"><i class="fa fa-check"></i> Basic Support <i class="fa fa-info-circle text-muted" data-toggle="tooltip" title="Email-based support with 48-hour response time included. Upgrade to Standard, Business, or Enterprise for faster SLAs."></i></li>
                             <li>
-                                <a href="#" class="btn btn-template-primary btn-block" data-toggle="modal" data-target="#waitlist-modal">Join Waitlist</a>
+                                <a href="#" class="btn btn-template-primary btn-block" data-toggle="modal" data-target="#waitlist-modal"
+                                   onclick="gtag('event', 'click', {'event_category': 'pricing', 'event_label': 'cloud_join_waitlist'});">Join Waitlist</a>
                             </li>
                             <li class="text-small">
                                 Powered by OpenBoxes
@@ -183,13 +185,16 @@
                 <hr/>
                 <p><strong>In the meantime, you can:</strong></p>
                 <div class="list-group">
-                    <a href="https://docs.openboxes.com/en/develop/" class="list-group-item list-group-item-action">
+                    <a href="https://docs.openboxes.com/en/develop/" class="list-group-item list-group-item-action"
+                       onclick="gtag('event', 'click', {'event_category': 'pricing', 'event_label': 'deploy_unavailable_install_manually'});">
                         <i class="fa fa-wrench text-primary"></i>&nbsp; Install OpenBoxes manually on any server
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action" data-toggle="modal" data-target="#waitlist-modal">
+                    <a href="#" class="list-group-item list-group-item-action" data-toggle="modal" data-target="#waitlist-modal"
+                       onclick="gtag('event', 'click', {'event_category': 'pricing', 'event_label': 'deploy_unavailable_join_waitlist'});">
                         <i class="fa fa-cloud text-primary"></i>&nbsp; Join the Cloud Hosting waitlist
                     </a>
-                    <a href="https://calendly.com/openboxes/discussion" class="list-group-item list-group-item-action">
+                    <a href="https://calendly.com/openboxes/discussion" class="list-group-item list-group-item-action"
+                       onclick="gtag('event', 'click', {'event_category': 'pricing', 'event_label': 'deploy_unavailable_schedule_discussion'});">
                         <i class="fa fa-calendar text-primary"></i>&nbsp; Schedule a discussion with our team
                     </a>
                 </div>

@@ -146,7 +146,8 @@
                     </td>
                     <td class="col-md-2 text-right">${{ lang.NumFmt 0 .price }}</td>
                     <td class="col-md-2 text-right">
-                        <a href="{{ .payment_url }}" target="_blank" class="btn btn-template-primary btn-sm"><i class="fa fa-credit-card"></i> Purchase</a>
+                        <a href="{{ .payment_url }}" target="_blank" class="btn btn-template-primary btn-sm"
+                           onclick="gtag('event', 'click', {'event_category': 'pricing', 'event_label': 'services_purchase_{{ .name | urlize }}'});"><i class="fa fa-credit-card"></i> Purchase</a>
                     </td>
                 </tr>
                 {{ end }}
@@ -159,8 +160,10 @@
             </p>
 
             <div class="text-center" style="margin-top: 30px;">
-                <a href="https://calendly.com/openboxes/discussion" class="btn btn-template-primary"><i class="fa fa-calendar"></i> Schedule a Consultation</a>
-                <a href="/quote" class="btn btn-template-main" style="margin-left: 10px;"><i class="fa fa-file-text-o"></i> Request a Quote</a>
+                <a href="https://calendly.com/openboxes/discussion" class="btn btn-template-primary"
+                   onclick="gtag('event', 'click', {'event_category': 'pricing', 'event_label': 'services_schedule_consultation'});"><i class="fa fa-calendar"></i> Schedule a Consultation</a>
+                <a href="/quote" class="btn btn-template-main" style="margin-left: 10px;"
+                   onclick="gtag('event', 'click', {'event_category': 'pricing', 'event_label': 'services_request_quote'});"><i class="fa fa-file-text-o"></i> Request a Quote</a>
             </div>
 
         </div>

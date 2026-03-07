@@ -407,7 +407,7 @@ paginate = 10
     contact_form_endpoint = "https://formspree.io/f/xezplekm"
 
     about_us = "<p>OpenBoxes is an open-source supply chain management system used to manage supplies and medications for healthcare facilities and disaster relief efforts.</p>"
-    copyright = "Copyright (c) 2010-2023, OpenBoxes"
+    copyright = "Copyright (c) 2010-2025, OpenBoxes"
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
