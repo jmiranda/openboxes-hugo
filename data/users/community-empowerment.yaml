@@ -1,5 +1,9 @@
 weight: 5
 name: "Community Empowerment"
-image: "img/users/community-empowerment.jpg"
+image: "/img/users/community-empowerment.jpg"
 url: "https://community-empowerment.org/"
-
+description: "Supports communities in the Dominican Republic through health and development programs. Uses OpenBoxes to manage inventory across their program sites."
+locations:
+  - name: "Santo Domingo, Dominican Republic"
+    latitude: 18.4861
+    longitude: -69.9312

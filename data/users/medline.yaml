@@ -1,5 +1,9 @@
 weight: 6
 name: "Medline Industries"
-image: "https://www.medline.com/media/assets/logo/Four-color/LOG_Medline-2014_CMYK.jpg"
+image: "/img/users/medline.png"
 url: "https://www.medline.com/"
-
+description: "One of the largest privately held medical supply manufacturers and distributors in the US. Evaluated OpenBoxes for warehouse and distribution operations."
+locations:
+  - name: "Mundelein, IL"
+    latitude: 42.2631
+    longitude: -88.0034

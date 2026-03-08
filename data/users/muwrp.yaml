@@ -1,6 +1,9 @@
 weight: 4
-name: "Makrere University Walter Reed Project"
-image: "https://nanosoft.co.ug/wp-content/uploads/2017/01/makerere-walter-reed.png"
+name: "Makerere University Walter Reed Project"
+image: "/img/users/muwrp.png"
 url: "https://www.muwrp.org"
-
-
+description: "HIV/AIDS research partnership between Makerere University and the Walter Reed Army Institute of Research in Uganda. Uses OpenBoxes for laboratory and medical supply management."
+locations:
+  - name: "Kampala, Uganda"
+    latitude: 0.3476
+    longitude: 32.5825

@@ -1,6 +1,6 @@
 {{ if isset .Site.Params "demo" }}
 {{ if .Site.Params.demo.enable }}
-<section class="bar background-image-fixed-2 no-mb color-white text-center">
+<section class="bar background-warehouse-2 no-mb color-white text-center">
     <div class="dark-mask"></div>
     <div class="container">
         <div class="row">
@@ -9,13 +9,15 @@
                 <h3 class="text-uppercase">{{ .Site.Params.demo.title }}</h3>
                 <p class="lead">{{ .Site.Params.demo.subtitle }}</p>
                 <p class="text-center">
-                    <a href="{{ .Site.Params.demo.link_url }}" class="btn btn-template-primary btn-lg" target="_blank">{{ .Site.Params.demo.link_text }}</a>
-                    <a href="" onClick="return triggerCalendlyPopup();" class="btn btn-template-main btn-lg">{{ .Site.Params.demo.schedule_link_text }}</a>
+                    <a href="{{ .Site.Params.demo.link_url }}" class="btn btn-template-primary btn-lg" target="_blank"
+                       onclick="gtag('event', 'click', {'event_category': 'demo', 'event_label': 'try_demo'});">{{ .Site.Params.demo.link_text }}</a>
+                    <a href="" onClick="return triggerCalendlyPopup();" class="btn btn-template-main btn-lg"
+                       onclick="gtag('event', 'click', {'event_category': 'demo', 'event_label': 'schedule_demo'});">{{ .Site.Params.demo.schedule_link_text }}</a>
                 </p>
             </div>
-            <div class="col-md-4 col-md-offset-0">
+            <div class="col-md-4 col-md-offset-1">
                 <a href="{{ .Site.Params.demo.link_url }}" target="_blank">
-                    <img src="../img/screenshots/security/login.png" class="img-responsive" />
+                    <img src="../img/screenshots/dashboard/dashboard.png" class="img-responsive" style="border-radius: 6px; box-shadow: 0 4px 20px rgba(0,0,0,0.4);" />
                 </a>
             </div>
         </div>

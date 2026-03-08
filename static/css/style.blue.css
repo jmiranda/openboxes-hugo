@@ -1779,6 +1779,16 @@ fieldset[disabled] .btn-template-primary.active {
   background-attachment: fixed;
   background-size: cover;
 }
+.bar.background-warehouse {
+  background: url('../img/backgrounds/warehouse-lean-manufacturing-principles2.jpg') center top no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.bar.background-warehouse-2 {
+  background: url('../img/backgrounds/AXRO-warehouse-lighting_L.jpg') center top no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
 .bar.color-white h1,
 .bar.color-white h2,
 .bar.color-white h3,

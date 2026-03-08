@@ -17,6 +17,9 @@ googleAnalytics = "G-4244ZMRC67"
 # Define the number of posts per page
 paginate = 10
 
+# Ignore editor temp/swap files to prevent crashes during file watches
+ignoreFiles = ['\.swp$', '~$', '\.tmp$', '#$', '\.bak$', '___jb_tmp___', '___jb_old___']
+
 [menu]
 
 # Main menu
@@ -52,7 +55,7 @@ paginate = 10
     parent = "get-started-explore"
     pre = "<i class='fa fa-desktop'></i>"
     name = "Try the Demo"
-    url  = "https://demo.openboxes.com/openboxes/auth/signup"
+    url  = "https://demo.openboxes.com"
     weight = 1
 
 [[menu.main]]
@@ -72,12 +75,20 @@ paginate = 10
     weight = 3
 
 [[menu.main]]
+    identifier = "explore-implementations"
+    name = "View Implementations"
+    parent = "get-started-explore"
+    pre = "<i class='fa fa-globe'></i>"
+    url  = "/users/"
+    weight = 4
+
+[[menu.main]]
     identifier = "cost-analysis"
     name = "Total Cost of Ownership"
     parent = "get-started-explore"
     pre = "<i class='fa fa-calculator'></i>"
     url  = "/cost-analysis"
-    weight = 4
+    weight = 5
 
 [[menu.main]]
     identifier = "roadmap"
@@ -85,7 +96,7 @@ paginate = 10
     parent = "get-started-explore"
     pre = "<i class='fa fa-road'></i>"
     url  = "/roadmap/"
-    weight = 5
+    weight = 6
 
 [[menu.main]]
     identifier = "release-notes"
@@ -93,7 +104,7 @@ paginate = 10
     parent = "get-started-explore"
     pre = "<i class='fa fa-file-text-o'></i>"
     url  = "/blog/categories/releases/"
-    weight = 6
+    weight = 7
 
 # Get Started > Deploy
 [[menu.main]]
@@ -103,11 +114,11 @@ paginate = 10
     weight = 2
 
 [[menu.main]]
-    identifier = "deploy-managed-cloud"
-    name = "Deploy on Managed Cloud"
+    identifier = "deploy-self-hosted"
+    name = "Deploy on Self-Hosted Server"
     parent = "get-started-deploy"
-    pre = "<i class='fa fa-cloud-upload'></i>"
-    url = "https://demo.openboxes.com/openboxes/auth/signup"
+    pre = "<i class='fa fa-server'></i>"
+    url  = "https://docs.openboxes.com/en/develop/admin-guide/installation/"
     weight = 1
 
 [[menu.main]]
@@ -119,11 +130,11 @@ paginate = 10
     weight = 2
 
 [[menu.main]]
-    identifier = "deploy-self-hosted"
-    name = "Deploy on Self-Hosted Server"
+    identifier = "deploy-managed-cloud"
+    name = "Deploy on Managed Cloud"
     parent = "get-started-deploy"
-    pre = "<i class='fa fa-server'></i>"
-    url  = "https://docs.openboxes.com/en/develop/"
+    pre = "<i class='fa fa-cloud-upload'></i>"
+    url = "/pricing/#packages"
     weight = 3
 
 [[menu.main]]
@@ -181,6 +192,12 @@ paginate = 10
     name = "Pricing"
     url  = "/pricing/"
     weight = 40
+
+# Blog
+[[menu.main]]
+    name = "Blog"
+    url  = "/blog/"
+    weight = 50
 
 # Docs
 [[menu.main]]
@@ -275,7 +292,7 @@ paginate = 10
     name = "Latest News"
     parent = "community-items"
     pre = "<i class='fa fa-newspaper-o'></i>"
-    url  = "/blog/categories/news/"
+    url  = "/categories/news/"
     weight = 3
 
 [[menu.main]]
@@ -309,6 +326,22 @@ paginate = 10
     pre = "<i class='fa fa-lightbulb-o'></i>"
     url = "https://community.openboxes.com/new-topic?category=features"
     weight = 7
+
+[[menu.main]]
+    identifier = "implementations"
+    name = "Implementations"
+    parent = "community-items"
+    pre = "<i class='fa fa-globe'></i>"
+    url = "/users/"
+    weight = 8
+
+[[menu.main]]
+    identifier = "subscribe-youtube"
+    name = "Subscribe on YouTube"
+    parent = "community-items"
+    pre = "<i class='fa fa-youtube-play'></i>"
+    url = "https://www.youtube.com/@openboxes?sub_confirmation=1"
+    weight = 9
 
 
 
@@ -508,11 +541,11 @@ paginate = 10
 
 [params.demo]
     enable = true
-    icon = "fa fa-desktop"
-    title = "Demo"
-    subtitle = "The moment you've all been waiting for ..."
-    link_url = "https://demo.openboxes.com/openboxes/auth/signup"
-    link_text = "Try the demo"
+    icon = "fa fa-play-circle"
+    title = "See OpenBoxes in Action"
+    subtitle = "Explore the demo environment — no signup required. See how OpenBoxes manages inventory, shipments, and reporting across facilities."
+    link_url = "https://demo.openboxes.com"
+    link_text = "Try the Demo"
     schedule_link_url = "https://calendly.com/openboxes/demo"
     schedule_link_text = "Schedule a Demo"
 
@@ -553,6 +586,14 @@ paginate = 10
     title = "Cloud Hosting Waitlist"
     subtitle = "We're building a fully managed cloud hosting solution for OpenBoxes. Join the waitlist to get early access and help us shape the offering."
     form_endpoint = "https://formspree.io/f/xzdaqjje"
+
+[params.youtube]
+    enable = true
+    icon = "fa fa-youtube-play"
+    title = "Help Us Create More Video Content"
+    subtitle = "More subscribers helps us justify creating more frequent video content. Subscribe to stay up to date and suggest topics you'd like us to cover."
+    channel_url = "https://www.youtube.com/@openboxes?sub_confirmation=1"
+    form_endpoint = "https://formspree.io/f/mqeyadjb"
 
 [params.calendly]
     enable = true

@@ -1,4 +1,9 @@
 weight: 2
 name: "Health Equity International"
-image: "https://pbs.twimg.com/profile_images/1169597826793431041/eC_VG0Sn_400x400.jpg"
+image: "/img/users/health-equity-international.png"
 url: "https://healthequityintl.org/"
+description: "Operates St. Boniface Hospital in southern Haiti. Uses OpenBoxes to track medical supplies and medications for one of the region's largest healthcare facilities."
+locations:
+  - name: "Fond-des-Blancs, Haiti"
+    latitude: 18.27
+    longitude: -73.13

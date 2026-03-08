@@ -1,4 +1,9 @@
 weight: 3
 name: "Pivot"
-image: "img/users/pivot.png"
+image: "/img/users/pivot.png"
 url: "http://pivotworks.org/"
+description: "Works to strengthen the public health system in southeastern Madagascar. Uses OpenBoxes to manage supply distribution across a network of rural health centers."
+locations:
+  - name: "Ifanadiana, Madagascar"
+    latitude: -21.3
+    longitude: 47.63

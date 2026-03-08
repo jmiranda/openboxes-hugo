@@ -15,6 +15,8 @@
 
         {{ partial "benefits.html" . }}
 
+        {{ partial "demo.html" . }}
+
         {{ if isset .Site.Params "ethicalads" }}
         {{ if .Site.Params.ethicalads.enable }}
         <div class="container text-center" style="padding: 10px 0;">
@@ -25,7 +27,7 @@
 
         {{ partial "recent_posts.html" . }}
 
-        {{ partial "demo.html" . }}
+        {{ partial "youtube.html" . }}
 
         {{ partial "testimonials.html" . }}
 
