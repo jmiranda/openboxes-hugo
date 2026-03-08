@@ -1,6 +1,6 @@
 <div class="container" id="contact">
     <div class="row">
-        <div class="col-md-9">
+        <div class="col-md-8 col-md-offset-2">
 
             <section>
 
@@ -8,382 +8,184 @@
 
                 {{ if isset .Site.Params "email" }}
 
-                <div id="signup-message" class="lead">Signup for hosting, development, installation, implementation,
-                    and training as well as other services. Please provide as much details about your project as you
-                    can so that we can provide a cost estimate.</div>
+                <p class="lead">Tell us about your project so we can put together an estimate. The more detail you provide, the faster we can respond.</p>
 
-                <form class="signup-form" method="post" action="https://formspree.io/f/mvovqkwo" enctype="multipart/form-data">
+                <form class="signup-form" id="quote-form" method="post" action="https://formspree.io/f/mvovqkwo">
 
                     <input type="hidden" name="type" value="quote"/>
 
+                    <h4><i class="fa fa-user text-muted"></i> About You</h4>
+                    <p class="text-muted text-small">Helps us understand who you are and how to reach you.</p>
+                    <hr/>
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <label for="name">{{ i18n "name" }}</label>
+                                <label for="name">Name <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control" name="name" id="name" required>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <label for="email">{{ i18n "email" }}</label>
-                                <input type="text" class="form-control" name="_replyto" id="email" required>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label for="name">{{ i18n "organization" }}</label>
-                                <input type="text" class="form-control" name="organization" id="organization">
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label for="name">{{ i18n "industry" }}</label>
-                                <select id="industry" name="industry" class="form-control">
-                                    <option value="" selected></option>
-                                    <option value="Accounting">Accounting</option>
-                                    <option value="Airlines/Aviation">Airlines/Aviation</option>
-                                    <option value="Alternative Dispute Resolution">Alternative Dispute Resolution</option>
-                                    <option value="Alternative Medicine">Alternative Medicine</option>
-                                    <option value="Animation">Animation</option>
-                                    <option value="Apparel/Fashion">Apparel/Fashion</option>
-                                    <option value="Architecture/Planning">Architecture/Planning</option>
-                                    <option value="Arts/Crafts">Arts/Crafts</option>
-                                    <option value="Automotive">Automotive</option>
-                                    <option value="Aviation/Aerospace">Aviation/Aerospace</option>
-                                    <option value="Banking/Mortgage">Banking/Mortgage</option>
-                                    <option value="Biotechnology/Greentech">Biotechnology/Greentech</option>
-                                    <option value="Broadcast Media">Broadcast Media</option>
-                                    <option value="Building Materials">Building Materials</option>
-                                    <option value="Business Supplies/Equipment">Business Supplies/Equipment</option>
-                                    <option value="Capital Markets/Hedge Fund/Private Equity">Capital Markets/Hedge Fund/Private Equity</option>
-                                    <option value="Chemicals">Chemicals</option>
-                                    <option value="Civic/Social Organization">Civic/Social Organization</option>
-                                    <option value="Civil Engineering">Civil Engineering</option>
-                                    <option value="Commercial Real Estate">Commercial Real Estate</option>
-                                    <option value="Computer Games">Computer Games</option>
-                                    <option value="Computer Hardware">Computer Hardware</option>
-                                    <option value="Computer Networking">Computer Networking</option>
-                                    <option value="Computer Software/Engineering">Computer Software/Engineering</option>
-                                    <option value="Computer/Network Security">Computer/Network Security</option>
-                                    <option value="Construction">Construction</option>
-                                    <option value="Consumer Electronics">Consumer Electronics</option>
-                                    <option value="Consumer Goods">Consumer Goods</option>
-                                    <option value="Consumer Services">Consumer Services</option>
-                                    <option value="Cosmetics">Cosmetics</option>
-                                    <option value="Dairy">Dairy</option>
-                                    <option value="Defense/Space">Defense/Space</option>
-                                    <option value="Design">Design</option>
-                                    <option value="E-Learning">E-Learning</option>
-                                    <option value="Education Management">Education Management</option>
-                                    <option value="Electrical/Electronic Manufacturing">Electrical/Electronic Manufacturing</option>
-                                    <option value="Entertainment/Movie Production">Entertainment/Movie Production</option>
-                                    <option value="Environmental Services">Environmental Services</option>
-                                    <option value="Events Services">Events Services</option>
-                                    <option value="Executive Office">Executive Office</option>
-                                    <option value="Facilities Services">Facilities Services</option>
-                                    <option value="Farming">Farming</option>
-                                    <option value="Financial Services">Financial Services</option>
-                                    <option value="Fine Art">Fine Art</option>
-                                    <option value="Fishery">Fishery</option>
-                                    <option value="Food Production">Food Production</option>
-                                    <option value="Food/Beverages">Food/Beverages</option>
-                                    <option value="Fundraising">Fundraising</option>
-                                    <option value="Furniture">Furniture</option>
-                                    <option value="Gambling/Casinos">Gambling/Casinos</option>
-                                    <option value="Glass/Ceramics/Concrete">Glass/Ceramics/Concrete</option>
-                                    <option value="Government Administration">Government Administration</option>
-                                    <option value="Government Relations">Government Relations</option>
-                                    <option value="Graphic Design/Web Design">Graphic Design/Web Design</option>
-                                    <option value="Health/Fitness">Health/Fitness</option>
-                                    <option value="Higher Education/Acadamia">Higher Education/Acadamia</option>
-                                    <option value="Hospital/Health Care">Hospital/Health Care</option>
-                                    <option value="Hospitality">Hospitality</option>
-                                    <option value="Human Resources/HR">Human Resources/HR</option>
-                                    <option value="Import/Export">Import/Export</option>
-                                    <option value="Individual/Family Services">Individual/Family Services</option>
-                                    <option value="Industrial Automation">Industrial Automation</option>
-                                    <option value="Information Services">Information Services</option>
-                                    <option value="Information Technology/IT">Information Technology/IT</option>
-                                    <option value="Insurance">Insurance</option>
-                                    <option value="International Affairs">International Affairs</option>
-                                    <option value="International Trade/Development">International Trade/Development</option>
-                                    <option value="Internet">Internet</option>
-                                    <option value="Investment Banking/Venture">Investment Banking/Venture</option>
-                                    <option value="Investment Management/Hedge Fund/Private Equity">Investment Management/Hedge Fund/Private Equity</option>
-                                    <option value="Judiciary">Judiciary</option>
-                                    <option value="Law Enforcement">Law Enforcement</option>
-                                    <option value="Law Practice/Law Firms">Law Practice/Law Firms</option>
-                                    <option value="Legal Services">Legal Services</option>
-                                    <option value="Legislative Office">Legislative Office</option>
-                                    <option value="Leisure/Travel">Leisure/Travel</option>
-                                    <option value="Library">Library</option>
-                                    <option value="Logistics/Procurement">Logistics/Procurement</option>
-                                    <option value="Luxury Goods/Jewelry">Luxury Goods/Jewelry</option>
-                                    <option value="Machinery">Machinery</option>
-                                    <option value="Management Consulting">Management Consulting</option>
-                                    <option value="Maritime">Maritime</option>
-                                    <option value="Market Research">Market Research</option>
-                                    <option value="Marketing/Advertising/Sales">Marketing/Advertising/Sales</option>
-                                    <option value="Mechanical or Industrial Engineering">Mechanical or Industrial Engineering</option>
-                                    <option value="Media Production">Media Production</option>
-                                    <option value="Medical Equipment">Medical Equipment</option>
-                                    <option value="Medical Practice">Medical Practice</option>
-                                    <option value="Mental Health Care">Mental Health Care</option>
-                                    <option value="Military Industry">Military Industry</option>
-                                    <option value="Mining/Metals">Mining/Metals</option>
-                                    <option value="Motion Pictures/Film">Motion Pictures/Film</option>
-                                    <option value="Museums/Institutions">Museums/Institutions</option>
-                                    <option value="Music">Music</option>
-                                    <option value="Nanotechnology">Nanotechnology</option>
-                                    <option value="Newspapers/Journalism">Newspapers/Journalism</option>
-                                    <option value="Non-Profit/Volunteering">Non-Profit/Volunteering</option>
-                                    <option value="Oil/Energy/Solar/Greentech">Oil/Energy/Solar/Greentech</option>
-                                    <option value="Online Publishing">Online Publishing</option>
-                                    <option value="Other Industry">Other Industry</option>
-                                    <option value="Outsourcing/Offshoring">Outsourcing/Offshoring</option>
-                                    <option value="Package/Freight Delivery">Package/Freight Delivery</option>
-                                    <option value="Packaging/Containers">Packaging/Containers</option>
-                                    <option value="Paper/Forest Products">Paper/Forest Products</option>
-                                    <option value="Performing Arts">Performing Arts</option>
-                                    <option value="Pharmaceuticals">Pharmaceuticals</option>
-                                    <option value="Philanthropy">Philanthropy</option>
-                                    <option value="Photography">Photography</option>
-                                    <option value="Plastics">Plastics</option>
-                                    <option value="Political Organization">Political Organization</option>
-                                    <option value="Primary/Secondary Education">Primary/Secondary Education</option>
-                                    <option value="Printing">Printing</option>
-                                    <option value="Professional Training">Professional Training</option>
-                                    <option value="Program Development">Program Development</option>
-                                    <option value="Public Relations/PR">Public Relations/PR</option>
-                                    <option value="Public Safety">Public Safety</option>
-                                    <option value="Publishing Industry">Publishing Industry</option>
-                                    <option value="Railroad Manufacture">Railroad Manufacture</option>
-                                    <option value="Ranching">Ranching</option>
-                                    <option value="Real Estate/Mortgage">Real Estate/Mortgage</option>
-                                    <option value="Recreational Facilities/Services">Recreational Facilities/Services</option>
-                                    <option value="Religious Institutions">Religious Institutions</option>
-                                    <option value="Renewables/Environment">Renewables/Environment</option>
-                                    <option value="Research Industry">Research Industry</option>
-                                    <option value="Restaurants">Restaurants</option>
-                                    <option value="Retail Industry">Retail Industry</option>
-                                    <option value="Security/Investigations">Security/Investigations</option>
-                                    <option value="Semiconductors">Semiconductors</option>
-                                    <option value="Shipbuilding">Shipbuilding</option>
-                                    <option value="Sporting Goods">Sporting Goods</option>
-                                    <option value="Sports">Sports</option>
-                                    <option value="Staffing/Recruiting">Staffing/Recruiting</option>
-                                    <option value="Supermarkets">Supermarkets</option>
-                                    <option value="Telecommunications">Telecommunications</option>
-                                    <option value="Textiles">Textiles</option>
-                                    <option value="Think Tanks">Think Tanks</option>
-                                    <option value="Tobacco">Tobacco</option>
-                                    <option value="Translation/Localization">Translation/Localization</option>
-                                    <option value="Transportation">Transportation</option>
-                                    <option value="Utilities">Utilities</option>
-                                    <option value="Venture Capital/VC">Venture Capital/VC</option>
-                                    <option value="Veterinary">Veterinary</option>
-                                    <option value="Warehousing">Warehousing</option>
-                                    <option value="Wholesale">Wholesale</option>
-                                    <option value="Wine/Spirits">Wine/Spirits</option>
-                                    <option value="Wireless">Wireless</option>
-                                    <option value="Writing/Editing">Writing/Editing</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <label for="motivation">{{ i18n "business" }}</label>
-                                        <textarea id="business-details" class="form-control" name="business" required rows="1" placeholder='{{ i18n "business-placeholder" }}'></textarea>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="goals">{{ i18n "goals" }}</label>
-                                        <textarea id="goals" class="form-control" name="goals" required rows="1" placeholder='{{ i18n "goals-placeholder" }}'></textarea>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="motivation">{{ i18n "motivation" }}</label>
-                                        <textarea id="motivation" class="form-control" name="motivation" required rows="1" placeholder='{{ i18n "motivation-placeholder" }}'></textarea>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="budget">{{ i18n "budget" }}</label>
-                                        <textarea id="budget" class="form-control" name="budget" required rows="1" placeholder='{{ i18n "budget-placeholder" }}'></textarea>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="timeline">{{ i18n "timeline" }}</label>
-                                        <textarea id="timeline" class="form-control" name="timeline" required rows="1" placeholder='{{ i18n "timeline-placeholder" }}'></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label>{{ i18n "services" }}</label>
-                                <span class="text-muted text-small">{{ i18n "servicesTooltip" }}</span>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <h6 class="text-muted text-small">{{ i18n "basicServices" }}</h6>
-                                        <div class="checkbox">
-                                            <label for="cloud-hosting">
-                                                <input type="checkbox" id="cloud-hosting" name="additionalServices" value="cloud-hosting" />
-                                                Hosting
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="custom-domain">
-                                                <input type="checkbox" id="custom-domain" name="additionalServices" value="custom-domain" />
-                                                Custom Domain
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="installation">
-                                                <input type="checkbox" id="installation" name="additionalServices" value="installation"  />
-                                                Installation
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="upgrades">
-                                                <input type="checkbox" id="upgrades" name="additionalServices" value="upgrades" />
-                                                Upgrades & Hotfixes
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="monitoring">
-                                                <input type="checkbox" id="monitoring" name="additionalServices" value="monitoring" />
-                                                Server Monitoring
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="auto-backup">
-                                                <input type="checkbox" id="auto-backup" name="additionalServices" value="auto-backup" />
-                                                Automatic Backups
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="email-notifications">
-                                                <input type="checkbox" id="email-notifications" name="additionalServices" value="email-notifications" />
-                                                Email Notifications
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <h6 class="text-muted text-small">{{ i18n "additionalServices" }}</h6>
-                                        <div class="checkbox">
-                                            <label for="implementation">
-                                                <input type="checkbox" id="implementation" name="additionalServices" value="implementation"/>
-                                                Implementation
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="data-migration">
-                                                <input type="checkbox" id="data-migration" name="additionalServices" value="data-migration"/>
-                                                Data Migration
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="development">
-                                                <input type="checkbox" id="development" name="additionalServices" value="development"/>
-                                                Custom Development
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="custom-reports">
-                                                <input type="checkbox" id="custom-reports" name="additionalServices" value="custom-reports"/>
-                                                Reporting & Analytics
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="training">
-                                                <input type="checkbox" id="training" name="additionalServices" value="training"/>
-                                                Remote Training
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="integration">
-                                                <input type="checkbox" id="integration" name="additionalServices" value="integration"/>
-                                                Integration
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="consulting">
-                                                <input type="checkbox" id="consulting" name="additionalServices" value="consulting"/>
-                                                Consulting
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <h6 class="text-muted text-small">{{ i18n "supportRequirements" }}</h6>
-                                        <div class="radio">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div>
-                                                        <label for="standard-us">
-                                                            <input type="radio" id="standard-us" name="support" value="standard-us" /> US Business
-                                                            <span class="text-small text-muted">(9am-5pm EST)</span>
-                                                        </label>
-                                                    </div>
-                                                    <div>
-                                                        <label for="standard-eu">
-                                                            <input type="radio" id="extended-us" name="support" value="standard-eu" /> US Extended
-                                                            <span class="text-small text-muted">(9am-9pm EST)</span>
-                                                        </label>
-                                                    </div>
-                                                    <div>
-                                                        <label for="standard-eu">
-                                                            <input type="radio" id="standard-eu" name="support" value="standard-eu" /> EU Business
-                                                            <span class="text-small text-muted">(9am-5pm UTC)</span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div>
-                                                        <label for="community">
-                                                            <input type="radio" id="community" name="support" value="community"/> <a href="https://community.openboxes.com" target="_blank">Community Forum</a>
-                                                            <span class="text-small text-muted">(Free)</span>
-                                                        </label>
-                                                    </div>
-                                                    <div>
-                                                        <label for="none">
-                                                            <input type="radio" id="none" name="support" value="none"/> No Support
-                                                            <span class="text-small text-muted">(No SLA)</span>
-                                                        </label>
-                                                    </div>
-                                                    <div>
-                                                        <label for="custom">
-                                                            <input type="radio" id="custom" name="support" value="custom" /> Custom SLA
-                                                            <span class="text-small text-muted">(up to 24/7)</span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <label for="email">Email <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" name="_replyto" id="email" required>
                             </div>
                         </div>
                     </div>
                     <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="organization">Organization <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" name="organization" id="organization" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="country">Country <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" name="country" id="country" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="industry">Industry <span class="text-danger">*</span></label>
+                                <select id="industry" name="industry" class="form-control" required>
+                                    <option value="" selected></option>
+                                    <option value="Healthcare / Hospital">Healthcare / Hospital</option>
+                                    <option value="Pharmaceuticals">Pharmaceuticals</option>
+                                    <option value="Non-Profit / NGO">Non-Profit / NGO</option>
+                                    <option value="Government / Public Health">Government / Public Health</option>
+                                    <option value="Warehouse / 3PL">Warehouse / 3PL</option>
+                                    <option value="Manufacturing">Manufacturing</option>
+                                    <option value="Retail / Wholesale">Retail / Wholesale</option>
+                                    <option value="Agriculture / Food">Agriculture / Food</option>
+                                    <option value="Education / Research">Education / Research</option>
+                                    <option value="Logistics / Distribution">Logistics / Distribution</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="referral">How did you hear about us?</label>
+                                <select id="referral" name="referral" class="form-control">
+                                    <option value="" selected></option>
+                                    <option value="Google / Search">Google / Search</option>
+                                    <option value="GitHub">GitHub</option>
+                                    <option value="Word of mouth">Word of mouth</option>
+                                    <option value="Conference / Event">Conference / Event</option>
+                                    <option value="Social media">Social media</option>
+                                    <option value="Blog / Article">Blog / Article</option>
+                                    <option value="Partner referral">Partner referral</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 style="margin-top: 30px;"><i class="fa fa-building text-muted"></i> Project Details</h4>
+                    <p class="text-muted text-small">We don't charge license fees per user or facility. This information helps us estimate scope, recommend the right hosting plan, and tailor the quote to your needs.</p>
+                    <hr/>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="users">Number of Users <span class="text-danger">*</span></label>
+                                <select id="users" name="users" class="form-control" required>
+                                    <option value="" selected></option>
+                                    <option value="1-10">1 - 10</option>
+                                    <option value="11-50">11 - 50</option>
+                                    <option value="51-200">51 - 200</option>
+                                    <option value="200+">200+</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="facilities">Number of Facilities <span class="text-danger">*</span></label>
+                                <select id="facilities" name="facilities" class="form-control" required>
+                                    <option value="" selected></option>
+                                    <option value="1">1</option>
+                                    <option value="2-5">2 - 5</option>
+                                    <option value="6-20">6 - 20</option>
+                                    <option value="20+">20+</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="budget">How much help do you need? <span class="text-danger">*</span></label>
+                                <select id="budget" name="budget" class="form-control" required>
+                                    <option value="" selected></option>
+                                    <option value="self-service">We'll handle it ourselves, just point us in the right direction</option>
+                                    <option value="guided">We can do most of it, but want guidance along the way</option>
+                                    <option value="partial">We need hands-on help with the hard parts (migration, integrations)</option>
+                                    <option value="implemented">We'd like your team to handle the implementation, then we'll take over</option>
+                                    <option value="full-service">We want a fully managed setup with ongoing support</option>
+                                    <option value="unsure">Not sure yet — help us figure that out</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="timeline">Timeline <span class="text-danger">*</span></label>
+                                <select id="timeline" name="timeline" class="form-control" required>
+                                    <option value="" selected></option>
+                                    <option value="immediately">As soon as possible</option>
+                                    <option value="1-3 months">1 - 3 months</option>
+                                    <option value="3-6 months">3 - 6 months</option>
+                                    <option value="6-12 months">6 - 12 months</option>
+                                    <option value="just-exploring">Just exploring</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 style="margin-top: 30px;"><i class="fa fa-cogs text-muted"></i> Services Needed</h4>
+                    <p class="text-muted text-small">Helps us identify the right team and put together an accurate estimate. Select all that apply.</p>
+                    <hr/>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <p class="text-muted" style="font-weight:bold; margin-bottom:5px;">Implementation</p>
+                            <div class="checkbox"><label><input type="checkbox" name="services[]" value="hosting"/> Hosting</label></div>
+                            <div class="checkbox"><label><input type="checkbox" name="services[]" value="installation"/> Installation</label></div>
+                            <div class="checkbox"><label><input type="checkbox" name="services[]" value="configuration"/> Configuration</label></div>
+                            <div class="checkbox"><label><input type="checkbox" name="services[]" value="data-migration"/> Data Migration</label></div>
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="text-muted" style="font-weight:bold; margin-bottom:5px;">Training & Support</p>
+                            <div class="checkbox"><label><input type="checkbox" name="services[]" value="training"/> Training</label></div>
+                            <div class="checkbox"><label><input type="checkbox" name="services[]" value="support"/> Ongoing Support</label></div>
+                            <div class="checkbox"><label><input type="checkbox" name="services[]" value="sysadmin"/> System Administration</label></div>
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="text-muted" style="font-weight:bold; margin-bottom:5px;">Development & Consulting</p>
+                            <div class="checkbox"><label><input type="checkbox" name="services[]" value="development"/> Custom Development</label></div>
+                            <div class="checkbox"><label><input type="checkbox" name="services[]" value="integration"/> Integration</label></div>
+                            <div class="checkbox"><label><input type="checkbox" name="services[]" value="discovery"/> Discovery & Requirements</label></div>
+                            <div class="checkbox"><label><input type="checkbox" name="services[]" value="consulting"/> Consulting</label></div>
+                            <div class="checkbox"><label><input type="checkbox" name="services[]" value="reporting"/> Reporting & Analytics</label></div>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 20px;">
                         <div class="col-sm-12">
-                            <label for="attachment" class="input-group-label">{{ i18n "attachment" }}</label>
-                            <div class="input-group">
-                                <input type="file" id="attachment" name="attachment" class="form-control">
-                                <span class="input-group-addon">.zip, .doc, .xls, .pdf</span>
+                            <div class="form-group">
+                                <label for="details">Tell us about your project</label>
+                                <textarea id="details" class="form-control" name="details" rows="4" placeholder="What problems are you trying to solve? Any specific requirements or constraints?"></textarea>
                             </div>
                         </div>
                     </div>
 
                     <hr/>
-                    <div class="row row-padding">
+                    <div class="row">
                         <div class="col-sm-12">
-                            <a href="/pricing" class="btn btn-link pull-left"><i class="fa fa-arrow-left"></i> Back to Pricing</button></a>
-                            <button type="submit" class="btn btn-template-primary pull-right"><i class="fa fa-paper-plane"></i> {{ i18n "quoteButton" }}</button>
+                            <a href="/pricing" class="btn btn-link pull-left"><i class="fa fa-arrow-left"></i> Back to Pricing</a>
+                            <button type="submit" class="btn btn-template-primary pull-right"><i class="fa fa-paper-plane"></i> Request Quote</button>
                         </div>
-
                     </div>
 
-                    <!-- /.row -->
                 </form>
 
                 {{ end }}
@@ -391,27 +193,165 @@
             </section>
 
         </div>
-
-        <div class="col-md-3">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    If you'd prefer to talk this over with a human, just click the link below to schedule a call with us<br/><br/>
-                    <a href="javascript:void(-1);" onclick="return triggerCalendlyPopup()" class="btn  btn-default" target="_blank"><i class="fa fa-calendar"></i> Schedule a call</a>
-                </div>
-                <hr/>
-                <div class="text-center">
-                    {{ partial "widgets/ethicalads.html" }}
-                </div>
-            </div>
-
-
-        </div>
-
-
-
-
     </div>
-    <!-- /.row -->
 </div>
 
-{{ partial "map.html" . }}
+<script>
+(function() {
+    var form = document.getElementById('quote-form');
+    if (!form) return;
+
+    var PRICING = {
+        'hosting':        { low: 300,  high: 1800,  label: 'Hosting',            scale: false, annual: true },
+        'installation':   { low: 750,  high: 750,   label: 'Installation',       scale: false, annual: false },
+        'configuration':  { low: 1200, high: 3000,  label: 'Configuration',      scale: true,  annual: false },
+        'data-migration': { low: 600,  high: 2400,  label: 'Data Migration',     scale: true,  annual: false },
+        'training':       { low: 800,  high: 1600,  label: 'Training',           scale: true,  annual: false },
+        'support':        { low: 5988, high: 17988, label: 'Ongoing Support',      scale: false, annual: true },
+        'sysadmin':       { low: 3600, high: 12000, label: 'System Administration', scale: false, annual: true },
+        'development':    { low: 1500, high: 6000,  label: 'Custom Development',   scale: false, annual: false },
+        'integration':    { low: 2500, high: 6000,  label: 'Integration',           scale: false, annual: false },
+        'discovery':      { low: 1500, high: 12000, label: 'Discovery & Requirements', scale: true, annual: false },
+        'consulting':     { low: 600,  high: 1200,  label: 'Consulting',               scale: false, annual: false },
+        'reporting':      { low: 1200, high: 4000,  label: 'Reporting & Analytics', scale: false, annual: false }
+    };
+
+    var SCALE = { '1': 1, '2-5': 1.5, '6-20': 2.5, '20+': 4 };
+
+    function getSelectedServices() {
+        var checked = form.querySelectorAll('input[name="services[]"]:checked');
+        var services = [];
+        for (var i = 0; i < checked.length; i++) {
+            services.push(checked[i].value);
+        }
+        return services;
+    }
+
+    function calculateEstimate(services, facilities) {
+        var multiplier = SCALE[facilities] || 1;
+        var oneTime = { low: 0, high: 0, items: [] };
+        var annual = { low: 0, high: 0, items: [] };
+        for (var i = 0; i < services.length; i++) {
+            var svc = PRICING[services[i]];
+            if (!svc) continue;
+            var low = svc.scale ? Math.round(svc.low * multiplier) : svc.low;
+            var high = svc.scale ? Math.round(svc.high * multiplier) : svc.high;
+            var bucket = svc.annual ? annual : oneTime;
+            bucket.low += low;
+            bucket.high += high;
+            bucket.items.push({ label: svc.label, low: low, high: high });
+        }
+        return { oneTime: oneTime, annual: annual };
+    }
+
+    function fmt(n) {
+        return '$' + n.toLocaleString('en-US');
+    }
+
+    function buildTable(title, bucket, unit) {
+        var html = '';
+        html += '<h4 style="margin-top:20px;">' + title + '</h4>';
+        html += '<table class="table table-striped">';
+        html += '<thead><tr><th>Service</th><th class="text-right">Estimate Range</th></tr></thead>';
+        html += '<tbody>';
+        for (var i = 0; i < bucket.items.length; i++) {
+            var item = bucket.items[i];
+            html += '<tr><td>' + item.label + '</td><td class="text-right">' + fmt(item.low) + ' &ndash; ' + fmt(item.high) + unit + '</td></tr>';
+        }
+        html += '</tbody>';
+        html += '<tfoot><tr style="font-weight:bold;"><td>Subtotal</td><td class="text-right">' + fmt(bucket.low) + ' &ndash; ' + fmt(bucket.high) + unit + '</td></tr></tfoot>';
+        html += '</table>';
+        return html;
+    }
+
+    function showEstimate(estimate, name) {
+        var section = form.closest('section');
+        var greeting = name ? ', ' + name.split(' ')[0] : '';
+        var hasItems = estimate.oneTime.items.length > 0 || estimate.annual.items.length > 0;
+        var html = '';
+
+        html += '<div style="text-align:center; margin-bottom: 30px;">';
+        html += '<span style="display:inline-block; width:60px; height:60px; border-radius:50%; background:#5cb85c; line-height:60px; color:#fff; font-size:28px; margin-bottom:15px;"><i class="fa fa-check"></i></span>';
+        html += '<h3 style="margin-top:0;">Request Received' + greeting + '!</h3>';
+        html += '</div>';
+
+        if (!hasItems) {
+            html += '<div class="alert alert-info" style="text-align:center;">';
+            html += '<p style="font-size:16px; margin:0;">We\'ll review your request and follow up with pricing options.</p>';
+            html += '</div>';
+        } else {
+            html += '<div class="panel panel-default" style="border-color:#5cb85c;">';
+            html += '<div class="panel-heading" style="background:#5cb85c; color:#fff; text-align:center;">';
+            html += '<h4 style="margin:0;">Ballpark Estimate</h4>';
+            html += '</div>';
+            html += '<div class="panel-body">';
+
+            if (estimate.oneTime.items.length > 0) {
+                html += buildTable('One-Time Costs', estimate.oneTime, '');
+            }
+            if (estimate.annual.items.length > 0) {
+                html += buildTable('Annual Costs', estimate.annual, '/yr');
+            }
+
+            html += '</div>';
+            html += '</div>';
+        }
+
+        html += '<p class="text-muted text-center" style="font-style:italic; margin-bottom:25px;">This is a ballpark estimate based on typical project costs. We\'ll follow up within 1&ndash;2 business days with a detailed quote tailored to your specific needs.</p>';
+
+        html += '<div class="text-center">';
+        html += '<a href="https://calendly.com/openboxes/30min" class="btn btn-template-primary" style="margin-right:10px;" onclick="gtag(\'event\', \'click\', {\'event_category\': \'quote\', \'event_label\': \'schedule-call\'});"><i class="fa fa-calendar"></i> Schedule a Call</a>';
+        html += '<a href="/pricing" class="btn btn-default"><i class="fa fa-arrow-left"></i> Back to Pricing</a>';
+        html += '</div>';
+
+        section.innerHTML = html;
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        var submitBtn = form.querySelector('button[type="submit"]');
+        var originalText = submitBtn.innerHTML;
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Submitting...';
+
+        var services = getSelectedServices();
+        var facilities = form.querySelector('#facilities').value;
+        var name = form.querySelector('#name').value;
+        var estimate = calculateEstimate(services, facilities);
+
+        gtag('event', 'click', {'event_category': 'quote', 'event_label': 'submit'});
+
+        var formData = new FormData(form);
+        if (estimate.oneTime.items.length > 0) {
+            var otParts = estimate.oneTime.items.map(function(item) {
+                return item.label + ': ' + fmt(item.low) + ' – ' + fmt(item.high);
+            });
+            otParts.push('Subtotal: ' + fmt(estimate.oneTime.low) + ' – ' + fmt(estimate.oneTime.high));
+            formData.append('Estimate: One-Time', otParts.join(' | '));
+        }
+        if (estimate.annual.items.length > 0) {
+            var aParts = estimate.annual.items.map(function(item) {
+                return item.label + ': ' + fmt(item.low) + ' – ' + fmt(item.high) + '/yr';
+            });
+            aParts.push('Subtotal: ' + fmt(estimate.annual.low) + ' – ' + fmt(estimate.annual.high) + '/yr');
+            formData.append('Estimate: Annual', aParts.join(' | '));
+        }
+
+        fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+        }).then(function(response) {
+            if (response.ok) {
+                showEstimate(estimate, name);
+            } else {
+                form.submit();
+            }
+        }).catch(function() {
+            form.submit();
+        });
+    });
+})();
+</script>
