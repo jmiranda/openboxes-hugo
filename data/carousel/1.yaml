@@ -6,3 +6,7 @@ description: |
 image: img/carousel/pih-haiti-warehouse.jpg
 link: https://demo.openboxes.com/openboxes/auth/signup
 link_text: Try the Demo
+link_icon: fa-desktop
+secondary_link: https://www.youtube.com/@openboxes/videos
+secondary_link_text: Watch a Video
+secondary_link_icon: fa-play-circle

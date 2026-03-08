@@ -6,3 +6,7 @@ description: |
 image: img/carousel/pih-malawi-pharmacy.jpg
 link: /features
 link_text: Explore Features
+link_icon: fa-tasks
+secondary_link: https://demo.openboxes.com/openboxes/auth/signup
+secondary_link_text: Try the Demo
+secondary_link_icon: fa-desktop

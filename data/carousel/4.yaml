@@ -6,3 +6,7 @@ description: |
 image: img/carousel/pih-haiti-hospital.jpg
 link: /pricing/#support
 link_text: Get Started
+link_icon: fa-rocket
+secondary_link: https://github.com/openboxes/openboxes
+secondary_link_text: View Source
+secondary_link_icon: fa-github

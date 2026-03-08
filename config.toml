@@ -351,9 +351,9 @@ paginate = 10
 
 [[menu.topbar]]
     weight = 2
-    name = "Support"
+    name = "Get Help"
     url = "/community"
-    pre = "<i class='fa fa-1x fa-support'></i>"
+    pre = "<i class='fa fa-1x fa-comments'></i>"
     post = "<i class='fa fa-external-link'></i>"
 
 #[[menu.topbar]]

@@ -6,3 +6,7 @@ description: |
 image: img/carousel/pih-haiti-distribution-interior.jpg
 link: /pricing
 link_text: View Pricing
+link_icon: fa-money
+secondary_link: https://calendly.com/openboxes/demo
+secondary_link_text: Schedule a Demo
+secondary_link_icon: fa-calendar

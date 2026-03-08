@@ -1,5 +1,24 @@
 /* your styles go here */
 
+/* Outline button for carousel secondary CTA */
+.btn-template-outline {
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+.btn-template-outline:hover,
+.btn-template-outline:focus,
+.btn-template-outline:active {
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+/* Carousel CTA button spacing */
+.home-carousel .btn {
+  margin: 0 5px 10px;
+}
+
 .box-image-text .image {
   min-height: 200px;
   max-height: 200px;
