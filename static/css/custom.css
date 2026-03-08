@@ -1,5 +1,25 @@
 /* your styles go here */
 
+/* Testimonials: fix bottom section clipping and reduce card height */
+.testimonials .item {
+  padding-bottom: 0 !important;
+}
+
+.testimonials .item .testimonial .text {
+  margin-bottom: 10px !important;
+  font-size: 13px;
+}
+
+.testimonials .item .testimonial .bottom {
+  height: auto !important;
+  position: relative !important;
+}
+
+.testimonials .item .testimonial .name-picture p {
+  margin: 0;
+  line-height: 1.4;
+}
+
 /* Outline button for carousel secondary CTA */
 .btn-template-outline {
   color: #ffffff;
