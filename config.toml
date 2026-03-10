@@ -271,16 +271,17 @@ ignoreFiles = ['\.swp$', '~$', '\.tmp$', '#$', '\.bak$', '___jb_tmp___', '___jb_
     name = "Community"
     weight = 70
 
+# Community > Connect
 [[menu.main]]
-    identifier = "community-items"
-    name = "Community"
+    identifier = "community-connect"
+    name = "Connect"
     parent = "community"
     weight = 1
 
 [[menu.main]]
     identifier = "join-community"
     name = "Join the Community"
-    parent = "community-items"
+    parent = "community-connect"
     pre = "<i class='fa fa-users'></i>"
     url = "https://community.openboxes.com"
     weight = 1
@@ -288,7 +289,7 @@ ignoreFiles = ['\.swp$', '~$', '\.tmp$', '#$', '\.bak$', '___jb_tmp___', '___jb_
 [[menu.main]]
     identifier = "source-code"
     name = "View the Source Code"
-    parent = "community-items"
+    parent = "community-connect"
     pre = "<i class='fa fa-github'></i>"
     url  = "https://github.com/openboxes/openboxes"
     weight = 2
@@ -296,58 +297,65 @@ ignoreFiles = ['\.swp$', '~$', '\.tmp$', '#$', '\.bak$', '___jb_tmp___', '___jb_
 [[menu.main]]
     identifier = "latest-news"
     name = "Latest News"
-    parent = "community-items"
+    parent = "community-connect"
     pre = "<i class='fa fa-newspaper-o'></i>"
     url  = "/categories/news/"
     weight = 3
 
 [[menu.main]]
-    identifier = "start-discussion"
-    name = "Start a Discussion"
-    parent = "community-items"
-    pre = "<i class='fa fa-comments'></i>"
-    url = "https://community.openboxes.com/new-topic?category=general"
-    weight = 4
-
-[[menu.main]]
-    identifier = "ask-question"
-    name = "Ask a Question"
-    parent = "community-items"
-    pre = "<i class='fa fa-question-circle'></i>"
-    url = "https://community.openboxes.com/new-topic?category=troubleshooting"
-    weight = 5
-
-[[menu.main]]
-    identifier = "report-bug"
-    name = "Report a Bug"
-    parent = "community-items"
-    pre = "<i class='fa fa-bug'></i>"
-    url = "https://community.openboxes.com/new-topic?category=bugs"
-    weight = 6
-
-[[menu.main]]
-    identifier = "request-feature"
-    name = "Request a Feature"
-    parent = "community-items"
-    pre = "<i class='fa fa-lightbulb-o'></i>"
-    url = "https://community.openboxes.com/new-topic?category=features"
-    weight = 7
-
-[[menu.main]]
     identifier = "implementations"
     name = "Implementations"
-    parent = "community-items"
+    parent = "community-connect"
     pre = "<i class='fa fa-globe'></i>"
     url = "/users/"
-    weight = 8
+    weight = 4
 
 [[menu.main]]
     identifier = "subscribe-youtube"
     name = "Subscribe on YouTube"
-    parent = "community-items"
+    parent = "community-connect"
     pre = "<i class='fa fa-youtube-play'></i>"
     url = "https://www.youtube.com/@openboxes?sub_confirmation=1"
-    weight = 9
+    weight = 5
+
+# Community > Participate
+[[menu.main]]
+    identifier = "community-participate"
+    name = "Participate"
+    parent = "community"
+    weight = 2
+
+[[menu.main]]
+    identifier = "start-discussion"
+    name = "Start a Discussion"
+    parent = "community-participate"
+    pre = "<i class='fa fa-comments'></i>"
+    url = "https://community.openboxes.com/new-topic?category=general"
+    weight = 1
+
+[[menu.main]]
+    identifier = "ask-question"
+    name = "Ask a Question"
+    parent = "community-participate"
+    pre = "<i class='fa fa-question-circle'></i>"
+    url = "https://community.openboxes.com/new-topic?category=troubleshooting"
+    weight = 2
+
+[[menu.main]]
+    identifier = "report-bug"
+    name = "Report a Bug"
+    parent = "community-participate"
+    pre = "<i class='fa fa-bug'></i>"
+    url = "https://community.openboxes.com/new-topic?category=bugs"
+    weight = 3
+
+[[menu.main]]
+    identifier = "request-feature"
+    name = "Request a Feature"
+    parent = "community-participate"
+    pre = "<i class='fa fa-lightbulb-o'></i>"
+    url = "https://community.openboxes.com/new-topic?category=features"
+    weight = 4
 
 
 
