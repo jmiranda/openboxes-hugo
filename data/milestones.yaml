@@ -1,0 +1,66 @@
+- year: "2010"
+  title: "Born out of necessity"
+  text: "Built at Partners In Health to manage medical supplies after the Haiti earthquake."
+  image: "/img/backgrounds/2010-haiti-earthquake.jpg"
+
+- year: "2011"
+  title: "Shipping supplies from Miami to Haiti"
+  text: "Used OpenBoxes to coordinate shipments of medical supplies from Miami to PIH facilities in Haiti."
+  image: "/img/backgrounds/colleagues.jpg"
+
+- year: "2012"
+  title: "First multi-site deployment"
+  text: "Rolled out across PIH facilities in Haiti — Cange, Hinche, Lacolline, and St. Marc."
+  image: "/img/carousel/pih-haiti-hospital.jpg"
+
+- year: "2013"
+  title: "Goes open source"
+  text: "Source code published on GitHub under the Eclipse Public License."
+
+- year: "2014"
+  title: "Inventory snapshots & reporting"
+  text: "Added periodic inventory snapshots and transaction-level reporting."
+
+- year: "2015"
+  title: "Expiry & lot tracking"
+  text: "Lot-level tracking and expiry date management for pharmaceuticals."
+
+- year: "2016"
+  title: "Stocklists & requisition templates"
+  text: "Standardized ordering with stocklists for health facilities."
+
+- year: "2018"
+  title: "SolDevelo joins the team"
+  text: "Polish development partner SolDevelo begins contributing full-time."
+
+- year: "2018"
+  title: "Deployed in Liberia & Sierra Leone"
+  text: "PIH expands OpenBoxes to West Africa."
+
+- year: "2019"
+  title: "Stock movements overhaul"
+  text: "Major rework of the stock transfer workflow with React-based UI."
+
+- year: "2020"
+  title: "Inbound & outbound shipping"
+  text: "Redesigned shipping and receiving workflows for complex supply chains."
+
+- year: "2021"
+  title: "Invoice management"
+  text: "Added invoice tracking and integration with financial systems."
+
+- year: "2022"
+  title: "Product catalogs & categories"
+  text: "Hierarchical product categorization and catalog management."
+
+- year: "2023"
+  title: "Beyond healthcare"
+  text: "Adopted by private sector organizations for warehouse and distribution management."
+
+- year: "2024"
+  title: "Community growth"
+  text: "2K Software and other partners begin offering implementation services."
+
+- year: "2025"
+  title: "v0.9.x series"
+  text: "Continued modernization — React frontend, improved reporting, and API enhancements."

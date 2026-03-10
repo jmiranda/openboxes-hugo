@@ -193,6 +193,12 @@ ignoreFiles = ['\.swp$', '~$', '\.tmp$', '#$', '\.bak$', '___jb_tmp___', '___jb_
     url  = "/pricing/"
     weight = 40
 
+# About
+[[menu.main]]
+    name = "Our Story"
+    url  = "/about/"
+    weight = 45
+
 # Blog
 [[menu.main]]
     name = "Blog"
