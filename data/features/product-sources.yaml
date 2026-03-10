@@ -1,0 +1,13 @@
+weight: 3
+name: "Product Sources"
+category: "Product"
+categoryWeight: 0
+icon: "fa fa-link"
+description: "Track where products come from by linking suppliers, manufacturers, and contract pricing to each product."
+items:
+- Associate multiple suppliers and manufacturers per product
+- Record supplier product codes and manufacturer codes
+- Track contract pricing and lead times by source
+- Set preferred sources for purchasing
+screenshots:
+- image: ../img/screenshots/product/product-sources.png
