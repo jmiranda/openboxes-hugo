@@ -6,3 +6,9 @@
 
 # IDEA project files
 .idea
+
+# Project-local pinned Hugo binary (see CLAUDE.md)
+/bin
+
+# Hugo transient build lock
+.hugo_build.lock
