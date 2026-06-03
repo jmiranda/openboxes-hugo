@@ -2,11 +2,11 @@
 weight: 3
 title: Deploy Your Way
 description: |
-  <p class="lead">Self-host on-premise, launch on DigitalOcean, or let us manage it in the cloud.</p>
+  <p class="lead">Self-host it yourself, or let <strong>OpenBoxes Lift</strong> fully manage it for you in the cloud.</p>
 image: img/carousel/pih-haiti-distribution-interior.jpg
-link: /pricing
-link_text: View Pricing
-link_icon: fa-money
+link: https://openboxes.cloud
+link_text: Explore OpenBoxes Lift
+link_icon: fa-cloud
 secondary_link: https://openboxes.cloud/demo
 secondary_link_text: Try the Demo
 secondary_link_icon: fa-desktop

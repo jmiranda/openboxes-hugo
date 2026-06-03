@@ -1,0 +1,21 @@
+{{ if isset .Site.Params "lift" }}
+{{ if .Site.Params.lift.enable }}
+<section id="home-lift" class="bar background-gray no-mb text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="icon"><i class="{{ .Site.Params.lift.icon }}"></i></div>
+                <h3 class="text-uppercase">{{ .Site.Params.lift.title }}</h3>
+                <p class="lead">{{ .Site.Params.lift.subtitle }}</p>
+                <p class="text-center">
+                    <a href="{{ .Site.Params.lift.link_url }}" target="_blank" class="btn btn-template-primary btn-lg"
+                       onclick="gtag('event', 'click', {'event_category': 'lift', 'event_label': 'home_explore'});">{{ .Site.Params.lift.link_text }}</a>
+                    <a href="{{ .Site.Params.lift.secondary_link_url }}" target="_blank" class="btn btn-template-main btn-lg"
+                       onclick="gtag('event', 'click', {'event_category': 'lift', 'event_label': 'home_pricing'});">{{ .Site.Params.lift.secondary_link_text }}</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}

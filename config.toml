@@ -405,6 +405,13 @@ ignoreFiles = ['\.swp$', '~$', '\.tmp$', '#$', '\.bak$', '___jb_tmp___', '___jb_
 # Top bar social links menu
 
 [[menu.topbar]]
+    weight = 1
+    name = "Try OpenBoxes Lift"
+    url = "https://openboxes.cloud"
+    pre = "<i class='fa fa-1x fa-cloud'></i>"
+    post = "<i class='fa fa-external-link'></i>"
+
+[[menu.topbar]]
     weight = 2
     name = "Get Help"
     url = "/community"
@@ -568,6 +575,16 @@ ignoreFiles = ['\.swp$', '~$', '\.tmp$', '#$', '\.bak$', '___jb_tmp___', '___jb_
     subtitle = "Explore the demo environment — no signup required. See how OpenBoxes manages inventory, shipments, and reporting across facilities."
     link_url = "https://openboxes.cloud/demo"
     link_text = "Try the Demo"
+
+[params.lift]
+    enable = true
+    icon = "fa fa-cloud"
+    title = "Fully Managed with OpenBoxes Lift"
+    subtitle = "Don't want to run a server? OpenBoxes Lift is our fully managed, cloud-hosted version of OpenBoxes. We handle hosting, SSL, backups, monitoring, and upgrades — so you can be up and running in minutes with no infrastructure to manage."
+    link_url = "https://openboxes.cloud"
+    link_text = "Explore OpenBoxes Lift"
+    secondary_link_url = "https://openboxes.cloud/pricing"
+    secondary_link_text = "View Pricing"
 
 [params.users]
     enable = true
