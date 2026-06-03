@@ -1,7 +1,7 @@
 weight: 6
 question: Does OpenBoxes provide 24/7 and off-peak support?
 answer: |
-  Our support availability varies by plan. Standard and Basic plans cover business hours (9am–5pm, Mon–Fri),
-  Business plans extend to 7am–9pm, and Enterprise plans include 24/7 support including holidays.
-  See our [Support Plans](/pricing/#support) for full details, or email
+  Support availability depends on your [OpenBoxes Lift](https://openboxes.cloud) plan. The **Shared** plan covers
+  business hours (9am–5pm, Mon–Fri), **Dedicated** extends to 7am–9pm, and **Enterprise** includes 24/7 support with
+  phone and live chat, even on holidays. See our [Support Plans](/pricing/#support) for full details, or email
   [support@openboxes.com](mailto:support@openboxes.com) if you'd like to discuss custom support options.
