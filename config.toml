@@ -31,12 +31,6 @@ ignoreFiles = ['\.swp$', '~$', '\.tmp$', '#$', '\.bak$', '___jb_tmp___', '___jb_
 #    url = "/"
 #    weight = 1
 
-# Platform (OpenBoxes Lift — hosted SaaS)
-[[menu.main]]
-    name = "Platform"
-    url  = "https://openboxes.cloud"
-    weight = 25
-
 # Features
 [[menu.main]]
     name = "Features"
@@ -406,7 +400,7 @@ ignoreFiles = ['\.swp$', '~$', '\.tmp$', '#$', '\.bak$', '___jb_tmp___', '___jb_
 
 [[menu.topbar]]
     weight = 1
-    name = "Try OpenBoxes Lift"
+    name = "Platform"
     url = "https://openboxes.cloud"
     pre = "<i class='fa fa-1x fa-cloud'></i>"
     post = "<i class='fa fa-external-link'></i>"
