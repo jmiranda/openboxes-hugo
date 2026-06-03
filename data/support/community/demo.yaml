@@ -1,6 +1,6 @@
 weight: 7
 name: "Demos"
 icon: "fa fa-television"
-description: "Schedule a demo with us."
-link: "https://calendly.com/openboxes/demo"
-linkName: "Schedule a Demo"
+description: "Try OpenBoxes in a live demo environment."
+link: "https://openboxes.cloud/demo"
+linkName: "Try the Demo"
