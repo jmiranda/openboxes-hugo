@@ -79,6 +79,11 @@
                 <p class="text-muted">Tell us about how your organization uses OpenBoxes. We'd love to feature you on our implementations map.</p>
                 <form id="implementation-form" method="post" action="https://formspree.io/f/xreybadz">
                     <input type="hidden" name="type" value="implementation"/>
+                    <!-- Honeypot: hidden from users, bots fill it and Formspree discards the submission -->
+                    <div style="position:absolute;left:-9999px;" aria-hidden="true">
+                        <label for="impl-gotcha">Leave this field empty</label>
+                        <input type="text" name="_gotcha" id="impl-gotcha" tabindex="-1" autocomplete="off"/>
+                    </div>
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="form-group">

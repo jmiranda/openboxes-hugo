@@ -14,6 +14,12 @@
 
                     <input type="hidden" name="type" value="quote"/>
 
+                    <!-- Honeypot: hidden from users, bots fill it and Formspree discards the submission -->
+                    <div style="position:absolute;left:-9999px;" aria-hidden="true">
+                        <label for="quote-gotcha">Leave this field empty</label>
+                        <input type="text" name="_gotcha" id="quote-gotcha" tabindex="-1" autocomplete="off"/>
+                    </div>
+
                     <h4><i class="fa fa-user text-muted"></i> About You</h4>
                     <p class="text-muted text-small">Helps us understand who you are and how to reach you.</p>
                     <hr/>
