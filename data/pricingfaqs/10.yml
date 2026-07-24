@@ -1,0 +1,8 @@
+weight: 7
+question: We don't have developers or our own servers — can we still use OpenBoxes?
+answer: |
+  Absolutely — that's exactly what [OpenBoxes Lift](https://openboxes.cloud) is for. Lift is our fully managed,
+  cloud-hosted version of OpenBoxes. We handle hosting, SSL, backups, monitoring, security, and upgrades, so you
+  don't need developers, servers, or an IT team to get started. You can be up and running in minutes and focus on
+  running your supply chain instead of running software. [Explore plans and pricing](https://openboxes.cloud/pricing)
+  or [try the demo](https://openboxes.cloud/demo).

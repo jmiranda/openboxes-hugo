@@ -85,7 +85,7 @@ are available — but the software itself costs nothing.
 If any of the five signs above sound familiar, it might be time to make the switch. Here's how to
 get started:
 
-1. **[Try the demo](https://demo.openboxes.com/openboxes/auth/signup)** — No installation required. See how OpenBoxes works with sample data.
+1. **[Try the demo](https://openboxes.cloud/demo)** — No installation required. See how OpenBoxes works with sample data.
 2. **[Read the installation guide](https://docs.openboxes.com/en/develop/)** — Step-by-step instructions for self-hosting.
 3. **[Deploy to DigitalOcean](https://marketplace.digitalocean.com/apps/openboxes-server?refcode=da4712a483b4)** — One-click deployment with SSL and automatic backups.
 4. **[Schedule a discussion](https://calendly.com/openboxes/discussion)** — Talk to our team about your specific needs.

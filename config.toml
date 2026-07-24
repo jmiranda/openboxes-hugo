@@ -55,7 +55,7 @@ ignoreFiles = ['\.swp$', '~$', '\.tmp$', '#$', '\.bak$', '___jb_tmp___', '___jb_
     parent = "get-started-explore"
     pre = "<i class='fa fa-desktop'></i>"
     name = "Try the Demo"
-    url  = "https://demo.openboxes.com"
+    url  = "https://openboxes.cloud/demo"
     weight = 1
 
 [[menu.main]]
@@ -131,10 +131,10 @@ ignoreFiles = ['\.swp$', '~$', '\.tmp$', '#$', '\.bak$', '___jb_tmp___', '___jb_
 
 [[menu.main]]
     identifier = "deploy-managed-cloud"
-    name = "Deploy on Managed Cloud"
+    name = "Deploy on OpenBoxes Lift"
     parent = "get-started-deploy"
     pre = "<i class='fa fa-cloud-upload'></i>"
-    url = "/pricing/#packages"
+    url = "https://openboxes.cloud"
     weight = 3
 
 [[menu.main]]
@@ -169,14 +169,6 @@ ignoreFiles = ['\.swp$', '~$', '\.tmp$', '#$', '\.bak$', '___jb_tmp___', '___jb_
     weight = 1
 
 [[menu.main]]
-    identifier = "schedule-demo"
-    name = "Schedule a Demo"
-    parent = "get-started-contact"
-    pre = "<i class='fa fa-calendar-check-o'></i>"
-    url = "https://calendly.com/openboxes/demo"
-    weight = 2
-
-[[menu.main]]
     identifier = "request-quote"
     name = "Request a Quote"
     parent = "get-started-contact"
@@ -198,12 +190,6 @@ ignoreFiles = ['\.swp$', '~$', '\.tmp$', '#$', '\.bak$', '___jb_tmp___', '___jb_
 #    name = "Our Story"
 #    url  = "/about/"
 #    weight = 45
-
-# Blog
-[[menu.main]]
-    name = "Blog"
-    url  = "/blog/"
-    weight = 50
 
 # Docs
 [[menu.main]]
@@ -265,6 +251,14 @@ ignoreFiles = ['\.swp$', '~$', '\.tmp$', '#$', '\.bak$', '___jb_tmp___', '___jb_
     url  = "https://dbdocs.io/jmiranda/openboxes"
     weight = 6
 
+[[menu.main]]
+    identifier = "docs-blog"
+    name = "Blog"
+    parent = "docs-items"
+    pre = "<i class='fa fa-newspaper-o'></i>"
+    url  = "/blog/"
+    weight = 7
+
 # Community
 [[menu.main]]
     identifier = "community"
@@ -317,6 +311,14 @@ ignoreFiles = ['\.swp$', '~$', '\.tmp$', '#$', '\.bak$', '___jb_tmp___', '___jb_
     pre = "<i class='fa fa-youtube-play'></i>"
     url = "https://www.youtube.com/@openboxes?sub_confirmation=1"
     weight = 5
+
+[[menu.main]]
+    identifier = "community-blog"
+    name = "Blog"
+    parent = "community-connect"
+    pre = "<i class='fa fa-newspaper-o'></i>"
+    url = "/blog/"
+    weight = 6
 
 # Community > Participate
 [[menu.main]]
@@ -395,6 +397,13 @@ ignoreFiles = ['\.swp$', '~$', '\.tmp$', '#$', '\.bak$', '___jb_tmp___', '___jb_
 
 
 # Top bar social links menu
+
+[[menu.topbar]]
+    weight = 1
+    name = "Platform"
+    url = "https://openboxes.cloud"
+    pre = "<i class='fa fa-1x fa-cloud'></i>"
+    post = "<i class='fa fa-external-link'></i>"
 
 [[menu.topbar]]
     weight = 2
@@ -558,10 +567,18 @@ ignoreFiles = ['\.swp$', '~$', '\.tmp$', '#$', '\.bak$', '___jb_tmp___', '___jb_
     icon = "fa fa-play-circle"
     title = "See OpenBoxes in Action"
     subtitle = "Explore the demo environment — no signup required. See how OpenBoxes manages inventory, shipments, and reporting across facilities."
-    link_url = "https://demo.openboxes.com"
+    link_url = "https://openboxes.cloud/demo"
     link_text = "Try the Demo"
-    schedule_link_url = "https://calendly.com/openboxes/demo"
-    schedule_link_text = "Schedule a Demo"
+
+[params.lift]
+    enable = true
+    icon = "fa fa-cloud"
+    title = "Fully Managed with OpenBoxes Lift"
+    subtitle = "Don't want to run a server? OpenBoxes Lift is our fully managed, cloud-hosted version of OpenBoxes. We handle hosting, SSL, backups, monitoring, and upgrades — so you can be up and running in minutes with no infrastructure to manage."
+    link_url = "https://openboxes.cloud"
+    link_text = "Explore OpenBoxes Lift"
+    secondary_link_url = "https://openboxes.cloud/pricing"
+    secondary_link_text = "View Pricing"
 
 [params.users]
     enable = true
@@ -594,12 +611,6 @@ ignoreFiles = ['\.swp$', '~$', '\.tmp$', '#$', '\.bak$', '___jb_tmp___', '___jb_
     enable = false
     deploy_url = "https://marketplace.digitalocean.com/apps/openboxes-server?refcode=da4712a483b4&action=deploy"
     marketplace_url = "https://marketplace.digitalocean.com/apps/openboxes-server"
-
-[params.waitlist]
-    enable = true
-    title = "Cloud Hosting Waitlist"
-    subtitle = "We're building a fully managed cloud hosting solution for OpenBoxes. Join the waitlist to get early access and help us shape the offering."
-    form_endpoint = "https://formspree.io/f/xzdaqjje"
 
 [params.youtube]
     enable = true

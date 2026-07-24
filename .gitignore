@@ -12,3 +12,10 @@
 
 # Hugo transient build lock
 .hugo_build.lock
+
+# Screenshot tooling (dev-only, for PR documentation — not part of the site)
+/node_modules
+/package.json
+/package-lock.json
+/screenshots
+/tools
