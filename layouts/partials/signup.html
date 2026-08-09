@@ -16,6 +16,12 @@
 
                     <input type="hidden" name="type" value="signup"/>
 
+                    <!-- Honeypot: hidden from users, bots fill it and Formspree discards the submission -->
+                    <div style="position:absolute;left:-9999px;" aria-hidden="true">
+                        <label for="signup-gotcha">Leave this field empty</label>
+                        <input type="text" name="_gotcha" id="signup-gotcha" tabindex="-1" autocomplete="off"/>
+                    </div>
+
                     <div class="row">
 
                         <div class="col-sm-6">
