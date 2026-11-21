@@ -13,8 +13,8 @@
   .hp-chooser .hp-restart { display: inline-block; margin-top: 14px; font-size: 13px; }
 
   /* Cards */
-  .hp-cards { display: flex; flex-wrap: wrap; margin: 0 -10px; }
-  .hp-card-col { width: 33.333%; padding: 0 10px; margin-bottom: 20px; }
+  .hp-cards { display: flex; flex-wrap: wrap; margin: 0 auto; max-width: 860px; }
+  .hp-card-col { width: 50%; padding: 0 10px; margin-bottom: 20px; }
   @media (max-width: 991px) { .hp-card-col { width: 100%; } }
   .hp-card { height: 100%; display: flex; flex-direction: column; border: 1px solid #e3e8ee; border-radius: 6px; padding: 26px 24px; background: #fff; transition: box-shadow .2s, border-color .2s, opacity .2s; }
   .hp-card .hp-icon { font-size: 30px; color: #38a7bb; margin-bottom: 10px; }
@@ -52,7 +52,7 @@
       <div class="hp-step" data-step="2">
         <h4>Do you have someone who can look after a Linux server?</h4>
         <div class="hp-hint">Installing updates, checking backups, fixing things when they break.</div>
-        <button class="btn btn-template-main" data-answer="digitalocean">Yes</button>
+        <button class="btn btn-template-main" data-answer="self-hosted-skills">Yes</button>
         <button class="btn btn-template-main" data-answer="lift">No</button>
       </div>
       <div class="hp-step" data-step="result">
@@ -74,34 +74,12 @@
           <div class="hp-who">You run it, anywhere you like</div>
           <ul>
             <li><i class="fa fa-check"></i> Free to download and use</li>
-            <li><i class="fa fa-check"></i> On-premise, or any cloud</li>
+            <li><i class="fa fa-check"></i> On-premise, or any cloud provider</li>
             <li><i class="fa fa-check"></i> Full control of your data</li>
             <li><i class="fa fa-minus"></i> You handle setup, updates and backups</li>
           </ul>
           <a href="https://docs.openboxes.com/en/develop/admin-guide/installation/" class="btn btn-template-main"
              onclick="gtag('event', 'click', {'event_category': 'hosting', 'event_label': 'self_hosted_install_guide'});">Read the install guide</a>
-        </div>
-      </div>
-
-      <div class="hp-card-col">
-        <div class="hp-card" data-option="digitalocean">
-          <span class="hp-badge">Recommended for you</span>
-          <div class="hp-icon"><i class="fa fa-cloud"></i></div>
-          <h4>DigitalOcean</h4>
-          <div class="hp-who">You run it, with a head start</div>
-          <ul>
-            <li><i class="fa fa-check"></i> Server with OpenBoxes pre-installed</li>
-            <li><i class="fa fa-check"></i> Running in minutes</li>
-            <li><i class="fa fa-check"></i> Billed to your own DigitalOcean account</li>
-            <li><i class="fa fa-minus"></i> You handle updates and backups</li>
-          </ul>
-          {{ if .Site.Params.digitalocean.enable }}
-          <a href="{{ .Site.Params.digitalocean.deploy_url }}" target="_blank" class="btn btn-template-main"
-             onclick="gtag('event', 'deploy_click', {'event_category': 'digitalocean', 'event_label': 'hosting'});">Deploy on DigitalOcean</a>
-          {{ else }}
-          <a href="{{ .Site.Params.digitalocean.marketplace_url }}" target="_blank" class="btn btn-template-main"
-             onclick="gtag('event', 'click', {'event_category': 'digitalocean', 'event_label': 'hosting_marketplace'});">View on DigitalOcean</a>
-          {{ end }}
         </div>
       </div>
 
@@ -135,10 +113,11 @@
 
 <script>
 (function () {
-  var names = { 'self-hosted': 'Self-hosted', 'digitalocean': 'DigitalOcean', 'lift': 'OpenBoxes Lift' };
+  var names = { 'self-hosted': 'Self-hosted', 'self-hosted-skills': 'Self-hosted', 'lift': 'OpenBoxes Lift' };
+  var cardFor = { 'self-hosted': 'self-hosted', 'self-hosted-skills': 'self-hosted', 'lift': 'lift' };
   var whys = {
     'self-hosted': 'Install OpenBoxes on your own server so your data never leaves your hardware.',
-    'digitalocean': 'You have the skills to run a server. DigitalOcean gets you there fastest.',
+    'self-hosted-skills': 'You have the skills to run a server. Install OpenBoxes on the cloud provider or hardware you already use.',
     'lift': 'Let the OpenBoxes team run the server so your team can focus on operations.'
   };
   var chooser = document.getElementById('hp-chooser');
@@ -154,7 +133,7 @@
     show('result');
     cards.classList.add('has-pick');
     cards.querySelectorAll('.hp-card').forEach(function (c) {
-      c.classList.toggle('picked', c.getAttribute('data-option') === option);
+      c.classList.toggle('picked', c.getAttribute('data-option') === cardFor[option]);
     });
     if (typeof gtag === 'function') { gtag('event', 'hosting_chooser_result', { 'event_category': 'hosting', 'event_label': option }); }
   }
