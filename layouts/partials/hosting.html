@@ -1,0 +1,181 @@
+<div class="container hosting-page">
+
+    <!-- Intro -->
+    <section class="bar background-white no-mb" style="padding-top: 0px">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading">
+                    <h3>Where should OpenBoxes run?</h3>
+                </div>
+                <p class="lead">
+                    OpenBoxes is free and open source, so you choose where it runs. The real question is
+                    <strong>who looks after the server</strong>: your team, or ours. This page walks you through the
+                    three options and helps you pick one.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick decision -->
+    <a name="decide"></a>
+    <section class="bar background-white no-mb">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading">
+                    <h3>Answer three questions</h3>
+                </div>
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th class="col-md-6">If this sounds like you…</th>
+                        <th class="col-md-6">Start with</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <strong>We don't want to run servers.</strong>
+                            <div class="text-muted text-small">No IT staff for patching, backups and upgrades, or you'd rather spend that time on operations.</div>
+                        </td>
+                        <td><a href="#lift"><strong>OpenBoxes Lift</strong></a>: fully managed by the OpenBoxes team.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>We're comfortable with Linux and want a cloud server quickly.</strong>
+                            <div class="text-muted text-small">Someone on your team can handle updates, backups and the occasional troubleshooting.</div>
+                        </td>
+                        <td><a href="#digitalocean"><strong>DigitalOcean</strong></a>: a ready-made server you own and run.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>The data has to stay on our own hardware, or our sites have unreliable internet.</strong>
+                            <div class="text-muted text-small">Data residency rules, an existing data center, or a warehouse that has to keep working offline.</div>
+                        </td>
+                        <td><a href="#self-hosted"><strong>Self-hosted</strong></a>: install on your own server, on-premise or in any cloud.</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p class="text-muted text-small">
+                    Not sure? You can start on one option and move later. Your data can be migrated between them.
+                    <a href="https://calendly.com/openboxes/discussion">Talk it through with us</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison -->
+    <a name="compare"></a>
+    <section class="bar background-white no-mb">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading">
+                    <h3>Who handles what</h3>
+                </div>
+                <table class="table table-striped table-bordered text-center">
+                    <thead>
+                    <tr>
+                        <th class="text-left col-md-3"></th>
+                        <th class="text-center col-md-3">Self-hosted</th>
+                        <th class="text-center col-md-3">DigitalOcean</th>
+                        <th class="text-center col-md-3">OpenBoxes Lift</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr><td class="text-left">Server and hosting</td><td>You</td><td>DigitalOcean</td><td>OpenBoxes</td></tr>
+                    <tr><td class="text-left">Installation</td><td>You</td><td>Pre-installed</td><td>OpenBoxes</td></tr>
+                    <tr><td class="text-left">SSL / HTTPS</td><td>You</td><td>Pre-configured</td><td>OpenBoxes</td></tr>
+                    <tr><td class="text-left">Software upgrades</td><td>You</td><td>You</td><td>OpenBoxes</td></tr>
+                    <tr><td class="text-left">Backups and monitoring</td><td>You</td><td>You</td><td>OpenBoxes</td></tr>
+                    <tr><td class="text-left">Email delivery (alerts, notifications)</td><td>You</td><td>You</td><td>OpenBoxes</td></tr>
+                    <tr><td class="text-left">Support</td><td>Community, or paid</td><td>Community, or paid</td><td>Included</td></tr>
+                    <tr><td class="text-left">What you pay for</td><td>Your hardware or cloud, plus staff time</td><td>Your DigitalOcean bill, plus staff time</td><td>A monthly subscription</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Options -->
+    <section class="bar background-white no-mb">
+        <div class="row">
+
+            <a name="self-hosted"></a>
+            <div class="col-md-4">
+                <div class="box-simple">
+                    <div class="icon"><i class="fa fa-server"></i></div>
+                    <h4>Self-hosted</h4>
+                    <p>
+                        Download OpenBoxes and install it on a server you manage: in your own data center, a local
+                        machine at a warehouse, or any cloud provider. You get full control, and full responsibility.
+                    </p>
+                    <p class="text-small text-muted">
+                        Need it to work through internet outages? We can set up on-premise servers that sync with a
+                        cloud server. Ask us about it.
+                    </p>
+                    <a href="https://docs.openboxes.com/en/develop/admin-guide/installation/" class="btn btn-template-main"
+                       onclick="gtag('event', 'click', {'event_category': 'hosting', 'event_label': 'self_hosted_install_guide'});">Read the install guide</a>
+                </div>
+            </div>
+
+            <a name="digitalocean"></a>
+            <div class="col-md-4">
+                <div class="box-simple">
+                    <div class="icon"><i class="fa fa-cloud"></i></div>
+                    <h4>DigitalOcean</h4>
+                    <p>
+                        Deploy a server with OpenBoxes already installed, billed to your own DigitalOcean account.
+                        It's the fastest way to get your own instance, and you still run it after that.
+                    </p>
+                    <p class="text-small text-muted">
+                        You pay DigitalOcean directly. Cost depends on the server size you choose.
+                    </p>
+                    {{ if .Site.Params.digitalocean.enable }}
+                    <a href="{{ .Site.Params.digitalocean.deploy_url }}" target="_blank" class="btn btn-template-main"
+                       onclick="gtag('event', 'deploy_click', {'event_category': 'digitalocean', 'event_label': 'hosting'});">Deploy on DigitalOcean</a>
+                    {{ else }}
+                    <a href="{{ .Site.Params.digitalocean.marketplace_url }}" target="_blank" class="btn btn-template-main"
+                       onclick="gtag('event', 'click', {'event_category': 'digitalocean', 'event_label': 'hosting_marketplace'});">View on DigitalOcean</a>
+                    {{ end }}
+                </div>
+            </div>
+
+            <a name="lift"></a>
+            <div class="col-md-4">
+                <div class="box-simple">
+                    <div class="icon"><i class="fa fa-cloud-upload"></i></div>
+                    <h4>OpenBoxes Lift</h4>
+                    <p>
+                        OpenBoxes, fully managed by the people who build it. We set it up, keep it updated and backed
+                        up, and support your team. You don't run any servers.
+                    </p>
+                    <p class="text-small text-muted">
+                        Plans, prices and the free trial are listed on openboxes.cloud.
+                    </p>
+                    <a href="https://openboxes.cloud/pricing" target="_blank" class="btn btn-template-primary"
+                       onclick="gtag('event', 'click', {'event_category': 'hosting', 'event_label': 'lift_plans'});">See Lift plans and pricing</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Help -->
+    <section class="bar background-white">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading">
+                    <h3>Still deciding?</h3>
+                </div>
+                <p>
+                    Hosting is only part of the cost of running any system. Our
+                    <a href="/cost-analysis/">Total Cost of Ownership</a> guide covers the rest: setup, training and
+                    ongoing maintenance. If you need on-premise deployment, implementation help or custom development,
+                    <a href="https://calendly.com/openboxes/discussion"
+                       onclick="gtag('event', 'click', {'event_category': 'hosting', 'event_label': 'schedule_discussion'});">schedule a call</a>
+                    and we'll help you choose.
+                </p>
+            </div>
+        </div>
+    </section>
+
+</div>
