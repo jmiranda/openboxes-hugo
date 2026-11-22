@@ -114,6 +114,14 @@ ignoreFiles = ['\.swp$', '~$', '\.tmp$', '#$', '\.bak$', '___jb_tmp___', '___jb_
     weight = 2
 
 [[menu.main]]
+    identifier = "deploy-compare-options"
+    name = "Compare Hosting Options"
+    parent = "get-started-deploy"
+    pre = "<i class='fa fa-balance-scale'></i>"
+    url  = "/hosting/"
+    weight = 0
+
+[[menu.main]]
     identifier = "deploy-self-hosted"
     name = "Deploy on Self-Hosted Server"
     parent = "get-started-deploy"
