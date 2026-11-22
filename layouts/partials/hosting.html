@@ -10,6 +10,9 @@
   .hp-chooser .hp-hint { color: #777; margin-bottom: 20px; }
   .hp-chooser .btn { min-width: 120px; margin: 0 6px; }
   .hp-chooser .hp-result-name { font-size: 24px; font-weight: 700; margin: 4px 0 8px; }
+  .hp-chooser .hp-reasons { list-style: none; padding: 0; margin: 0 auto; max-width: 520px; text-align: left; }
+  .hp-chooser .hp-reasons li { padding: 3px 0 3px 22px; position: relative; }
+  .hp-chooser .hp-reasons li .fa { position: absolute; left: 0; top: 7px; color: #38a7bb; }
   .hp-chooser .hp-restart { display: inline-block; margin-top: 14px; font-size: 13px; }
 
   /* Cards */
@@ -44,21 +47,23 @@
     <!-- Chooser -->
     <div class="hp-chooser" id="hp-chooser">
       <div class="hp-step active" data-step="1">
-        <h4>Does your data have to stay on your own hardware?</h4>
-        <div class="hp-hint">For example data residency rules, your own data center, or sites with unreliable internet.</div>
-        <button class="btn btn-template-main" data-answer="self-hosted">Yes</button>
-        <button class="btn btn-template-main" data-next="2">No</button>
-      </div>
-      <div class="hp-step" data-step="2">
+        <div class="hp-hint">Question 1 of 2</div>
         <h4>Do you have someone who can look after a Linux server?</h4>
         <div class="hp-hint">Installing updates, checking backups, fixing things when they break.</div>
-        <button class="btn btn-template-main" data-answer="self-hosted-skills">Yes</button>
-        <button class="btn btn-template-main" data-answer="lift">No</button>
+        <button class="btn btn-template-main" data-q="skills" data-a="yes" data-next="2">Yes</button>
+        <button class="btn btn-template-main" data-q="skills" data-a="no" data-next="2">No</button>
+      </div>
+      <div class="hp-step" data-step="2">
+        <div class="hp-hint">Question 2 of 2</div>
+        <h4>Do you need someone to call when something breaks?</h4>
+        <div class="hp-hint">Direct help from the people who build OpenBoxes, rather than community forums.</div>
+        <button class="btn btn-template-main" data-q="support" data-a="yes" data-next="result">Yes</button>
+        <button class="btn btn-template-main" data-q="support" data-a="no" data-next="result">No</button>
       </div>
       <div class="hp-step" data-step="result">
         <div class="hp-hint">We recommend</div>
         <div class="hp-result-name" id="hp-result-name"></div>
-        <div id="hp-result-why"></div>
+        <ul class="hp-reasons" id="hp-result-why"></ul>
         <a href="#" class="hp-restart" id="hp-restart"><i class="fa fa-undo"></i> Start over</a>
       </div>
     </div>
@@ -113,38 +118,58 @@
 
 <script>
 (function () {
-  var names = { 'self-hosted': 'Self-hosted', 'self-hosted-skills': 'Self-hosted', 'lift': 'OpenBoxes Lift' };
-  var cardFor = { 'self-hosted': 'self-hosted', 'self-hosted-skills': 'self-hosted', 'lift': 'lift' };
-  var whys = {
-    'self-hosted': 'Install OpenBoxes on your own server so your data never leaves your hardware.',
-    'self-hosted-skills': 'You have the skills to run a server. Install OpenBoxes on the cloud provider or hardware you already use.',
-    'lift': 'Let the OpenBoxes team run the server so your team can focus on operations.'
-  };
   var chooser = document.getElementById('hp-chooser');
   var cards = document.getElementById('hp-cards');
+  var answers = {};
+  var reasons = {
+    skills: {
+      yes: 'You have someone who can run and maintain a server.',
+      no: 'Nobody on your team needs to run a server: we handle hosting, updates and backups.'
+    },
+    support: {
+      yes: 'Support from the OpenBoxes team is included.',
+      no: 'Community forums and docs cover your support needs.'
+    }
+  };
   function show(step) {
     chooser.querySelectorAll('.hp-step').forEach(function (s) {
       s.classList.toggle('active', s.getAttribute('data-step') === step);
     });
   }
-  function pick(option) {
-    document.getElementById('hp-result-name').textContent = names[option];
-    document.getElementById('hp-result-why').textContent = whys[option];
+  function recommend() {
+    // Self-hosted only when the team can run a server AND doesn't need direct support.
+    return (answers.skills === 'yes' && answers.support === 'no') ? 'self-hosted' : 'lift';
+  }
+  function showResult() {
+    var option = recommend();
+    document.getElementById('hp-result-name').textContent = option === 'lift' ? 'OpenBoxes Lift' : 'Self-hosted';
+    var list = document.getElementById('hp-result-why');
+    list.innerHTML = '';
+    ['skills', 'support'].forEach(function (q) {
+      var li = document.createElement('li');
+      li.innerHTML = '<i class="fa fa-check"></i>';
+      li.appendChild(document.createTextNode(reasons[q][answers[q]]));
+      list.appendChild(li);
+    });
     show('result');
     cards.classList.add('has-pick');
     cards.querySelectorAll('.hp-card').forEach(function (c) {
-      c.classList.toggle('picked', c.getAttribute('data-option') === cardFor[option]);
+      c.classList.toggle('picked', c.getAttribute('data-option') === option);
     });
-    if (typeof gtag === 'function') { gtag('event', 'hosting_chooser_result', { 'event_category': 'hosting', 'event_label': option }); }
+    if (typeof gtag === 'function') {
+      gtag('event', 'hosting_chooser_result', { 'event_category': 'hosting', 'event_label': option + ' (skills:' + answers.skills + ', support:' + answers.support + ')' });
+    }
   }
   chooser.addEventListener('click', function (e) {
-    var btn = e.target.closest('[data-next],[data-answer]');
+    var btn = e.target.closest('[data-q]');
     if (!btn) { return; }
-    if (btn.hasAttribute('data-next')) { show(btn.getAttribute('data-next')); }
-    else { pick(btn.getAttribute('data-answer')); }
+    answers[btn.getAttribute('data-q')] = btn.getAttribute('data-a');
+    var next = btn.getAttribute('data-next');
+    if (next === 'result') { showResult(); } else { show(next); }
   });
   document.getElementById('hp-restart').addEventListener('click', function (e) {
     e.preventDefault();
+    answers = {};
     show('1');
     cards.classList.remove('has-pick');
     cards.querySelectorAll('.hp-card').forEach(function (c) { c.classList.remove('picked'); });
